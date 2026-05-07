@@ -55,7 +55,7 @@ export default function TraumaPTSDPage() {
       title: "The Invisible Wound",
       subtitle: "Understanding Trauma & PTSD",
       description: "Trauma isn't just what happened to you—it's how your body and mind responded to survive. The flashbacks, the hypervigilance, the feeling of being constantly on edge—these aren't signs of weakness. They're your nervous system doing its job. But you don't have to live in survival mode forever.",
-      image: "/ptsd1.jpg",
+      image: "/new/dylann-hendricks-z2rC_O-TosY-unsplash.jpg",
       imagePosition: "right",
       stat: "70% of adults experience at least one traumatic event in their lifetime"
     },
@@ -72,7 +72,7 @@ export default function TraumaPTSDPage() {
         "Emotional numbness or detachment",
         "Exaggerated startle response"
       ],
-      image: "/ptsd2.jpg",
+      image: "/new/abel-marquez-0chVl3b15MQ-unsplash.jpg",
       imagePosition: "left",
       isSymptoms: true
     },
@@ -81,7 +81,7 @@ export default function TraumaPTSDPage() {
       title: "The Science of Trauma Recovery",
       subtitle: "Your brain can heal",
       description: "Trauma changes the brain—but the brain can change back. Through neuroplasticity and evidence-based approaches like ART (Accelerated Resolution Therapy) and Trauma-Focused CBT, we can reprocess traumatic memories, reduce their emotional charge, and restore a sense of safety in your body and relationships.",
-      image: "/ptsd3.jpg",
+      image: "/new/robina-weermeijer-3KGF9R_0oHs-unsplash.jpg",
       imagePosition: "right",
       stat: "ART has been shown to resolve trauma in 1-5 sessions"
     },
@@ -96,7 +96,7 @@ export default function TraumaPTSDPage() {
         { name: "Somatic Approaches", desc: "Release trauma stored in the body", color: "#c09050" },
         { name: "EMDR-Informed", desc: "Process traumatic memories through bilateral stimulation", color: "#d4a84b" }
       ],
-      image: "/depression4.jpg",
+      image: "/new/ricardo-gomez-angel-D9kOnC_1AHw-unsplash.jpg",
       imagePosition: "left",
       isApproaches: true
     },
@@ -105,7 +105,7 @@ export default function TraumaPTSDPage() {
       title: "Your Healing Journey",
       subtitle: "You don't have to do this alone",
       description: "Healing from trauma isn't about erasing the past—it's about reclaiming your present and future. I'll meet you where you are, honoring your story while gently guiding you toward safety, trust, and post-traumatic growth. You deserve to feel safe in your own body and relationships.",
-      image: "/ptsd4.jpg",
+      image: "/new/priscilla-du-preez-aPa843frIzI-unsplash.jpg",
       imagePosition: "right",
       stat: "100% virtual • Licensed in NY, NJ, RI"
     },
@@ -114,7 +114,7 @@ export default function TraumaPTSDPage() {
       title: "A Safe Space Awaits",
       subtitle: "Virtual therapy from anywhere",
       description: "Secure, HIPAA-compliant sessions from the comfort of your home. No commute, no waiting rooms—just you, me, and a path forward. Evening and weekend appointments available.",
-      image: "https://images.pexels.com/photos/4145192/pexels-photo-4145192.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      image: "/new/billy-pasco-se3tHNszbkM-unsplash.jpg",
       imagePosition: "left",
       stat: "Flexible scheduling • 24hr cancellation policy"
     },
@@ -123,7 +123,7 @@ export default function TraumaPTSDPage() {
       title: "You Are Not Broken",
       subtitle: "Healing is possible",
       description: "Trauma isn't a life sentence. With the right support, you can move from surviving to thriving. The flashbacks can fade. The hypervigilance can quiet. You can feel safe again. And you don't have to do it alone.",
-      image: "https://images.pexels.com/photos/4100427/pexels-photo-4100427.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      image: "/new/javardh-FL6rma2jePU-unsplash.jpg",
       imagePosition: "right",
       stat: "You've already taken the bravest step"
     }
@@ -138,7 +138,7 @@ export default function TraumaPTSDPage() {
         {/* Cinematic Background with Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/ptsdhero.jpg"
+            src="/new/kreative-kwame-oUXhw8SEqlM-unsplash.jpg"
             alt="Calm peaceful healing"
             className="w-full h-full object-cover scale-110"
           />
@@ -193,7 +193,7 @@ export default function TraumaPTSDPage() {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://calendly.com/manifestcoachingllc"
+                href="https://calendly.com/manifestcoachingllc/clarity-call"
                 target="_blank"
                 className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-[#c09050] to-[#d4a84b] text-white font-bold hover:shadow-2xl transition-all duration-500 font-['Montserrat']"
               >
@@ -364,7 +364,7 @@ export default function TraumaPTSDPage() {
         
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.pexels.com/photos/4101555/pexels-photo-4101555.jpeg?auto=compress&cs=tinysrgb&w=2400"
+            src="/new/linus-nylund-Q5QspluNZmM-unsplash.jpg"
             alt="Healing journey"
             className="w-full h-full object-cover"
           />
@@ -424,7 +424,7 @@ export default function TraumaPTSDPage() {
             <motion.a
               whileHover={{ scale: 1.05, y: -3 }}
               whileTap={{ scale: 0.98 }}
-              href="https://calendly.com/manifestcoachingllc"
+              href="https://calendly.com/manifestcoachingllc/clarity-call"
               target="_blank"
               className="group inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-white text-[#c09050] font-black text-lg hover:shadow-2xl transition-all duration-500 font-['Montserrat']"
             >

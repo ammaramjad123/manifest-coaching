@@ -143,7 +143,7 @@ export default function AboutProcessSection() {
           className="text-center mt-16"
         >
           <a
-            href="https://calendly.com/manifestcoachingllc"
+            href="https://calendly.com/manifestcoachingllc/clarity-call"
             target="_blank"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-black border-2 border-[#c09050] text-white font-black hover:bg-[#c09050] hover:border-[#c09050] hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 font-['Montserrat'] text-sm uppercase tracking-wider"
           >

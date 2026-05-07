@@ -93,6 +93,22 @@ export default function ContactSection() {
     return newErrors;
   };
 
+  // Routes contact to the correct inbox based on service selected:
+  // Process email  → therapy (The Process)
+  // Pivot email    → coaching / corporate (The Pivot)
+  // Partnerships email → training / immigration / general (Partnerships)
+  const getRoutingEmail = (service) => {
+    const routes = {
+      therapy:     'process@thepeacepractice.com',
+      coaching:    'pivot@thepeacepractice.com',
+      corporate:   'pivot@thepeacepractice.com',
+      training:    'partnerships@thepeacepractice.com',
+      immigration: 'partnerships@thepeacepractice.com',
+      general:     'manifestcoachingllc@gmail.com',
+    };
+    return routes[service] || 'manifestcoachingllc@gmail.com';
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -114,6 +130,7 @@ export default function ContactSection() {
           phone: formData.phone,
           service: services.find(s => s.value === formData.service)?.label,
           message: formData.message,
+          to_email: getRoutingEmail(formData.service),
           title: "Contact Form Submission - The Peace Practice"
         },
         "YOUR_PUBLIC_KEY"      // Replace with your EmailJS public key
@@ -140,17 +157,33 @@ export default function ContactSection() {
     {
       icon: <Phone className="w-6 h-6" />,
       title: 'Call Us',
-      details: ['(929) 900-3056', '(929) 925-2554'],
+      details: ['(929) 900-3056'],
       action: 'Call Now',
       link: 'tel:+19299003056',
       color: 'from-[#c09050] to-[#d4a84b]'
     },
     {
       icon: <Mail className="w-6 h-6" />,
-      title: 'Email Us',
-      details: ['manifestcoachingllc@gmail.com'],
+      title: 'The Process — Therapy',
+      details: ['process@thepeacepractice.com', 'Clinical Therapy Inquiries'],
       action: 'Send Email',
-      link: 'mailto:manifestcoachingllc@gmail.com',
+      link: 'mailto:process@thepeacepractice.com',
+      color: 'from-[#c09050] to-[#d4a84b]'
+    },
+    {
+      icon: <Mail className="w-6 h-6" />,
+      title: 'The Pivot — Coaching',
+      details: ['pivot@thepeacepractice.com', 'Coaching & Corporate Inquiries'],
+      action: 'Send Email',
+      link: 'mailto:pivot@thepeacepractice.com',
+      color: 'from-[#c09050] to-[#d4a84b]'
+    },
+    {
+      icon: <Mail className="w-6 h-6" />,
+      title: 'The Partnership — Training',
+      details: ['partnerships@thepeacepractice.com', 'Professional & Training Inquiries'],
+      action: 'Send Email',
+      link: 'mailto:partnerships@thepeacepractice.com',
       color: 'from-[#c09050] to-[#d4a84b]'
     },
     {
@@ -158,7 +191,7 @@ export default function ContactSection() {
       title: 'Book Online',
       details: ['Schedule a consultation', 'via Calendly'],
       action: 'Book Now',
-      link: 'https://calendly.com/manifestcoachingllc',
+      link: 'https://calendly.com/manifestcoachingllc/clarity-call',
       color: 'from-[#c09050] to-[#d4a84b]'
     }
   ];
@@ -186,8 +219,8 @@ export default function ContactSection() {
             </span>
           </h1>
           <p className="text-gray-500 max-w-3xl mx-auto text-base sm:text-lg lg:text-xl font-['Plus_Jakarta_Sans']">
-            Have questions about therapy, coaching, or training? Ready to book your first session? 
-            I'm here to support you every step of the way.
+            Have questions about therapy, coaching, or training? Ready to book your first session?
+            We're here to support you every step of the way.
           </p>
         </div>
 
@@ -203,7 +236,7 @@ export default function ContactSection() {
               <div className="p-6 sm:p-8 md:p-10">
                 <div className="mb-8">
                   <h2 className="text-2xl md:text-3xl font-bold text-black mb-2 font-['Montserrat']">Send a Message</h2>
-                  <p className="text-gray-500 text-sm md:text-base font-['Plus_Jakarta_Sans']">Fill out the form below and I'll get back to you within 24 hours.</p>
+                  <p className="text-gray-500 text-sm md:text-base font-['Plus_Jakarta_Sans']">Fill out the form below and you'll hear back within 24 hours.</p>
                 </div>
 
                 {isSubmitted ? (
@@ -382,8 +415,8 @@ export default function ContactSection() {
               {/* Right Side - Contact Information */}
               <div className="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 md:p-10 border-l border-gray-200">
                 <div className="mb-8">
-                  <h2 className="text-2xl md:text-3xl font-bold text-black mb-2 font-['Montserrat']">Connect With Me</h2>
-                  <p className="text-gray-500 text-sm md:text-base font-['Plus_Jakarta_Sans']">I'm here to help and answer any questions you might have.</p>
+                  <h2 className="text-2xl md:text-3xl font-bold text-black mb-2 font-['Montserrat']">Let's Connect</h2>
+                  <p className="text-gray-500 text-sm md:text-base font-['Plus_Jakarta_Sans']">Here to help and answer any questions you might have.</p>
                 </div>
 
                 {/* Contact Methods */}

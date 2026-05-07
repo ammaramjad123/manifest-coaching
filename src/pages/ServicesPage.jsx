@@ -26,6 +26,286 @@ AlertCircle,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
+// ─────────────────────────────────────────────────────────
+//  PATH FINDER QUIZ
+// ─────────────────────────────────────────────────────────
+function PathFinderQuiz() {
+  const [step, setStep] = useState(0);
+  const [answers, setAnswers] = useState([]);
+
+  const questions = [
+    {
+      q: "What best describes where you are right now?",
+      options: [
+        { label: "I'm navigating emotional pain, trauma, or mental health symptoms that are affecting my daily life.", value: "process" },
+        { label: "I'm functioning — but I feel stuck. I know I'm meant for more and need strategy to get there.", value: "pivot" },
+        { label: "I'm a clinician, attorney, HR leader, or organization seeking professional training or partnerships.", value: "partnership" },
+      ]
+    },
+    {
+      q: "Where are you currently located?",
+      options: [
+        { label: "New York, New Jersey, or Rhode Island", value: "process" },
+        { label: "Elsewhere in the United States", value: "pivot" },
+        { label: "Location isn't the priority — I'm engaging professionally.", value: "partnership" },
+      ]
+    },
+    {
+      q: "What outcome feels most important to you right now?",
+      options: [
+        { label: "Healing, stability, and processing what I've been carrying.", value: "process" },
+        { label: "Clarity, momentum, and a concrete plan for my next chapter.", value: "pivot" },
+        { label: "Professional development, certification, or expanding organizational capacity.", value: "partnership" },
+      ]
+    },
+    {
+      q: "How would you describe the weight of what you're navigating?",
+      options: [
+        { label: "It's affecting my daily functioning — I need consistent clinical support.", value: "process" },
+        { label: "I'm okay — but I'm ready to shift from surviving to intentionally thriving.", value: "pivot" },
+        { label: "This is a professional investment, not a personal crisis.", value: "partnership" },
+      ]
+    },
+    {
+      q: "Which phrase feels most true right now?",
+      options: [
+        { label: '"I need to heal first."', value: "process" },
+        { label: '"I need to grow next."', value: "pivot" },
+        { label: '"I want to help others do both."', value: "partnership" },
+      ]
+    },
+  ];
+
+  const results = {
+    process: {
+      path: "The Process",
+      subtitle: "Clinical Therapy",
+      description: "Based on your responses, you are in a season of healing. The Process provides evidence-based clinical therapy — including ART®, DBT, and ACT — for individuals 17+ in New York, New Jersey, and Rhode Island. This is the right clinical container for the work ahead.",
+      includes: [
+        "Individual therapy via HIPAA-compliant telehealth",
+        "Evidence-based modalities: ART®, DBT, and ACT",
+        "Insurance accepted through ALMA and Headway",
+      ],
+      note: "Clinical therapy is available to clients residing in NY, NJ, and RI only.",
+    },
+    pivot: {
+      path: "The Pivot",
+      subtitle: "Transformational Coaching",
+      description: "Based on your responses, you are in a season of expansion. The Pivot is strategic, nationwide coaching through the MANIFEST Method — designed to help you clarify your vision, break through stagnation, and build your next chapter with intention.",
+      includes: [
+        "Available nationwide via virtual sessions",
+        "The proprietary MANIFEST Method framework",
+        "Single sessions or multi-session packages",
+      ],
+      note: "Coaching is not therapy and is not a substitute for clinical mental health treatment.",
+    },
+    partnership: {
+      path: "The Partnership",
+      subtitle: "Professional Training & Education",
+      description: "Based on your responses, you are investing in professional and organizational excellence. The Partnership provides ART® and SĀF-T clinical trainings through RCRR, alongside EAP collaborations, organizational wellness workshops, and consultation for legal professionals.",
+      includes: [
+        "ART® Basic and Advanced clinical trainings via RCRR",
+        "SĀF-T certification facilitated through RCRR",
+        "EAP & corporate workshops — inquire for custom engagements",
+      ],
+      note: "Reach out directly to discuss scheduling, group rates, and custom programming.",
+    },
+  };
+
+  const handleAnswer = (value) => {
+    const next = [...answers, value];
+    setAnswers(next);
+    setStep(s => s + 1);
+  };
+
+  const computeResult = () => {
+    const counts = { process: 0, pivot: 0, partnership: 0 };
+    answers.forEach(v => { if (counts[v] !== undefined) counts[v]++; });
+    return Object.keys(counts).reduce((a, b) => counts[a] >= counts[b] ? a : b);
+  };
+
+  const reset = () => { setStep(0); setAnswers([]); };
+
+  const isResult = step >= questions.length;
+  const resultKey = isResult ? computeResult() : null;
+  const result = resultKey ? results[resultKey] : null;
+  const progress = isResult ? 100 : (step / questions.length) * 100;
+
+  return (
+    <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+
+      {/* Heading */}
+      <div className="text-center max-w-3xl mx-auto mb-12">
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#c09050]/10 border border-[#c09050]/20 mb-4"
+        >
+          <Sparkles className="w-4 h-4 text-[#c09050]" />
+          <span className="text-xs font-black uppercase tracking-widest text-[#c09050] font-['Montserrat']">Path Finder</span>
+        </motion.div>
+        <motion.h2
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          viewport={{ once: true }}
+          className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-4 font-['Montserrat']"
+        >
+          Which Path Is{" "}
+          <span className="bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent">
+            Right for You?
+          </span>
+        </motion.h2>
+        <motion.p
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="text-gray-500 text-base md:text-lg font-['Plus_Jakarta_Sans']"
+        >
+          Answer 5 questions. We will point you toward the right door.
+        </motion.p>
+      </div>
+
+      {/* Quiz card */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        viewport={{ once: true }}
+        className="max-w-2xl mx-auto"
+      >
+        {/* Progress bar */}
+        <div className="w-full h-1 bg-gray-200 rounded-full mb-7 overflow-hidden">
+          <motion.div
+            className="h-full bg-gradient-to-r from-[#c09050] to-[#d4a84b] rounded-full"
+            initial={false}
+            animate={{ width: `${progress}%` }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
+          />
+        </div>
+
+        <div className="bg-white rounded-3xl border border-gray-100 shadow-xl overflow-hidden">
+          <div className="p-7 sm:p-9">
+
+            {!isResult ? (
+              <motion.div
+                key={step}
+                initial={{ opacity: 0, x: 24 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
+              >
+                <p className="text-xs font-black uppercase tracking-[0.18em] text-[#c09050]/70 mb-4 font-['Montserrat']">
+                  Question {step + 1} of {questions.length}
+                </p>
+                <h3 className="text-xl sm:text-2xl font-black text-black mb-7 font-['Montserrat'] leading-snug">
+                  {questions[step].q}
+                </h3>
+                <div className="space-y-3">
+                  {questions[step].options.map((opt, i) => (
+                    <motion.button
+                      key={i}
+                      whileHover={{ scale: 1.01 }}
+                      whileTap={{ scale: 0.98 }}
+                      onClick={() => handleAnswer(opt.value)}
+                      className="w-full text-left px-5 py-4 rounded-2xl border-2 border-gray-100 hover:border-[#c09050] hover:bg-[#c09050]/[0.03] transition-all duration-200 group"
+                    >
+                      <div className="flex items-center gap-4">
+                        <div className="w-8 h-8 rounded-full border-2 border-gray-200 group-hover:border-[#c09050] group-hover:bg-[#c09050]/10 flex items-center justify-center flex-shrink-0 transition-all duration-200">
+                          <span className="text-xs font-black text-gray-400 group-hover:text-[#c09050] transition-colors font-['Montserrat']">
+                            {String.fromCharCode(65 + i)}
+                          </span>
+                        </div>
+                        <span className="text-gray-700 text-sm sm:text-base font-['Plus_Jakarta_Sans'] leading-relaxed group-hover:text-gray-900 transition-colors">
+                          {opt.label}
+                        </span>
+                      </div>
+                    </motion.button>
+                  ))}
+                </div>
+              </motion.div>
+            ) : (
+              <motion.div
+                key="result"
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.45, ease: "easeOut" }}
+              >
+                {/* Result header */}
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-10 h-10 rounded-full bg-[#c09050]/10 flex items-center justify-center">
+                    <CheckCircle className="w-5 h-5 text-[#c09050]" />
+                  </div>
+                  <p className="text-xs font-black uppercase tracking-[0.16em] text-[#c09050] font-['Montserrat']">
+                    Your Recommended Path
+                  </p>
+                </div>
+
+                <h3 className="text-3xl sm:text-4xl font-black text-black font-['Montserrat'] mb-1">
+                  {result.path}
+                </h3>
+                <p className="text-[#c09050] font-bold text-sm uppercase tracking-wider mb-5 font-['Montserrat']">
+                  {result.subtitle}
+                </p>
+
+                <p className="text-gray-600 text-base leading-relaxed mb-6 font-['Plus_Jakarta_Sans']">
+                  {result.description}
+                </p>
+
+                {/* Includes */}
+                <div className="bg-[#fefcf7] border border-[#c09050]/10 rounded-2xl p-5 mb-5 space-y-3">
+                  {result.includes.map((item, i) => (
+                    <div key={i} className="flex items-start gap-3">
+                      <CheckCircle className="w-4 h-4 text-[#c09050] mt-0.5 flex-shrink-0" />
+                      <span className="text-gray-700 text-sm font-['Plus_Jakarta_Sans'] leading-relaxed">{item}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <p className="text-gray-400 text-xs mb-7 font-['Plus_Jakarta_Sans'] italic">{result.note}</p>
+
+                {/* CTAs */}
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <motion.a
+                    whileHover={{ scale: 1.03, y: -2 }}
+                    whileTap={{ scale: 0.97 }}
+                    href="https://calendly.com/manifestcoachingllc/clarity-call"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-black border-2 border-[#c09050] text-white font-bold text-sm hover:bg-[#c09050] hover:border-[#c09050] transition-all duration-300 font-['Montserrat']"
+                  >
+                    <Calendar className="w-4 h-4" />
+                    Book Free Consultation
+                    <ArrowRight className="w-4 h-4" />
+                  </motion.a>
+                  <motion.button
+                    whileHover={{ scale: 1.03 }}
+                    whileTap={{ scale: 0.97 }}
+                    onClick={reset}
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border-2 border-gray-200 text-gray-500 font-semibold text-sm hover:border-gray-300 hover:text-gray-700 transition-all duration-200 font-['Montserrat']"
+                  >
+                    Retake Quiz
+                  </motion.button>
+                </div>
+              </motion.div>
+            )}
+
+          </div>
+        </div>
+
+        {!isResult && (
+          <p className="text-center text-gray-400 text-xs mt-5 font-['Plus_Jakarta_Sans']">
+            Not sure yet? Every path begins with a free 15-minute alignment call.
+          </p>
+        )}
+      </motion.div>
+    </div>
+  );
+}
+
+// ─────────────────────────────────────────────────────────
 export default function ServicesPage() {
   const controls = useAnimation();
   const [ inView] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -57,7 +337,7 @@ export default function ServicesPage() {
       features: ["Individual therapy ages 17+", "Virtual HIPAA-compliant sessions", "Flexible scheduling", "Insurance accepted"],
       locations: ["NY (#098940)", "NJ (#44SL06739500)", "RI (#ISW04317)"],
       ctaText: "Begin Your Healing Journey",
-      ctaLink: "https://headway.co",
+      ctaLink: "https://calendly.com/manifestcoachingllc/healingsingle",
       ctaIcon: <Heart size={18} />
     },
     {
@@ -77,7 +357,7 @@ export default function ServicesPage() {
       features: ["Nationwide via telehealth", "Single or package bundles", "Pay-to-schedule via Calendly", "Workbooks included"],
       locations: ["Available Nationwide"],
       ctaText: "Start Your Expansion Journey",
-      ctaLink: "https://calendly.com/manifestcoachingllc",
+      ctaLink: "https://calendly.com/manifestcoachingllc/coach",
       ctaIcon: <Brain size={18} />
     },
     {
@@ -94,10 +374,10 @@ export default function ServicesPage() {
       description: "Evidence-based training for organizations and professionals.",
       longDescription: "SĀF-T and Clinical ART trainings facilitated through RCRR for mental health professionals.",
       modalities: ["ART Basic Training", "ART Advanced Training", "SĀF-T Certification"],
-      features: ["CE credits available", "In-person & virtual options", "Group rates available", "Facilitated through RCRR"],
+      features: ["ART Training (CE credits — ART only)", "In-person & virtual options", "Group rates available", "Facilitated through RCRR"],
       locations: ["In-person (NY, GA) + Virtual Nationwide"],
       ctaText: "Inquire About Training",
-      ctaLink: "#contact",
+      ctaLink: "/contact",
       ctaIcon: <BookOpen size={18} />
     }
   ];
@@ -215,7 +495,7 @@ export default function ServicesPage() {
                     <span className="text-xs font-bold text-gray-500">50-70 min session</span>
                   </div>
                   <a
-                    href="https://calendly.com/manifestcoachingllc/manifest-coaching-llc-art?back=1&month=2026-04"
+                    href="https://calendly.com/manifestcoachingllc/healingsingle"
                     target="_blank"
                     className="block w-full text-center py-3 rounded-xl bg-black border-2 border-[#c09050] text-white font-bold hover:bg-[#c09050] hover:border-[#c09050] transition-all duration-300 group-hover:-translate-y-0.5 font-['Montserrat'] text-base"
                   >
@@ -287,7 +567,7 @@ export default function ServicesPage() {
                     <span className="text-xs font-bold text-gray-500">55 min session</span>
                   </div>
                   <a
-                    href="https://calendly.com/manifestcoachingllc/coach?back=1&month=2026-04"
+                    href="https://calendly.com/manifestcoachingllc/coach"
                     target="_blank"
                     className="block w-full text-center py-3 rounded-xl bg-black border-2 border-[#c09050] text-white font-bold hover:bg-[#c09050] hover:border-[#c09050] transition-all duration-300 group-hover:-translate-y-0.5 font-['Montserrat'] text-base"
                   >
@@ -326,8 +606,14 @@ export default function ServicesPage() {
                     <AlertCircle className="w-4 h-4 text-amber-500" />
                     <span className="text-xs font-bold text-gray-500">$100 late cancellation fee</span>
                   </div>
+                  <div className="flex items-start gap-2 p-3 rounded-xl bg-amber-50 border border-amber-200 mb-3">
+                    <span className="text-amber-500 text-sm flex-shrink-0 mt-0.5">⚠️</span>
+                    <p className="text-amber-800 text-sm font-['Plus_Jakarta_Sans'] leading-relaxed">
+                      <span className="font-bold">New clients:</span> Please set up your insurance and first appointment directly on ALMA first. The Calendly link below is for existing clients only.
+                    </p>
+                  </div>
                   <a
-                    href="https://calendly.com/manifestcoachingllc/alma?back=1&month=2026-04"
+                    href="https://calendly.com/manifestcoachingllc/alma"
                     target="_blank"
                     className="block w-full text-center py-3 rounded-xl bg-black border-2 border-[#10B981] text-white font-bold hover:bg-[#10B981] hover:border-[#10B981] transition-all duration-300 group-hover:-translate-y-0.5 font-['Montserrat'] text-base"
                   >
@@ -373,8 +659,14 @@ export default function ServicesPage() {
                     <AlertCircle className="w-4 h-4 text-amber-500" />
                     <span className="text-xs font-bold text-gray-500">$100 late cancellation fee</span>
                   </div>
+                  <div className="flex items-start gap-2 p-3 rounded-xl bg-amber-50 border border-amber-200 mb-3">
+                    <span className="text-amber-500 text-sm flex-shrink-0 mt-0.5">⚠️</span>
+                    <p className="text-amber-800 text-sm font-['Plus_Jakarta_Sans'] leading-relaxed">
+                      <span className="font-bold">New clients:</span> Please set up your insurance and first appointment directly on Headway first. The Calendly link below is for existing clients only.
+                    </p>
+                  </div>
                   <a
-                    href="https://calendly.com/manifestcoachingllc/headway?back=1&month=2026-04"
+                    href="https://calendly.com/manifestcoachingllc/headway"
                     target="_blank"
                     className="block w-full text-center py-3 rounded-xl bg-black border-2 border-[#3B82F6] text-white font-bold hover:bg-[#3B82F6] hover:border-[#3B82F6] transition-all duration-300 group-hover:-translate-y-0.5 font-['Montserrat'] text-base"
                   >
@@ -420,7 +712,7 @@ export default function ServicesPage() {
             className="mt-10 text-center"
           >
             <a
-              href="https://calendly.com/manifestcoachingllc"
+              href="https://calendly.com/manifestcoachingllc/clarity-call"
               target="_blank"
               className="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-black border-2 border-[#c09050] text-white font-bold hover:bg-[#c09050] hover:border-[#c09050] transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 font-['Montserrat']"
             >
@@ -609,6 +901,129 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* ========== PATH FINDER QUESTIONNAIRE ========== */}
+      <section className="py-20 md:py-24 bg-[#fafaf8]">
+        <PathFinderQuiz />
+      </section>
+
+      {/* ========== PATH COMPARISON TABLE ========== */}
+      <section className="py-16 md:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <motion.h2
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="text-2xl sm:text-3xl md:text-4xl font-black text-black font-['Montserrat'] mb-3"
+            >
+              At a{" "}
+              <span className="bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent">
+                Glance
+              </span>
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="text-gray-500 text-base font-['Plus_Jakarta_Sans']"
+            >
+              A quick reference for the three paths.
+            </motion.p>
+          </div>
+
+          {/* Mobile: stacked cards | Desktop: side-by-side */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
+            {[
+              {
+                name: "The Process",
+                sub: "Clinical Therapy",
+                icon: Heart,
+                rows: [
+                  { label: "Who It's For", value: "Individuals seeking clinical healing" },
+                  { label: "Location", value: "NY, NJ & RI only" },
+                  { label: "Session Length", value: "50–90 min" },
+                  { label: "Payment", value: "Insurance or private pay" },
+                  { label: "Modalities", value: "ART®, DBT, ACT" },
+                ]
+              },
+              {
+                name: "The Pivot",
+                sub: "Transformational Coaching",
+                icon: Brain,
+                rows: [
+                  { label: "Who It's For", value: "High-achievers ready to grow" },
+                  { label: "Location", value: "Nationwide via telehealth" },
+                  { label: "Session Length", value: "55–90 min" },
+                  { label: "Payment", value: "Private pay" },
+                  { label: "Framework", value: "The MANIFEST Method" },
+                ]
+              },
+              {
+                name: "The Partnership",
+                sub: "Training & Education",
+                icon: BookOpen,
+                rows: [
+                  { label: "Who It's For", value: "Professionals & organizations" },
+                  { label: "Location", value: "In-person + virtual nationwide" },
+                  { label: "Session Length", value: "Varies by program" },
+                  { label: "Payment", value: "Private pay — inquire for rates" },
+                  { label: "Certifications", value: "ART® & SĀF-T via RCRR" },
+                ]
+              }
+            ].map((path, idx) => {
+              const Icon = path.icon;
+              return (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 24 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.45, delay: idx * 0.08 }}
+                  viewport={{ once: true }}
+                  className="bg-white rounded-2xl border border-gray-100 shadow-md overflow-hidden"
+                >
+                  {/* Card header */}
+                  <div className="bg-black px-6 py-5 flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-[#c09050]/20 flex items-center justify-center flex-shrink-0">
+                      <Icon className="w-5 h-5 text-[#d4a84b]" />
+                    </div>
+                    <div>
+                      <p className="text-[#d4a84b] font-black text-xl font-['Montserrat'] leading-tight">{path.name}</p>
+                      <p className="text-white/60 text-sm font-['Plus_Jakarta_Sans']">{path.sub}</p>
+                    </div>
+                  </div>
+                  {/* Rows */}
+                  <div className="divide-y divide-gray-50">
+                    {path.rows.map((row, i) => (
+                      <div key={i} className="px-6 py-3.5 flex items-start justify-between gap-4">
+                        <span className="text-gray-400 text-xs font-black uppercase tracking-wider font-['Montserrat'] whitespace-nowrap pt-0.5">
+                          {row.label}
+                        </span>
+                        <span className="text-gray-800 text-sm font-['Plus_Jakarta_Sans'] text-right leading-snug">
+                          {row.value}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </motion.div>
+              );
+            })}
+          </div>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="text-center text-gray-400 text-xs mt-8 font-['Plus_Jakarta_Sans']"
+          >
+            Unsure which path fits? The free 15-minute alignment call is the right first step.
+          </motion.p>
+        </div>
+      </section>
+
       {/* ========== THE MANIFEST METHOD PREVIEW ========== */}
       <section className="py-20 md:py-28 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
@@ -637,8 +1052,8 @@ export default function ServicesPage() {
               { letter: "I", word: "Internal", desc: "Deepening understanding of inner workings", hoverText: "Look within to grow" },
               { letter: "F", word: "Fulfillment", desc: "Cultivating the sense of being healed and whole", hoverText: "Feel complete at last" },
               { letter: "E", word: "Enable", desc: "Creating pathways to your next chapter", hoverText: "Open new doors" },
-              { letter: "S", word: "Strategic Serenity", desc: "Radical honesty with purpose-driven planning", hoverText: "Plan with clarity" },
-              { letter: "T", word: "Transformation", desc: "Healing, training & transitions", hoverText: "Become your best self" }
+              { letter: "S", word: "Sincere · Serene", desc: "Coaching: Sincere commitment to growth. Therapy: Serene arrival through healing.", hoverText: "Authentic & grounded" },
+              { letter: "T", word: "Transformations · Therapeutic Healing", desc: "Coaching: life-scale shifts. Therapy: restoring wholeness.", hoverText: "Become your best self" }
             ].map((item, idx) => (
               <motion.div
                 key={idx}
@@ -675,26 +1090,6 @@ export default function ServicesPage() {
             ))}
           </div>
           
-          {/* CTA Button - Improved Hover Effect */}
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.4 }}
-            className="text-center mt-12 md:mt-16"
-          >
-            <Link
-              to="/manifest-method"
-              className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-black border-2 border-[#c09050] text-white font-bold text-sm md:text-base transition-all duration-300 hover:bg-[#c09050] hover:border-[#c09050] hover:shadow-xl hover:-translate-y-0.5 font-['Montserrat']"
-            >
-              <span>Discover the MANIFEST Method</span>
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-            </Link>
-            
-            {/* Alternative text link below */}
-            <p className="text-gray-400 text-xs mt-4 font-['Plus_Jakarta_Sans']">
-              Learn how the 8 pillars can transform your life
-            </p>
-          </motion.div>
         </div>
       </section>
 
@@ -876,7 +1271,7 @@ export default function ServicesPage() {
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  to="/assessment"
+                  to="/#assessment"
                   className="group inline-flex items-center justify-center gap-2 px-6 md:px-8 py-3 md:py-4 rounded-full bg-black border-2 border-[#c09050] text-white font-bold transition-all duration-500 hover:bg-[#c09050] hover:border-[#c09050] hover:shadow-2xl hover:-translate-y-1 font-['Montserrat']"
                 >
                   Take The Path Forward Assessment
@@ -884,7 +1279,7 @@ export default function ServicesPage() {
                 </Link>
                 
                 <a
-                  href="https://calendly.com/manifestcoachingllc"
+                  href="https://calendly.com/manifestcoachingllc/clarity-call"
                   target="_blank"
                   className="group inline-flex items-center justify-center gap-2 px-6 md:px-8 py-3 md:py-4 rounded-full border-2 border-[#c09050] text-[#c09050] font-bold hover:bg-[#c09050] hover:text-white hover:border-[#c09050] transition-all duration-300 font-['Montserrat']"
                 >

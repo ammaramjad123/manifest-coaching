@@ -1,114 +1,96 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { 
-  ArrowRight,
-  Sparkles, 
-  Heart, 
-  Shield, 
-  Award, 
-  Clock, 
-  Users,
-  CheckCircle,
-  Video,
-  CreditCard,
-  Star,
-  MapPin,
-  Calendar,
-  MessageCircle,
-  BookOpen,
-  Brain,
-  Flower2
-} from "lucide-react";
+import { Sparkles, ArrowRight, Calendar } from "lucide-react";
 
-export default function WhyChooseUs() {
+const steps = [
+  {
+    letter: "M",
+    word: "Motivating",
+    description: "Identifying the \"Grit\" — the core drive behind the desire for change."
+  },
+  {
+    letter: "A",
+    word: "And",
+    description: "Holding space for both your history and your future simultaneously."
+  },
+  {
+    letter: "N",
+    word: "Nurturing",
+    description: "Stabilizing the nervous system with ART, DBT, & ACT."
+  },
+  {
+    letter: "I",
+    word: "Internal",
+    description: "Deepening the understanding of your inner workings and their impact."
+  },
+  {
+    letter: "F",
+    word: "Fulfillment",
+    description: "Cultivating the sense of being healed, whole, and realized."
+  },
+  {
+    letter: "E",
+    word: "Enable",
+    description: "Creating the pathways that allow you to step into your next chapter."
+  },
+  {
+    letter: "S",
+    word: "Sincere · Serene",
+    description: "Coaching: Sincere — showing up with full honesty and authentic intent. Therapy: Serene — the interior calm that becomes possible through clinical healing."
+  },
+  {
+    letter: "T",
+    word: "Transformations · Therapeutic Healing",
+    description: "Coaching: Transformations — life-scale shifts in how you move through the world. Therapy: Therapeutic Healing — restoring wholeness through evidence-based clinical work."
+  }
+];
+
+export default function ManifestMethod() {
   const controls = useAnimation();
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
+    if (inView) controls.start("visible");
   }, [controls, inView]);
 
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.2,
-      },
-    },
+      transition: { staggerChildren: 0.08, delayChildren: 0.2 }
+    }
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, y: 24 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
-    },
+      transition: { duration: 0.6, ease: "easeOut" }
+    }
   };
 
-  const benefits = [
-    {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Licensed Clinical Expert",
-      description: "26+ years of experience. Licensed LCSW in NY, NJ & RI. NYU Master's degree.",
-      color: "#c09050"
-    },
-    {
-      icon: <Heart className="w-6 h-6" />,
-      title: "Compassionate Care",
-      description: "Client-centered, trauma-informed approach. You'll feel seen, heard, and valued.",
-      color: "#D53F8C"
-    },
-    {
-      icon: <Video className="w-6 h-6" />,
-      title: "100% Virtual Sessions",
-      description: "Secure, HIPAA-compliant platform. Access care from anywhere.",
-      color: "#3182CE"
-    },
-    {
-      icon: <CreditCard className="w-6 h-6" />,
-      title: "Insurance Accepted",
-      description: "Aetna, Cigna, UnitedHealthcare, Blue Cross, and 15+ other plans.",
-      color: "#38A169"
-    },
-    {
-      icon: <Clock className="w-6 h-6" />,
-      title: "Flexible Scheduling",
-      description: "Evening and weekend appointments available. Free consultation offered.",
-      color: "#DD6B20"
-    },
-    {
-      icon: <Users className="w-6 h-6" />,
-      title: "Proven Track Record",
-      description: "100+ clients served. Trusted by Psychology Today and major insurers.",
-      color: "#c09050"
-    }
-  ];
-
-  const stats = [
-    { value: "26+", label: "Years Experience", icon: <Award className="w-5 h-5" /> },
-    { value: "100+", label: "Clients Served", icon: <Users className="w-5 h-5" /> },
-    { value: "15+", label: "Insurance Plans", icon: <Shield className="w-5 h-5" /> },
-    { value: "100%", label: "Virtual Sessions", icon: <Video className="w-5 h-5" /> }
-  ];
-
   return (
-    <section id="why-choose-us" className="relative w-full py-16 sm:py-24 md:py-32 bg-white overflow-hidden">
-      
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-0 left-0 w-full h-full" style={{
-          backgroundImage: `radial-gradient(circle at 2px 2px, #c09050 0.5px, transparent 0.5px)`,
-          backgroundSize: '30px 30px'
-        }} />
+    <section id="manifest-method" className="relative w-full py-16 sm:py-24 md:py-32 bg-white overflow-hidden">
+
+      {/* Warm radial glow */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[#c09050]/5 rounded-full blur-3xl" />
+        <div className="absolute top-0 right-0 w-80 h-80 bg-[#d4a84b]/4 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#c09050]/4 rounded-full blur-3xl" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-        
+      {/* Subtle dot grid */}
+      <div className="absolute inset-0 pointer-events-none" style={{
+        backgroundImage: `radial-gradient(circle at 1.5px 1.5px, #c09050 1px, transparent 1px)`,
+        backgroundSize: "36px 36px",
+        opacity: 0.06
+      }} />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        {/* Header */}
         <motion.div
           ref={ref}
           variants={containerVariants}
@@ -122,76 +104,125 @@ export default function WhyChooseUs() {
           >
             <Sparkles className="w-4 h-4 text-[#c09050]" />
             <span className="text-[10px] sm:text-xs font-black uppercase tracking-[0.2em] text-[#c09050] font-['Montserrat']">
-              Why Choose The Peace Practice
+              Proprietary Framework
             </span>
           </motion.div>
 
           <motion.h2
             variants={itemVariants}
-            className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-4 font-['Montserrat']"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-black mb-4 font-['Montserrat'] tracking-tight"
           >
-            Your Trusted Partner in{" "}
+            The{" "}
             <span className="bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent">
-              Healing & Growth
-            </span>
+              MANIFEST
+            </span>{" "}
+            Method
           </motion.h2>
 
           <motion.p
             variants={itemVariants}
-            className="text-gray-600 text-base sm:text-lg font-['Plus_Jakarta_Sans']"
+            className="text-gray-600 text-base sm:text-lg font-['Plus_Jakarta_Sans'] leading-relaxed"
           >
-            Experience compassionate, evidence-based care from a seasoned clinician who truly listens
+            A proprietary framework powering every branch of the practice — designed to move you from survival to a state of being fully realized.
           </motion.p>
         </motion.div>
 
-        {/* Stats Row */}
+        {/* Philosophy quote bar */}
         <motion.div
-          variants={containerVariants}
+          variants={itemVariants}
           initial="hidden"
           animate={controls}
-          className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 mb-12 md:mb-16"
+          className="max-w-4xl mx-auto mb-12 md:mb-16 px-4 sm:px-8 py-5 rounded-2xl border border-[#c09050]/20 bg-[#c09050]/5 text-center"
         >
-          {stats.map((stat, idx) => (
-            <motion.div
-              key={idx}
-              variants={itemVariants}
-              className="text-center p-4 sm:p-5 rounded-2xl bg-gray-50 border border-gray-100"
-            >
-              <div className="w-10 h-10 mx-auto mb-3 rounded-full bg-[#c09050]/10 flex items-center justify-center text-[#c09050]">
-                {stat.icon}
-              </div>
-              <div className="text-2xl sm:text-3xl font-black text-black font-['Montserrat']">{stat.value}</div>
-              <div className="text-xs sm:text-sm text-gray-500 font-['Plus_Jakarta_Sans']">{stat.label}</div>
-            </motion.div>
-          ))}
+          <p className="text-gray-700 text-base sm:text-lg md:text-xl font-['Plus_Jakarta_Sans'] leading-relaxed italic">
+            "Your history is a narrative, not a limitation.{" "}
+            <span className="text-[#c09050] font-semibold not-italic">Your future is a blueprint, not a burden.</span>"
+          </p>
         </motion.div>
 
-        {/* Benefits Grid */}
+        {/* MANIFEST Steps Grid */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate={controls}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10 mb-12 md:mb-16"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 mb-14 md:mb-20"
         >
-          {benefits.map((benefit, idx) => (
+          {steps.map((step, idx) => (
             <motion.div
-              key={idx}
+              key={step.letter}
               variants={itemVariants}
-              className="group p-5 sm:p-6 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+              className="group relative rounded-2xl border border-gray-100 bg-white shadow-sm p-5 sm:p-6 hover:border-[#c09050]/40 hover:bg-[#c09050]/[0.03] transition-all duration-500 hover:-translate-y-1 hover:shadow-md"
             >
-              <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500`} style={{ backgroundColor: `${benefit.color}10` }}>
-                <div style={{ color: benefit.color }}>{benefit.icon}</div>
+              {/* Large decorative letter */}
+              <div className="flex items-start gap-3 mb-3">
+                <span className="text-4xl sm:text-5xl font-black text-[#c09050] leading-none font-['Montserrat'] group-hover:scale-110 transition-transform duration-500 inline-block">
+                  {step.letter}
+                </span>
+                <div className="pt-1">
+                  <p className="text-black font-black text-base sm:text-lg font-['Montserrat'] leading-tight">
+                    {step.word}
+                  </p>
+                  {/* Underline */}
+                  <div className="w-8 h-0.5 bg-gradient-to-r from-[#c09050] to-[#d4a84b] rounded-full mt-1.5 group-hover:w-full transition-all duration-500" />
+                </div>
               </div>
-              <h3 className="text-lg sm:text-xl font-black text-black mb-2 font-['Montserrat'] group-hover:text-[#c09050] transition-colors">
-                {benefit.title}
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed font-['Plus_Jakarta_Sans']">
-                {benefit.description}
+              <p className="text-gray-500 text-sm sm:text-base font-['Plus_Jakarta_Sans'] leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
+                {step.description}
               </p>
+
+              {/* Step number */}
+              <div className="absolute top-4 right-4 text-xs font-bold text-gray-200 font-['Montserrat']">
+                {String(idx + 1).padStart(2, "0")}
+              </div>
             </motion.div>
           ))}
         </motion.div>
 
+        {/* Bottom tagline + CTA */}
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate={controls}
+          className="text-center"
+        >
+          <motion.p
+            variants={itemVariants}
+            className="text-gray-400 text-sm sm:text-base font-['Plus_Jakarta_Sans'] mb-2"
+          >
+            Breath and death are our only guarantees.
+          </motion.p>
+          <motion.p
+            variants={itemVariants}
+            className="text-gray-900 text-lg sm:text-xl md:text-2xl font-black font-['Montserrat'] mb-8"
+          >
+            Together, we master{" "}
+            <span className="bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent">
+              everything in between.
+            </span>
+          </motion.p>
+
+          <motion.div
+            variants={itemVariants}
+            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          >
+            <a
+              href="https://calendly.com/manifestcoachingllc/clarity-call"
+              target="_blank"
+              rel="noreferrer"
+              className="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-[#c09050] to-[#d4a84b] text-white font-bold text-base sm:text-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 font-['Montserrat']"
+            >
+              <Calendar className="w-5 h-5 group-hover:scale-110 transition-transform" />
+              Book Free Consultation
+            </a>
+            <a
+              href="#services"
+              className="group inline-flex items-center gap-3 px-8 py-4 rounded-full border-2 border-[#c09050]/40 text-gray-800 font-bold text-base sm:text-lg hover:border-[#c09050] hover:text-[#c09050] hover:bg-[#c09050]/5 transition-all duration-300 font-['Montserrat']"
+            >
+              Explore the Three Pathways
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+            </a>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );

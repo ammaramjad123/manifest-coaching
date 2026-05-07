@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
   Phone,
@@ -15,7 +15,11 @@ import {
   Video,
   Brain,
   Users,
-  BookOpen
+  BookOpen,
+  Zap,
+  Globe,
+  Activity,
+  Target
 } from "lucide-react";
 
 export default function Header() {
@@ -25,6 +29,15 @@ export default function Header() {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [showDropdown, setShowDropdown] = useState(false);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
+  const dropdownTimer = useRef(null);
+
+  const handleDropdownEnter = () => {
+    clearTimeout(dropdownTimer.current);
+    setShowDropdown(true);
+  };
+  const handleDropdownLeave = () => {
+    dropdownTimer.current = setTimeout(() => setShowDropdown(false), 160);
+  };
   
   const location = useLocation();
 
@@ -88,11 +101,19 @@ export default function Header() {
   };
 
   const specialtiesList = [
-    { id: "anxiety", label: "Anxiety & Depression", icon: Heart, desc: "Evidence-based approaches" },
-    { id: "trauma", label: "Trauma & PTSD", icon: Shield, desc: "Trauma-focused therapy" },
-    { id: "women", label: "Women's Issues", icon: Sparkles, desc: "Empowerment & support" },
-    { id: "coaching", label: "Life Coaching", icon: Brain, desc: "MANIFEST method" },
-    { id: "immigration", label: "Immigration Evaluations", icon: BookOpen, desc: "Legal & psychological support" }
+    { label: "Anxiety & Depression", icon: Heart, desc: "Evidence-based approaches", href: "/specialties/anxiety-depression" },
+    { label: "Trauma & PTSD", icon: Shield, desc: "Trauma-focused therapy", href: "/specialties/trauma-ptsd" },
+    { label: "Women's Issues", icon: Sparkles, desc: "Empowerment & support", href: "/specialties/women-issues" },
+    { label: "Life Coaching", icon: Brain, desc: "The MANIFEST Method", href: "/specialties/life-coaching" },
+    { label: "Immigration Evaluations", icon: BookOpen, desc: "Legal & psychological", href: "/specialties/immigration" }
+  ];
+
+  const modalitiesList = [
+    { label: "ACT", desc: "Acceptance & Commitment Therapy", icon: Target, href: "/specialties/act" },
+    { label: "DBT", desc: "Dialectical Behavior Therapy", icon: Brain, href: "/specialties/dbt" },
+    { label: "ART®", desc: "Accelerated Resolution Therapy", icon: Zap, href: "/specialties/art" },
+    { label: "Inclusive & Affirming", desc: "Culturally responsive practice", icon: Globe, href: "/specialties/inclusive-affirming-care" },
+    { label: "SĀF-T", desc: "Safety & Sensation technique", icon: Activity, href: "/specialties/safety-sensation" }
   ];
 
   return (
@@ -173,7 +194,7 @@ export default function Header() {
     location.pathname === "/about" ? "text-[#c09050]" : "text-gray-700 hover:text-[#c09050]"
   }`}
 >
-  About
+  About the Curator
   <span
     className={`absolute left-0 top-full mt-1 h-0.5 rounded-full transition-all duration-300 group-hover:w-full ${
       location.pathname === "/about" ? "w-full bg-[#c09050]" : "w-0 bg-[#c09050]"
@@ -181,58 +202,100 @@ export default function Header() {
   />
 </Link>
                 {/* Desktop Dropdown for Specialties */}
-                <div 
+                <div
                   className="relative"
-                  onMouseEnter={() => setShowDropdown(true)}
-                  onMouseLeave={() => setShowDropdown(false)}
+                  onMouseEnter={handleDropdownEnter}
+                  onMouseLeave={handleDropdownLeave}
                 >
                   <button
-                    className={`group relative whitespace-nowrap text-base xl:text-lg font-semibold transition-colors duration-300 flex items-center gap-1 text-gray-700 hover:text-[#c09050]`}
+                    className="group relative whitespace-nowrap text-base xl:text-lg font-semibold transition-colors duration-300 flex items-center gap-1 text-gray-700 hover:text-[#c09050]"
                   >
                     Specialties
                     <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${showDropdown ? 'rotate-180' : ''}`} />
                     <span className="absolute left-0 top-full mt-1 h-0.5 w-0 rounded-full bg-[#c09050] transition-all duration-300 group-hover:w-full" />
                   </button>
-                  
+
                   {showDropdown && (
-                    <div 
-                      className="absolute top-full left-0 mt-1 w-80 bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden animate-fadeIn"
-                      onMouseEnter={() => setShowDropdown(true)}
-                      onMouseLeave={() => setShowDropdown(false)}
+                    <div
+                      className="absolute top-full left-1/2 -translate-x-1/2 mt-0 pt-3 w-[740px] z-50"
+                      onMouseEnter={handleDropdownEnter}
+                      onMouseLeave={handleDropdownLeave}
                     >
-                      <div className="absolute inset-0 bg-gradient-to-br from-[#c09050]/5 to-[#d4a84b]/5"></div>
-                      <div className="relative p-2">
-                       {specialtiesList.map((item) => {
-  const Icon = item.icon;
-  // Map the IDs to actual page routes
-  const routeMap = {
-    anxiety: "/specialties/anxiety-depression",
-    trauma: "/specialties/trauma-ptsd",
-    women: "/specialties/women-issues",
-    coaching: "/specialties/life-coaching",
-    immigration: "/specialties/immigration"
-  };
-  return (
-    <Link
-      key={item.id}
-      to={routeMap[item.id]}
-      onClick={() => setShowDropdown(false)}
-      className="flex items-center space-x-3 w-full px-4 py-3 rounded-xl hover:bg-[#c09050]/10 transition-all duration-300 group"
-    >
-      <div className="w-10 h-10 bg-[#c09050]/10 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-        <Icon className="w-5 h-5 text-[#c09050]" />
-      </div>
-      <div className="text-left">
-        <p className="font-semibold text-gray-800">{item.label}</p>
-        <p className="text-xs text-gray-500">{item.desc}</p>
-      </div>
-    </Link>
-  );
-})}
+                      <div className="bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#c09050]/5 to-[#d4a84b]/5 pointer-events-none rounded-2xl" />
+                        <div className="relative grid grid-cols-2 gap-0 divide-x divide-gray-100 p-4">
+
+                          {/* Column 1 — Specialty Areas */}
+                          <div className="pr-4">
+                            <p className="text-xs font-black uppercase tracking-[0.18em] text-[#c09050] px-3 pb-3 font-['Montserrat']">
+                              Specialty Areas
+                            </p>
+                            {specialtiesList.map((item) => {
+                              const Icon = item.icon;
+                              return (
+                                <Link
+                                  key={item.href}
+                                  to={item.href}
+                                  onClick={() => setShowDropdown(false)}
+                                  className="flex items-center gap-3 w-full px-3 py-3 rounded-xl hover:bg-[#c09050]/10 transition-all duration-200 group"
+                                >
+                                  <div className="w-10 h-10 bg-[#c09050]/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                                    <Icon className="w-5 h-5 text-[#c09050]" />
+                                  </div>
+                                  <div className="text-left min-w-0">
+                                    <p className="font-bold text-gray-800 text-base leading-tight">{item.label}</p>
+                                    <p className="text-sm text-gray-500 truncate mt-0.5">{item.desc}</p>
+                                  </div>
+                                </Link>
+                              );
+                            })}
+                          </div>
+
+                          {/* Column 2 — Clinical Modalities */}
+                          <div className="pl-4">
+                            <p className="text-xs font-black uppercase tracking-[0.18em] text-[#c09050] px-3 pb-3 font-['Montserrat']">
+                              Clinical Modalities
+                            </p>
+                            {modalitiesList.map((item) => {
+                              const Icon = item.icon;
+                              return (
+                                <Link
+                                  key={item.href}
+                                  to={item.href}
+                                  onClick={() => setShowDropdown(false)}
+                                  className="flex items-center gap-3 w-full px-3 py-3 rounded-xl hover:bg-[#c09050]/10 transition-all duration-200 group"
+                                >
+                                  <div className="w-10 h-10 bg-[#c09050]/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                                    <Icon className="w-5 h-5 text-[#c09050]" />
+                                  </div>
+                                  <div className="text-left min-w-0">
+                                    <p className="font-bold text-gray-800 text-base leading-tight">{item.label}</p>
+                                    <p className="text-sm text-gray-500 truncate mt-0.5">{item.desc}</p>
+                                  </div>
+                                </Link>
+                              );
+                            })}
+                          </div>
+
+                        </div>
                       </div>
                     </div>
                   )}
                 </div>
+
+               <Link
+  to="/faq"
+  className={`group relative whitespace-nowrap text-base xl:text-lg font-semibold transition-colors duration-300 ${
+    location.pathname === "/faq" ? "text-[#c09050]" : "text-gray-700 hover:text-[#c09050]"
+  }`}
+>
+  FAQ
+  <span
+    className={`absolute left-0 top-full mt-1 h-0.5 rounded-full transition-all duration-300 group-hover:w-full ${
+      location.pathname === "/faq" ? "w-full bg-[#c09050]" : "w-0 bg-[#c09050]"
+    }`}
+  />
+</Link>
 
                <Link
   to="/contact"
@@ -252,14 +315,14 @@ export default function Header() {
               {/* DESKTOP CTA BUTTONS */}
               <div className="hidden lg:flex items-center gap-3 xl:gap-4">
                 <a
-                  href="https://calendly.com/manifestcoachingllc"
+                  href="https://calendly.com/manifestcoachingllc/"
                   target="_blank"
                   className="flex items-center gap-2 px-4 xl:px-5 py-2 xl:py-2.5 rounded-full font-bold text-sm xl:text-base bg-[#c09050]/10 border border-[#c09050]/20 text-[#c09050] hover:bg-[#c09050] hover:text-white transition-all duration-300"
                 >
                   <Calendar size={16} className="xl:w-[18px] xl:h-[18px]" />
                   <span>Book Consultation</span>
                 </a>
-                <a href="#contact">
+                <a href="tel:+19299003056">
                   <button
                     className="flex items-center gap-2 px-5 xl:px-6 py-2 xl:py-2.5 rounded-full font-bold text-sm xl:text-base bg-black border-2 border-[#c09050] text-white shadow-lg hover:bg-[#c09050] hover:border-[#c09050] hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
                   >
@@ -352,17 +415,17 @@ export default function Header() {
              <Link
   to="/about"
   className={`py-3 px-4 rounded-xl text-lg sm:text-xl font-semibold transition-all duration-300 ${
-    location.pathname === "/about" 
-      ? "bg-[#c09050]/10 text-[#c09050] border-l-4 border-[#c09050]" 
+    location.pathname === "/about"
+      ? "bg-[#c09050]/10 text-[#c09050] border-l-4 border-[#c09050]"
       : "text-gray-800 hover:bg-gray-100"
   }`}
   onClick={() => setMobileOpen(false)}
 >
-  About
+  About the Curator
 </Link>
 
               {/* Mobile Dropdown for Specialties */}
-              <div className="space-y-2">
+              <div className="space-y-1">
                 <button
                   onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
                   className="flex items-center justify-between w-full py-3 px-4 rounded-xl text-lg sm:text-xl font-semibold text-gray-800 hover:bg-gray-100 transition-all duration-300"
@@ -370,44 +433,74 @@ export default function Header() {
                   <span>Specialties</span>
                   <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${mobileDropdownOpen ? 'rotate-180' : ''}`} />
                 </button>
-                
+
                 {mobileDropdownOpen && (
-                  <div className="ml-4 space-y-2 animate-fadeIn">
-                   {specialtiesList.map((item) => {
-  const Icon = item.icon;
-  const routeMap = {
-    anxiety: "/specialties/anxiety-depression",
-    trauma: "/specialties/trauma-ptsd",
-    women: "/specialties/women-issues",
-    coaching: "/specialties/life-coaching",
-    immigration: "/specialties/immigration"
-  };
-  return (
-    <Link
-      key={item.id}
-      to={routeMap[item.id]}
-      onClick={() => setMobileOpen(false)}
-      className="flex items-center space-x-3 w-full py-3 px-4 rounded-xl hover:bg-gray-100 transition-all duration-300"
-    >
-      <div className="w-8 h-8 bg-[#c09050]/10 rounded-full flex items-center justify-center">
-        <Icon className="w-4 h-4 text-[#c09050]" />
-      </div>
-      <div className="text-left">
-        <p className="font-semibold text-gray-800">{item.label}</p>
-        <p className="text-xs text-gray-500">{item.desc}</p>
-      </div>
-    </Link>
-  );
-})}
+                  <div className="ml-2 animate-fadeIn">
+                    <p className="text-xs font-black uppercase tracking-[0.16em] text-[#c09050] px-4 pt-3 pb-2 font-['Montserrat']">
+                      Specialty Areas
+                    </p>
+                    {specialtiesList.map((item) => {
+                      const Icon = item.icon;
+                      return (
+                        <Link
+                          key={item.href}
+                          to={item.href}
+                          onClick={() => setMobileOpen(false)}
+                          className="flex items-center gap-3 w-full py-3 px-4 rounded-xl hover:bg-gray-100 transition-all duration-300"
+                        >
+                          <div className="w-10 h-10 bg-[#c09050]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                            <Icon className="w-5 h-5 text-[#c09050]" />
+                          </div>
+                          <div className="text-left">
+                            <p className="font-bold text-gray-800 text-base sm:text-lg">{item.label}</p>
+                            <p className="text-sm text-gray-500">{item.desc}</p>
+                          </div>
+                        </Link>
+                      );
+                    })}
+                    <p className="text-xs font-black uppercase tracking-[0.16em] text-[#c09050] px-4 pt-4 pb-2 font-['Montserrat']">
+                      Clinical Modalities
+                    </p>
+                    {modalitiesList.map((item) => {
+                      const Icon = item.icon;
+                      return (
+                        <Link
+                          key={item.href}
+                          to={item.href}
+                          onClick={() => setMobileOpen(false)}
+                          className="flex items-center gap-3 w-full py-3 px-4 rounded-xl hover:bg-gray-100 transition-all duration-300"
+                        >
+                          <div className="w-10 h-10 bg-[#c09050]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                            <Icon className="w-5 h-5 text-[#c09050]" />
+                          </div>
+                          <div className="text-left">
+                            <p className="font-bold text-gray-800 text-base sm:text-lg">{item.label}</p>
+                            <p className="text-sm text-gray-500">{item.desc}</p>
+                          </div>
+                        </Link>
+                      );
+                    })}
                   </div>
                 )}
               </div>
 
               <Link
+  to="/faq"
+  className={`py-3 px-4 rounded-xl text-lg sm:text-xl font-semibold transition-all duration-300 ${
+    location.pathname === "/faq"
+      ? "bg-[#c09050]/10 text-[#c09050] border-l-4 border-[#c09050]"
+      : "text-gray-800 hover:bg-gray-100"
+  }`}
+  onClick={() => setMobileOpen(false)}
+>
+  FAQ
+</Link>
+
+              <Link
   to="/contact"
   className={`py-3 px-4 rounded-xl text-lg sm:text-xl font-semibold transition-all duration-300 ${
-    location.pathname === "/contact" 
-      ? "bg-[#c09050]/10 text-[#c09050] border-l-4 border-[#c09050]" 
+    location.pathname === "/contact"
+      ? "bg-[#c09050]/10 text-[#c09050] border-l-4 border-[#c09050]"
       : "text-gray-800 hover:bg-gray-100"
   }`}
   onClick={() => setMobileOpen(false)}
@@ -419,7 +512,7 @@ export default function Header() {
             {/* Mobile CTA Buttons */}
             <div className="p-5 sm:p-6 border-t border-gray-200 mt-4 space-y-3">
               <a
-                href="https://calendly.com/manifestcoachingllc"
+                href="https://calendly.com/manifestcoachingllc/"
                 target="_blank"
                 onClick={() => setMobileOpen(false)}
                 className="flex items-center justify-center gap-3 w-full py-3.5 sm:py-4 rounded-full border-2 border-[#c09050] text-[#c09050] font-bold text-base sm:text-lg hover:bg-[#c09050] hover:text-white transition-all duration-300"
@@ -427,7 +520,7 @@ export default function Header() {
                 <Calendar size={18} className="sm:w-5 sm:h-5" />
                 <span>Book Consultation</span>
               </a>
-              <a href="#contact">
+              <a href="tel:+19299003056">
                 <button
                   onClick={() => setMobileOpen(false)}
                   className="flex items-center justify-center gap-3 w-full py-3.5 sm:py-4 rounded-full bg-black border-2 border-[#c09050] text-white font-bold text-base sm:text-lg hover:bg-[#c09050] hover:border-[#c09050] transition-all duration-300 shadow-lg"
@@ -446,7 +539,7 @@ export default function Header() {
               </div>
               <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-600">
                 <CheckCircle size={14} className="sm:w-4 sm:h-4 text-[#c09050]" />
-                <span>NYU Graduate</span>
+                <span>Master ART Trainer</span>
               </div>
               <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-600">
                 <Clock size={14} className="sm:w-4 sm:h-4 text-[#c09050]" />
@@ -458,13 +551,10 @@ export default function Header() {
               </div>
             </div>
 
-            {/* Phone Numbers Section */}
+            {/* Phone Number */}
             <div className="p-5 sm:p-6 pt-0 flex flex-col gap-2 text-center">
               <a href="tel:+19299003056" className="text-sm text-gray-600 hover:text-[#c09050]">
                 (929) 900-3056
-              </a>
-              <a href="tel:+19299252554" className="text-sm text-gray-600 hover:text-[#c09050]">
-                (929) 925-2554
               </a>
             </div>
           </div>

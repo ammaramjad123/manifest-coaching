@@ -59,7 +59,7 @@ export default function LifeCoachingPage() {
       title: "From Functioning to Flourishing",
       subtitle: "What is Transformational Coaching?",
       description: "You're doing everything right—but something still feels off. You're successful, yet unfulfilled. Capable, yet stuck. Coaching isn't about fixing what's broken. It's about unlocking what's already within you. It's a high-accountability partnership designed to help you bridge the gap between where you are and where you want to be.",
-      image: "/life1.jpg",
+      image: "/new/gary-yost--iZGedR1uJo-unsplash.jpg",
       imagePosition: "right",
       stat: "85% of coaching clients report significant improvement in self-confidence"
     },
@@ -78,7 +78,7 @@ export default function LifeCoachingPage() {
         "S - Strategic Serenity: Radical honesty + purpose",
         "T - Transformation: Healing, training & transitions"
       ],
-      image: "/life2.jpg",
+      image: "/new/sumit-jaswal-gzUj4xFysEc-unsplash.jpg",
       imagePosition: "left",
       isSymptoms: true
     },
@@ -87,7 +87,7 @@ export default function LifeCoachingPage() {
       title: "Break Through Imposter Syndrome",
       subtitle: "You belong at the table",
       description: "That voice telling you you're not qualified, not ready, not enough? It's lying. Imposter syndrome affects high-achievers disproportionately—the more successful you are, the louder the doubt. Together, we'll identify the source, challenge the narrative, and build unshakeable self-belief.",
-      image: "/life3.jpg",
+      image: "/new/kreative-kwame-oUXhw8SEqlM-unsplash.jpg",
       imagePosition: "right",
       stat: "70% of people experience imposter syndrome at some point"
     },
@@ -102,7 +102,7 @@ export default function LifeCoachingPage() {
         { name: "Accountability", desc: "Weekly check-ins and progress tracking", color: "#c09050" },
         { name: "Mindset Mastery", desc: "Rewrite limiting beliefs and self-talk", color: "#d4a84b" }
       ],
-      image: "/depression4.jpg",
+      image: "/new/alonso-reyes-JCaw4DRqekk-unsplash.jpg",
       imagePosition: "left",
       isApproaches: true
     },
@@ -111,7 +111,7 @@ export default function LifeCoachingPage() {
       title: "Career & Leadership Evolution",
       subtitle: "Step into your power",
       description: "Whether you're launching a new career, pivoting industries, or stepping into leadership, coaching provides the clarity and confidence you need. We'll navigate the transition together—from identifying your strengths to owning your authority.",
-      image: "/life4.jpg",
+      image: "/new/danilo-d-agostino-TmSaH54lLG4-unsplash.jpg",
       imagePosition: "right",
       stat: "Executives who receive coaching report 70% improvement in work performance"
     },
@@ -120,7 +120,7 @@ export default function LifeCoachingPage() {
       title: "Your Container, Your Pace",
       subtitle: "Packages designed for your journey",
       description: "Whether you need a single session to break through a block or a multi-month container for deep transformation, coaching packages are flexible and tailored to you. Each session is 55 minutes of focused, high-impact work. Workbooks and resources included.",
-      image: "https://images.pexels.com/photos/4100427/pexels-photo-4100427.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      image: "/new/imre-zsolt-h7zZWJQ4DMs-unsplash.jpg",
       imagePosition: "left",
       stat: "Single sessions • 5-hour bundles • 10-hour packages"
     },
@@ -129,7 +129,7 @@ export default function LifeCoachingPage() {
       title: "Ready to Manifest Your Next Chapter",
       subtitle: "The life you want is waiting",
       description: "You've done the work. You've built the foundation. Now it's time to build your skyscraper. Coaching is for those ready to move from 'functioning' to 'flourishing.' Let's bridge the gap between where you are and where you want to be.",
-      image: "https://images.pexels.com/photos/3823486/pexels-photo-3823486.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      image: "/new/valerii-ladomyriak-7oGXQII7AWc-unsplash (1).jpg",
       imagePosition: "right",
       stat: "You've already taken the bravest step"
     }
@@ -143,7 +143,7 @@ export default function LifeCoachingPage() {
         
         <div className="absolute inset-0 z-0">
           <img
-            src="/lifehero.jpg"
+            src="/new/philippe-spitalier-kumAXJ9r834-unsplash.jpg"
             alt="Person reaching toward light and possibility"
             className="w-full h-full object-cover scale-110"
           />
@@ -197,7 +197,7 @@ export default function LifeCoachingPage() {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://calendly.com/manifestcoachingllc"
+                href="https://calendly.com/manifestcoachingllc/clarity-call"
                 target="_blank"
                 className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-[#c09050] to-[#d4a84b] text-white font-bold hover:shadow-2xl transition-all duration-500 font-['Montserrat']"
               >
@@ -364,7 +364,7 @@ export default function LifeCoachingPage() {
         
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.pexels.com/photos/4101555/pexels-photo-4101555.jpeg?auto=compress&cs=tinysrgb&w=2400"
+            src="/new/philippe-spitalier-kumAXJ9r834-unsplash.jpg"
             alt="Person achieving their goals"
             className="w-full h-full object-cover"
           />
@@ -424,7 +424,7 @@ export default function LifeCoachingPage() {
             <motion.a
               whileHover={{ scale: 1.05, y: -3 }}
               whileTap={{ scale: 0.98 }}
-              href="https://calendly.com/manifestcoachingllc"
+              href="https://calendly.com/manifestcoachingllc/clarity-call"
               target="_blank"
               className="group inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-white text-[#c09050] font-black text-lg hover:shadow-2xl transition-all duration-500 font-['Montserrat']"
             >

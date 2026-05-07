@@ -140,13 +140,15 @@ export default function ServicesHero() {
             className="relative z-40 flex flex-wrap items-center justify-center gap-4 sm:gap-6 pt-4"
           >
             <a
-              href="#process"
+              href="https://calendly.com/manifestcoachingllc/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 h-12 sm:h-14 px-6 sm:px-8 rounded-2xl bg-black border-2 border-[#c09050] text-white font-black uppercase tracking-wider text-xs sm:text-sm hover:bg-[#c09050] hover:border-[#c09050] hover:scale-105 transition-all shadow-2xl active:scale-95"
             >
               Explore Services <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
-              href="https://calendly.com/manifestcoachingllc"
+              href="https://calendly.com/manifestcoachingllc/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 h-12 sm:h-14 px-6 sm:px-8 rounded-2xl bg-transparent border-2 border-[#c09050] text-[#c09050] font-black uppercase tracking-wider text-xs sm:text-sm hover:bg-[#c09050] hover:text-white hover:border-[#c09050] transition-all"

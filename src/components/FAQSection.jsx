@@ -177,7 +177,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section id="faq" className="relative w-full py-16 sm:py-24 md:py-32 bg-white overflow-hidden">
+    <section id="faq" className="relative w-full py-36 sm:py-45  bg-white overflow-hidden">
       
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-0 left-0 w-full h-full" style={{
@@ -211,7 +211,7 @@ export default function FAQSection() {
           >
             Got Questions?{" "}
             <span className="bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent">
-              I've Got Answers.
+              We Have Answers.
             </span>
           </motion.h2>
 
@@ -342,7 +342,7 @@ export default function FAQSection() {
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
-                  href="https://calendly.com/manifestcoachingllc"
+                  href="https://calendly.com/manifestcoachingllc/clarity-call"
                   target="_blank"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-black border-2 border-[#c09050] text-white font-bold transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 font-['Montserrat']"
                 >

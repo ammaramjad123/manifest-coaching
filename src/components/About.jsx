@@ -46,31 +46,33 @@ export default function About() {
           {/* Left Side - Content */}
           <motion.div variants={itemVariants}>
             <p className="font-['Montserrat'] text-[#c09050] uppercase tracking-[3px] text-sm font-bold mb-3">
-              About Me
+              The Principal Curator
             </p>
             <h2 className="font-['Montserrat'] text-3xl sm:text-4xl lg:text-5xl font-bold text-black mb-6">
-              Over 26 Years of
-              <br />
-              <span className="text-[#c09050]">Clinical Excellence</span>
+              Ayana Foluke McKanney,{" "}
+              <span className="text-[#c09050]">MSW, LCSW</span>
             </h2>
             <p className="font-['Plus_Jakarta_Sans'] text-gray-700 text-xl leading-relaxed mb-6">
-              As a seasoned Clinical Social Worker with over 26 years of experience, I approach every client's journey with compassion, authenticity, and unwavering dedication to their healing and growth.
+              With over 27 years of clinical mastery, Ayana Foluke McKanney is a licensed therapist by trade and an architect by instinct. As the Principal Curator of individual evolution, her work is rooted in Brooklyn Grit and refined by Strategic Serenity, bridging the gap between high-stakes clinical excellence and intentional living.
+            </p>
+            <p className="font-['Plus_Jakarta_Sans'] text-gray-600 text-lg leading-relaxed mb-6">
+              Ayana utilizes her proprietary MANIFEST Method as the foundational engine for both her clinical therapy and transformational coaching. Through this framework, she empowers clients to deconstruct emotional barriers and rebuild resilient foundations. Whether she is resolving the echoes of trauma, conducting specialized clinical assessments for immigration proceedings, training the next generation of practitioners, or guiding high-achievers through a strategic pivot, her approach is singular: audit the noise to architect the next.
             </p>
             <p className="font-['Plus_Jakarta_Sans'] text-gray-600 text-lg leading-relaxed mb-8">
-              My philosophy is simple: create a safe, non-judgmental space where you feel seen, heard, and empowered. I believe in treating the whole person—mind, body, and spirit—while integrating evidence-based practices that actually work. I hold a Master of Social Work from New York University and am licensed in NY, NJ, and RI. Personally overseeing each client's therapeutic journey from intake to transformation.
+              A Licensed Clinical Social Worker (NY, NJ, RI) and Master Accelerated Resolution Therapy (ART) Trainer, Ayana's toolkit is as diverse as the lives she transforms. She is a certified trauma clinician specializing in ART, ACT, DBT, and SĀF-T, and a Master Life Coach. Ayana founded The Peace Practice as a clinical home for those ready to move from frantic fragmentation to fully-functioning fulfillment. She believes that your history is a narrative, not a limitation—and your future is a blueprint, not a burden.
             </p>
             <div className="flex flex-wrap gap-6">
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-[#c09050]" />
-                <span className="text-base text-gray-700">26+ Years Experience</span>
+                <span className="text-base text-gray-700">27+ Years Experience</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-[#c09050]" />
-                <span className="text-base text-gray-700">NYU Graduate</span>
+                <span className="text-base text-gray-700">Master ART Trainer</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-[#c09050]" />
-                <span className="text-base text-gray-700">1000+ Clients Served</span>
+                <span className="text-base text-gray-700">Licensed in NY, NJ, RI</span>
               </div>
             </div>
           </motion.div>
@@ -82,8 +84,8 @@ export default function About() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[400px] sm:h-[450px] md:h-[500px]">
               <img
-                src="/hands.jpg"
-                alt="Ayana Foluke McKanney - Clinical Therapist"
+                src="/ayana.jpg"
+                alt="Ayana Foluke McKanney - Principal Curator"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-[#c09050]/0 to-transparent"></div>

@@ -383,7 +383,7 @@ export default function PathForwardAssessment() {
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
-                    href="https://calendly.com/manifestcoachingllc"
+                    href="https://calendly.com/manifestcoachingllc/clarity-call"
                     target="_blank"
                     className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-black border-2 border-[#c09050] text-white font-bold transition-all duration-500 hover:bg-[#c09050] hover:border-[#c09050] hover:shadow-2xl hover:-translate-y-1 font-['Montserrat']"
                   >

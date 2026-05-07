@@ -59,7 +59,7 @@ export default function WomenIssuesPage() {
       title: "The Invisible Load",
       subtitle: "Understanding Women's Mental Health",
       description: "The mental load of managing households, careers, relationships, and self-care. The pressure to be everything to everyone. The guilt of taking time for yourself. These aren't personal failings—they're systemic challenges that women have been navigating for generations. You deserve a space where you can exhale.",
-      image: "/women1.jpg",
+      image: "/new/yoann-boyer-i14h2xyPr18-unsplash.jpg",
       imagePosition: "right",
       stat: "Women are twice as likely as men to experience anxiety and depression"
     },
@@ -76,7 +76,7 @@ export default function WomenIssuesPage() {
         "Loss of interest in things you once loved",
         "Feelings of guilt or inadequacy as a mother"
       ],
-      image: "/women2.jpg",
+      image: "/new/satit-wongsampan-9SM7OgDXmQY-unsplash (1).jpg",
       imagePosition: "left",
       isSymptoms: true
     },
@@ -85,7 +85,7 @@ export default function WomenIssuesPage() {
       title: "Loss, Grief, & Infertility",
       subtitle: "Honoring your journey to motherhood",
       description: "Pregnancy loss, miscarriage, stillbirth, and infertility are among the most painful experiences a woman can face. The grief is real. The hope and heartbreak can coexist. You don't have to navigate this alone. I provide a safe, compassionate space to honor your loss and your longing.",
-      image: "/women3.jpg",
+      image: "/new/hardingferrent-IpZ89zebL18-unsplash.jpg",
       imagePosition: "right",
       stat: "1 in 4 pregnancies end in miscarriage • 1 in 8 couples experience infertility"
     },
@@ -100,7 +100,7 @@ export default function WomenIssuesPage() {
         { name: "Identity & Purpose", desc: "Rediscovering yourself beyond roles", color: "#c09050" },
         { name: "Self-Compassion", desc: "Releasing guilt and embracing rest", color: "#d4a84b" }
       ],
-      image: "/women5.jpg",
+      image: "/new/valerii-ladomyriak-7oGXQII7AWc-unsplash (1).jpg",
       imagePosition: "left",
       isApproaches: true
     },
@@ -109,7 +109,7 @@ export default function WomenIssuesPage() {
       title: "Body, Self, & Society",
       subtitle: "Healing self-esteem and body image",
       description: "From diet culture to anti-aging messages, society constantly tells women they're not enough. Thin enough. Young enough. Successful enough. Together, we'll untangle these messages, reconnect with your authentic self, and build a relationship with your body based on respect, not criticism.",
-      image: "/women4.jpg",
+      image: "/new/katarzyna-zygnerska-G4rGkoRnoNw-unsplash.jpg",
       imagePosition: "right",
       stat: "85% of women report dissatisfaction with their body image"
     },
@@ -118,7 +118,7 @@ export default function WomenIssuesPage() {
       title: "Caregiver Burnout",
       subtitle: "You can't pour from an empty cup",
       description: "Whether you're caring for children, aging parents, or both—caregiver burnout is real. The exhaustion, the resentment, the guilt for feeling resentful. You deserve care too. Let's find sustainable ways to support your loved ones without losing yourself.",
-      image: "https://images.pexels.com/photos/4100427/pexels-photo-4100427.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      image: "/new/venwardo-F-ga6WwcqOQ-unsplash.jpg",
       imagePosition: "left",
       stat: "60% of caregivers experience symptoms of depression"
     },
@@ -127,7 +127,7 @@ export default function WomenIssuesPage() {
       title: "Your Voice, Your Power",
       subtitle: "Reclaiming your identity and purpose",
       description: "Who are you when you're not being someone's mother, partner, daughter, or employee? What do you want—not what you're supposed to want. Therapy can help you reconnect with your authentic self, set boundaries, and build a life that truly fulfills you.",
-      image: "/women6.jpg",
+      image: "/new/alonso-reyes-JCaw4DRqekk-unsplash.jpg",
       imagePosition: "right",
       stat: "You've already taken the bravest step"
     }
@@ -141,7 +141,7 @@ export default function WomenIssuesPage() {
         
         <div className="absolute inset-0 z-0">
           <img
-            src="/womenhero.jpg"
+            src="/new/sincerely-media-kSeo6slWMQE-unsplash.jpg"
             alt="Woman in nature finding peace"
             className="w-full h-full object-cover scale-110"
           />
@@ -195,7 +195,7 @@ export default function WomenIssuesPage() {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://calendly.com/manifestcoachingllc"
+                href="https://calendly.com/manifestcoachingllc/clarity-call"
                 target="_blank"
                 className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-[#c09050] to-[#d4a84b] text-white font-bold hover:shadow-2xl transition-all duration-500 font-['Montserrat']"
               >
@@ -362,7 +362,7 @@ export default function WomenIssuesPage() {
         
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.pexels.com/photos/3768122/pexels-photo-3768122.jpeg?auto=compress&cs=tinysrgb&w=2400"
+            src="/new/kamil-kalkan-BTpIUnszs_Q-unsplash.jpg"
             alt="Healing journey"
             className="w-full h-full object-cover"
           />
@@ -422,7 +422,7 @@ export default function WomenIssuesPage() {
             <motion.a
               whileHover={{ scale: 1.05, y: -3 }}
               whileTap={{ scale: 0.98 }}
-              href="https://calendly.com/manifestcoachingllc"
+              href="https://calendly.com/manifestcoachingllc/clarity-call"
               target="_blank"
               className="group inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-white text-[#c09050] font-black text-lg hover:shadow-2xl transition-all duration-500 font-['Montserrat']"
             >

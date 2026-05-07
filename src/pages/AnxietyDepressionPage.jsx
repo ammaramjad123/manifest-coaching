@@ -56,7 +56,7 @@ export default function AnxietyDepressionPage() {
       title: "The Weight You Carry",
       subtitle: "Understanding Anxiety & Depression",
       description: "Anxiety and depression aren't just feelings—they're experiences that can weigh you down, making even the simplest tasks feel impossible. The racing thoughts, the heavy fog, the loss of interest—these are real, valid, and treatable. But here's the truth: you're not broken. You're human, and healing is possible.",
-      image: "/depression1.jpg",
+      image: "/new/jakob-braun-HfOOKAPsE28-unsplash.jpg",
       imagePosition: "right",
       stat: "1 in 5 adults experience anxiety or depression"
     },
@@ -73,7 +73,7 @@ export default function AnxietyDepressionPage() {
         "Racing heart, tension, fatigue",
         "Trouble concentrating or making decisions"
       ],
-      image: "/depression2.jpg",
+      image: "/new/linus-nylund-Q5QspluNZmM-unsplash.jpg",
       imagePosition: "left",
       isSymptoms: true
     },
@@ -82,7 +82,7 @@ export default function AnxietyDepressionPage() {
       title: "The Science of Healing",
       subtitle: "Evidence-based approaches that work",
       description: "Through CBT, ACT, and mindfulness, we can rewire thought patterns, reduce symptoms, and restore balance. Your brain has neuroplasticity—it can change, adapt, and heal. Science shows that therapy is as effective as medication for many people, with lasting results.",
-      image: "/depression3.jpg",
+      image: "/new/robina-weermeijer-3KGF9R_0oHs-unsplash.jpg",
       imagePosition: "right",
       stat: "80% of people improve with evidence-based therapy"
     },
@@ -97,7 +97,7 @@ export default function AnxietyDepressionPage() {
         { name: "Mindfulness", desc: "Stay present and reduce rumination", color: "#c09050" },
         { name: "ART", desc: "Accelerated Resolution Therapy for trauma", color: "#d4a84b" }
       ],
-      image: "/depression4.jpg",
+      image: "/new/priscilla-du-preez-aPa843frIzI-unsplash.jpg",
       imagePosition: "left",
       isApproaches: true
     },
@@ -106,7 +106,7 @@ export default function AnxietyDepressionPage() {
       title: "Your Journey, Your Pace",
       subtitle: "Personalized care for your unique needs",
       description: "No two journeys are the same. I'll meet you where you are, honoring your story while gently guiding you toward the peace and clarity you deserve. Whether you need weekly sessions or bi-weekly check-ins, we move at your pace.",
-      image: "/depression5.jpg",
+      image: "/new/hester-qiang-95t94hZTESw-unsplash.jpg",
       imagePosition: "right",
       stat: "100% virtual • Licensed in NY, NJ, RI"
     },
@@ -115,7 +115,7 @@ export default function AnxietyDepressionPage() {
       title: "A Safe Space Awaits",
       subtitle: "Virtual therapy from anywhere",
       description: "Secure, HIPAA-compliant sessions from the comfort of your home. No commute, no waiting rooms—just you, me, and a path forward. Evening and weekend appointments available.",
-      image: "https://images.pexels.com/photos/4145192/pexels-photo-4145192.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      image: "/new/venwardo-F-ga6WwcqOQ-unsplash.jpg",
       imagePosition: "left",
       stat: "Flexible scheduling • 24hr cancellation policy"
     },
@@ -124,7 +124,7 @@ export default function AnxietyDepressionPage() {
       title: "You Are Not Alone",
       subtitle: "Millions have walked this path and found healing",
       description: "The racing thoughts, the heavy fog, the loss of interest—these are real, valid, and treatable. Seeking help isn't weakness; it's the bravest thing you can do. And you don't have to do it alone.",
-      image: "https://images.pexels.com/photos/4100427/pexels-photo-4100427.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      image: "/new/abel-marquez-0chVl3b15MQ-unsplash.jpg",
       imagePosition: "right",
       stat: "You've already taken the hardest step"
     }
@@ -139,7 +139,7 @@ export default function AnxietyDepressionPage() {
         {/* Cinematic Background Video/Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/depressionhero.jpg"
+            src="/new/imre-zsolt-h7zZWJQ4DMs-unsplash.jpg"
             alt="Calm peaceful healing"
             className="w-full h-full object-cover scale-110"
           />
@@ -195,7 +195,7 @@ export default function AnxietyDepressionPage() {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://calendly.com/manifestcoachingllc"
+                href="https://calendly.com/manifestcoachingllc/clarity-call"
                 target="_blank"
                 className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-[#c09050] to-[#d4a84b] text-white font-bold hover:shadow-2xl transition-all duration-500 font-['Montserrat']"
               >
@@ -373,7 +373,7 @@ export default function AnxietyDepressionPage() {
         <div className="absolute inset-0 z-0">
           {/* Keep this CTA image as is */}
           <img
-            src="https://images.pexels.com/photos/4101555/pexels-photo-4101555.jpeg?auto=compress&cs=tinysrgb&w=2400"
+            src="/new/alonso-reyes-JCaw4DRqekk-unsplash.jpg"
             alt="Healing journey"
             className="w-full h-full object-cover"
           />
@@ -434,7 +434,7 @@ export default function AnxietyDepressionPage() {
             <motion.a
               whileHover={{ scale: 1.05, y: -3 }}
               whileTap={{ scale: 0.98 }}
-              href="https://calendly.com/manifestcoachingllc"
+              href="https://calendly.com/manifestcoachingllc/clarity-call"
               target="_blank"
               className="group inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-white text-[#c09050] font-black text-lg hover:shadow-2xl transition-all duration-500 font-['Montserrat']"
             >

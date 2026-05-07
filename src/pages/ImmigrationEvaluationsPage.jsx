@@ -61,7 +61,7 @@ export default function ImmigrationEvaluationsPage() {
       title: "Your Story, Expertly Told",
       subtitle: "What Are Immigration Evaluations?",
       description: "Immigration evaluations are comprehensive clinical assessments that document the psychological impact of potential deportation, family separation, or return to unsafe conditions. These evaluations provide critical evidence for asylum, hardship, VAWA, and other immigration cases. I curate complex narratives into powerful documentation for the judicial system.",
-      image: "https://images.pexels.com/photos/3768122/pexels-photo-3768122.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      image: "/new/danilo-d-agostino-TmSaH54lLG4-unsplash.jpg",
       imagePosition: "right",
       stat: "90% of immigration cases with clinical evaluations are successful"
     },
@@ -78,7 +78,7 @@ export default function ImmigrationEvaluationsPage() {
         "Cancellation of Removal - Extreme hardship",
         "Citizenship Disability Waivers - Medical exceptions"
       ],
-      image: "/immigration1.jpg",
+      image: "/new/arturo-anez-9yhBvC2ykoc-unsplash.jpg",
       imagePosition: "left",
       isSymptoms: true
     },
@@ -87,7 +87,7 @@ export default function ImmigrationEvaluationsPage() {
       title: "The Evaluation Process",
       subtitle: "What to expect during your assessment",
       description: "Each evaluation includes a comprehensive clinical interview, standardized psychological assessments, review of relevant records, and a detailed forensic report. The process is trauma-informed, culturally-responsive, and designed to minimize distress while maximizing documentation quality.",
-      image: "/immigration2.jpg",
+      image: "/new/priscilla-du-preez-aPa843frIzI-unsplash.jpg",
       imagePosition: "right",
       stat: "120-minute comprehensive evaluation • Deposit required to book"
     },
@@ -102,7 +102,7 @@ export default function ImmigrationEvaluationsPage() {
         { name: "Forensic Quality", desc: "Reports designed for legal submission", color: "#c09050" },
         { name: "Attorney Collaboration", desc: "Working with your legal team", color: "#d4a84b" }
       ],
-      image: "/whychoose.jpg",
+      image: "/new/kreative-kwame-oUXhw8SEqlM-unsplash.jpg",
       imagePosition: "left",
       isApproaches: true
     },
@@ -111,7 +111,7 @@ export default function ImmigrationEvaluationsPage() {
       title: "Who I Serve",
       subtitle: "Legal partners and individuals",
       description: "I work with immigration attorneys, legal clinics, and individuals navigating the immigration system directly. Whether you need a single evaluation or ongoing consultation for complex cases, I provide timely, thorough documentation.",
-      image: "/immigrants3.jpg",
+      image: "/new/vijesh-datt-OuAyzIWfvGQ-unsplash.jpg",
       imagePosition: "right",
       stat: "Licensed in NY, NJ, RI • Virtual evaluations available"
     },
@@ -120,7 +120,7 @@ export default function ImmigrationEvaluationsPage() {
       title: "Licensed States",
       subtitle: "Where I can provide evaluations",
       description: "I am licensed to provide clinical therapy and immigration evaluations in New York, New Jersey, and Rhode Island. All evaluations are conducted virtually via a secure, HIPAA-compliant platform.",
-      image: "/states.jpg",
+      image: "/new/linus-nylund-Q5QspluNZmM-unsplash.jpg",
       imagePosition: "left",
       stat: "NY (#098940) • NJ (#44SL06739500) • RI (#ISW04317)"
     },
@@ -129,7 +129,7 @@ export default function ImmigrationEvaluationsPage() {
       title: "Take the First Step",
       subtitle: "Your story deserves to be heard",
       description: "Immigration cases are won on evidence and credibility. A clinical evaluation can make the difference between approval and denial. Let me help you document your story with the clinical precision and compassion it deserves.",
-      image: "/firststep.jpg",
+      image: "/new/hester-qiang-95t94hZTESw-unsplash.jpg",
       imagePosition: "right",
       stat: "Schedule your evaluation today • Deposit secures your appointment"
     }
@@ -143,7 +143,7 @@ export default function ImmigrationEvaluationsPage() {
         
         <div className="absolute inset-0 z-0">
           <img
-            src="/immigrationhero.jpg"
+            src="/new/kyle-glenn-nXt5HtLmlgE-unsplash.jpg"
             alt="Justice and compassion"
             className="w-full h-full object-cover scale-110"
           />
@@ -364,7 +364,7 @@ export default function ImmigrationEvaluationsPage() {
         
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.pexels.com/photos/4101555/pexels-photo-4101555.jpeg?auto=compress&cs=tinysrgb&w=2400"
+            src="/new/alonso-reyes-JCaw4DRqekk-unsplash.jpg"
             alt="Justice and hope"
             className="w-full h-full object-cover"
           />

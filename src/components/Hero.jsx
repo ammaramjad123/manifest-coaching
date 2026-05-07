@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-router-dom";
 import { 
   Phone, 
   Calendar, 
@@ -83,9 +84,9 @@ export default function HeroSection() {
   ];
 
   return (
-    <section className="relative w-full min-h-screen overflow-hidden bg-[#0a0a1a] pt-35 sm:pt-50">
+    <section className="relative w-full min-h-screen overflow-hidden bg-black pt-35 sm:pt-40">
       
-      {/* 4K Therapy Background Image with DARK Overlay */}
+      {/* Background Image from Public Folder */}
       <div className="absolute inset-0 z-0">
         <motion.div
           initial={{ scale: 1.1, opacity: 0 }}
@@ -94,20 +95,20 @@ export default function HeroSection() {
           className="w-full h-full"
         >
           <img
-            src="https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&w=2400"
-            alt="Calm peaceful therapy office with natural light"
+            src="/hero.jpg"
+            alt="Calm peaceful therapy environment"
             className="w-full h-full object-cover"
           />
-          {/* DARK Overlay Layers for Better Text Readability */}
-          <div className="absolute inset-0 bg-gradient-to-br from-black/90 via-[#c09050]/20 to-black/90" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-transparent to-black/85" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_20%,black_98%)]" />
-          <div className="absolute inset-0 bg-black/60" />
+          {/* Black Overlay with Lighter Accent */}
+          <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-black/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/30" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_30%,black/65%)]" />
+          <div className="absolute inset-0 bg-black/40" />
         </motion.div>
       </div>
 
       {/* Animated Grain Effect */}
-      <div className="absolute inset-0 opacity-[0.04] pointer-events-none z-10">
+      <div className="absolute inset-0 opacity-[0.03] pointer-events-none z-10">
         <div className="w-full h-full bg-[url('https://grainy-gradients.vercel.app/noise.svg')] mix-blend-overlay" />
       </div>
 
@@ -116,7 +117,7 @@ export default function HeroSection() {
         {[...Array(50)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-1 h-1 bg-[#c09050]/40 rounded-full"
+            className="absolute w-1 h-1 bg-[#c09050]/30 rounded-full"
             initial={{
               x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1000),
               y: Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1000),
@@ -124,7 +125,7 @@ export default function HeroSection() {
             }}
             animate={{
               y: [null, -150, -300],
-              opacity: [0, 0.6, 0],
+              opacity: [0, 0.5, 0],
               x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1000),
             }}
             transition={{
@@ -142,7 +143,7 @@ export default function HeroSection() {
         {[...Array(25)].map((_, i) => (
           <motion.div
             key={`medium-${i}`}
-            className="absolute w-1.5 h-1.5 bg-[#d4a84b]/30 rounded-full"
+            className="absolute w-1.5 h-1.5 bg-[#d4a84b]/25 rounded-full"
             initial={{
               x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1000),
               y: Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1000),
@@ -150,7 +151,7 @@ export default function HeroSection() {
             }}
             animate={{
               y: [null, -200, -400],
-              opacity: [0, 0.4, 0],
+              opacity: [0, 0.35, 0],
               x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1000),
             }}
             transition={{
@@ -168,7 +169,7 @@ export default function HeroSection() {
         {[...Array(15)].map((_, i) => (
           <motion.div
             key={`large-${i}`}
-            className="absolute w-2 h-2 bg-[#c09050]/20 rounded-full"
+            className="absolute w-2 h-2 bg-[#c09050]/15 rounded-full"
             initial={{
               x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1000),
               y: Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1000),
@@ -176,7 +177,7 @@ export default function HeroSection() {
             }}
             animate={{
               y: [null, -250, -500],
-              opacity: [0, 0.3, 0],
+              opacity: [0, 0.25, 0],
               x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1000),
             }}
             transition={{
@@ -228,30 +229,26 @@ export default function HeroSection() {
             </span>
           </motion.div>
 
-          {/* Main Heading */}
+          {/* Main Heading - Your Journey. Our Partnership. */}
           <motion.h1
             variants={itemVariants}
             className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[110px] font-black text-white tracking-tighter leading-[1.1] md:leading-[1.05] mb-6 font-['Montserrat']"
           >
-            Your Journey to
+            Your Journey.
             <br />
             <span className="relative inline-block">
               <span className="bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent pr-4 font-black">
-                Healing & Peace
+                Our Partnership.
               </span>
             </span>
-            <br />
-            <span className="text-white/90">Starts Here</span>
           </motion.h1>
 
-          {/* Description */}
+          {/* Description - Neutral language */}
           <motion.p
             variants={itemVariants}
             className="text-white/80 max-w-3xl mx-auto text-base sm:text-lg md:text-xl font-medium leading-relaxed mb-8 px-4 font-['Plus_Jakarta_Sans']"
           >
-            With over 26 years of experience, I provide compassionate therapy, 
-            life coaching, and professional training to help you navigate life's 
-            challenges and discover your path to peace.
+            With over 26 years of experience, compassionate therapy, life coaching, and professional training are offered to help navigate life's challenges and discover your path to peace.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -260,7 +257,7 @@ export default function HeroSection() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
           >
             <a
-              href="https://calendly.com/manifestcoachingllc"
+              href="https://calendly.com/manifestcoachingllc/clarity-call"
               target="_blank"
               className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/30 text-white font-bold text-base sm:text-lg hover:bg-white/20 transition-all duration-300 overflow-hidden font-['Montserrat']"
             >
@@ -269,31 +266,23 @@ export default function HeroSection() {
               <div className="absolute inset-0 bg-gradient-to-r from-[#c09050]/0 via-[#c09050]/20 to-[#c09050]/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
             </a>
             <div className="inline-block transition-transform duration-300 hover:-translate-y-1">
-              <a href="#services">
+              <Link to="/services">
                 <button className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-[#c09050] to-[#d4a84b] text-white font-bold text-base sm:text-lg hover:shadow-2xl transition-all duration-300 overflow-hidden font-['Montserrat'] cursor-pointer">
                   <div className="absolute inset-0 z-0 bg-gradient-to-r from-[#b07d40] to-[#c09050] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <Heart className="w-5 h-5 relative z-10" />
                   <span className="relative z-10">Explore Services</span>
                   <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform duration-300" />
                 </button>
-              </a>
+              </Link>
             </div>
           </motion.div>
 
-          {/* Premium Trust Strip */}
+          {/* Premium Trust Strip - Updated (removed NYU Graduate) */}
           <motion.div
             variants={itemVariants}
             className="relative z-30 mt-20 pt-1 pb-10"
           >
             <div className="flex flex-wrap items-center justify-center gap-6 md:gap-14">
-              {/* NYU Graduate */}
-              <div className="flex items-center gap-3 group cursor-pointer">
-                <Award className="w-6 h-6 text-white/50 group-hover:text-[#c09050] transition duration-300" />
-                <span className="text-xl md:text-2xl font-black italic tracking-wide text-white/60 group-hover:text-white transition duration-300 font-['Montserrat']">
-                  NYU GRADUATE
-                </span>
-              </div>
-
               {/* 26+ Years */}
               <div className="flex items-center gap-3 group cursor-pointer">
                 <Brain className="w-6 h-6 text-white/50 group-hover:text-[#c09050] transition duration-300" />
@@ -322,8 +311,8 @@ export default function HeroSection() {
         </motion.div>
       </div>
 
-      {/* Bottom Gradient Fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0a0a1a] to-transparent z-10" />
+      {/* Bottom Gradient Fade to black */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent z-10" />
     </section>
   );
 }
@@ -373,7 +362,7 @@ function StatItem({ label, value, icon, description }) {
       }}
       className="flex flex-col items-center text-center gap-2 group cursor-pointer"
     >
-      <div className="w-12 h-12 rounded-full bg-[#c09050]/20 backdrop-blur-sm flex items-center justify-center text-[#c09050] group-hover:bg-[#c09050]/40 transition-all duration-300 group-hover:scale-110">
+      <div className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center text-[#c09050] group-hover:bg-white/20 transition-all duration-300 group-hover:scale-110">
         {icon}
       </div>
       <div className="flex flex-col gap-0.5">

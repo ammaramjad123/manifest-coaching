@@ -169,7 +169,7 @@ export default function AboutPage() {
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <a
-                  href="https://calendly.com/manifestcoachingllc"
+                  href="https://calendly.com/manifestcoachingllc/"
                   target="_blank"
                   className="group inline-flex items-center justify-center gap-3 h-14 px-8 bg-transparent border-2 border-[#c09050] text-[#c09050] font-black rounded-2xl hover:bg-[#c09050] hover:text-white hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 text-xs uppercase tracking-widest"
                 >
@@ -216,7 +216,7 @@ export default function AboutPage() {
                 className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-white w-full max-w-[320px] sm:max-w-[380px] md:max-w-[450px] lg:max-w-[500px]"
               >
                 <img
-                  src="/therapy.jpg"
+                  src="/new/priscilla-du-preez-aPa843frIzI-unsplash.jpg"
                   alt="Ayana Foluke McKanney"
                   className="w-full h-auto aspect-[4/3] object-cover"
                 />
@@ -575,7 +575,7 @@ export default function AboutPage() {
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="https://calendly.com/manifestcoachingllc"
+                  href="https://calendly.com/manifestcoachingllc/clarity-call"
                   target="_blank"
                   className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-black border-2 border-[#c09050] text-white font-bold hover:bg-[#c09050] hover:border-[#c09050] hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 font-['Montserrat']"
                 >

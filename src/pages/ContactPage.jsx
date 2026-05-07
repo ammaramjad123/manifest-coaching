@@ -144,17 +144,33 @@ export default function ContactPage() {
     {
       icon: <Phone className="w-6 h-6 text-[#fffff]" />,
       title: 'Call Us',
-      details: ['(929) 900-3056', '(929) 925-2554'],
+      details: ['(929) 900-3056'],
       action: 'Call Now',
       link: 'tel:+19299003056',
       color: 'from-[#c09050] to-[#d4a84b]'
     },
     {
       icon: <Mail className="w-6 h-6 text-[#fffff]" />,
-      title: 'Email Us',
-      details: ['manifestcoachingllc@gmail.com'],
+      title: 'The Process — Therapy',
+      details: ['process@thepeacepractice.com', 'Clinical Therapy Inquiries'],
       action: 'Send Email',
-      link: 'mailto:manifestcoachingllc@gmail.com',
+      link: 'mailto:process@thepeacepractice.com',
+      color: 'from-[#c09050] to-[#d4a84b]'
+    },
+    {
+      icon: <Mail className="w-6 h-6 text-[#fffff]" />,
+      title: 'The Pivot — Coaching',
+      details: ['pivot@thepeacepractice.com', 'Coaching & Corporate Inquiries'],
+      action: 'Send Email',
+      link: 'mailto:pivot@thepeacepractice.com',
+      color: 'from-[#c09050] to-[#d4a84b]'
+    },
+    {
+      icon: <Mail className="w-6 h-6 text-[#fffff]" />,
+      title: 'The Partnership — Training',
+      details: ['partnerships@thepeacepractice.com', 'Professional & Training Inquiries'],
+      action: 'Send Email',
+      link: 'mailto:partnerships@thepeacepractice.com',
       color: 'from-[#c09050] to-[#d4a84b]'
     },
     {
@@ -162,7 +178,7 @@ export default function ContactPage() {
       title: 'Book Online',
       details: ['Schedule a consultation', 'via Calendly'],
       action: 'Book Now',
-      link: 'https://calendly.com/manifestcoachingllc',
+      link: 'https://calendly.com/manifestcoachingllc/clarity-call',
       color: 'from-[#c09050] to-[#d4a84b]'
     }
   ];

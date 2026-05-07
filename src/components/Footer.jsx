@@ -27,6 +27,7 @@ export default function Footer() {
     { name: "Services", href: "/services" },
     { name: "About", href: "/about" },
     { name: "Specialties", href: "/#specialties" },
+    { name: "FAQ", href: "/faq" },
     { name: "Contact", href: "/contact" }
   ];
 
@@ -38,9 +39,9 @@ export default function Footer() {
   ];
 
   const resources = [
-    { name: "The Path Forward Assessment", href: "/assessment" },
+    { name: "The Path Forward Assessment", href: "/#assessment" },
     { name: "The MANIFEST Method", href: "/#manifest-method" },
-    { name: "FAQ", href: "/#faq" },
+    { name: "FAQ", href: "/faq" },
     { name: "Testimonials", href: "/#testimonials" }
   ];
 
@@ -98,7 +99,7 @@ export default function Footer() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
-                  href="https://calendly.com/manifestcoachingllc"
+                  href="https://calendly.com/manifestcoachingllc/clarity-call"
                   target="_blank"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-black border-2 border-[#c09050] text-white font-bold text-sm transition-all duration-500 hover:bg-[#c09050] hover:border-[#c09050] hover:shadow-2xl hover:-translate-y-1 font-['Montserrat']"
                 >
@@ -185,19 +186,13 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="tel:+19299252554" className="flex items-center gap-3 text-gray-500 hover:text-[#c09050] text-sm transition-colors duration-300 group">
-                    <FaPhone className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                    <span>(929) 925-2554</span>
-                  </a>
-                </li>
-                <li>
                   <a href="mailto:manifestcoachingllc@gmail.com" className="flex items-center gap-3 text-gray-500 hover:text-[#c09050] text-sm transition-colors duration-300 group">
                     <FaEnvelope className="w-4 h-4 group-hover:scale-110 transition-transform" />
                     <span>manifestcoachingllc@gmail.com</span>
                   </a>
                 </li>
                 <li>
-                  <a href="https://calendly.com/manifestcoachingllc" target="_blank" className="flex items-start gap-3 text-gray-500 hover:text-[#c09050] text-sm transition-colors duration-300 group">
+                  <a href="https://calendly.com/manifestcoachingllc/clarity-call" target="_blank" className="flex items-start gap-3 text-gray-500 hover:text-[#c09050] text-sm transition-colors duration-300 group">
                     <FaVideo className="w-4 h-4 mt-0.5 group-hover:scale-110 transition-transform" />
                     <span>Virtual Sessions<br />Available Nationwide</span>
                   </a>
@@ -211,7 +206,7 @@ export default function Footer() {
             <p className="text-gray-400 text-xs font-['Plus_Jakarta_Sans']">
               © {currentYear} The Peace Practice. All rights reserved.
             </p>
-            
+
             <div className="flex items-center gap-4">
               <a
                 href="https://www.instagram.com/manifestcoachingllc/"
@@ -241,6 +236,27 @@ export default function Footer() {
 
             <p className="text-gray-400 text-xs font-['Plus_Jakarta_Sans']">
               Your Journey. Our Partnership.
+            </p>
+          </div>
+
+          {/* Legal Compliance Section */}
+          <div className="mt-6 pt-5 border-t border-gray-100 text-center space-y-2">
+            <p className="text-gray-500 text-xs font-semibold tracking-wide font-['Montserrat']">
+              The Peace Practice &nbsp;|&nbsp; Your Journey. Our Partnership.
+            </p>
+            <p className="text-gray-400 text-xs font-['Plus_Jakarta_Sans']">
+              MANIFEST Coaching LLC d/b/a The Peace Practice
+            </p>
+            <p className="text-gray-400 text-xs font-['Plus_Jakarta_Sans']">
+              Clinical Therapy: Available for individuals (17+) in NY, NJ, and RI.&nbsp;&nbsp;
+              Consultative Coaching: Available Nationwide via the MANIFEST Method.&nbsp;&nbsp;
+              Professional Training: SĀF-T and Clinical ART trainings facilitated through RCRR. EAP trainings available (inquire).
+            </p>
+            <p className="text-gray-400 text-xs font-['Plus_Jakarta_Sans']">
+              Ayana Foluke McKanney, LCSW &nbsp;
+              <span className="text-[10px] text-gray-300">
+                NY&nbsp;#098940&nbsp;|&nbsp;NJ&nbsp;#44SL06739500&nbsp;|&nbsp;RI&nbsp;#ISW04317&nbsp;|&nbsp;NPI&nbsp;1508672049
+              </span>
             </p>
           </div>
         </div>
