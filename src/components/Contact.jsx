@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import emailjs from "@emailjs/browser";
+import { emailConfig } from "../config/emailConfig";
 import { 
   Send, 
   Phone, 
@@ -48,7 +49,7 @@ export default function ContactSection() {
   }, [isSubmitted]);
 
   const services = [
-    { value: 'general', label: 'General Enquiry' },
+    { value: 'general', label: 'General Inquiry' },
     { value: 'therapy', label: 'Clinical Therapy (NY, NJ, RI)' },
     { value: 'coaching', label: 'Transformational Coaching (Nationwide)' },
     { value: 'training', label: 'Professional Training (SĀF-T / ART)' },
@@ -65,8 +66,7 @@ export default function ContactSection() {
 
   const officeHours = [
     { day: 'Monday - Friday', hours: '9:00 AM - 7:00 PM' },
-    { day: 'Saturday', hours: '10:00 AM - 3:00 PM' },
-    { day: 'Sunday', hours: 'Closed' }
+    { day: 'Saturday & Sunday', hours: 'By Appointment Only' }
   ];
 
   const handleChange = (e) => {
@@ -102,8 +102,8 @@ export default function ContactSection() {
       therapy:     'process@thepeacepractice.com',
       coaching:    'pivot@thepeacepractice.com',
       corporate:   'pivot@thepeacepractice.com',
-      training:    'partnerships@thepeacepractice.com',
-      immigration: 'partnerships@thepeacepractice.com',
+      training:    'partnership@peacepractice.me',
+      immigration: 'partnership@peacepractice.me',
       general:     'manifestcoachingllc@gmail.com',
     };
     return routes[service] || 'manifestcoachingllc@gmail.com';
@@ -122,8 +122,8 @@ export default function ContactSection() {
 
     try {
       await emailjs.send(
-        "YOUR_SERVICE_ID",     // Replace with your EmailJS service ID
-        "YOUR_TEMPLATE_ID",    // Replace with your EmailJS template ID
+        emailConfig.serviceId,
+        emailConfig.templateId,
         {
           fullName: formData.fullName,
           email: formData.email,
@@ -133,7 +133,7 @@ export default function ContactSection() {
           to_email: getRoutingEmail(formData.service),
           title: "Contact Form Submission - The Peace Practice"
         },
-        "YOUR_PUBLIC_KEY"      // Replace with your EmailJS public key
+        emailConfig.publicKey
       );
 
       setIsSubmitted(true);
@@ -181,9 +181,9 @@ export default function ContactSection() {
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'The Partnership — Training',
-      details: ['partnerships@thepeacepractice.com', 'Professional & Training Inquiries'],
+      details: ['partnership@peacepractice.me', 'Professional & Training Inquiries'],
       action: 'Send Email',
-      link: 'mailto:partnerships@thepeacepractice.com',
+      link: 'mailto:partnership@peacepractice.me',
       color: 'from-[#c09050] to-[#d4a84b]'
     },
     {
@@ -197,7 +197,7 @@ export default function ContactSection() {
   ];
 
   return (
-    <section className="relative w-full bg-white overflow-hidden py-20 md:py-28 lg:py-32" id="contact">
+    <section className="relative w-full bg-white overflow-hidden py-14 md:py-20" id="contact">
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-20 pointer-events-none">
         <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] bg-repeat" />
@@ -212,13 +212,13 @@ export default function ContactSection() {
               Get in Touch
             </span>
           </div>
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 font-['Montserrat']">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 font-[system-ui]">
             Start Your Journey
-            <span className="block bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent mt-2">
+            <span className="block bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent mt-2 leading-[1.15] pb-2">
               Today
             </span>
           </h1>
-          <p className="text-gray-500 max-w-3xl mx-auto text-base sm:text-lg lg:text-xl font-['Plus_Jakarta_Sans']">
+          <p className="text-gray-500 max-w-3xl mx-auto text-base sm:text-lg lg:text-xl font-[system-ui]">
             Have questions about therapy, coaching, or training? Ready to book your first session?
             We're here to support you every step of the way.
           </p>
@@ -233,10 +233,10 @@ export default function ContactSection() {
           <div className="relative bg-white rounded-3xl border border-gray-200 overflow-hidden shadow-2xl">
             <div className="grid grid-cols-1 lg:grid-cols-2">
               {/* Left Side - Contact Form */}
-              <div className="p-6 sm:p-8 md:p-10">
+              <div className="p-6 sm:p-8 md:p-10 flex flex-col">
                 <div className="mb-8">
-                  <h2 className="text-2xl md:text-3xl font-bold text-black mb-2 font-['Montserrat']">Send a Message</h2>
-                  <p className="text-gray-500 text-sm md:text-base font-['Plus_Jakarta_Sans']">Fill out the form below and you'll hear back within 24 hours.</p>
+                  <h2 className="text-2xl md:text-3xl font-bold text-black mb-2 font-[system-ui]">Send a Message</h2>
+                  <p className="text-gray-500 text-sm md:text-base font-[system-ui]">Fill out the form below and you'll hear back within 24 hours.</p>
                 </div>
 
                 {isSubmitted ? (
@@ -244,8 +244,8 @@ export default function ContactSection() {
                     <div className="w-20 h-20 bg-gradient-to-br from-[#c09050] to-[#d4a84b] rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                       <CheckCircle className="w-10 h-10 text-white" />
                     </div>
-                    <h3 className="text-2xl font-bold text-black mb-2 font-['Montserrat']">Message Sent!</h3>
-                    <p className="text-gray-600 font-['Plus_Jakarta_Sans']">Thank you for reaching out. I will contact you shortly.</p>
+                    <h3 className="text-2xl font-bold text-black mb-2 font-[system-ui]">Message Sent!</h3>
+                    <p className="text-gray-600 font-[system-ui]">Thank you for reaching out. I will contact you shortly.</p>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-5">
@@ -384,7 +384,7 @@ export default function ContactSection() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full py-4 bg-black border-2 border-[#c09050] text-white rounded-xl font-semibold shadow-lg hover:bg-[#c09050] hover:border-[#c09050] hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer font-['Montserrat']"
+                      className="w-full py-4 bg-black border-2 border-[#c09050] text-white rounded-xl font-semibold shadow-lg hover:bg-[#c09050] hover:border-[#c09050] hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer font-[system-ui]"
                     >
                       {isSubmitting ? (
                         <>
@@ -399,28 +399,31 @@ export default function ContactSection() {
                       )}
                     </button>
 
-                    {/* Trust Badges */}
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4">
-                      {benefits.map((benefit, idx) => (
-                        <div key={idx} className="flex flex-col items-center gap-2 text-center">
-                          <div className="text-[#c09050]">{benefit.icon}</div>
-                          <span className="text-gray-500 text-xs font-['Plus_Jakarta_Sans']">{benefit.text}</span>
-                        </div>
-                      ))}
-                    </div>
                   </form>
+                )}
+
+                {/* Trust Badges — pinned to the bottom so the column aligns with the info side */}
+                {!isSubmitted && (
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-auto pt-8 border-t border-gray-100">
+                    {benefits.map((benefit, idx) => (
+                      <div key={idx} className="flex flex-col items-center gap-2 text-center">
+                        <div className="text-[#c09050]">{benefit.icon}</div>
+                        <span className="text-gray-500 text-xs font-[system-ui]">{benefit.text}</span>
+                      </div>
+                    ))}
+                  </div>
                 )}
               </div>
 
               {/* Right Side - Contact Information */}
               <div className="bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 md:p-10 border-l border-gray-200">
                 <div className="mb-8">
-                  <h2 className="text-2xl md:text-3xl font-bold text-black mb-2 font-['Montserrat']">Let's Connect</h2>
-                  <p className="text-gray-500 text-sm md:text-base font-['Plus_Jakarta_Sans']">Here to help and answer any questions you might have.</p>
+                  <h2 className="text-2xl md:text-3xl font-bold text-black mb-2 font-[system-ui]">Let's Connect</h2>
+                  <p className="text-gray-500 text-sm md:text-base font-[system-ui]">Here to help and answer any questions you might have.</p>
                 </div>
 
                 {/* Contact Methods */}
-                <div className="space-y-4 mb-8">
+                <div className="space-y-4">
                   {contactMethods.map((method, idx) => (
                     <a
                       key={idx}
@@ -432,9 +435,9 @@ export default function ContactSection() {
                         {method.icon}
                       </div>
                       <div className="flex-1">
-                        <h3 className="font-semibold text-black text-lg mb-1 font-['Montserrat']">{method.title}</h3>
+                        <h3 className="font-semibold text-black text-lg mb-1 font-[system-ui]">{method.title}</h3>
                         {method.details.map((detail, i) => (
-                          <p key={i} className="text-gray-600 text-sm md:text-base font-medium font-['Plus_Jakarta_Sans']">
+                          <p key={i} className="text-gray-600 text-sm md:text-base font-medium font-[system-ui]">
                             {detail}
                           </p>
                         ))}
@@ -447,41 +450,57 @@ export default function ContactSection() {
                   ))}
                 </div>
 
+              </div>
+            </div>
+
+            {/* Full-width info footer: Office Hours · Licensed In · Follow */}
+            <div className="border-t border-gray-200 bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 md:p-10">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
                 {/* Office Hours */}
-                <div className="border-t border-gray-200 pt-6 mb-6">
-                  <div className="flex items-center gap-2 mb-4">
-                    <Clock className="w-5 h-5 text-[#c09050]" />
-                    <h3 className="font-semibold text-black font-['Montserrat']">Office Hours</h3>
+                <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-9 h-9 rounded-lg bg-[#c09050]/10 flex items-center justify-center flex-shrink-0">
+                      <Clock className="w-5 h-5 text-[#c09050]" />
+                    </div>
+                    <h3 className="font-semibold text-black font-[system-ui]">Office Hours</h3>
                   </div>
                   <div className="space-y-2">
                     {officeHours.map((schedule, idx) => (
-                      <div key={idx} className="flex justify-between text-sm">
-                        <span className="text-gray-500 font-['Plus_Jakarta_Sans']">{schedule.day}</span>
-                        <span className="text-gray-700 font-['Plus_Jakarta_Sans']">{schedule.hours}</span>
+                      <div key={idx} className="flex justify-between gap-3 text-sm">
+                        <span className="text-gray-500 font-[system-ui]">{schedule.day}</span>
+                        <span className="text-gray-700 font-[system-ui] text-right">{schedule.hours}</span>
                       </div>
                     ))}
                   </div>
                 </div>
 
-                {/* License Info */}
-                <div className="border-t border-gray-200 pt-6 mb-6">
-                  <div className="flex items-center gap-2 mb-4">
-                    <Shield className="w-5 h-5 text-[#c09050]" />
-                    <h3 className="font-semibold text-black font-['Montserrat']">Licensed In</h3>
+                {/* Licensed In */}
+                <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-9 h-9 rounded-lg bg-[#c09050]/10 flex items-center justify-center flex-shrink-0">
+                      <Shield className="w-5 h-5 text-[#c09050]" />
+                    </div>
+                    <h3 className="font-semibold text-black font-[system-ui]">Licensed In</h3>
                   </div>
-                  <div className="space-y-1">
-                    <p className="text-gray-500 text-sm font-['Plus_Jakarta_Sans']">New York: #098940</p>
-                    <p className="text-gray-500 text-sm font-['Plus_Jakarta_Sans']">New Jersey: #44SL06739500</p>
-                    <p className="text-gray-500 text-sm font-['Plus_Jakarta_Sans']">Rhode Island: #ISW04317</p>
+                  <div className="space-y-2 text-sm">
+                    <div className="flex justify-between gap-3"><span className="text-gray-500 font-[system-ui]">New York</span><span className="text-gray-700 font-[system-ui]">#098940</span></div>
+                    <div className="flex justify-between gap-3"><span className="text-gray-500 font-[system-ui]">New Jersey</span><span className="text-gray-700 font-[system-ui]">#44SL06739500</span></div>
+                    <div className="flex justify-between gap-3"><span className="text-gray-500 font-[system-ui]">Rhode Island</span><span className="text-gray-700 font-[system-ui]">#ISW04317</span></div>
                   </div>
                 </div>
 
-                {/* Social Links - Instagram */}
-                <div className="border-t border-gray-200 pt-6">
-                  <h3 className="font-semibold text-black mb-4 font-['Montserrat']">Follow My Journey</h3>
+                {/* Follow */}
+                <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-9 h-9 rounded-lg bg-[#c09050]/10 flex items-center justify-center flex-shrink-0">
+                      <Heart className="w-5 h-5 text-[#c09050]" />
+                    </div>
+                    <h3 className="font-semibold text-black font-[system-ui]">Follow My Journey</h3>
+                  </div>
+                  <p className="text-gray-500 text-sm font-[system-ui] mb-4">Stay connected for insights and updates.</p>
                   <div className="flex gap-3">
-                    <a 
-                      href="https://www.instagram.com/manifestcoachingllc/" 
+                    <a
+                      href="https://www.instagram.com/manifestcoachingllc/"
                       target="_blank"
                       className="w-10 h-10 rounded-xl bg-gray-100 hover:bg-[#c09050] flex items-center justify-center transition-all duration-300 hover:scale-110 group"
                     >
@@ -491,8 +510,8 @@ export default function ContactSection() {
                         <line x1="17" y1="7" x2="17.01" y2="7" stroke="currentColor" strokeWidth="2"/>
                       </svg>
                     </a>
-                    <a 
-                      href="https://www.linkedin.com/in/ayana-mckanney-lcsw-18879023/" 
+                    <a
+                      href="https://www.linkedin.com/in/ayana-mckanney-lcsw-18879023/"
                       target="_blank"
                       className="w-10 h-10 rounded-xl bg-gray-100 hover:bg-[#c09050] flex items-center justify-center transition-all duration-300 hover:scale-110 group"
                     >

@@ -1,3 +1,4 @@
+import { images } from "../config/siteImages";
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -59,7 +60,7 @@ export default function LifeCoachingPage() {
       title: "From Functioning to Flourishing",
       subtitle: "What is Transformational Coaching?",
       description: "You're doing everything right—but something still feels off. You're successful, yet unfulfilled. Capable, yet stuck. Coaching isn't about fixing what's broken. It's about unlocking what's already within you. It's a high-accountability partnership designed to help you bridge the gap between where you are and where you want to be.",
-      image: "/new/gary-yost--iZGedR1uJo-unsplash.jpg",
+      image: images.lifeCoaching.section1,
       imagePosition: "right",
       stat: "85% of coaching clients report significant improvement in self-confidence"
     },
@@ -78,7 +79,7 @@ export default function LifeCoachingPage() {
         "S - Strategic Serenity: Radical honesty + purpose",
         "T - Transformation: Healing, training & transitions"
       ],
-      image: "/new/sumit-jaswal-gzUj4xFysEc-unsplash.jpg",
+      image: images.lifeCoaching.section2,
       imagePosition: "left",
       isSymptoms: true
     },
@@ -87,7 +88,7 @@ export default function LifeCoachingPage() {
       title: "Break Through Imposter Syndrome",
       subtitle: "You belong at the table",
       description: "That voice telling you you're not qualified, not ready, not enough? It's lying. Imposter syndrome affects high-achievers disproportionately—the more successful you are, the louder the doubt. Together, we'll identify the source, challenge the narrative, and build unshakeable self-belief.",
-      image: "/new/kreative-kwame-oUXhw8SEqlM-unsplash.jpg",
+      image: images.lifeCoaching.section3,
       imagePosition: "right",
       stat: "70% of people experience imposter syndrome at some point"
     },
@@ -102,7 +103,7 @@ export default function LifeCoachingPage() {
         { name: "Accountability", desc: "Weekly check-ins and progress tracking", color: "#c09050" },
         { name: "Mindset Mastery", desc: "Rewrite limiting beliefs and self-talk", color: "#d4a84b" }
       ],
-      image: "/new/alonso-reyes-JCaw4DRqekk-unsplash.jpg",
+      image: images.lifeCoaching.section4,
       imagePosition: "left",
       isApproaches: true
     },
@@ -111,7 +112,7 @@ export default function LifeCoachingPage() {
       title: "Career & Leadership Evolution",
       subtitle: "Step into your power",
       description: "Whether you're launching a new career, pivoting industries, or stepping into leadership, coaching provides the clarity and confidence you need. We'll navigate the transition together—from identifying your strengths to owning your authority.",
-      image: "/new/danilo-d-agostino-TmSaH54lLG4-unsplash.jpg",
+      image: images.lifeCoaching.section5,
       imagePosition: "right",
       stat: "Executives who receive coaching report 70% improvement in work performance"
     },
@@ -119,17 +120,17 @@ export default function LifeCoachingPage() {
       id: 5,
       title: "Your Container, Your Pace",
       subtitle: "Packages designed for your journey",
-      description: "Whether you need a single session to break through a block or a multi-month container for deep transformation, coaching packages are flexible and tailored to you. Each session is 55 minutes of focused, high-impact work. Workbooks and resources included.",
-      image: "/new/imre-zsolt-h7zZWJQ4DMs-unsplash.jpg",
+      description: "Coaching packages are flexible and tailored to you. Each session is focused, high-impact work. Workbooks are included for intensives.",
+      image: images.lifeCoaching.section6,
       imagePosition: "left",
-      stat: "Single sessions • 5-hour bundles • 10-hour packages"
+      stat: "5-hour bundles • 10-hour packages"
     },
     {
       id: 6,
       title: "Ready to Manifest Your Next Chapter",
       subtitle: "The life you want is waiting",
       description: "You've done the work. You've built the foundation. Now it's time to build your skyscraper. Coaching is for those ready to move from 'functioning' to 'flourishing.' Let's bridge the gap between where you are and where you want to be.",
-      image: "/new/valerii-ladomyriak-7oGXQII7AWc-unsplash (1).jpg",
+      image: images.lifeCoaching.section7,
       imagePosition: "right",
       stat: "You've already taken the bravest step"
     }
@@ -143,7 +144,7 @@ export default function LifeCoachingPage() {
         
         <div className="absolute inset-0 z-0">
           <img
-            src="/new/philippe-spitalier-kumAXJ9r834-unsplash.jpg"
+            src={images.lifeCoaching.hero}
             alt="Person reaching toward light and possibility"
             className="w-full h-full object-cover scale-110"
           />
@@ -179,17 +180,17 @@ export default function LifeCoachingPage() {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6"
             >
               <Sparkles className="w-4 h-4 text-[#c09050]" />
-              <span className="text-xs font-black uppercase tracking-wider text-white">Transformational Coaching</span>
+              <span className="text-xs font-black uppercase tracking-wider text-white">The Pivot — Life Coaching</span>
             </motion.div>
             
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white mb-6 font-['Montserrat'] leading-tight">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white mb-6 font-[system-ui] leading-tight">
               Life{" "}
               <span className="bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent">
                 Coaching
               </span>
             </h1>
             
-            <p className="text-white/80 text-lg sm:text-xl max-w-2xl mx-auto mb-8 font-['Plus_Jakarta_Sans'] leading-relaxed">
+            <p className="text-white/80 text-lg sm:text-xl max-w-2xl mx-auto mb-8 font-[system-ui] leading-relaxed">
               The MANIFEST Method coaching for those ready to move from functioning to flourishing.
             </p>
             
@@ -199,7 +200,7 @@ export default function LifeCoachingPage() {
                 whileTap={{ scale: 0.95 }}
                 href="https://calendly.com/manifestcoachingllc/clarity-call"
                 target="_blank"
-                className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-[#c09050] to-[#d4a84b] text-white font-bold hover:shadow-2xl transition-all duration-500 font-['Montserrat']"
+                className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-[#c09050] to-[#d4a84b] text-white font-bold hover:shadow-2xl transition-all duration-500 font-[system-ui]"
               >
                 <Calendar className="w-5 h-5" />
                 Free Consultation
@@ -209,7 +210,7 @@ export default function LifeCoachingPage() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 href="/contact"
-                className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/30 text-white font-bold hover:bg-white/20 transition-all duration-500 font-['Montserrat']"
+                className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/30 text-white font-bold hover:bg-white/20 transition-all duration-500 font-[system-ui]"
               >
                 <Phone className="w-5 h-5" />
                 Contact Me
@@ -284,7 +285,7 @@ export default function LifeCoachingPage() {
                     </span>
                   </div>
                   
-                  <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-6 font-['Montserrat'] leading-tight">
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-6 font-[system-ui] leading-tight">
                     {section.title}
                   </h2>
                   
@@ -299,7 +300,7 @@ export default function LifeCoachingPage() {
                           className="flex items-center gap-3 p-3 rounded-xl bg-gray-50 border border-gray-100"
                         >
                           <div className="w-2 h-2 rounded-full bg-[#c09050]" />
-                          <span className="text-gray-700 text-sm font-['Plus_Jakarta_Sans']">{symptom}</span>
+                          <span className="text-gray-700 text-sm font-[system-ui]">{symptom}</span>
                         </motion.div>
                       ))}
                     </div>
@@ -325,13 +326,13 @@ export default function LifeCoachingPage() {
                     </div>
                   ) : (
                     <>
-                      <p className="text-gray-600 text-lg leading-relaxed mb-6 font-['Plus_Jakarta_Sans']">
+                      <p className="text-gray-600 text-lg leading-relaxed mb-6 font-[system-ui]">
                         {section.description}
                       </p>
                       {section.stat && (
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#c09050]/5 border border-[#c09050]/10 mb-6">
                           <Quote className="w-3 h-3 text-[#c09050]" />
-                          <span className="text-xs text-gray-600 font-['Plus_Jakarta_Sans']">{section.stat}</span>
+                          <span className="text-xs text-gray-600 font-[system-ui]">{section.stat}</span>
                         </div>
                       )}
                     </>
@@ -364,12 +365,12 @@ export default function LifeCoachingPage() {
         
         <div className="absolute inset-0 z-0">
           <img
-            src="/new/philippe-spitalier-kumAXJ9r834-unsplash.jpg"
+            src={images.lifeCoaching.cta}
             alt="Person achieving their goals"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#c09050]/90 to-[#d4a84b]/90" />
-          <div className="absolute inset-0 bg-black/20" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#c09050]/25 to-[#d4a84b]/20" />
+          <div className="absolute inset-0 bg-black/25" />
         </div>
 
         <div className="absolute inset-0 pointer-events-none">
@@ -399,7 +400,7 @@ export default function LifeCoachingPage() {
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-6 font-['Montserrat'] leading-tight"
+            className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-6 font-[system-ui] leading-tight"
           >
             Ready to Manifest
             <br />
@@ -410,7 +411,7 @@ export default function LifeCoachingPage() {
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-white/90 text-lg md:text-xl mb-10 font-['Plus_Jakarta_Sans'] max-w-2xl mx-auto"
+            className="text-white/90 text-lg md:text-xl mb-10 font-[system-ui] max-w-2xl mx-auto"
           >
             Schedule your free 15-minute consultation today. No pressure, just conversation.
           </motion.p>
@@ -426,7 +427,7 @@ export default function LifeCoachingPage() {
               whileTap={{ scale: 0.98 }}
               href="https://calendly.com/manifestcoachingllc/clarity-call"
               target="_blank"
-              className="group inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-white text-[#c09050] font-black text-lg hover:shadow-2xl transition-all duration-500 font-['Montserrat']"
+              className="group inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-white text-[#c09050] font-black text-lg hover:shadow-2xl transition-all duration-500 font-[system-ui]"
             >
               <Calendar className="w-5 h-5" />
               Book Free Consultation
@@ -436,7 +437,7 @@ export default function LifeCoachingPage() {
               whileHover={{ scale: 1.05, y: -3 }}
               whileTap={{ scale: 0.98 }}
               href="/contact"
-              className="group inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-white/10 backdrop-blur-sm border-2 border-white text-white font-black text-lg hover:bg-white hover:text-[#c09050] transition-all duration-500 font-['Montserrat']"
+              className="group inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-white/10 backdrop-blur-sm border-2 border-white text-white font-black text-lg hover:bg-white hover:text-[#c09050] transition-all duration-500 font-[system-ui]"
             >
               <Phone className="w-5 h-5" />
               Contact Me

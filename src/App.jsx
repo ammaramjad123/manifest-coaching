@@ -1,6 +1,15 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
 import HomePage from './pages/HomePage';
 import ServicesPage from './pages/ServicesPage';
 import ContactPage from './pages/ContactPage';
@@ -16,10 +25,13 @@ import DBTPage from './pages/DBTPage';
 import ARTPage from './pages/ARTPage';
 import InclusiveCarePage from './pages/InclusiveCarePage';
 import SAFTPage from './pages/SAFTPage';
+import BARTerBalancePage from './pages/BARTerBalancePage';
+import ManifestMethodPage from './pages/ManifestMethodPage';
 
 function App() {
   return (
     <div className="min-h-screen bg-white">
+      <ScrollToTop />
       <Header />
       <main>
         <Routes>
@@ -38,6 +50,8 @@ function App() {
           <Route path="/specialties/art" element={<ARTPage />} />
           <Route path="/specialties/inclusive-affirming-care" element={<InclusiveCarePage />} />
           <Route path="/specialties/safety-sensation" element={<SAFTPage />} />
+          <Route path="/specialties/barter-balance" element={<BARTerBalancePage />} />
+          <Route path="/specialties/manifest-method" element={<ManifestMethodPage />} />
         </Routes>
       </main>
       <Footer />

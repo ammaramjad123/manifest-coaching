@@ -1,3 +1,4 @@
+import { images } from "../config/siteImages";
 import SpecialtyPageTemplate from '../components/SpecialtyPageTemplate';
 import { Brain, Shield, Heart, Users } from 'lucide-react';
 
@@ -6,7 +7,7 @@ const data = {
   titleLine1: "Dialectical",
   titleLine2: "Behavior Therapy",
   intro: "DBT is a comprehensive, evidence-based therapy built on one powerful dialectic: you are doing the best you can, AND you can do better. It combines cognitive-behavioral techniques with radical acceptance and mindfulness to give you a full toolkit for building a life worth living — even in the most emotionally intense seasons.",
-  heroImage: "/new/pawel-czerwinski-WVEKM88v9VM-unsplash.jpg",
+  heroImage: images.dbt.hero,
 
   sections: [
     {
@@ -15,13 +16,13 @@ const data = {
       body: "DBT was developed by Dr. Marsha Linehan for individuals with high emotional sensitivity — and has since been validated across a broad spectrum of presentations. Its core insight is the dialectic: two seemingly opposite truths can coexist. You are doing the best you can right now, and there are skills that can help you do better. Neither truth cancels the other. Both are held with equal care.",
       stat: "One of the most rigorously researched therapy models in clinical practice",
       imageLeft: false,
-      image: "/new/lesly-juarez-DFtjXYd5Pto-unsplash.jpg"
+      image: images.dbt.section1
     },
     {
       subtitle: "Who Benefits",
       title: "DBT Was Designed for Emotional Intensity",
       imageLeft: true,
-      image: "/new/deniz-altindas-t1XLQvDqt_4-unsplash.jpg",
+      image: images.dbt.section2,
       items: [
         "Intense or rapidly shifting emotions",
         "Impulsive behaviors or self-harm",
@@ -37,7 +38,7 @@ const data = {
       subtitle: "The Four Modules",
       title: "A Complete Toolkit for Every Season of Life",
       imageLeft: false,
-      image: "/new/linus-nylund-Q5QspluNZmM-unsplash.jpg",
+      image: images.dbt.section3,
       approaches: [
         {
           icon: Brain,
@@ -64,10 +65,10 @@ const data = {
     {
       subtitle: "What to Expect",
       title: "Structured, Compassionate, and Direct",
-      body: "DBT sessions are structured and skill-focused. Diary card tracking between sessions helps identify patterns and triggers before they escalate. Behavioral chain analysis maps the full arc of crisis moments — so we can intervene earlier and more skillfully next time. Mindfulness practices are woven into every session. The therapeutic relationship is direct, deeply compassionate, and built on validation always paired with strategies for meaningful change.",
+      body: "DBT sessions are structured and skill-focused. Skills to practice between sessions help identify patterns and triggers before they escalate. Behavioral chain analysis maps the full arc of crisis moments — so we can intervene earlier and more skillfully next time. Mindfulness practices are woven into every session. The therapeutic relationship is direct, deeply compassionate, and built on validation always paired with strategies for meaningful change.",
       stat: "Validation and change — held together, never one without the other",
       imageLeft: true,
-      image: "/new/aakifah-shaikh-Dh1pFElYVpI-unsplash.jpg"
+      image: images.dbt.section4
     }
   ],
 
@@ -98,7 +99,7 @@ const data = {
   ctaIcon: Brain,
   ctaHeading: "Ready to Build a Life Worth Living?",
   ctaBody: "Start with a free 15-minute alignment call. We will explore whether DBT skills are the right foundation for where you are today.",
-  ctaBgImage: "/new/pawel-czerwinski-WVEKM88v9VM-unsplash.jpg"
+  ctaBgImage: images.dbt.cta
 };
 
 export default function DBTPage() {

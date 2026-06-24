@@ -8,22 +8,17 @@ export default function AboutProcessSection() {
   const steps = [
     {
       title: "Discovery Call",
-      desc: "Reach out via phone, email, or Calendly. We'll schedule a free 15-minute consultation to understand your needs, answer questions, and determine if we're a good fit.",
+      desc: "Reach out via phone, email, or Calendly. A free 15-minute consultation to understand your needs, answer questions, and determine if there is a good fit.",
       icon: Phone,
     },
     {
       title: "Alignment Session",
-      desc: "We identify whether you're in a season of Restoration (Therapy) or Expansion (Coaching). Together, we decide which 'hat' honors your current journey best.",
+      desc: "We identify whether you are in a season of Restoration (Therapy) or Expansion (Coaching). Together, we decide which path honors your current journey best.",
       icon: Calendar,
     },
     {
       title: "The Journey Begins",
-      desc: "Whether it's ART therapy, DBT skills, or the MANIFEST coaching framework, we begin your personalized path toward healing, growth, or transformation.",
-      icon: Heart,
-    },
-    {
-      title: "The Journey Begins",
-      desc: "Whether it's ART therapy, DBT skills, or the MANIFEST coaching framework, we begin your personalized path toward healing, growth, or transformation.",
+      desc: "Whether it is ART therapy, DBT skills, or the MANIFEST coaching framework, your personalized path toward healing, growth, or transformation begins here.",
       icon: Heart,
     },
     {
@@ -34,7 +29,7 @@ export default function AboutProcessSection() {
   ];
 
   return (
-    <section className="relative w-full py-24 sm:py-32 px-4 sm:px-6 lg:px-8 overflow-hidden bg-white">
+    <section className="relative w-full py-14 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-white">
       {/* Subtle Energy Background */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(192,144,80,0.03),transparent_70%)]" />
 
@@ -49,14 +44,14 @@ export default function AboutProcessSection() {
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#c09050]/10 border border-[#c09050]/20 mb-6">
             <Sparkles className="w-4 h-4 text-[#c09050]" />
-            <p className="text-xs font-black uppercase tracking-[0.2em] text-[#c09050] font-['Montserrat']">
+            <p className="text-xs font-black uppercase tracking-[0.2em] text-[#c09050] font-[system-ui]">
               The Path Forward
             </p>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-black text-center font-['Montserrat']">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-black text-center font-[system-ui]">
             How It <span className="bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent">Works</span>
           </h2>
-          <p className="mt-4 text-gray-500 max-w-2xl mx-auto font-['Plus_Jakarta_Sans']">
+          <p className="mt-4 text-gray-500 max-w-2xl mx-auto font-[system-ui]">
             Four simple steps to healing, growth, and transformation. No pressure, just partnership.
           </p>
         </motion.div>
@@ -104,7 +99,7 @@ export default function AboutProcessSection() {
                 >
                   <div className="relative max-w-[90%] sm:max-w-md p-6 rounded-2xl bg-white border border-gray-100 shadow-lg hover:shadow-xl hover:border-[#c09050]/30 transition-all duration-300">
                     {/* Step Number */}
-                    <div className="absolute -top-4 left-4 w-8 h-8 rounded-full bg-[#c09050] text-white flex items-center justify-center text-sm font-black shadow-lg font-['Montserrat']">
+                    <div className="absolute -top-4 left-4 w-8 h-8 rounded-full bg-[#c09050] text-white flex items-center justify-center text-sm font-black shadow-lg font-[system-ui]">
                       {i + 1}
                     </div>
 
@@ -116,12 +111,12 @@ export default function AboutProcessSection() {
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-base sm:text-lg font-black text-black font-['Montserrat']">
+                    <h3 className="text-base sm:text-lg font-black text-black font-[system-ui]">
                       {step.title}
                     </h3>
 
                     {/* Description */}
-                    <p className="mt-3 text-sm sm:text-base text-gray-600 leading-relaxed font-['Plus_Jakarta_Sans']">
+                    <p className="mt-3 text-sm sm:text-base text-gray-600 leading-relaxed font-[system-ui]">
                       {step.desc}
                     </p>
 
@@ -145,7 +140,7 @@ export default function AboutProcessSection() {
           <a
             href="https://calendly.com/manifestcoachingllc/clarity-call"
             target="_blank"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-black border-2 border-[#c09050] text-white font-black hover:bg-[#c09050] hover:border-[#c09050] hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 font-['Montserrat'] text-sm uppercase tracking-wider"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-black border-2 border-[#c09050] text-white font-black hover:bg-[#c09050] hover:border-[#c09050] hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 font-[system-ui] text-sm uppercase tracking-wider"
           >
             <Calendar className="w-4 h-4" />
             Start Your Journey Today

@@ -1,3 +1,4 @@
+import { images } from "../config/siteImages";
 import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -65,7 +66,7 @@ export default function HeroSection() {
     },
     { 
       label: "Happy Clients", 
-      value: "1000+", 
+      value: "1k+",
       icon: <Users size={24} />,
       description: "Trusted care"
     },
@@ -95,15 +96,12 @@ export default function HeroSection() {
           className="w-full h-full"
         >
           <img
-            src="/hero.jpg"
+            src={images.home.hero}
             alt="Calm peaceful therapy environment"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-center"
           />
-          {/* Black Overlay with Lighter Accent */}
-          <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-black/30" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/30" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_30%,black/65%)]" />
-          <div className="absolute inset-0 bg-black/40" />
+          {/* Bright at top, fades to dark toward bottom for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/45 to-black/80" />
         </motion.div>
       </div>
 
@@ -224,31 +222,30 @@ export default function HeroSection() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#c09050]/20 backdrop-blur-2xl border border-[#c09050]/40 mb-6 md:mb-8"
           >
             <Sparkles className="w-4 h-4 text-[#c09050]" />
-            <span className="text-[10px] sm:text-xs font-black uppercase tracking-[0.2em] text-white font-['Montserrat']">
-              Compassionate Therapy Services
+            <span className="text-[10px] sm:text-xs font-black uppercase tracking-[0.2em] text-white font-[system-ui]">
+              Pathways to Peace
             </span>
           </motion.div>
 
           {/* Main Heading - Your Journey. Our Partnership. */}
           <motion.h1
             variants={itemVariants}
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[110px] font-black text-white tracking-tighter leading-[1.1] md:leading-[1.05] mb-6 font-['Montserrat']"
+            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[110px] font-black text-white tracking-tight leading-[1.1] md:leading-[1.05] mb-6 font-[system-ui]"
           >
-            Your Journey.
+            Y<span className="inline-block pr-[3px] bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent">OUR</span> Journey
             <br />
-            <span className="relative inline-block">
-              <span className="bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent pr-4 font-black">
-                Our Partnership.
-              </span>
+            <span className="relative inline-block pr-4">
+              <span className="inline-block pr-[3px] bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent font-black">OUR</span>
+              <span className="font-black"> Partnership</span>
             </span>
           </motion.h1>
 
           {/* Description - Neutral language */}
           <motion.p
             variants={itemVariants}
-            className="text-white/80 max-w-3xl mx-auto text-base sm:text-lg md:text-xl font-medium leading-relaxed mb-8 px-4 font-['Plus_Jakarta_Sans']"
+            className="text-white/80 max-w-3xl mx-auto text-base sm:text-lg md:text-xl font-medium leading-relaxed mb-8 px-4 font-[system-ui]"
           >
-            With over 26 years of experience, compassionate therapy, life coaching, and professional training are offered to help navigate life's challenges and discover your path to peace.
+            With nearly 30 years of experience, compassionate therapy, life coaching, and professional partnerships are offered to help navigate life's challenges and discover your path to peace.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -259,7 +256,7 @@ export default function HeroSection() {
             <a
               href="https://calendly.com/manifestcoachingllc/clarity-call"
               target="_blank"
-              className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/30 text-white font-bold text-base sm:text-lg hover:bg-white/20 transition-all duration-300 overflow-hidden font-['Montserrat']"
+              className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/30 text-white font-bold text-base sm:text-lg hover:bg-white/20 transition-all duration-300 overflow-hidden font-[system-ui]"
             >
               <Calendar className="w-5 h-5 group-hover:scale-110 transition-transform" />
               <span>Schedule Free Consultation</span>
@@ -267,7 +264,7 @@ export default function HeroSection() {
             </a>
             <div className="inline-block transition-transform duration-300 hover:-translate-y-1">
               <Link to="/services">
-                <button className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-[#c09050] to-[#d4a84b] text-white font-bold text-base sm:text-lg hover:shadow-2xl transition-all duration-300 overflow-hidden font-['Montserrat'] cursor-pointer">
+                <button className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-[#c09050] to-[#d4a84b] text-white font-bold text-base sm:text-lg hover:shadow-2xl transition-all duration-300 overflow-hidden font-[system-ui] cursor-pointer">
                   <div className="absolute inset-0 z-0 bg-gradient-to-r from-[#b07d40] to-[#c09050] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <Heart className="w-5 h-5 relative z-10" />
                   <span className="relative z-10">Explore Services</span>
@@ -286,7 +283,7 @@ export default function HeroSection() {
               {/* 26+ Years */}
               <div className="flex items-center gap-3 group cursor-pointer">
                 <Brain className="w-6 h-6 text-white/50 group-hover:text-[#c09050] transition duration-300" />
-                <span className="text-xl md:text-2xl font-black italic tracking-wide text-white/60 group-hover:text-white transition duration-300 font-['Montserrat']">
+                <span className="text-xl md:text-2xl font-black italic tracking-wide text-white/60 group-hover:text-white transition duration-300 font-[system-ui]">
                   26+ YEARS
                 </span>
               </div>
@@ -294,7 +291,7 @@ export default function HeroSection() {
               {/* Evidence Based */}
               <div className="flex items-center gap-3 group cursor-pointer">
                 <CheckCircle className="w-6 h-6 text-white/50 group-hover:text-[#c09050] transition duration-300" />
-                <span className="text-xl md:text-2xl font-black italic tracking-wide text-white/60 group-hover:text-white transition duration-300 font-['Montserrat']">
+                <span className="text-xl md:text-2xl font-black italic tracking-wide text-white/60 group-hover:text-white transition duration-300 font-[system-ui]">
                   EVIDENCE-BASED
                 </span>
               </div>
@@ -302,7 +299,7 @@ export default function HeroSection() {
               {/* Trauma Informed */}
               <div className="flex items-center gap-3 group cursor-pointer">
                 <Heart className="w-6 h-6 text-white/50 group-hover:text-[#c09050] transition duration-300" />
-                <span className="text-xl md:text-2xl font-black italic tracking-wide text-white/60 group-hover:text-white transition duration-300 font-['Montserrat']">
+                <span className="text-xl md:text-2xl font-black italic tracking-wide text-white/60 group-hover:text-white transition duration-300 font-[system-ui]">
                   TRAUMA-INFORMED
                 </span>
               </div>
@@ -366,13 +363,13 @@ function StatItem({ label, value, icon, description }) {
         {icon}
       </div>
       <div className="flex flex-col gap-0.5">
-        <span className="text-2xl md:text-3xl font-black text-white tracking-tighter font-['Montserrat']">
+        <span className="text-2xl md:text-3xl font-black text-white tracking-tighter font-[system-ui]">
           {count}{typeof value === 'string' && value.includes('+') ? '+' : ''}
         </span>
-        <span className="text-xs font-semibold uppercase tracking-wider text-white/60 font-['Montserrat']">
+        <span className="text-xs font-semibold uppercase tracking-wider text-white/60 font-[system-ui]">
           {label}
         </span>
-        <span className="text-[10px] text-white/40 font-['Plus_Jakarta_Sans']">
+        <span className="text-[10px] text-white/40 font-[system-ui]">
           {description}
         </span>
       </div>

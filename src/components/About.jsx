@@ -1,3 +1,4 @@
+import { images } from "../config/siteImages";
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -45,20 +46,20 @@ export default function About() {
         >
           {/* Left Side - Content */}
           <motion.div variants={itemVariants}>
-            <p className="font-['Montserrat'] text-[#c09050] uppercase tracking-[3px] text-sm font-bold mb-3">
+            <p className="font-[system-ui] text-[#c09050] uppercase tracking-[3px] text-sm font-bold mb-3">
               The Principal Curator
             </p>
-            <h2 className="font-['Montserrat'] text-3xl sm:text-4xl lg:text-5xl font-bold text-black mb-6">
+            <h2 className="font-[system-ui] text-3xl sm:text-4xl lg:text-5xl font-bold text-black mb-6">
               Ayana Foluke McKanney,{" "}
               <span className="text-[#c09050]">MSW, LCSW</span>
             </h2>
-            <p className="font-['Plus_Jakarta_Sans'] text-gray-700 text-xl leading-relaxed mb-6">
+            <p className="font-[system-ui] text-gray-700 text-xl leading-relaxed mb-6">
               With over 27 years of clinical mastery, Ayana Foluke McKanney is a licensed therapist by trade and an architect by instinct. As the Principal Curator of individual evolution, her work is rooted in Brooklyn Grit and refined by Strategic Serenity, bridging the gap between high-stakes clinical excellence and intentional living.
             </p>
-            <p className="font-['Plus_Jakarta_Sans'] text-gray-600 text-lg leading-relaxed mb-6">
+            <p className="font-[system-ui] text-gray-600 text-lg leading-relaxed mb-6">
               Ayana utilizes her proprietary MANIFEST Method as the foundational engine for both her clinical therapy and transformational coaching. Through this framework, she empowers clients to deconstruct emotional barriers and rebuild resilient foundations. Whether she is resolving the echoes of trauma, conducting specialized clinical assessments for immigration proceedings, training the next generation of practitioners, or guiding high-achievers through a strategic pivot, her approach is singular: audit the noise to architect the next.
             </p>
-            <p className="font-['Plus_Jakarta_Sans'] text-gray-600 text-lg leading-relaxed mb-8">
+            <p className="font-[system-ui] text-gray-600 text-lg leading-relaxed mb-8">
               A Licensed Clinical Social Worker (NY, NJ, RI) and Master Accelerated Resolution Therapy (ART) Trainer, Ayana's toolkit is as diverse as the lives she transforms. She is a certified trauma clinician specializing in ART, ACT, DBT, and SĀF-T, and a Master Life Coach. Ayana founded The Peace Practice as a clinical home for those ready to move from frantic fragmentation to fully-functioning fulfillment. She believes that your history is a narrative, not a limitation—and your future is a blueprint, not a burden.
             </p>
             <div className="flex flex-wrap gap-6">
@@ -84,7 +85,7 @@ export default function About() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[400px] sm:h-[450px] md:h-[500px]">
               <img
-                src="/ayana.jpg"
+                src={images.about.legacyPhoto}
                 alt="Ayana Foluke McKanney - Principal Curator"
                 className="w-full h-full object-cover"
               />

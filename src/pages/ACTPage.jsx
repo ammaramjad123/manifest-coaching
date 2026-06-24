@@ -1,3 +1,4 @@
+import { images } from "../config/siteImages";
 import SpecialtyPageTemplate from '../components/SpecialtyPageTemplate';
 import { Brain, Compass, Target } from 'lucide-react';
 
@@ -6,7 +7,7 @@ const data = {
   titleLine1: "Acceptance &",
   titleLine2: "Commitment Therapy",
   intro: "ACT teaches psychological flexibility — the ability to be fully present with difficult thoughts and feelings without being controlled by them, while committing to actions aligned with your deepest values. It is not about eliminating pain; it is about building a life worth living alongside it.",
-  heroImage: "/new/hester-qiang-95t94hZTESw-unsplash.jpg",
+  heroImage: images.act.hero,
 
   sections: [
     {
@@ -15,18 +16,17 @@ const data = {
       body: "ACT is a third-wave cognitive-behavioral therapy grounded in decades of peer-reviewed research. Unlike earlier CBT approaches, ACT does not try to eliminate unwanted thoughts and feelings. Instead, it teaches you to change your relationship to those experiences — stepping back from unhelpful mental patterns while moving forward on what truly matters to you. The result is not a quieter mind. It is a freer one.",
       stat: "Ranked among the most empirically supported psychotherapies by APA Division 12",
       imageLeft: false,
-      image: "/new/billy-pasco-se3tHNszbkM-unsplash.jpg"
+      image: images.act.section1
     },
     {
       subtitle: "Who Benefits",
       title: "ACT Works Across a Wide Range of Human Struggles",
       imageLeft: true,
-      image: "/new/alonso-reyes-JCaw4DRqekk-unsplash.jpg",
+      image: images.act.section2,
       items: [
         "Anxiety, worry & chronic overthinking",
         "Depression & persistent low mood",
         "Grief & complicated loss",
-        "Chronic illness & physical pain",
         "Trauma responses",
         "OCD & intrusive thoughts",
         "Life transitions & identity shifts",
@@ -37,7 +37,7 @@ const data = {
       subtitle: "The Three Pillars",
       title: "Accept. Defuse. Commit.",
       imageLeft: false,
-      image: "/new/katarzyna-zygnerska-G4rGkoRnoNw-unsplash.jpg",
+      image: images.act.section3,
       approaches: [
         {
           icon: Brain,
@@ -62,7 +62,7 @@ const data = {
       body: "Sessions integrate mindfulness practices, experiential metaphors, and values-based action planning. You will learn to defuse from unhelpful mental patterns, clarify what truly matters, and build behavioral experiments that bridge the gap between pain and purpose. The therapeutic relationship is collaborative, non-judgmental, and anchored in your lived experience — not a textbook version of it.",
       stat: "Structured, practical, and adaptable to your pace and goals",
       imageLeft: true,
-      image: "/new/gary-yost--iZGedR1uJo-unsplash.jpg"
+      image: images.act.section4
     }
   ],
 
@@ -83,17 +83,13 @@ const data = {
     {
       q: "How many sessions does ACT typically take?",
       a: "ACT can be effective in as few as 8–12 sessions for targeted concerns, though this varies by presenting issue and personal goals. Some clients work within an ACT framework over a longer course of therapy as the skills deepen over time. This will be discussed collaboratively during your first sessions."
-    },
-    {
-      q: "Does ACT help with physical pain or chronic illness?",
-      a: "Yes — ACT has a strong evidence base for chronic pain, illness, and medical populations. It teaches a different relationship to pain: one of acceptance and valued action rather than struggle. Many clients find they can live more fully even when pain cannot be fully eliminated."
     }
   ],
 
   ctaIcon: Target,
   ctaHeading: "Ready to Stop Fighting and Start Living?",
   ctaBody: "The first step is a free 15-minute alignment call. Together, we will explore whether ACT is the right fit for where you are right now.",
-  ctaBgImage: "/new/hester-qiang-95t94hZTESw-unsplash.jpg"
+  ctaBgImage: images.act.cta
 };
 
 export default function ACTPage() {

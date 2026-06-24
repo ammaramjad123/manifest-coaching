@@ -1,3 +1,4 @@
+import { images } from "../config/siteImages";
 import SpecialtyPageTemplate from '../components/SpecialtyPageTemplate';
 import { Globe, Heart, Sparkles, Star } from 'lucide-react';
 
@@ -6,7 +7,7 @@ const data = {
   titleLine1: "Inclusive &",
   titleLine2: "Affirming Care",
   intro: "Healing does not happen in a vacuum. Your cultural heritage, race, lived experiences, faith, and personal story are the architecture of who you are. The Peace Practice is committed to a space where every dimension of your identity is not just acknowledged — it is honored as a vital part of your transformation.",
-  heroImage: "/new/kamil-kalkan-BTpIUnszs_Q-unsplash.jpg",
+  heroImage: images.inclusive.hero,
 
   sections: [
     {
@@ -15,13 +16,13 @@ const data = {
       body: "Too many clinicians approach identity as background noise — something to acknowledge and set aside. This practice takes the opposite view: your cultural background, faith tradition, community context, and lived experience are central to understanding your inner world and to any meaningful therapeutic work. A diagnosis does not live in isolation. Neither do you. Your history is a narrative, not a limitation.",
       stat: "Culturally responsive care — woven into every session, not added as an afterthought",
       imageLeft: false,
-      image: "/new/arturo-anez-9yhBvC2ykoc-unsplash.jpg"
+      image: images.inclusive.section1
     },
     {
       subtitle: "Who This Serves",
       title: "Affirming Care for a Wide Range of Lived Experiences",
       imageLeft: true,
-      image: "/new/vijesh-datt-OuAyzIWfvGQ-unsplash.jpg",
+      image: images.inclusive.section2,
       items: [
         "Multicultural & bicultural individuals",
         "First & second-generation immigrants",
@@ -37,7 +38,7 @@ const data = {
       subtitle: "Clinical Pillars",
       title: "Three Pillars of Truly Affirming Practice",
       imageLeft: false,
-      image: "/new/kyle-glenn-nXt5HtLmlgE-unsplash.jpg",
+      image: images.inclusive.section3,
       approaches: [
         {
           icon: Globe,
@@ -56,18 +57,18 @@ const data = {
         },
         {
           icon: Star,
-          name: "★★★ [LGBTQ+ Affirming Care — Content Placeholder] ★★★",
-          desc: "★★★ [Ayana — please fill in your LGBTQ+ affirming care content here. Describe the specific ways this practice affirms and supports LGBTQ+ individuals, couples, and families. Include any relevant training, certifications, or clinical commitments.] ★★★"
+          name: "Resilience & Post-Traumatic Growth",
+          desc: "Communities that have navigated systemic adversity, historical trauma, and ongoing inequity carry extraordinary resilience — resilience that is often unrecognized and underutilized in traditional clinical models. This practice centers that resilience as a clinical asset. We work not only to address what has caused harm, but to actively cultivate the post-traumatic growth that is already present within you."
         }
       ]
     },
     {
       subtitle: "What to Expect",
       title: "A Therapeutic Space That Sees You Whole",
-      body: "Sessions are characterized by cultural humility — a posture of ongoing learning rather than assumed expertise about your experience. You will not be asked to educate your therapist on your community or heritage. The work begins from genuine curiosity, respect, and clinical competence. What has felt like a burden in other rooms can become the starting point for profound growth here.",
+      body: "Sessions are characterized by cultural humility — a posture of ongoing learning rather than assumed expertise about your experience. You will be encouraged to share and express your values, your culture, your heritage. The work begins from genuine curiosity, respect, and clinical competence. What has felt like a burden in other rooms can become the starting point for profound growth here.",
       stat: "Cultural humility is not a skill we demonstrate once — it is a practice we commit to in every session",
       imageLeft: true,
-      image: "/new/kreative-kwame-oUXhw8SEqlM-unsplash.jpg"
+      image: images.inclusive.section4
     }
   ],
 
@@ -98,7 +99,7 @@ const data = {
   ctaIcon: Globe,
   ctaHeading: "You Deserve Therapy That Sees You Whole.",
   ctaBody: "Start with a free 15-minute alignment call. Explore whether this is the space where your full self — every dimension of it — is genuinely welcome.",
-  ctaBgImage: "/new/kamil-kalkan-BTpIUnszs_Q-unsplash.jpg"
+  ctaBgImage: images.inclusive.cta
 };
 
 export default function InclusiveCarePage() {

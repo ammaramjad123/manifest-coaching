@@ -181,7 +181,7 @@ export default function PathForwardAssessment() {
   const progress = ((currentQuestion + 1) / questions.length) * 100;
 
   return (
-    <section id="assessment" className="relative w-full py-16 sm:py-24 md:py-32 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+    <section id="assessment" className="relative w-full py-12 sm:py-16 md:py-20 bg-[#fefcf7] overflow-hidden">
       
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-30">
@@ -191,29 +191,31 @@ export default function PathForwardAssessment() {
         }} />
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-5 sm:px-6 lg:px-8">
-        
+      <div className="relative z-10 max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
+
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+
         {/* Section Header */}
         <motion.div
           ref={ref}
           variants={containerVariants}
           initial="hidden"
           animate={controls}
-          className="text-center max-w-3xl mx-auto mb-10 md:mb-14"
+          className="text-center lg:text-left"
         >
           <motion.div
             variants={itemVariants}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#c09050]/10 border border-[#c09050]/20 mb-6"
           >
             <Sparkles className="w-4 h-4 text-[#c09050]" />
-            <span className="text-[10px] sm:text-xs font-black uppercase tracking-[0.2em] text-[#c09050] font-['Montserrat']">
+            <span className="text-[10px] sm:text-xs font-black uppercase tracking-[0.2em] text-[#c09050] font-[system-ui]">
               The Path Forward
             </span>
           </motion.div>
 
           <motion.h2
             variants={itemVariants}
-            className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-4 font-['Montserrat']"
+            className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-4 font-[system-ui]"
           >
             Clinical Therapy or{" "}
             <span className="bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent">
@@ -223,10 +225,31 @@ export default function PathForwardAssessment() {
 
           <motion.p
             variants={itemVariants}
-            className="text-gray-600 text-base sm:text-lg font-['Plus_Jakarta_Sans']"
+            className="text-gray-600 text-base sm:text-lg font-[system-ui]"
           >
             Take this assessment to discover whether you're in a season of Restoration or Expansion
           </motion.p>
+
+          {/* Trust Badges */}
+          <motion.div
+            variants={itemVariants}
+            className="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-4"
+          >
+            <div className="flex items-center gap-2 text-sm text-gray-500">
+              <Shield className="w-4 h-4 text-[#c09050]" />
+              <span className="font-[system-ui]">Evidence-Based Approaches</span>
+            </div>
+            <div className="w-px h-4 bg-gray-300 hidden sm:block"></div>
+            <div className="flex items-center gap-2 text-sm text-gray-500">
+              <Compass className="w-4 h-4 text-[#c09050]" />
+              <span className="font-[system-ui]">26+ Years Experience</span>
+            </div>
+            <div className="w-px h-4 bg-gray-300 hidden sm:block"></div>
+            <div className="flex items-center gap-2 text-sm text-gray-500">
+              <Flower2 className="w-4 h-4 text-[#c09050]" />
+              <span className="font-[system-ui]">Client-Centered Care</span>
+            </div>
+          </motion.div>
         </motion.div>
 
         {/* Assessment Card */}
@@ -234,7 +257,6 @@ export default function PathForwardAssessment() {
           variants={itemVariants}
           initial="hidden"
           animate={controls}
-          className="max-w-3xl mx-auto"
         >
           <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
             
@@ -243,7 +265,7 @@ export default function PathForwardAssessment() {
               <div className="p-6 sm:p-8 md:p-10">
                 {/* Progress Bar */}
                 <div className="mb-8">
-                  <div className="flex justify-between text-sm text-gray-500 mb-2 font-['Plus_Jakarta_Sans']">
+                  <div className="flex justify-between text-sm text-gray-500 mb-2 font-[system-ui]">
                     <span>Question {currentQuestion + 1} of {questions.length}</span>
                     <span>{Math.round(progress)}% Complete</span>
                   </div>
@@ -257,7 +279,7 @@ export default function PathForwardAssessment() {
 
                 {/* Question */}
                 <div className="mb-8">
-                  <h3 className="text-xl sm:text-2xl font-bold text-black mb-6 font-['Montserrat']">
+                  <h3 className="text-xl sm:text-2xl font-bold text-black mb-6 font-[system-ui]">
                     {questions[currentQuestion].text}
                   </h3>
                   
@@ -283,7 +305,7 @@ export default function PathForwardAssessment() {
                               <div className="w-2 h-2 rounded-full bg-white" />
                             )}
                           </div>
-                          <span className={`text-sm sm:text-base leading-relaxed font-['Plus_Jakarta_Sans'] ${
+                          <span className={`text-sm sm:text-base leading-relaxed font-[system-ui] ${
                             selectedOption === option.value
                               ? "text-gray-900 font-medium"
                               : "text-gray-700"
@@ -332,10 +354,10 @@ export default function PathForwardAssessment() {
                       <Target className="w-10 h-10 text-white" />
                     )}
                   </div>
-                  <h3 className="text-2xl sm:text-3xl font-black text-black mb-2 font-['Montserrat']">
+                  <h3 className="text-2xl sm:text-3xl font-black text-black mb-2 font-[system-ui]">
                     {result?.type === "therapy" ? "Season of Restoration" : "Season of Expansion"}
                   </h3>
-                  <p className="text-gray-500 font-['Plus_Jakarta_Sans']">
+                  <p className="text-gray-500 font-[system-ui]">
                     {result?.therapyCount} Therapy responses • {result?.coachingCount} Coaching responses
                   </p>
                 </div>
@@ -346,9 +368,9 @@ export default function PathForwardAssessment() {
                     <>
                       <div className="flex items-center gap-2 mb-3">
                         <Heart className="w-5 h-5 text-[#c09050]" />
-                        <h4 className="font-bold text-black font-['Montserrat']">Clinical Therapy</h4>
+                        <h4 className="font-bold text-black font-[system-ui]">Clinical Therapy</h4>
                       </div>
-                      <p className="text-gray-700 text-sm sm:text-base leading-relaxed font-['Plus_Jakarta_Sans']">
+                      <p className="text-gray-700 text-sm sm:text-base leading-relaxed font-[system-ui]">
                         You are likely in a season of <span className="font-bold text-[#c09050]">Restoration</span>. 
                         Therapy provides a regulated medical model to treat the "why" behind your distress. 
                         It is the necessary foundation for healing—especially when navigating a new diagnosis, 
@@ -359,9 +381,9 @@ export default function PathForwardAssessment() {
                     <>
                       <div className="flex items-center gap-2 mb-3">
                         <Target className="w-5 h-5 text-[#c09050]" />
-                        <h4 className="font-bold text-black font-['Montserrat']">Transformational Coaching</h4>
+                        <h4 className="font-bold text-black font-[system-ui]">Transformational Coaching</h4>
                       </div>
-                      <p className="text-gray-700 text-sm sm:text-base leading-relaxed font-['Plus_Jakarta_Sans']">
+                      <p className="text-gray-700 text-sm sm:text-base leading-relaxed font-[system-ui]">
                         You are likely in a season of <span className="font-bold text-[#c09050]">Expansion</span>. 
                         Coaching is a future-focused, proactive partnership designed for those ready to move 
                         from "functioning" to "flourishing." It focuses on the "how" of manifesting your 
@@ -373,7 +395,7 @@ export default function PathForwardAssessment() {
 
                 {/* The Synergy Note */}
                 <div className="mb-8 p-4 rounded-xl bg-[#c09050]/5 border border-[#c09050]/10 text-center">
-                  <p className="text-xs sm:text-sm text-gray-600 font-['Plus_Jakarta_Sans']">
+                  <p className="text-xs sm:text-sm text-gray-600 font-[system-ui]">
                     <span className="font-bold text-[#c09050]">The Synergy:</span> These paths are often sequential. 
                     Many find it beneficial to begin with therapy to shore up their emotional ground, 
                     then transition into coaching once they feel stable enough to build their "skyscraper."
@@ -381,20 +403,20 @@ export default function PathForwardAssessment() {
                 </div>
 
                 {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col gap-3">
                   <a
                     href="https://calendly.com/manifestcoachingllc/clarity-call"
                     target="_blank"
-                    className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-black border-2 border-[#c09050] text-white font-bold transition-all duration-500 hover:bg-[#c09050] hover:border-[#c09050] hover:shadow-2xl hover:-translate-y-1 font-['Montserrat']"
+                    className="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full bg-black border-2 border-[#c09050] text-white font-bold text-sm sm:text-base whitespace-nowrap transition-all duration-500 hover:bg-[#c09050] hover:border-[#c09050] hover:shadow-xl hover:-translate-y-0.5 font-[system-ui]"
                   >
-                    <Calendar className="w-4 h-4" />
+                    <Calendar className="w-4 h-4 flex-shrink-0" />
                     Book Free Consultation
                   </a>
                   <button
                     onClick={resetAssessment}
-                    className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border-2 border-gray-300 text-gray-600 font-bold hover:border-[#c09050] hover:text-[#c09050] transition-all duration-300 font-['Montserrat']"
+                    className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full border-2 border-gray-200 text-gray-600 font-semibold text-sm sm:text-base whitespace-nowrap hover:border-[#c09050] hover:text-[#c09050] transition-all duration-300 font-[system-ui]"
                   >
-                    <ArrowRight className="w-4 h-4" />
+                    <ArrowRight className="w-4 h-4 flex-shrink-0" />
                     Take Assessment Again
                   </button>
                 </div>
@@ -403,28 +425,7 @@ export default function PathForwardAssessment() {
           </div>
         </motion.div>
 
-        {/* Trust Badges */}
-        <motion.div
-          variants={itemVariants}
-          initial="hidden"
-          animate={controls}
-          className="mt-12 md:mt-8 flex flex-wrap items-center justify-center gap-4 text-center"
-        >
-          <div className="flex items-center gap-2 text-sm text-gray-500">
-            <Shield className="w-4 h-4 text-[#c09050]" />
-            <span className="font-['Plus_Jakarta_Sans']">Evidence-Based Approaches</span>
-          </div>
-          <div className="w-px h-4 bg-gray-300 hidden sm:block"></div>
-          <div className="flex items-center gap-2 text-sm text-gray-500">
-            <Compass className="w-4 h-4 text-[#c09050]" />
-            <span className="font-['Plus_Jakarta_Sans']">26+ Years Experience</span>
-          </div>
-          <div className="w-px h-4 bg-gray-300 hidden sm:block"></div>
-          <div className="flex items-center gap-2 text-sm text-gray-500">
-            <Flower2 className="w-4 h-4 text-[#c09050]" />
-            <span className="font-['Plus_Jakarta_Sans']">Client-Centered Care</span>
-          </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

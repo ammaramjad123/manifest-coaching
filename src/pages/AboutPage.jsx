@@ -1,8 +1,8 @@
+import { images } from "../config/siteImages";
 import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import AboutProcessSection from "../components/AboutProcessSection";
-import OriginCurrent from "../components/OriginCurrent";
 import { 
     AlertCircle,
     Brain,
@@ -59,7 +59,7 @@ export default function AboutPage() {
 
   const stats = [
     { value: "26+", label: "Years Experience", icon: <Clock size={24} /> },
-    { value: "100+", label: "Clients Served", icon: <Users size={24} /> },
+    { value: "5K+", label: "Clients Served", icon: <Users size={24} /> },
     { value: "3", label: "States Licensed", icon: <MapPin size={24} /> },
     { value: "NYU", label: "Master's Degree", icon: <Award size={24} /> }
   ];
@@ -90,8 +90,8 @@ export default function AboutPage() {
   return (
     <div className="bg-white overflow-hidden">
       
-      {/* ========== HERO SECTION - SPLIT LAYOUT ========== */}
-      <section className="relative min-h-screen flex items-center bg-white overflow-hidden lg:pt-44 pt-38 pb-24">
+      {/* ========== ABOUT — COMBINED BIO (Intro · Journey · Story) ========== */}
+      <section className="relative bg-gradient-to-b from-white to-gray-50 overflow-hidden lg:pt-44 pt-36 pb-16 md:pb-20">
         
         {/* Background elements */}
         <div className="absolute top-0 right-0 w-1/2 h-full bg-[#c09050]/5 -skew-x-12 translate-x-32 z-0 hidden lg:block" />
@@ -121,7 +121,7 @@ export default function AboutPage() {
   ))}
 </div>
                 <span className="text-[10px] font-black uppercase tracking-widest text-[#c09050]">
-                  Trusted by 100+ Clients
+                  Trusted by 5K+ Clients
                 </span>
               </motion.div>
 
@@ -130,29 +130,33 @@ export default function AboutPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1, duration: 0.6 }}
-                className="text-5xl md:text-6xl lg:text-7xl font-black mb-6 tracking-tighter leading-[1.1] text-balance font-['Montserrat'] text-black"
+                className="text-5xl md:text-6xl lg:text-7xl font-black mb-6 tracking-tighter leading-[1.18] text-balance font-[system-ui] text-black"
               >
                 From{" "}
-                <span className="bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent italic">
-                  Brooklyn Grit&nbsp;
+                <span className="inline-block bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent italic leading-[1.18] pb-1 pr-1">
+                  Brooklyn Grit
                 </span>
                 <br />
                 to{" "}
-                <span className="bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent italic">
-                  Georgia Grace&nbsp;
+                <span className="inline-block bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent italic leading-[1.18] pb-1 pr-1">
+                  Georgia Grace
                 </span>
               </motion.h1>
 
               {/* Description */}
-              <motion.p
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.6 }}
-                className="text-black/70 text-base md:text-lg max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed font-['Plus_Jakarta_Sans']"
+                className="max-w-xl mx-auto lg:mx-0 mb-8 space-y-4"
               >
-                A seasoned Clinical Social Worker with over 26 years of experience, 
-                dedicated to helping you navigate life's most challenging circumstances.
-              </motion.p>
+                <p className="text-black/70 text-base md:text-lg leading-relaxed font-[system-ui]">
+                  As a child, Ayana was captivated by the stories of Harlem's Mother Clara Hale and the work of Covenant House — narratives that ignited a lifelong calling to serve as a bridge for those navigating life's most challenging terrains. She earned her BSW from SUNY Brockport (2000) and her MSW from New York University (2004), with a specialization in Clinical Social Work.
+                </p>
+                <p className="text-black/70 text-base md:text-lg leading-relaxed font-[system-ui]">
+                  With over 26 years of experience across the public and private sectors — and licensure in New York, New Jersey, and Rhode Island — she is trained in ART®, SĀF-T, DBT, and ACT, having guided more than 5,000 individuals toward healing through the MANIFEST Method. Today she navigates life from the serene landscape of Georgia alongside her husband, three children, and two dogs.
+                </p>
+              </motion.div>
 
               {/* CTA Buttons - UPDATED: Black + Gold Border & Transparent + Gold Border */}
               <motion.div
@@ -196,8 +200,8 @@ export default function AboutPage() {
                 </div>
                 <div className="w-px h-12 bg-black/10" />
                 <div className="flex flex-col items-center lg:items-start">
-                  <span className="text-3xl font-black text-black tracking-tight">100+</span>
-                  <span className="text-xs text-black/50 mt-2">Happy Clients</span>
+                  <span className="text-3xl font-black text-black tracking-tight">5K+</span>
+                  <span className="text-xs text-black/50 mt-2">Clients Served</span>
                 </div>
                 <div className="w-px h-12 bg-black/10 hidden sm:block" />
                 <div className="flex flex-col items-center lg:items-start">
@@ -216,9 +220,9 @@ export default function AboutPage() {
                 className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-white w-full max-w-[320px] sm:max-w-[380px] md:max-w-[450px] lg:max-w-[500px]"
               >
                 <img
-                  src="/new/priscilla-du-preez-aPa843frIzI-unsplash.jpg"
+                  src={images.about.headshot}
                   alt="Ayana Foluke McKanney"
-                  className="w-full h-auto aspect-[4/3] object-cover"
+                  className="w-full h-auto aspect-[3/4] object-cover object-top"
                 />
                 
                 {/* Overlay Glass Badge */}
@@ -231,7 +235,7 @@ export default function AboutPage() {
                   <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-[#c09050] flex items-center justify-center mb-1 sm:mb-2">
                     <Heart className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
                   </div>
-                  <p className="text-black text-[8px] sm:text-[10px] font-medium leading-relaxed font-['Plus_Jakarta_Sans']">
+                  <p className="text-black text-[8px] sm:text-[10px] font-medium leading-relaxed font-[system-ui]">
                     "Your history is a narrative, not a limitation. Your future is a blueprint, not a burden."
                   </p>
                   <p className="text-[#c09050] text-[7px] sm:text-[9px] font-bold mt-1">— Ayana McKanney, LCSW</p>
@@ -252,298 +256,155 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
+
+        {/* ── Mission quote (right under the bio/picture) ── */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="relative z-10 max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 mt-12 md:mt-16 text-center"
+        >
+          <Quote className="w-8 h-8 text-[#c09050]/40 fill-[#c09050]/20 mx-auto mb-4" />
+          <p className="text-gray-800 text-xl sm:text-2xl font-light italic leading-relaxed font-[system-ui]">
+            "Emotional wellness and regulation provides generational wealth — a life that honors both breath and death."
+          </p>
+          <p className="text-[#c09050] font-bold text-sm mt-4 font-[system-ui]">— Ayana Foluke McKanney, LCSW</p>
+        </motion.div>
       </section>
 
-     {/* ========== THE JOURNEY TIMELINE SECTION ========== */}
-      <section className="py-20 md:py-28 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-          
-          {/* Section Header */}
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#c09050]/10 border border-[#c09050]/20 mb-4">
-              <Compass className="w-4 h-4 text-[#c09050]" />
-              <span className="text-xs font-black uppercase tracking-wider text-[#c09050]">The Journey</span>
-            </div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-4 font-['Montserrat']">
-              A Lifelong Commitment to{" "}
-              <span className="bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent">
-                Healing
-              </span>
-            </h2>
-            <div className="w-16 h-0.5 bg-[#c09050] mx-auto rounded-full mb-6" />
-            <p className="text-black/60 text-lg font-['Plus_Jakarta_Sans'] max-w-2xl mx-auto">
-              From Harlem's inspiration to NYU's halls — a journey of purpose, passion, and partnership
-            </p>
-          </div>
-
-        {/* Timeline Grid - 3 Column Layout */}
-<div className="grid md:grid-cols-3 gap-6 lg:gap-8 relative">
-  
-  {/* Connecting Line (Desktop) */}
-  <div className="absolute top-1/3 left-0 right-0 h-0.5 bg-gradient-to-r from-[#c09050]/30 via-[#c09050]/50 to-[#c09050]/30 -translate-y-1/2 hidden md:block" />
-  
-  {/* Card 1 - The Calling */}
-  <motion.div
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5, delay: 0.1 }}
-    className="relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-[#c09050]/10 z-10 flex flex-col h-full"
-  >
-    <div className="w-16 h-16 rounded-full bg-[#c09050] flex items-center justify-center text-white text-2xl font-black mb-4 shadow-md">
-      01
-    </div>
-
-    <h3 className="text-xl font-black text-black mb-2 font-['Montserrat']">
-      The Calling
-    </h3>
-
-    <p className="text-black/70 text-base leading-relaxed font-['Plus_Jakarta_Sans']">
-      Captivated by Harlem's Mother Clara Hale and Covenant House, I discovered my life's mission: to serve as a bridge for those navigating life's most challenging terrains.
-    </p>
-
-    <div className="mt-auto pt-4 flex items-center gap-2">
-      <Heart className="w-4 h-4 text-[#c09050]" />
-      <span className="text-xs text-[#c09050] font-semibold">
-        Since Childhood
-      </span>
-    </div>
-  </motion.div>
-
-  {/* Card 2 - The Education */}
-  <motion.div
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5, delay: 0.2 }}
-    className="relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-[#c09050]/10 z-10 flex flex-col h-full"
-  >
-    <div className="w-16 h-16 rounded-full bg-[#c09050] flex items-center justify-center text-white text-2xl font-black mb-4 shadow-md">
-      02
-    </div>
-
-    <h3 className="text-xl font-black text-black mb-2 font-['Montserrat']">
-      The Education
-    </h3>
-
-    <p className="text-black/70 text-base leading-relaxed font-['Plus_Jakarta_Sans']">
-      BSW from SUNY Brockport (2000) • MSW from New York University (2004). A foundation built on clinical excellence and evidence-based practice.
-    </p>
-
-    <div className="mt-auto pt-4 flex items-center gap-2">
-      <Award className="w-4 h-4 text-[#c09050]" />
-      <span className="text-xs text-[#c09050] font-semibold">
-        NYU Graduate
-      </span>
-    </div>
-  </motion.div>
-
-  {/* Card 3 - The Practice */}
-  <motion.div
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5, delay: 0.3 }}
-    className="relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-[#c09050]/10 z-10 flex flex-col h-full"
-  >
-    <div className="w-16 h-16 rounded-full bg-[#c09050] flex items-center justify-center text-white text-2xl font-black mb-4 shadow-md">
-      03
-    </div>
-
-    <h3 className="text-xl font-black text-black mb-2 font-['Montserrat']">
-      The Practice
-    </h3>
-
-    <p className="text-black/70 text-base leading-relaxed font-['Plus_Jakarta_Sans']">
-      26+ years of experience across public and private sectors. Helping individuals heal, grow, and transform through the MANIFEST method.
-    </p>
-
-    <div className="mt-auto pt-4 flex items-center gap-2">
-      <Users className="w-4 h-4 text-[#c09050]" />
-      <span className="text-xs text-[#c09050] font-semibold">
-        100+ Lives Impacted
-      </span>
-    </div>
-  </motion.div>
-
-</div>
-
-          {/* Brooklyn Grit to Georgia Grace Banner */}
-<motion.div
-  variants={itemVariants}
-  initial="hidden"
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 0.6, delay: 0.4 }}
-  className="mt-12 md:mt-16"
->
-  <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#c09050]/10 to-[#d4a84b]/10 border border-[#c09050]/20 p-6 sm:p-8 text-center">
-    <div className="absolute top-0 right-0 w-40 h-40 bg-[#c09050]/20 rounded-full blur-3xl"></div>
-    <div className="absolute bottom-0 left-0 w-40 h-40 bg-[#d4a84b]/20 rounded-full blur-3xl"></div>
-    
-    <div className="relative z-10">
-      <Flower2 className="w-12 h-12 text-[#c09050] mx-auto mb-4" />
-      <p className="text-[#c09050] text-sm uppercase tracking-wider mb-2 font-['Montserrat'] font-semibold">The Philosophy</p>
-      <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-black mb-4 font-['Montserrat']">
-        From Brooklyn Grit to Georgia Grace
-      </h3>
-      <p className="text-gray-600 max-w-2xl mx-auto font-['Plus_Jakarta_Sans'] text-base sm:text-lg">
-        I bring honesty and directness — we won't shy away from hard truths — but I deliver it with a reflective, down-to-earth approach that honors your journey.
-      </p>
-    </div>
-  </div>
-</motion.div>
-        </div>
-      </section>
-
-   
    <AboutProcessSection/>
-
-      <OriginCurrent/>
 
       
 
      {/* ========== CREDENTIALS & EXPERTISE SECTION ========== */}
-      <section className="py-20 md:py-28 bg-gradient-to-b from-white to-gray-50 overflow-hidden relative">
-        
+      <section className="py-14 md:py-20 bg-gradient-to-b from-white to-gray-50 overflow-hidden relative">
+
         {/* Animated Background */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-1/4 left-0 w-64 h-64 bg-[#c09050]/5 rounded-full blur-3xl" />
           <div className="absolute bottom-1/4 right-0 w-80 h-80 bg-[#c09050]/5 rounded-full blur-3xl" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+        <div className="relative z-10 max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
           
-          {/* Section Header */}
-          <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+          {/* Header */}
+          <div className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#c09050]/10 border border-[#c09050]/20 mb-4">
               <Award className="w-4 h-4 text-[#c09050]" />
               <span className="text-xs font-black uppercase tracking-wider text-[#c09050]">Credentials & Expertise</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-4 font-['Montserrat']">
-              Education,{" "}
-              <span className="bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent">
-                Certifications
-              </span>
-              <br />
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-4 font-[system-ui]">
+              Education, Certifications{" "}
               <span className="bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent">
                 & Clinical Excellence
               </span>
             </h2>
-            <div className="w-16 h-0.5 bg-[#c09050] mx-auto rounded-full mb-6" />
-            <p className="text-black/60 text-lg font-['Plus_Jakarta_Sans']">
+            <div className="w-16 h-0.5 bg-[#c09050] mx-auto rounded-full mb-5" />
+            <p className="text-black/60 text-base md:text-lg font-[system-ui]">
               Over 26 years of clinical expertise grounded in evidence-based practice
             </p>
           </div>
 
-          {/* Main Credentials Grid */}
-          <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            
-            {/* Left Column - Education */}
+          {/* Top row — Education · Licensed · Experience */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 mb-5 md:mb-6">
+
+            {/* Education */}
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              className="bg-white rounded-2xl p-6 md:p-8 shadow-lg border border-[#c09050]/10 hover:shadow-xl transition-all duration-500"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-2xl p-6 md:p-7 shadow-lg border border-[#c09050]/10 hover:shadow-xl transition-all duration-500"
             >
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-xl bg-[#c09050] flex items-center justify-center">
-                  <Award className="w-6 h-6 text-white" />
+              <div className="flex items-center gap-3 mb-5">
+                <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#d4a84b] to-[#c09050] shadow-md shadow-[#c09050]/30 flex items-center justify-center flex-shrink-0">
+                  <Award className="w-5 h-5 text-white" />
                 </div>
-                <h3 className="text-2xl font-black text-black font-['Montserrat']">Education</h3>
+                <h3 className="text-lg font-black text-black font-[system-ui]">Education</h3>
               </div>
-              
-              <div className="space-y-6">
-                <div className="border-l-4 border-[#c09050] pl-4">
-                  <p className="font-black text-black text-lg">Master of Social Work (MSW)</p>
-                  <p className="text-black/70 font-semibold text-sm">New York University, 2004</p>
-                  <p className="text-black/50 text-sm mt-1">Specialization in Clinical Social Work</p>
-                </div>
-                <div className="border-l-4 border-[#c09050] pl-4">
-                  <p className="font-black text-black text-lg">Bachelor of Science in Social Work (BSW)</p>
-                  <p className="text-black/70 font-semibold text-sm">SUNY College at Brockport, 2000</p>
-                  <p className="text-black/50 text-sm mt-1">Summa Cum Laude</p>
-                </div>
+              <div className="border-l-4 border-[#c09050] pl-4">
+                <p className="font-black text-black text-base leading-snug">Master of Social Work (MSW)</p>
+                <p className="text-black/70 font-semibold text-sm mt-1">New York University · 2004</p>
+                <p className="text-black/50 text-sm mt-1">Specialization in Clinical Social Work</p>
               </div>
             </motion.div>
 
-            {/* Right Column - Certifications */}
+            {/* Licensed */}
             <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              className="bg-white rounded-2xl p-6 md:p-8 shadow-lg border border-[#c09050]/10 hover:shadow-xl transition-all duration-500"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.08 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-2xl p-6 md:p-7 shadow-lg border border-[#c09050]/10 hover:shadow-xl transition-all duration-500"
             >
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-xl bg-[#c09050] flex items-center justify-center">
-                  <Shield className="w-6 h-6 text-white" />
+              <div className="flex items-center gap-3 mb-5">
+                <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#d4a84b] to-[#c09050] shadow-md shadow-[#c09050]/30 flex items-center justify-center flex-shrink-0">
+                  <Shield className="w-5 h-5 text-white" />
                 </div>
-                <h3 className="text-2xl font-black text-black font-['Montserrat']">Certifications</h3>
+                <h3 className="text-lg font-black text-black font-[system-ui]">Licensed LCSW</h3>
               </div>
-              
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-[#c09050]/10 flex items-center justify-center mt-0.5">
-                    <CheckCircle className="w-3.5 h-3.5 text-[#c09050]" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-black">Accelerated Resolution Therapy (ART)</p>
-                    <p className="text-black/70 text-base">Evidence-based treatment for trauma, anxiety, depression, phobias, OCD, grief, and performance anxiety</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-[#c09050]/10 flex items-center justify-center mt-0.5">
-                    <CheckCircle className="w-3.5 h-3.5 text-[#c09050]" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-black">SĀF-T (Sensation Awareness Focus Technique)</p>
-                    <p className="text-black/70 text-base">A component drawn from ART focusing on eliminating distressing body sensations and promoting rapid calming</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-[#c09050]/10 flex items-center justify-center mt-0.5">
-                    <CheckCircle className="w-3.5 h-3.5 text-[#c09050]" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-black">Evidence-Based Modalities Trained</p>
-                    <p className="text-black/70 text-base">CBT, DBT, ACT, Mindfulness-Based Therapy, Trauma-Focused Care</p>
-                  </div>
-                </div>
+              <div className="space-y-2 text-sm">
+                <div className="flex justify-between gap-3"><span className="text-black/60 font-[system-ui]">New York</span><span className="text-black font-semibold font-[system-ui]">#098940</span></div>
+                <div className="flex justify-between gap-3"><span className="text-black/60 font-[system-ui]">New Jersey</span><span className="text-black font-semibold font-[system-ui]">#44SL06739500</span></div>
+                <div className="flex justify-between gap-3"><span className="text-black/60 font-[system-ui]">Rhode Island</span><span className="text-black font-semibold font-[system-ui]">#ISW04317</span></div>
+              </div>
+            </motion.div>
+
+            {/* Experience & Recognition */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.16 }}
+              viewport={{ once: true }}
+              className="sm:col-span-2 lg:col-span-1 bg-gradient-to-br from-[#c09050] to-[#d4a84b] rounded-2xl p-6 md:p-7 shadow-lg shadow-[#c09050]/20 text-white"
+            >
+              <div className="flex items-baseline gap-2 mb-1">
+                <span className="text-4xl font-black font-[system-ui]">26+</span>
+                <span className="text-white/85 font-semibold font-[system-ui]">Years of Practice</span>
+              </div>
+              <div className="w-full h-px bg-white/25 my-4" />
+              <div className="flex items-start gap-2.5">
+                <Star className="w-5 h-5 text-white fill-white mt-0.5 flex-shrink-0" />
+                <p className="text-white text-[15px] md:text-base font-semibold font-[system-ui] leading-snug">
+                  Master ART® Trainer — peer-reviewed, evidence-based treatment recognized by IS-ART.
+                </p>
               </div>
             </motion.div>
           </div>
 
-          {/* License Numbers - Highlighted Card */}
+          {/* Certifications — full width */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="mt-12 max-w-3xl mx-auto"
+            transition={{ duration: 0.5, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="bg-white rounded-2xl p-6 md:p-8 shadow-lg border border-[#c09050]/10"
           >
-            <div className="bg-gradient-to-r from-[#c09050]/5 to-[#c09050]/5 rounded-2xl p-6 text-center border border-[#c09050]/10">
-              <div className="flex items-center justify-center gap-2 mb-3">
-                <Shield className="w-5 h-5 text-[#c09050]" />
-                <span className="text-sm font-black uppercase tracking-wider text-[#c09050]">Licensed Clinical Social Worker</span>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#d4a84b] to-[#c09050] shadow-md shadow-[#c09050]/30 flex items-center justify-center flex-shrink-0">
+                <CheckCircle className="w-5 h-5 text-white" />
               </div>
-              <div className="flex flex-wrap justify-center gap-3 md:gap-6">
-                <span className="px-3 py-1 bg-white rounded-full text-sm font-medium text-black shadow-sm border border-[#c09050]/10">NY (#098940)</span>
-                <span className="px-3 py-1 bg-white rounded-full text-sm font-medium text-black shadow-sm border border-[#c09050]/10">NJ (#44SL06739500)</span>
-                <span className="px-3 py-1 bg-white rounded-full text-sm font-medium text-black shadow-sm border border-[#c09050]/10">RI (#ISW04317)</span>
-              </div>
-              <p className="text-black/60 text-sm mt-3 font-['Plus_Jakarta_Sans']">
-                Licensed to practice clinical therapy in New York, New Jersey, and Rhode Island
-              </p>
+              <h3 className="text-lg md:text-xl font-black text-black font-[system-ui]">Certifications & Specialized Training</h3>
             </div>
-          </motion.div>
 
-          {/* ART Recognition Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="mt-8 text-center"
-          >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-50 border border-[#c09050]/10">
-              <Star className="w-3 h-3 text-[#c09050] fill-[#c09050]" />
-              <span className="text-base font-semibold text-black/60 font-['Plus_Jakarta_Sans']">Peer-reviewed evidenced-based treatment recognized by IS-ART</span>
-              <Star className="w-3 h-3 text-[#c09050] fill-[#c09050]" />
+            <div className="grid sm:grid-cols-2 gap-x-8 gap-y-5">
+              {[
+                { t: "Accelerated Resolution Therapy (ART®)", d: "Evidence-based treatment for trauma, anxiety, depression, phobias, OCD, grief, and performance anxiety" },
+                { t: "SĀF-T (Sensations Awareness Focused Technique)", d: "An ART-derived component focused on eliminating distressing body sensations and promoting rapid calming" },
+                { t: "Certified Trauma-Informed Clinician", d: "Advanced training in trauma-informed care principles and clinical application across all therapeutic contexts" },
+                { t: "Evidence-Based Modalities Trained", d: "ART®, SĀF-T, DBT, ACT, and Mindfulness-Based Therapy" },
+              ].map((c, i) => (
+                <div key={i} className="flex items-start gap-3">
+                  <div className="w-6 h-6 rounded-full bg-[#c09050]/10 flex items-center justify-center mt-0.5 flex-shrink-0">
+                    <CheckCircle className="w-3.5 h-3.5 text-[#c09050]" />
+                  </div>
+                  <div>
+                    <p className="font-bold text-black font-[system-ui]">{c.t}</p>
+                    <p className="text-black/60 text-sm font-[system-ui] leading-relaxed mt-0.5">{c.d}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </motion.div>
         </div>
@@ -551,7 +412,7 @@ export default function AboutPage() {
 
      {/* ========== CTA SECTION ========== */}
       <section className="py-16 md:py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -567,9 +428,9 @@ export default function AboutPage() {
                 <Flower2 className="w-8 h-8 text-[#c09050]" />
               </div>
               
-              <h2 className="text-3xl sm:text-4xl font-black text-black mb-4 font-['Montserrat']">Ready to Begin Your Journey?</h2>
+              <h2 className="text-3xl sm:text-4xl font-black text-black mb-4 font-[system-ui]">Ready to Begin Your Journey?</h2>
               
-              <p className="text-black/70 text-lg mb-8 max-w-2xl mx-auto font-['Plus_Jakarta_Sans']">
+              <p className="text-black/70 text-lg mb-8 max-w-2xl mx-auto font-[system-ui]">
                 Schedule your free 15-minute consultation today. No pressure, just conversation.
               </p>
               
@@ -577,14 +438,14 @@ export default function AboutPage() {
                 <a
                   href="https://calendly.com/manifestcoachingllc/clarity-call"
                   target="_blank"
-                  className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-black border-2 border-[#c09050] text-white font-bold hover:bg-[#c09050] hover:border-[#c09050] hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 font-['Montserrat']"
+                  className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-black border-2 border-[#c09050] text-white font-bold hover:bg-[#c09050] hover:border-[#c09050] hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 font-[system-ui]"
                 >
                   <Calendar className="w-5 h-5" />
                   Book Free Consultation
                 </a>
                 <Link
                   to="/contact"
-                  className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-transparent border-2 border-[#c09050] text-[#c09050] font-bold hover:bg-[#c09050] hover:text-white hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 font-['Montserrat']"
+                  className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-transparent border-2 border-[#c09050] text-[#c09050] font-bold hover:bg-[#c09050] hover:text-white hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 font-[system-ui]"
                 >
                   <Phone className="w-5 h-5" />
                   Contact Me

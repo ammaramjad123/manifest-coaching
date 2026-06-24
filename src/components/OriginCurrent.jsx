@@ -66,7 +66,7 @@ export default function OriginStory() {
           
           <motion.h2
             variants={itemVariants}
-            className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-4 font-['Montserrat']"
+            className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-4 font-[system-ui]"
           >
             From{" "}
             <span className="bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent">
@@ -94,24 +94,24 @@ export default function OriginStory() {
         >
           <motion.p
             variants={itemVariants}
-            className="text-black/70 text-lg md:text-xl leading-relaxed font-['Plus_Jakarta_Sans']"
+            className="text-black/70 text-lg md:text-xl leading-relaxed font-[system-ui]"
           >
             As a child, I was captivated by the stories of Harlem's Mother Clara Hale and the transformative impact of Covenant House. Those narratives did more than inspire me—they ignited a lifelong calling to serve as a bridge for those navigating life's most challenging terrains.
           </motion.p>
 
           <motion.p
             variants={itemVariants}
-            className="text-black/70 text-lg md:text-xl leading-relaxed font-['Plus_Jakarta_Sans']"
+            className="text-black/70 text-lg md:text-xl leading-relaxed font-[system-ui]"
           >
             With over 26 years of experience across public and private sectors, and an MSW from New York University, I have stood in the gap for individuals across the human spectrum. Whether supporting families navigating the judicial system or assisting high-achievers facing the "heavy success" of burnout, my work is one of constant curation: sifting through life's "grit" to uncover the "grace" beneath.
           </motion.p>
 
           <motion.p
             variants={itemVariants}
-            className="text-black/70 text-lg md:text-xl leading-relaxed font-['Plus_Jakarta_Sans']"
+            className="text-black/70 text-lg md:text-xl leading-relaxed font-[system-ui]"
           >
-            I believe your life is your most important work of art, but even the best artists occasionally get stuck. My practice is rooted in the{" "}
-            <span className="font-bold text-[#c09050]">MANIFEST method</span> — Motivating And Nurturing Internal Fulfillment. Whether you are seeking a clinical process, a life pivot, or a legacy passage, I provide a space where you are seen, heard, and empowered to move from paralysis to possibility.
+            Your life is your most important work of art, but even the best artists occasionally get stuck. The practice is rooted in the{" "}
+            <span className="font-bold text-[#c09050]">MANIFEST method</span> — Motivating And Nurturing Internal Fulfillment. Whether you are seeking a clinical process, a life pivot, or a legacy passage, this is a space where you are seen, heard, and empowered to move from paralysis to possibility.
           </motion.p>
 
           {/* Brooklyn Grit to Georgia Grace Banner */}
@@ -119,7 +119,7 @@ export default function OriginStory() {
             variants={itemVariants}
             className="my-8 p-6 md:p-8 rounded-2xl bg-gradient-to-r from-[#c09050]/5 to-[#d4a84b]/5 border border-[#c09050]/10"
           >
-            <p className="text-xl md:text-2xl font-black text-black font-['Montserrat']">
+            <p className="text-xl md:text-2xl font-black text-black font-[system-ui]">
               I bring <span className="text-[#c09050]">"Brooklyn Grit"</span> to our work — we won't shy away from hard truths —
               <br />
               but I deliver it with <span className="text-[#c09050]">"Georgia Grace"</span>: a reflective, down-to-earth approach.
@@ -128,7 +128,7 @@ export default function OriginStory() {
 
           <motion.p
             variants={itemVariants}
-            className="text-black/70 text-lg md:text-xl leading-relaxed font-['Plus_Jakarta_Sans']"
+            className="text-black/70 text-lg md:text-xl leading-relaxed font-[system-ui]"
           >
             The Peace Practice is the clinical home of MANIFEST Coaching LLC. Our practice is built on the MANIFEST method — a framework designed to bridge clinical excellence with intentional living, helping you curate a life of purpose.
           </motion.p>
@@ -148,7 +148,7 @@ export default function OriginStory() {
               <div className="absolute -top-8 -left-8 opacity-20">
                 <Quote className="w-12 h-12 text-[#c09050]" />
               </div>
-              <p className="text-2xl md:text-3xl lg:text-4xl font-black text-black max-w-3xl mx-auto font-['Montserrat'] leading-tight">
+              <p className="text-2xl md:text-3xl lg:text-4xl font-black text-black max-w-3xl mx-auto font-[system-ui] leading-tight">
                 "We all share the guarantee of breath & death;
                 <br />
                 <span className="bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent">
@@ -161,7 +161,7 @@ export default function OriginStory() {
             </div>
             <div className="mt-8 flex items-center justify-center gap-2">
               <div className="w-12 h-px bg-gradient-to-r from-transparent to-[#c09050]" />
-              <span className="text-gray-500 text-sm font-['Plus_Jakarta_Sans']">— Ayana Foluke McKanney, LCSW</span>
+              <span className="text-gray-500 text-sm font-[system-ui]">— Ayana Foluke McKanney, LCSW</span>
               <div className="w-12 h-px bg-gradient-to-l from-transparent to-[#c09050]" />
             </div>
           </motion.div>

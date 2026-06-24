@@ -1,3 +1,4 @@
+import { images } from "../config/siteImages";
 import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
@@ -35,60 +36,26 @@ export default function ServicesHero() {
 
   const stats = [
     { label: "Years Experience", value: "26+" },
-    { label: "Clients Served", value: "100+" },
+    { label: "Clients Served", value: "5K+" },
     { label: "Insurance Plans", value: "15+" },
     { label: "States Licensed", value: "3" }
   ];
 
   return (
-    <section className="relative w-full min-h-screen bg-white flex flex-col items-center justify-center overflow-x-hidden pt-44 pb-20">
-      
-      {/* Animated Background Orbs */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-        <motion.div 
-          className="absolute top-20 right-10 w-96 h-96 bg-[#c09050]/5 rounded-full blur-3xl"
-          animate={{ x: [0, -30, 0], y: [0, 20, 0] }}
-          transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-        />
-        <motion.div 
-          className="absolute bottom-20 left-10 w-96 h-96 bg-[#d4a84b]/5 rounded-full blur-3xl"
-          animate={{ x: [0, 30, 0], y: [0, -20, 0] }}
-          transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
-        />
-        <motion.div 
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#c09050]/3 rounded-full blur-3xl"
-          animate={{ scale: [1, 1.2, 1] }}
-          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-        />
-      </div>
+    <section className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-x-hidden pt-44 pb-20">
 
-      {/* Floating Particles */}
-      <div className="absolute inset-0 z-0 pointer-events-none">
-        {[...Array(30)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-1 h-1 bg-[#c09050]/20 rounded-full"
-            initial={{
-              x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1000),
-              y: Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1000),
-              opacity: 0,
-            }}
-            animate={{
-              y: [null, -100, -200],
-              opacity: [0, 0.4, 0],
-            }}
-            transition={{
-              duration: Math.random() * 6 + 5,
-              repeat: Infinity,
-              delay: Math.random() * 5,
-              ease: "linear",
-            }}
-          />
-        ))}
+      {/* Full background image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src={images.services.hero}
+          alt=""
+          className="w-full h-full object-cover object-center"
+        />
+        {/* Radial white overlay — bright in center for text, lets image breathe at edges */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_80%_at_50%_50%,rgba(255,255,255,0.88)_0%,rgba(255,255,255,0.65)_50%,rgba(255,255,255,0.15)_100%)]" />
+        {/* Bottom fade to white so it blends into the page below */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white" />
       </div>
-
-      {/* Lighting & Depth */}
-      <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_center,transparent_20%,rgba(0,0,0,0.02)_60%,rgba(0,0,0,0.05)_100%)] pointer-events-none" />
 
       {/* Hero Content */}
       <div className="relative z-30 container mx-auto px-6 lg:px-12 flex flex-col items-center">
@@ -115,14 +82,9 @@ export default function ServicesHero() {
             variants={itemVariants}
             className="relative z-50 text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black text-black tracking-tighter leading-[1.1] uppercase break-words"
           >
-            Your{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#c09050] to-[#d4a84b] italic font-medium tracking-tight">
-              Journey.
-            </span>
+            Y<span className="inline-block pr-[3px] bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent">OUR</span> Journey
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#c09050] via-[#d4a84b] to-[#c09050]">
-              Our Partnership&nbsp;
-            </span>
+            <span className="inline-block pr-[3px] bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent">OUR</span> Partnership
           </motion.h1>
 
           {/* Description */}

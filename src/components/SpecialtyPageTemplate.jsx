@@ -41,12 +41,12 @@ export default function SpecialtyPageTemplate({ data }) {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-7"
             >
               <Sparkles className="w-4 h-4 text-[#c09050]" />
-              <span className="text-xs font-black uppercase tracking-[0.18em] text-white font-['Montserrat']">{data.badge}</span>
+              <span className="text-xs font-black uppercase tracking-[0.18em] text-white font-[system-ui]">{data.badge}</span>
             </motion.div>
 
             <motion.h1
               initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.35 }}
-              className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white mb-6 font-['Montserrat'] leading-[1.05] tracking-tight"
+              className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white mb-6 font-[system-ui] leading-[1.05] tracking-tight"
             >
               {data.titleLine1}
               {data.titleLine2 && (
@@ -61,7 +61,7 @@ export default function SpecialtyPageTemplate({ data }) {
 
             <motion.p
               initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.45 }}
-              className="text-white/80 text-lg sm:text-xl max-w-2xl mx-auto mb-9 font-['Plus_Jakarta_Sans'] leading-relaxed"
+              className="text-white/80 text-lg sm:text-xl max-w-2xl mx-auto mb-9 font-[system-ui] leading-relaxed"
             >
               {data.intro}
             </motion.p>
@@ -74,7 +74,7 @@ export default function SpecialtyPageTemplate({ data }) {
                 whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.96 }}
                 href="https://calendly.com/manifestcoachingllc/clarity-call"
                 target="_blank" rel="noreferrer"
-                className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-[#c09050] to-[#d4a84b] text-white font-bold hover:shadow-2xl transition-all duration-500 font-['Montserrat']"
+                className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-[#c09050] to-[#d4a84b] text-white font-bold hover:shadow-2xl transition-all duration-500 font-[system-ui]"
               >
                 <Calendar className="w-5 h-5" />
                 Book Free Alignment Call
@@ -83,7 +83,7 @@ export default function SpecialtyPageTemplate({ data }) {
               <motion.a
                 whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.96 }}
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/30 text-white font-bold hover:bg-white/20 transition-all duration-500 font-['Montserrat']"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/30 text-white font-bold hover:bg-white/20 transition-all duration-500 font-[system-ui]"
               >
                 Get in Touch
               </motion.a>
@@ -102,7 +102,7 @@ export default function SpecialtyPageTemplate({ data }) {
                   {i > 0 && <div className="w-px h-4 bg-white/20" />}
                   <div className="flex items-center gap-2">
                     <Icon className="w-4 h-4 text-[#c09050]" />
-                    <span className="text-white/60 text-xs font-['Plus_Jakarta_Sans']">{label}</span>
+                    <span className="text-white/60 text-xs font-[system-ui]">{label}</span>
                   </div>
                 </React.Fragment>
               ))}
@@ -129,7 +129,7 @@ export default function SpecialtyPageTemplate({ data }) {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true, margin: "-80px" }}
-          className="relative overflow-hidden py-20 sm:py-28"
+          className="relative overflow-hidden py-12 sm:py-16"
           style={{ backgroundColor: idx % 2 === 0 ? "#ffffff" : "#fefcf7" }}
         >
           <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
@@ -144,12 +144,12 @@ export default function SpecialtyPageTemplate({ data }) {
               >
                 <div className="max-w-xl mx-auto lg:mx-0">
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#c09050]/10 border border-[#c09050]/20 mb-6">
-                    <span className="text-xs font-black uppercase tracking-[0.16em] text-[#c09050] font-['Montserrat']">
+                    <span className="text-xs font-black uppercase tracking-[0.16em] text-[#c09050] font-[system-ui]">
                       {section.subtitle}
                     </span>
                   </div>
 
-                  <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-6 font-['Montserrat'] leading-tight">
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-6 font-[system-ui] leading-tight">
                     {section.title}
                   </h2>
 
@@ -164,7 +164,7 @@ export default function SpecialtyPageTemplate({ data }) {
                           className="flex items-center gap-3 p-3 rounded-xl bg-gray-50 border border-gray-100"
                         >
                           <div className="w-2 h-2 rounded-full bg-[#c09050] flex-shrink-0" />
-                          <span className="text-gray-700 text-sm font-['Plus_Jakarta_Sans']">{item}</span>
+                          <span className="text-gray-700 text-sm font-[system-ui]">{item}</span>
                         </motion.div>
                       ))}
                     </div>
@@ -184,22 +184,22 @@ export default function SpecialtyPageTemplate({ data }) {
                               <div className="w-10 h-10 rounded-full bg-[#c09050]/10 flex items-center justify-center group-hover:scale-110 transition-transform">
                                 <Icon className="w-4 h-4 text-[#c09050]" />
                               </div>
-                              <h3 className="font-black text-black text-base font-['Montserrat']">{approach.name}</h3>
+                              <h3 className="font-black text-black text-base font-[system-ui]">{approach.name}</h3>
                             </div>
-                            <p className="text-gray-600 text-base font-['Plus_Jakarta_Sans'] pl-13 leading-relaxed">{approach.desc}</p>
+                            <p className="text-gray-600 text-base font-[system-ui] pl-13 leading-relaxed">{approach.desc}</p>
                           </motion.div>
                         );
                       })}
                     </div>
                   ) : (
                     <>
-                      <p className="text-gray-600 text-lg leading-relaxed mb-6 font-['Plus_Jakarta_Sans']">
+                      <p className="text-gray-600 text-lg leading-relaxed mb-6 font-[system-ui]">
                         {section.body}
                       </p>
                       {section.stat && (
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#c09050]/5 border border-[#c09050]/10">
                           <Quote className="w-3 h-3 text-[#c09050]" />
-                          <span className="text-xs text-gray-600 font-['Plus_Jakarta_Sans']">{section.stat}</span>
+                          <span className="text-xs text-gray-600 font-[system-ui]">{section.stat}</span>
                         </div>
                       )}
                     </>
@@ -235,11 +235,11 @@ export default function SpecialtyPageTemplate({ data }) {
               viewport={{ once: true }}
             >
               <Quote className="w-10 h-10 text-[#c09050]/40 mx-auto mb-6" />
-              <p className="text-white text-xl sm:text-2xl md:text-3xl font-['Plus_Jakarta_Sans'] leading-relaxed italic mb-5">
+              <p className="text-white text-xl sm:text-2xl md:text-3xl font-[system-ui] leading-relaxed italic mb-5">
                 "{data.quote.text}"
               </p>
               {data.quote.author && (
-                <p className="text-[#c09050] font-bold text-sm uppercase tracking-widest font-['Montserrat']">
+                <p className="text-[#c09050] font-bold text-sm uppercase tracking-widest font-[system-ui]">
                   — {data.quote.author}
                 </p>
               )}
@@ -250,7 +250,7 @@ export default function SpecialtyPageTemplate({ data }) {
 
       {/* ══════════════════════ FAQ ══════════════════════ */}
       {data.faqs?.length > 0 && (
-        <section className="py-16 sm:py-24 bg-white">
+        <section className="py-10 sm:py-14 bg-white">
           <div className="max-w-4xl mx-auto px-5 sm:px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -261,9 +261,9 @@ export default function SpecialtyPageTemplate({ data }) {
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#c09050]/10 border border-[#c09050]/20 mb-5">
                 <Sparkles className="w-4 h-4 text-[#c09050]" />
-                <span className="text-xs font-black uppercase tracking-[0.16em] text-[#c09050] font-['Montserrat']">Common Questions</span>
+                <span className="text-xs font-black uppercase tracking-[0.16em] text-[#c09050] font-[system-ui]">Common Questions</span>
               </div>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black font-['Montserrat']">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black font-[system-ui]">
                 Have a{" "}
                 <span className="bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent">
                   Question?
@@ -285,7 +285,7 @@ export default function SpecialtyPageTemplate({ data }) {
                     onClick={() => setOpenFAQ(openFAQ === i ? null : i)}
                     className="w-full flex items-center justify-between p-5 sm:p-6 text-left bg-white hover:bg-[#c09050]/[0.025] transition-colors"
                   >
-                    <span className="font-bold text-black text-base sm:text-lg pr-4 font-['Montserrat']">{faq.q}</span>
+                    <span className="font-bold text-black text-base sm:text-lg pr-4 font-[system-ui]">{faq.q}</span>
                     {openFAQ === i
                       ? <ChevronUp className="w-5 h-5 text-[#c09050] flex-shrink-0" />
                       : <ChevronDown className="w-5 h-5 text-gray-400 flex-shrink-0" />}
@@ -296,7 +296,7 @@ export default function SpecialtyPageTemplate({ data }) {
                       transition={{ duration: 0.25 }}
                       className="px-5 sm:px-6 pb-6 bg-white border-t border-gray-50"
                     >
-                      <p className="text-gray-600 text-base font-['Plus_Jakarta_Sans'] leading-relaxed pt-4">{faq.a}</p>
+                      <p className="text-gray-600 text-base font-[system-ui] leading-relaxed pt-4">{faq.a}</p>
                     </motion.div>
                   )}
                 </motion.div>
@@ -310,8 +310,8 @@ export default function SpecialtyPageTemplate({ data }) {
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img src={data.ctaBgImage} alt="Begin your journey" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#c09050]/90 to-[#d4a84b]/85" />
-          <div className="absolute inset-0 bg-black/15" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#c09050]/25 to-[#d4a84b]/20" />
+          <div className="absolute inset-0 bg-black/25" />
         </div>
 
         <div className="absolute inset-0 pointer-events-none z-10">
@@ -344,7 +344,7 @@ export default function SpecialtyPageTemplate({ data }) {
           <motion.h2
             initial={{ y: 30, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-6 font-['Montserrat'] leading-tight"
+            className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-6 font-[system-ui] leading-tight"
           >
             {data.ctaHeading}
           </motion.h2>
@@ -352,7 +352,7 @@ export default function SpecialtyPageTemplate({ data }) {
           <motion.p
             initial={{ y: 30, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-white/90 text-lg md:text-xl mb-10 font-['Plus_Jakarta_Sans'] max-w-2xl mx-auto leading-relaxed"
+            className="text-white/90 text-lg md:text-xl mb-10 font-[system-ui] max-w-2xl mx-auto leading-relaxed"
           >
             {data.ctaBody}
           </motion.p>
@@ -366,7 +366,7 @@ export default function SpecialtyPageTemplate({ data }) {
               whileHover={{ scale: 1.05, y: -3 }} whileTap={{ scale: 0.98 }}
               href="https://calendly.com/manifestcoachingllc/clarity-call"
               target="_blank" rel="noreferrer"
-              className="inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-white text-[#c09050] font-black text-lg hover:shadow-2xl transition-all duration-500 font-['Montserrat']"
+              className="inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-white text-[#c09050] font-black text-lg hover:shadow-2xl transition-all duration-500 font-[system-ui]"
             >
               <Calendar className="w-5 h-5" />
               Book Free Consultation
@@ -375,7 +375,7 @@ export default function SpecialtyPageTemplate({ data }) {
             <motion.a
               whileHover={{ scale: 1.05, y: -3 }} whileTap={{ scale: 0.98 }}
               href="/contact"
-              className="inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-white/10 backdrop-blur-sm border-2 border-white text-white font-black text-lg hover:bg-white hover:text-[#c09050] transition-all duration-500 font-['Montserrat']"
+              className="inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-white/10 backdrop-blur-sm border-2 border-white text-white font-black text-lg hover:bg-white hover:text-[#c09050] transition-all duration-500 font-[system-ui]"
             >
               Get in Touch
             </motion.a>
@@ -394,7 +394,7 @@ export default function SpecialtyPageTemplate({ data }) {
                 {i > 0 && <div className="w-px h-4 bg-white/30" />}
                 <div className="flex items-center gap-2">
                   <Icon className="w-4 h-4 text-white/80" />
-                  <span className="text-white/70 text-xs font-['Plus_Jakarta_Sans']">{label}</span>
+                  <span className="text-white/70 text-xs font-[system-ui]">{label}</span>
                 </div>
               </React.Fragment>
             ))}

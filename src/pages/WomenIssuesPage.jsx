@@ -1,3 +1,4 @@
+import { images } from "../config/siteImages";
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -59,7 +60,7 @@ export default function WomenIssuesPage() {
       title: "The Invisible Load",
       subtitle: "Understanding Women's Mental Health",
       description: "The mental load of managing households, careers, relationships, and self-care. The pressure to be everything to everyone. The guilt of taking time for yourself. These aren't personal failings—they're systemic challenges that women have been navigating for generations. You deserve a space where you can exhale.",
-      image: "/new/yoann-boyer-i14h2xyPr18-unsplash.jpg",
+      image: images.women.section1,
       imagePosition: "right",
       stat: "Women are twice as likely as men to experience anxiety and depression"
     },
@@ -76,7 +77,7 @@ export default function WomenIssuesPage() {
         "Loss of interest in things you once loved",
         "Feelings of guilt or inadequacy as a mother"
       ],
-      image: "/new/satit-wongsampan-9SM7OgDXmQY-unsplash (1).jpg",
+      image: images.women.section2,
       imagePosition: "left",
       isSymptoms: true
     },
@@ -84,8 +85,8 @@ export default function WomenIssuesPage() {
       id: 2,
       title: "Loss, Grief, & Infertility",
       subtitle: "Honoring your journey to motherhood",
-      description: "Pregnancy loss, miscarriage, stillbirth, and infertility are among the most painful experiences a woman can face. The grief is real. The hope and heartbreak can coexist. You don't have to navigate this alone. I provide a safe, compassionate space to honor your loss and your longing.",
-      image: "/new/hardingferrent-IpZ89zebL18-unsplash.jpg",
+      description: "Pregnancy loss, miscarriage, stillbirth, and infertility are among the most painful experiences a woman can face. The grief is real. The hope and heartbreak can coexist. You don't have to navigate this alone. A safe, compassionate space is provided to honor your loss and your longing.",
+      image: images.women.section3,
       imagePosition: "right",
       stat: "1 in 4 pregnancies end in miscarriage • 1 in 8 couples experience infertility"
     },
@@ -100,7 +101,7 @@ export default function WomenIssuesPage() {
         { name: "Identity & Purpose", desc: "Rediscovering yourself beyond roles", color: "#c09050" },
         { name: "Self-Compassion", desc: "Releasing guilt and embracing rest", color: "#d4a84b" }
       ],
-      image: "/new/valerii-ladomyriak-7oGXQII7AWc-unsplash (1).jpg",
+      image: images.women.section4,
       imagePosition: "left",
       isApproaches: true
     },
@@ -109,7 +110,7 @@ export default function WomenIssuesPage() {
       title: "Body, Self, & Society",
       subtitle: "Healing self-esteem and body image",
       description: "From diet culture to anti-aging messages, society constantly tells women they're not enough. Thin enough. Young enough. Successful enough. Together, we'll untangle these messages, reconnect with your authentic self, and build a relationship with your body based on respect, not criticism.",
-      image: "/new/katarzyna-zygnerska-G4rGkoRnoNw-unsplash.jpg",
+      image: images.women.section5,
       imagePosition: "right",
       stat: "85% of women report dissatisfaction with their body image"
     },
@@ -118,7 +119,7 @@ export default function WomenIssuesPage() {
       title: "Caregiver Burnout",
       subtitle: "You can't pour from an empty cup",
       description: "Whether you're caring for children, aging parents, or both—caregiver burnout is real. The exhaustion, the resentment, the guilt for feeling resentful. You deserve care too. Let's find sustainable ways to support your loved ones without losing yourself.",
-      image: "/new/venwardo-F-ga6WwcqOQ-unsplash.jpg",
+      image: images.women.section6,
       imagePosition: "left",
       stat: "60% of caregivers experience symptoms of depression"
     },
@@ -127,7 +128,7 @@ export default function WomenIssuesPage() {
       title: "Your Voice, Your Power",
       subtitle: "Reclaiming your identity and purpose",
       description: "Who are you when you're not being someone's mother, partner, daughter, or employee? What do you want—not what you're supposed to want. Therapy can help you reconnect with your authentic self, set boundaries, and build a life that truly fulfills you.",
-      image: "/new/alonso-reyes-JCaw4DRqekk-unsplash.jpg",
+      image: images.women.section7,
       imagePosition: "right",
       stat: "You've already taken the bravest step"
     }
@@ -141,7 +142,7 @@ export default function WomenIssuesPage() {
         
         <div className="absolute inset-0 z-0">
           <img
-            src="/new/sincerely-media-kSeo6slWMQE-unsplash.jpg"
+            src={images.women.hero}
             alt="Woman in nature finding peace"
             className="w-full h-full object-cover scale-110"
           />
@@ -180,14 +181,14 @@ export default function WomenIssuesPage() {
               <span className="text-xs font-black uppercase tracking-wider text-white">Women's Mental Health</span>
             </motion.div>
             
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white mb-6 font-['Montserrat'] leading-tight">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white mb-6 font-[system-ui] leading-tight">
               Women's{" "}
               <span className="bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent">
                 Issues
               </span>
             </h1>
             
-            <p className="text-white/80 text-lg sm:text-xl max-w-2xl mx-auto mb-8 font-['Plus_Jakarta_Sans'] leading-relaxed">
+            <p className="text-white/80 text-lg sm:text-xl max-w-2xl mx-auto mb-8 font-[system-ui] leading-relaxed">
               A safe, empowering space to navigate the unique challenges women face across all life stages.
             </p>
             
@@ -197,7 +198,7 @@ export default function WomenIssuesPage() {
                 whileTap={{ scale: 0.95 }}
                 href="https://calendly.com/manifestcoachingllc/clarity-call"
                 target="_blank"
-                className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-[#c09050] to-[#d4a84b] text-white font-bold hover:shadow-2xl transition-all duration-500 font-['Montserrat']"
+                className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-[#c09050] to-[#d4a84b] text-white font-bold hover:shadow-2xl transition-all duration-500 font-[system-ui]"
               >
                 <Calendar className="w-5 h-5" />
                 Free Consultation
@@ -207,7 +208,7 @@ export default function WomenIssuesPage() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 href="/contact"
-                className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/30 text-white font-bold hover:bg-white/20 transition-all duration-500 font-['Montserrat']"
+                className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/30 text-white font-bold hover:bg-white/20 transition-all duration-500 font-[system-ui]"
               >
                 <Phone className="w-5 h-5" />
                 Contact Me
@@ -282,7 +283,7 @@ export default function WomenIssuesPage() {
                     </span>
                   </div>
                   
-                  <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-6 font-['Montserrat'] leading-tight">
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-6 font-[system-ui] leading-tight">
                     {section.title}
                   </h2>
                   
@@ -297,7 +298,7 @@ export default function WomenIssuesPage() {
                           className="flex items-center gap-3 p-3 rounded-xl bg-gray-50 border border-gray-100"
                         >
                           <div className="w-2 h-2 rounded-full bg-[#c09050]" />
-                          <span className="text-gray-700 text-sm font-['Plus_Jakarta_Sans']">{symptom}</span>
+                          <span className="text-gray-700 text-sm font-[system-ui]">{symptom}</span>
                         </motion.div>
                       ))}
                     </div>
@@ -323,13 +324,13 @@ export default function WomenIssuesPage() {
                     </div>
                   ) : (
                     <>
-                      <p className="text-gray-600 text-lg leading-relaxed mb-6 font-['Plus_Jakarta_Sans']">
+                      <p className="text-gray-600 text-lg leading-relaxed mb-6 font-[system-ui]">
                         {section.description}
                       </p>
                       {section.stat && (
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#c09050]/5 border border-[#c09050]/10 mb-6">
                           <Quote className="w-3 h-3 text-[#c09050]" />
-                          <span className="text-xs text-gray-600 font-['Plus_Jakarta_Sans']">{section.stat}</span>
+                          <span className="text-xs text-gray-600 font-[system-ui]">{section.stat}</span>
                         </div>
                       )}
                     </>
@@ -362,7 +363,7 @@ export default function WomenIssuesPage() {
         
         <div className="absolute inset-0 z-0">
           <img
-            src="/new/kamil-kalkan-BTpIUnszs_Q-unsplash.jpg"
+            src={images.women.cta}
             alt="Healing journey"
             className="w-full h-full object-cover"
           />
@@ -397,7 +398,7 @@ export default function WomenIssuesPage() {
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-6 font-['Montserrat'] leading-tight"
+            className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-6 font-[system-ui] leading-tight"
           >
             You Deserve a Space
             <br />
@@ -408,7 +409,7 @@ export default function WomenIssuesPage() {
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-white/90 text-lg md:text-xl mb-10 font-['Plus_Jakarta_Sans'] max-w-2xl mx-auto"
+            className="text-white/90 text-lg md:text-xl mb-10 font-[system-ui] max-w-2xl mx-auto"
           >
             Schedule your free 15-minute consultation today. No pressure, just conversation.
           </motion.p>
@@ -424,7 +425,7 @@ export default function WomenIssuesPage() {
               whileTap={{ scale: 0.98 }}
               href="https://calendly.com/manifestcoachingllc/clarity-call"
               target="_blank"
-              className="group inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-white text-[#c09050] font-black text-lg hover:shadow-2xl transition-all duration-500 font-['Montserrat']"
+              className="group inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-white text-[#c09050] font-black text-lg hover:shadow-2xl transition-all duration-500 font-[system-ui]"
             >
               <Calendar className="w-5 h-5" />
               Book Free Consultation
@@ -434,7 +435,7 @@ export default function WomenIssuesPage() {
               whileHover={{ scale: 1.05, y: -3 }}
               whileTap={{ scale: 0.98 }}
               href="/contact"
-              className="group inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-white/10 backdrop-blur-sm border-2 border-white text-white font-black text-lg hover:bg-white hover:text-[#c09050] transition-all duration-500 font-['Montserrat']"
+              className="group inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-white/10 backdrop-blur-sm border-2 border-white text-white font-black text-lg hover:bg-white hover:text-[#c09050] transition-all duration-500 font-[system-ui]"
             >
               <Phone className="w-5 h-5" />
               Contact Me

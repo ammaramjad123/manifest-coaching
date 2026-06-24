@@ -1,6 +1,7 @@
 import React from "react";
-import { 
-  FaHeart, 
+import { images } from "../config/siteImages";
+import {
+  FaHeart,
   FaPhone, 
   FaEnvelope, 
   FaMapMarkerAlt, 
@@ -67,24 +68,26 @@ export default function Footer() {
             {/* Left Side - Brand */}
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-[#c09050] to-[#d4a84b] flex items-center justify-center">
-                  <FaHeart className="w-6 h-6 text-white" />
-                </div>
+                <img
+                  src={images.logo}
+                  alt="The Peace Practice"
+                  className="h-14 w-auto object-contain flex-shrink-0"
+                />
                 <div>
-                  <h2 className="text-2xl sm:text-3xl font-black text-black font-['Montserrat']">
+                  <h2 className="text-2xl sm:text-3xl font-black text-black font-[system-ui]">
                     The Peace Practice
                   </h2>
-                  <p className="text-gray-500 text-sm font-['Plus_Jakarta_Sans']">
+                  <p className="text-gray-500 text-sm font-[system-ui]">
                     Ayana Foluke McKanney, LCSW
                   </p>
                 </div>
               </div>
-              <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-md font-['Plus_Jakarta_Sans'] mb-4">
+              <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-md font-[system-ui] mb-4">
                 Your Journey. Our Partnership. Providing compassionate therapy, transformational coaching, and professional training to help you navigate life's challenges and discover your path to peace.
               </p>
               <div className="flex items-center gap-2">
                 <FaShieldAlt className="w-4 h-4 text-[#c09050]" />
-                <span className="text-gray-400 text-xs font-['Plus_Jakarta_Sans']">HIPAA Compliant • Secure Platform</span>
+                <span className="text-gray-400 text-xs font-[system-ui]">HIPAA Compliant • Secure Platform</span>
               </div>
             </div>
 
@@ -92,16 +95,16 @@ export default function Footer() {
             <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 border border-gray-100">
               <div className="flex items-center gap-2 mb-3">
                 <FaStar className="w-5 h-5 text-[#c09050]" />
-                <h3 className="text-black font-bold text-lg font-['Montserrat']">Ready to Begin Your Journey?</h3>
+                <h3 className="text-black font-bold text-lg font-[system-ui]">Ready to Begin Your Journey?</h3>
               </div>
-              <p className="text-gray-500 text-sm mb-4 font-['Plus_Jakarta_Sans']">
+              <p className="text-gray-500 text-sm mb-4 font-[system-ui]">
                 Schedule your free 15-minute consultation today. No pressure, just conversation.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
                   href="https://calendly.com/manifestcoachingllc/clarity-call"
                   target="_blank"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-black border-2 border-[#c09050] text-white font-bold text-sm transition-all duration-500 hover:bg-[#c09050] hover:border-[#c09050] hover:shadow-2xl hover:-translate-y-1 font-['Montserrat']"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-black border-2 border-[#c09050] text-white font-bold text-sm transition-all duration-500 hover:bg-[#c09050] hover:border-[#c09050] hover:shadow-2xl hover:-translate-y-1 font-[system-ui]"
                 >
                   <FaCalendarAlt className="w-4 h-4" />
                   Book Free Consultation
@@ -109,7 +112,7 @@ export default function Footer() {
                 </a>
                 <a
                   href="/contact"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border-2 border-[#c09050] text-[#c09050] font-bold text-sm hover:bg-[#c09050] hover:text-white transition-all duration-300 font-['Montserrat']"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border-2 border-[#c09050] text-[#c09050] font-bold text-sm hover:bg-[#c09050] hover:text-white transition-all duration-300 font-[system-ui]"
                 >
                   <MdEmail className="w-4 h-4" />
                   Send Message
@@ -123,7 +126,7 @@ export default function Footer() {
             
             {/* Quick Links */}
             <div>
-              <h3 className="text-black font-bold text-lg mb-4 font-['Montserrat']">Quick Links</h3>
+              <h3 className="text-black font-bold text-lg mb-4 font-[system-ui]">Quick Links</h3>
               <ul className="space-y-2">
                 {quickLinks.map((link) => (
                   <li key={link.name}>
@@ -141,7 +144,7 @@ export default function Footer() {
 
             {/* Services */}
             <div>
-              <h3 className="text-black font-bold text-lg mb-4 font-['Montserrat']">Services</h3>
+              <h3 className="text-black font-bold text-lg mb-4 font-[system-ui]">Services</h3>
               <ul className="space-y-2">
                 {services.map((service) => (
                   <li key={service.name}>
@@ -159,7 +162,7 @@ export default function Footer() {
 
             {/* Resources */}
             <div>
-              <h3 className="text-black font-bold text-lg mb-4 font-['Montserrat']">Resources</h3>
+              <h3 className="text-black font-bold text-lg mb-4 font-[system-ui]">Resources</h3>
               <ul className="space-y-2">
                 {resources.map((resource) => (
                   <li key={resource.name}>
@@ -177,7 +180,7 @@ export default function Footer() {
 
             {/* Contact Info */}
             <div>
-              <h3 className="text-black font-bold text-lg mb-4 font-['Montserrat']">Contact</h3>
+              <h3 className="text-black font-bold text-lg mb-4 font-[system-ui]">Contact</h3>
               <ul className="space-y-3">
                 <li>
                   <a href="tel:+19299003056" className="flex items-center gap-3 text-gray-500 hover:text-[#c09050] text-sm transition-colors duration-300 group">
@@ -186,9 +189,9 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:manifestcoachingllc@gmail.com" className="flex items-center gap-3 text-gray-500 hover:text-[#c09050] text-sm transition-colors duration-300 group">
+                  <a href="mailto:portal@thepeacepractice.me" className="flex items-center gap-3 text-gray-500 hover:text-[#c09050] text-sm transition-colors duration-300 group">
                     <FaEnvelope className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                    <span>manifestcoachingllc@gmail.com</span>
+                    <span>portal@thepeacepractice.me</span>
                   </a>
                 </li>
                 <li>
@@ -203,7 +206,7 @@ export default function Footer() {
 
           {/* Bottom Bar */}
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 pt-6 border-t border-gray-200">
-            <p className="text-gray-400 text-xs font-['Plus_Jakarta_Sans']">
+            <p className="text-gray-400 text-xs font-[system-ui]">
               © {currentYear} The Peace Practice. All rights reserved.
             </p>
 
@@ -234,29 +237,46 @@ export default function Footer() {
               </a>
             </div>
 
-            <p className="text-gray-400 text-xs font-['Plus_Jakarta_Sans']">
-              Your Journey. Our Partnership.
+            <p className="text-gray-400 text-xs font-[system-ui]">
+              Developed by{" "}
+              <a
+                href="https://www.cobraintech.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-[#c09050] hover:text-[#d4a84b] transition-colors duration-300 font-semibold"
+              >
+                CoBrain Technologies
+              </a>
             </p>
           </div>
 
           {/* Legal Compliance Section */}
-          <div className="mt-6 pt-5 border-t border-gray-100 text-center space-y-2">
-            <p className="text-gray-500 text-xs font-semibold tracking-wide font-['Montserrat']">
+          <div className="mt-8 pt-6 border-t border-gray-200 text-center space-y-3">
+            <p className="text-gray-800 text-sm font-black tracking-wide font-[system-ui]">
               The Peace Practice &nbsp;|&nbsp; Your Journey. Our Partnership.
             </p>
-            <p className="text-gray-400 text-xs font-['Plus_Jakarta_Sans']">
+            <p className="text-gray-600 text-sm font-[system-ui]">
               MANIFEST Coaching LLC d/b/a The Peace Practice
             </p>
-            <p className="text-gray-400 text-xs font-['Plus_Jakarta_Sans']">
-              Clinical Therapy: Available for individuals (17+) in NY, NJ, and RI.&nbsp;&nbsp;
-              Consultative Coaching: Available Nationwide via the MANIFEST Method.&nbsp;&nbsp;
-              Professional Training: SĀF-T and Clinical ART trainings facilitated through RCRR. EAP trainings available (inquire).
+            <div className="max-w-3xl mx-auto space-y-1">
+              <p className="text-gray-600 text-sm font-[system-ui]">
+                <span className="font-semibold text-gray-700">Clinical Therapy:</span> Available for individuals (17+) in NY, NJ, and RI.
+              </p>
+              <p className="text-gray-600 text-sm font-[system-ui]">
+                <span className="font-semibold text-gray-700">Consultative Coaching:</span> Available Nationwide via the MANIFEST Method.
+              </p>
+              <p className="text-gray-600 text-sm font-[system-ui]">
+                <span className="font-semibold text-gray-700">Professional Training & Partnerships:</span> ART® & SĀF-T trainings, EAP services, immigration assessments, and the bARTer Balance Benefit — facilitated through MANIFEST Coaching LLC.
+              </p>
+            </div>
+            <p className="text-gray-700 text-sm font-[system-ui]">
+              <span className="font-bold text-gray-800">Licensed for Clinical Therapy</span> — Ayana Foluke McKanney, LCSW
             </p>
-            <p className="text-gray-400 text-xs font-['Plus_Jakarta_Sans']">
-              Ayana Foluke McKanney, LCSW &nbsp;
-              <span className="text-[10px] text-gray-300">
-                NY&nbsp;#098940&nbsp;|&nbsp;NJ&nbsp;#44SL06739500&nbsp;|&nbsp;RI&nbsp;#ISW04317&nbsp;|&nbsp;NPI&nbsp;1508672049
-              </span>
+            <p className="text-gray-600 text-sm font-[system-ui]">
+              NY #098940 &nbsp;|&nbsp; NJ #44SL06739500 &nbsp;|&nbsp; RI #ISW04317 &nbsp;|&nbsp; NPI# 1508672049
+            </p>
+            <p className="text-gray-500 text-xs font-[system-ui] max-w-2xl mx-auto leading-relaxed">
+              Accelerated Resolution Therapy® and ART® are registered service marks of the Rosenzweig Center for Rapid Recovery (RCRR), used with permission.
             </p>
           </div>
         </div>

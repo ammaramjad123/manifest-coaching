@@ -1,3 +1,4 @@
+import { images } from "../config/siteImages";
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
@@ -101,11 +102,11 @@ export default function Header() {
   };
 
   const specialtiesList = [
-    { label: "Anxiety & Depression", icon: Heart, desc: "Evidence-based approaches", href: "/specialties/anxiety-depression" },
-    { label: "Trauma & PTSD", icon: Shield, desc: "Trauma-focused therapy", href: "/specialties/trauma-ptsd" },
-    { label: "Women's Issues", icon: Sparkles, desc: "Empowerment & support", href: "/specialties/women-issues" },
-    { label: "Life Coaching", icon: Brain, desc: "The MANIFEST Method", href: "/specialties/life-coaching" },
-    { label: "Immigration Evaluations", icon: BookOpen, desc: "Legal & psychological", href: "/specialties/immigration" }
+    { label: "The Process", icon: Heart, desc: "Clinical Therapy — Anxiety, Depression & Trauma", href: "/specialties/anxiety-depression" },
+    { label: "The Pivot", icon: Brain, desc: "Life Coaching — Mindset transformation & peak personal evolution", href: "/specialties/life-coaching" },
+    { label: "The Partnership", icon: BookOpen, desc: "Training, Education & Immigration", href: "/specialties/immigration" },
+    { label: "bARTer Balance", icon: Sparkles, desc: "Organizational wellness program", href: "/specialties/barter-balance" },
+    { label: "The MANIFEST Method", icon: Zap, desc: "The proprietary healing framework", href: "/specialties/manifest-method" },
   ];
 
   const modalitiesList = [
@@ -145,7 +146,7 @@ export default function Header() {
                 className="flex-shrink-0 flex items-center space-x-2 group"
               >
                 <img
-                  src="/logo.png"
+                  src={images.logo}
                   alt="The Peace Practice"
                   className="object-contain transition-all duration-300 h-22 w-auto sm:h-18 md:h-26"
                 />
@@ -227,18 +228,14 @@ export default function Header() {
 
                           {/* Column 1 — Specialty Areas */}
                           <div className="pr-4">
-                            <p className="text-xs font-black uppercase tracking-[0.18em] text-[#c09050] px-3 pb-3 font-['Montserrat']">
+                            <p className="text-xs font-black uppercase tracking-[0.18em] text-[#c09050] px-3 pb-3 font-[system-ui]">
                               Specialty Areas
                             </p>
                             {specialtiesList.map((item) => {
                               const Icon = item.icon;
-                              return (
-                                <Link
-                                  key={item.href}
-                                  to={item.href}
-                                  onClick={() => setShowDropdown(false)}
-                                  className="flex items-center gap-3 w-full px-3 py-3 rounded-xl hover:bg-[#c09050]/10 transition-all duration-200 group"
-                                >
+                              const cls = "flex items-center gap-3 w-full px-3 py-3 rounded-xl hover:bg-[#c09050]/10 transition-all duration-200 group";
+                              const inner = (
+                                <>
                                   <div className="w-10 h-10 bg-[#c09050]/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                                     <Icon className="w-5 h-5 text-[#c09050]" />
                                   </div>
@@ -246,14 +243,19 @@ export default function Header() {
                                     <p className="font-bold text-gray-800 text-base leading-tight">{item.label}</p>
                                     <p className="text-sm text-gray-500 truncate mt-0.5">{item.desc}</p>
                                   </div>
-                                </Link>
+                                </>
+                              );
+                              return item.isAnchor ? (
+                                <a key={item.href} href={item.href} onClick={() => setShowDropdown(false)} className={cls}>{inner}</a>
+                              ) : (
+                                <Link key={item.href} to={item.href} onClick={() => setShowDropdown(false)} className={cls}>{inner}</Link>
                               );
                             })}
                           </div>
 
                           {/* Column 2 — Clinical Modalities */}
                           <div className="pl-4">
-                            <p className="text-xs font-black uppercase tracking-[0.18em] text-[#c09050] px-3 pb-3 font-['Montserrat']">
+                            <p className="text-xs font-black uppercase tracking-[0.18em] text-[#c09050] px-3 pb-3 font-[system-ui]">
                               Clinical Modalities
                             </p>
                             {modalitiesList.map((item) => {
@@ -371,7 +373,7 @@ export default function Header() {
                 onClick={() => setMobileOpen(false)}
               >
                 <img
-                  src="/logo.png"
+                  src={images.logo}
                   alt="The Peace Practice"
                   className="h-22 w-auto object-contain"
                 />
@@ -436,18 +438,14 @@ export default function Header() {
 
                 {mobileDropdownOpen && (
                   <div className="ml-2 animate-fadeIn">
-                    <p className="text-xs font-black uppercase tracking-[0.16em] text-[#c09050] px-4 pt-3 pb-2 font-['Montserrat']">
+                    <p className="text-xs font-black uppercase tracking-[0.16em] text-[#c09050] px-4 pt-3 pb-2 font-[system-ui]">
                       Specialty Areas
                     </p>
                     {specialtiesList.map((item) => {
                       const Icon = item.icon;
-                      return (
-                        <Link
-                          key={item.href}
-                          to={item.href}
-                          onClick={() => setMobileOpen(false)}
-                          className="flex items-center gap-3 w-full py-3 px-4 rounded-xl hover:bg-gray-100 transition-all duration-300"
-                        >
+                      const cls = "flex items-center gap-3 w-full py-3 px-4 rounded-xl hover:bg-gray-100 transition-all duration-300";
+                      const inner = (
+                        <>
                           <div className="w-10 h-10 bg-[#c09050]/10 rounded-full flex items-center justify-center flex-shrink-0">
                             <Icon className="w-5 h-5 text-[#c09050]" />
                           </div>
@@ -455,10 +453,15 @@ export default function Header() {
                             <p className="font-bold text-gray-800 text-base sm:text-lg">{item.label}</p>
                             <p className="text-sm text-gray-500">{item.desc}</p>
                           </div>
-                        </Link>
+                        </>
+                      );
+                      return item.isAnchor ? (
+                        <a key={item.href} href={item.href} onClick={() => setMobileOpen(false)} className={cls}>{inner}</a>
+                      ) : (
+                        <Link key={item.href} to={item.href} onClick={() => setMobileOpen(false)} className={cls}>{inner}</Link>
                       );
                     })}
-                    <p className="text-xs font-black uppercase tracking-[0.16em] text-[#c09050] px-4 pt-4 pb-2 font-['Montserrat']">
+                    <p className="text-xs font-black uppercase tracking-[0.16em] text-[#c09050] px-4 pt-4 pb-2 font-[system-ui]">
                       Clinical Modalities
                     </p>
                     {modalitiesList.map((item) => {

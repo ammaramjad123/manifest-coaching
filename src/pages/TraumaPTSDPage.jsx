@@ -1,3 +1,4 @@
+import { images } from "../config/siteImages";
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -55,7 +56,7 @@ export default function TraumaPTSDPage() {
       title: "The Invisible Wound",
       subtitle: "Understanding Trauma & PTSD",
       description: "Trauma isn't just what happened to you—it's how your body and mind responded to survive. The flashbacks, the hypervigilance, the feeling of being constantly on edge—these aren't signs of weakness. They're your nervous system doing its job. But you don't have to live in survival mode forever.",
-      image: "/new/dylann-hendricks-z2rC_O-TosY-unsplash.jpg",
+      image: images.trauma.section1,
       imagePosition: "right",
       stat: "70% of adults experience at least one traumatic event in their lifetime"
     },
@@ -70,9 +71,12 @@ export default function TraumaPTSDPage() {
         "Avoiding reminders of the event",
         "Nightmares or sleep disturbances",
         "Emotional numbness or detachment",
-        "Exaggerated startle response"
+        "Exaggerated startle response",
+        "Birth trauma or pregnancy loss",
+        "Caregiver burnout & invisible wounds",
+        "Grief from infertility or miscarriage"
       ],
-      image: "/new/abel-marquez-0chVl3b15MQ-unsplash.jpg",
+      image: images.trauma.section2,
       imagePosition: "left",
       isSymptoms: true
     },
@@ -80,8 +84,8 @@ export default function TraumaPTSDPage() {
       id: 2,
       title: "The Science of Trauma Recovery",
       subtitle: "Your brain can heal",
-      description: "Trauma changes the brain—but the brain can change back. Through neuroplasticity and evidence-based approaches like ART (Accelerated Resolution Therapy) and Trauma-Focused CBT, we can reprocess traumatic memories, reduce their emotional charge, and restore a sense of safety in your body and relationships.",
-      image: "/new/robina-weermeijer-3KGF9R_0oHs-unsplash.jpg",
+      description: "Trauma changes the brain—but the brain can change back. Through neuroplasticity and evidence-based approaches like ART® (Accelerated Resolution Therapy) and SĀF-T, we can reprocess traumatic memories, reduce their emotional charge, and restore a sense of safety in your body and relationships.",
+      image: images.trauma.section3,
       imagePosition: "right",
       stat: "ART has been shown to resolve trauma in 1-5 sessions"
     },
@@ -91,12 +95,12 @@ export default function TraumaPTSDPage() {
       subtitle: "Evidence-based methods that create real change",
       description: "I use proven, trauma-informed approaches to help you process painful memories and reclaim your life.",
       approaches: [
-        { name: "ART", desc: "Accelerated Resolution Therapy - reprocess traumatic images and sensations", color: "#c09050" },
-        { name: "Trauma-Focused CBT", desc: "Identify and change trauma-related thought patterns", color: "#d4a84b" },
-        { name: "Somatic Approaches", desc: "Release trauma stored in the body", color: "#c09050" },
-        { name: "EMDR-Informed", desc: "Process traumatic memories through bilateral stimulation", color: "#d4a84b" }
+        { name: "ART®", desc: "Accelerated Resolution Therapy — rapidly reprocess traumatic images and sensations without extensive verbal processing", color: "#c09050" },
+        { name: "SĀF-T", desc: "Restores nervous system stability and safety — designed for coaches, first responders, and trauma survivors", color: "#d4a84b" },
+        { name: "Somatic Approaches", desc: "Release trauma stored in the body and restore a felt sense of safety", color: "#c09050" },
+        { name: "Mindfulness", desc: "Restore presence and reduce the grip of traumatic memory", color: "#d4a84b" }
       ],
-      image: "/new/ricardo-gomez-angel-D9kOnC_1AHw-unsplash.jpg",
+      image: images.trauma.section4,
       imagePosition: "left",
       isApproaches: true
     },
@@ -105,7 +109,7 @@ export default function TraumaPTSDPage() {
       title: "Your Healing Journey",
       subtitle: "You don't have to do this alone",
       description: "Healing from trauma isn't about erasing the past—it's about reclaiming your present and future. I'll meet you where you are, honoring your story while gently guiding you toward safety, trust, and post-traumatic growth. You deserve to feel safe in your own body and relationships.",
-      image: "/new/priscilla-du-preez-aPa843frIzI-unsplash.jpg",
+      image: images.trauma.section5,
       imagePosition: "right",
       stat: "100% virtual • Licensed in NY, NJ, RI"
     },
@@ -114,7 +118,7 @@ export default function TraumaPTSDPage() {
       title: "A Safe Space Awaits",
       subtitle: "Virtual therapy from anywhere",
       description: "Secure, HIPAA-compliant sessions from the comfort of your home. No commute, no waiting rooms—just you, me, and a path forward. Evening and weekend appointments available.",
-      image: "/new/billy-pasco-se3tHNszbkM-unsplash.jpg",
+      image: images.trauma.section6,
       imagePosition: "left",
       stat: "Flexible scheduling • 24hr cancellation policy"
     },
@@ -123,7 +127,7 @@ export default function TraumaPTSDPage() {
       title: "You Are Not Broken",
       subtitle: "Healing is possible",
       description: "Trauma isn't a life sentence. With the right support, you can move from surviving to thriving. The flashbacks can fade. The hypervigilance can quiet. You can feel safe again. And you don't have to do it alone.",
-      image: "/new/javardh-FL6rma2jePU-unsplash.jpg",
+      image: images.trauma.section7,
       imagePosition: "right",
       stat: "You've already taken the bravest step"
     }
@@ -138,7 +142,7 @@ export default function TraumaPTSDPage() {
         {/* Cinematic Background with Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/new/kreative-kwame-oUXhw8SEqlM-unsplash.jpg"
+            src={images.trauma.hero}
             alt="Calm peaceful healing"
             className="w-full h-full object-cover scale-110"
           />
@@ -175,17 +179,17 @@ export default function TraumaPTSDPage() {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6"
             >
               <Sparkles className="w-4 h-4 text-[#c09050]" />
-              <span className="text-xs font-black uppercase tracking-wider text-white">Clinical Specialty</span>
+              <span className="text-xs font-black uppercase tracking-wider text-white">The Process — Clinical Therapy</span>
             </motion.div>
             
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white mb-6 font-['Montserrat'] leading-tight">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white mb-6 font-[system-ui] leading-tight">
               Trauma &{" "}
               <span className="bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent">
                 PTSD
               </span>
             </h1>
             
-            <p className="text-white/80 text-lg sm:text-xl max-w-2xl mx-auto mb-8 font-['Plus_Jakarta_Sans'] leading-relaxed">
+            <p className="text-white/80 text-lg sm:text-xl max-w-2xl mx-auto mb-8 font-[system-ui] leading-relaxed">
               Heal from painful experiences, reclaim your sense of safety, and move from surviving to thriving.
             </p>
             
@@ -195,7 +199,7 @@ export default function TraumaPTSDPage() {
                 whileTap={{ scale: 0.95 }}
                 href="https://calendly.com/manifestcoachingllc/clarity-call"
                 target="_blank"
-                className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-[#c09050] to-[#d4a84b] text-white font-bold hover:shadow-2xl transition-all duration-500 font-['Montserrat']"
+                className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-[#c09050] to-[#d4a84b] text-white font-bold hover:shadow-2xl transition-all duration-500 font-[system-ui]"
               >
                 <Calendar className="w-5 h-5" />
                 Free Consultation
@@ -205,7 +209,7 @@ export default function TraumaPTSDPage() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 href="/contact"
-                className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/30 text-white font-bold hover:bg-white/20 transition-all duration-500 font-['Montserrat']"
+                className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/30 text-white font-bold hover:bg-white/20 transition-all duration-500 font-[system-ui]"
               >
                 <Phone className="w-5 h-5" />
                 Contact Me
@@ -283,7 +287,7 @@ export default function TraumaPTSDPage() {
                     </span>
                   </div>
                   
-                  <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-6 font-['Montserrat'] leading-tight">
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-6 font-[system-ui] leading-tight">
                     {section.title}
                   </h2>
                   
@@ -298,7 +302,7 @@ export default function TraumaPTSDPage() {
                           className="flex items-center gap-3 p-3 rounded-xl bg-gray-50 border border-gray-100"
                         >
                           <div className="w-2 h-2 rounded-full bg-[#c09050]" />
-                          <span className="text-gray-700 text-sm font-['Plus_Jakarta_Sans']">{symptom}</span>
+                          <span className="text-gray-700 text-sm font-[system-ui]">{symptom}</span>
                         </motion.div>
                       ))}
                     </div>
@@ -324,13 +328,13 @@ export default function TraumaPTSDPage() {
                     </div>
                   ) : (
                     <>
-                      <p className="text-gray-600 text-lg leading-relaxed mb-6 font-['Plus_Jakarta_Sans']">
+                      <p className="text-gray-600 text-lg leading-relaxed mb-6 font-[system-ui]">
                         {section.description}
                       </p>
                       {section.stat && (
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#c09050]/5 border border-[#c09050]/10 mb-6">
                           <Quote className="w-3 h-3 text-[#c09050]" />
-                          <span className="text-xs text-gray-600 font-['Plus_Jakarta_Sans']">{section.stat}</span>
+                          <span className="text-xs text-gray-600 font-[system-ui]">{section.stat}</span>
                         </div>
                       )}
                     </>
@@ -364,12 +368,12 @@ export default function TraumaPTSDPage() {
         
         <div className="absolute inset-0 z-0">
           <img
-            src="/new/linus-nylund-Q5QspluNZmM-unsplash.jpg"
+            src={images.trauma.cta}
             alt="Healing journey"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#c09050]/90 to-[#d4a84b]/90" />
-          <div className="absolute inset-0 bg-black/20" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#c09050]/60 to-[#d4a84b]/55" />
+          <div className="absolute inset-0 bg-black/15" />
         </div>
 
         <div className="absolute inset-0 pointer-events-none">
@@ -399,7 +403,7 @@ export default function TraumaPTSDPage() {
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-6 font-['Montserrat'] leading-tight"
+            className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-6 font-[system-ui] leading-tight"
           >
             You Don't Have to
             <br />
@@ -410,7 +414,7 @@ export default function TraumaPTSDPage() {
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-white/90 text-lg md:text-xl mb-10 font-['Plus_Jakarta_Sans'] max-w-2xl mx-auto"
+            className="text-white/90 text-lg md:text-xl mb-10 font-[system-ui] max-w-2xl mx-auto"
           >
             Schedule your free 15-minute consultation today. No pressure, just conversation.
           </motion.p>
@@ -426,7 +430,7 @@ export default function TraumaPTSDPage() {
               whileTap={{ scale: 0.98 }}
               href="https://calendly.com/manifestcoachingllc/clarity-call"
               target="_blank"
-              className="group inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-white text-[#c09050] font-black text-lg hover:shadow-2xl transition-all duration-500 font-['Montserrat']"
+              className="group inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-white text-[#c09050] font-black text-lg hover:shadow-2xl transition-all duration-500 font-[system-ui]"
             >
               <Calendar className="w-5 h-5" />
               Book Free Consultation
@@ -436,7 +440,7 @@ export default function TraumaPTSDPage() {
               whileHover={{ scale: 1.05, y: -3 }}
               whileTap={{ scale: 0.98 }}
               href="/contact"
-              className="group inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-white/10 backdrop-blur-sm border-2 border-white text-white font-black text-lg hover:bg-white hover:text-[#c09050] transition-all duration-500 font-['Montserrat']"
+              className="group inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-white/10 backdrop-blur-sm border-2 border-white text-white font-black text-lg hover:bg-white hover:text-[#c09050] transition-all duration-500 font-[system-ui]"
             >
               <Phone className="w-5 h-5" />
               Contact Me

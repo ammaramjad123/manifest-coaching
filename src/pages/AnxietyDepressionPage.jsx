@@ -1,3 +1,4 @@
+import { images } from "../config/siteImages";
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -56,7 +57,7 @@ export default function AnxietyDepressionPage() {
       title: "The Weight You Carry",
       subtitle: "Understanding Anxiety & Depression",
       description: "Anxiety and depression aren't just feelings—they're experiences that can weigh you down, making even the simplest tasks feel impossible. The racing thoughts, the heavy fog, the loss of interest—these are real, valid, and treatable. But here's the truth: you're not broken. You're human, and healing is possible.",
-      image: "/new/jakob-braun-HfOOKAPsE28-unsplash.jpg",
+      image: images.anxiety.section1,
       imagePosition: "right",
       stat: "1 in 5 adults experience anxiety or depression"
     },
@@ -71,9 +72,12 @@ export default function AnxietyDepressionPage() {
         "Loss of interest in things you once loved",
         "Difficulty sleeping or sleeping too much",
         "Racing heart, tension, fatigue",
-        "Trouble concentrating or making decisions"
+        "Trouble concentrating or making decisions",
+        "Perinatal anxiety or postpartum depression",
+        "Caregiver burnout & emotional depletion",
+        "Hormonal shifts affecting mood & energy"
       ],
-      image: "/new/linus-nylund-Q5QspluNZmM-unsplash.jpg",
+      image: images.anxiety.section2,
       imagePosition: "left",
       isSymptoms: true
     },
@@ -81,23 +85,23 @@ export default function AnxietyDepressionPage() {
       id: 2,
       title: "The Science of Healing",
       subtitle: "Evidence-based approaches that work",
-      description: "Through CBT, ACT, and mindfulness, we can rewire thought patterns, reduce symptoms, and restore balance. Your brain has neuroplasticity—it can change, adapt, and heal. Science shows that therapy is as effective as medication for many people, with lasting results.",
-      image: "/new/robina-weermeijer-3KGF9R_0oHs-unsplash.jpg",
+      description: "Through ART®, DBT, ACT, and mindfulness, we can rewire thought patterns, reduce symptoms, and restore balance. Your brain has neuroplasticity—it can change, adapt, and heal. Science shows that therapy is as effective as medication for many people, with lasting results.",
+      image: images.anxiety.section3,
       imagePosition: "right",
       stat: "80% of people improve with evidence-based therapy"
     },
     {
       id: 3,
-      title: "Treatment Approaches",
-      subtitle: "Methods that create real change",
-      description: "I use proven therapeutic approaches tailored to your unique needs, combining the best of evidence-based practice with compassionate, personalized care.",
+      title: "The Therapy Process",
+      subtitle: "Your roadmap to healing",
+      description: "Therapy is a structured, compassionate partnership — meeting you exactly where you are and building a clear path forward, one session at a time.",
       approaches: [
-        { name: "CBT", desc: "Identify and restructure negative thought patterns", color: "#c09050" },
-        { name: "ACT", desc: "Accept thoughts while committing to value-driven action", color: "#d4a84b" },
-        { name: "Mindfulness", desc: "Stay present and reduce rumination", color: "#c09050" },
-        { name: "ART", desc: "Accelerated Resolution Therapy for trauma", color: "#d4a84b" }
+        { name: "Free Consultation", desc: "A 15-minute alignment call to explore fit, answer questions, and determine the right path forward." },
+        { name: "Clinical Assessment", desc: "We explore your history, goals, and needs to build a personalized, evidence-based treatment plan." },
+        { name: "Evidence-Based Treatment", desc: "Sessions using ART®, DBT, or ACT — tailored to what your healing actually requires." },
+        { name: "Integration & Growth", desc: "Track progress, celebrate breakthroughs, and carry your tools well beyond the therapy room." }
       ],
-      image: "/new/priscilla-du-preez-aPa843frIzI-unsplash.jpg",
+      image: images.anxiety.section4,
       imagePosition: "left",
       isApproaches: true
     },
@@ -106,7 +110,7 @@ export default function AnxietyDepressionPage() {
       title: "Your Journey, Your Pace",
       subtitle: "Personalized care for your unique needs",
       description: "No two journeys are the same. I'll meet you where you are, honoring your story while gently guiding you toward the peace and clarity you deserve. Whether you need weekly sessions or bi-weekly check-ins, we move at your pace.",
-      image: "/new/hester-qiang-95t94hZTESw-unsplash.jpg",
+      image: images.anxiety.section5,
       imagePosition: "right",
       stat: "100% virtual • Licensed in NY, NJ, RI"
     },
@@ -115,7 +119,7 @@ export default function AnxietyDepressionPage() {
       title: "A Safe Space Awaits",
       subtitle: "Virtual therapy from anywhere",
       description: "Secure, HIPAA-compliant sessions from the comfort of your home. No commute, no waiting rooms—just you, me, and a path forward. Evening and weekend appointments available.",
-      image: "/new/venwardo-F-ga6WwcqOQ-unsplash.jpg",
+      image: images.anxiety.section6,
       imagePosition: "left",
       stat: "Flexible scheduling • 24hr cancellation policy"
     },
@@ -124,7 +128,7 @@ export default function AnxietyDepressionPage() {
       title: "You Are Not Alone",
       subtitle: "Millions have walked this path and found healing",
       description: "The racing thoughts, the heavy fog, the loss of interest—these are real, valid, and treatable. Seeking help isn't weakness; it's the bravest thing you can do. And you don't have to do it alone.",
-      image: "/new/abel-marquez-0chVl3b15MQ-unsplash.jpg",
+      image: images.anxiety.section7,
       imagePosition: "right",
       stat: "You've already taken the hardest step"
     }
@@ -134,12 +138,12 @@ export default function AnxietyDepressionPage() {
     <div ref={containerRef} className="relative bg-white overflow-hidden">
       
       {/* EPIC HERO SECTION */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-22 sm:pt-32">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 sm:pt-44 pb-10">
         
         {/* Cinematic Background Video/Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/new/imre-zsolt-h7zZWJQ4DMs-unsplash.jpg"
+            src={images.anxiety.hero}
             alt="Calm peaceful healing"
             className="w-full h-full object-cover scale-110"
           />
@@ -176,17 +180,17 @@ export default function AnxietyDepressionPage() {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6"
             >
               <Sparkles className="w-4 h-4 text-[#c09050]" />
-              <span className="text-xs font-black uppercase tracking-wider text-white">Clinical Specialty</span>
+              <span className="text-xs font-black uppercase tracking-wider text-white">The Process — Clinical Therapy</span>
             </motion.div>
             
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white mb-6 font-['Montserrat'] leading-tight">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white mb-6 font-[system-ui] leading-tight">
               Anxiety &{" "}
               <span className="bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent">
                 Depression
               </span>
             </h1>
             
-            <p className="text-white/80 text-lg sm:text-xl max-w-2xl mx-auto mb-8 font-['Plus_Jakarta_Sans'] leading-relaxed">
+            <p className="text-white/80 text-lg sm:text-xl max-w-2xl mx-auto mb-8 font-[system-ui] leading-relaxed">
               Break free from the weight of anxious thoughts and heavy feelings. 
               Evidence-based therapy tailored to your unique journey.
             </p>
@@ -197,7 +201,7 @@ export default function AnxietyDepressionPage() {
                 whileTap={{ scale: 0.95 }}
                 href="https://calendly.com/manifestcoachingllc/clarity-call"
                 target="_blank"
-                className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-[#c09050] to-[#d4a84b] text-white font-bold hover:shadow-2xl transition-all duration-500 font-['Montserrat']"
+                className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-[#c09050] to-[#d4a84b] text-white font-bold hover:shadow-2xl transition-all duration-500 font-[system-ui]"
               >
                 <Calendar className="w-5 h-5" />
                 Free Consultation
@@ -207,7 +211,7 @@ export default function AnxietyDepressionPage() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 href="/contact"
-                className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/30 text-white font-bold hover:bg-white/20 transition-all duration-500 font-['Montserrat']"
+                className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/30 text-white font-bold hover:bg-white/20 transition-all duration-500 font-[system-ui]"
               >
                 <Phone className="w-5 h-5" />
                 Contact Me
@@ -236,23 +240,20 @@ export default function AnxietyDepressionPage() {
                 <span className="text-white/60 text-xs">Flexible Scheduling</span>
               </div>
             </motion.div>
+
+            {/* Scroll Indicator — below the stats */}
+            <motion.div
+              className="mt-8 mx-auto w-fit cursor-pointer"
+              animate={{ y: [0, 10, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity }}
+              onClick={() => window.scrollTo({ top: window.innerHeight, behavior: "smooth" })}
+            >
+              <div className="w-5 h-8 border-2 border-white/30 rounded-full flex justify-center">
+                <div className="w-1 h-2 bg-[#c09050] rounded-full mt-1 animate-pulse" />
+              </div>
+            </motion.div>
           </motion.div>
         </div>
-        
-        {/* Scroll Indicator */}
-        <motion.div 
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer z-20"
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-          onClick={() => window.scrollTo({ top: window.innerHeight, behavior: "smooth" })}
-        >
-          <div className="flex flex-col items-center gap-2">
-            
-            <div className="w-5 h-8 border-2 border-white/30 rounded-full flex justify-center">
-              <div className="w-1 h-2 bg-[#c09050] rounded-full mt-1 animate-pulse" />
-            </div>
-          </div>
-        </motion.div>
       </section>
 
       {/* Immersive Sections - Alternating Left/Right with Full Images */}
@@ -287,7 +288,7 @@ export default function AnxietyDepressionPage() {
                     </span>
                   </div>
                   
-                  <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-6 font-['Montserrat'] leading-tight">
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-6 font-[system-ui] leading-tight">
                     {section.title}
                   </h2>
                   
@@ -302,7 +303,7 @@ export default function AnxietyDepressionPage() {
                           className="flex items-center gap-3 p-3 rounded-xl bg-gray-50 border border-gray-100"
                         >
                           <div className="w-2 h-2 rounded-full bg-[#c09050]" />
-                          <span className="text-gray-700 text-sm font-['Plus_Jakarta_Sans']">{symptom}</span>
+                          <span className="text-gray-700 text-sm font-[system-ui]">{symptom}</span>
                         </motion.div>
                       ))}
                     </div>
@@ -328,13 +329,13 @@ export default function AnxietyDepressionPage() {
                     </div>
                   ) : (
                     <>
-                      <p className="text-gray-600 text-lg leading-relaxed mb-6 font-['Plus_Jakarta_Sans']">
+                      <p className="text-gray-600 text-lg leading-relaxed mb-6 font-[system-ui]">
                         {section.description}
                       </p>
                       {section.stat && (
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#c09050]/5 border border-[#c09050]/10 mb-6">
                           <Quote className="w-3 h-3 text-[#c09050]" />
-                          <span className="text-xs text-gray-600 font-['Plus_Jakarta_Sans']">{section.stat}</span>
+                          <span className="text-xs text-gray-600 font-[system-ui]">{section.stat}</span>
                         </div>
                       )}
                     </>
@@ -373,12 +374,12 @@ export default function AnxietyDepressionPage() {
         <div className="absolute inset-0 z-0">
           {/* Keep this CTA image as is */}
           <img
-            src="/new/alonso-reyes-JCaw4DRqekk-unsplash.jpg"
+            src={images.anxiety.cta}
             alt="Healing journey"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#c09050]/90 to-[#d4a84b]/90" />
-          <div className="absolute inset-0 bg-black/20" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#c09050]/25 to-[#d4a84b]/20" />
+          <div className="absolute inset-0 bg-black/25" />
         </div>
 
         {/* Animated particles */}
@@ -409,7 +410,7 @@ export default function AnxietyDepressionPage() {
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-6 font-['Montserrat'] leading-tight"
+            className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-6 font-[system-ui] leading-tight"
           >
             You Don't Have to
             <br />
@@ -420,7 +421,7 @@ export default function AnxietyDepressionPage() {
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-white/90 text-lg md:text-xl mb-10 font-['Plus_Jakarta_Sans'] max-w-2xl mx-auto"
+            className="text-white/90 text-lg md:text-xl mb-10 font-[system-ui] max-w-2xl mx-auto"
           >
             Schedule your free 15-minute consultation today. No pressure, just conversation.
           </motion.p>
@@ -436,7 +437,7 @@ export default function AnxietyDepressionPage() {
               whileTap={{ scale: 0.98 }}
               href="https://calendly.com/manifestcoachingllc/clarity-call"
               target="_blank"
-              className="group inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-white text-[#c09050] font-black text-lg hover:shadow-2xl transition-all duration-500 font-['Montserrat']"
+              className="group inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-white text-[#c09050] font-black text-lg hover:shadow-2xl transition-all duration-500 font-[system-ui]"
             >
               <Calendar className="w-5 h-5" />
               Book Free Consultation
@@ -446,7 +447,7 @@ export default function AnxietyDepressionPage() {
               whileHover={{ scale: 1.05, y: -3 }}
               whileTap={{ scale: 0.98 }}
               href="/contact"
-              className="group inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-white/10 backdrop-blur-sm border-2 border-white text-white font-black text-lg hover:bg-white hover:text-[#c09050] transition-all duration-500 font-['Montserrat']"
+              className="group inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-white/10 backdrop-blur-sm border-2 border-white text-white font-black text-lg hover:bg-white hover:text-[#c09050] transition-all duration-500 font-[system-ui]"
             >
               <Phone className="w-5 h-5" />
               Contact Me

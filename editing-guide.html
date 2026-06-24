@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<style>
+  @page { size: letter; margin: 15mm 16mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1c1c1c; line-height: 1.5; font-size: 12.5px; margin: 0;
+  }
+  h1 { font-size: 26px; margin: 0 0 2px; color: #1c1c1c; }
+  .sub { color: #c09050; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; font-size: 11px; margin-bottom: 14px; }
+  h2 {
+    font-size: 16px; margin: 0 0 10px; padding: 8px 12px; color: #fff;
+    background: linear-gradient(90deg,#c09050,#d4a84b); border-radius: 8px;
+  }
+  .section { margin-bottom: 18px; page-break-inside: avoid; }
+  ol { margin: 6px 0 0; padding-left: 20px; }
+  ol li { margin-bottom: 6px; }
+  code, .file {
+    font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 11.5px;
+    background: #f4efe6; color: #8a5a1c; padding: 1px 6px; border-radius: 4px;
+    border: 1px solid #e6dcc8;
+  }
+  .box {
+    border: 1px solid #e6dcc8; background: #fcf8f1; border-radius: 10px;
+    padding: 12px 14px; margin-top: 10px;
+  }
+  .rules { border-left: 4px solid #c09050; }
+  .intro { background:#fcf8f1; border:1px solid #e6dcc8; border-radius:10px; padding:12px 14px; margin-bottom:16px; }
+  .tag { display:inline-block; background:#1c1c1c; color:#fff; font-size:10px; font-weight:700;
+    padding:2px 8px; border-radius:5px; letter-spacing:.05em; text-transform:uppercase; }
+  .yes { color: #2e7d32; font-weight: 700; }
+  .no { color: #c0392b; font-weight: 700; }
+  .hr { height:1px; background:#eee; margin:16px 0; border:0; }
+  .small { font-size: 11px; color: #666; }
+  ul.clean { list-style: none; padding-left: 0; margin: 6px 0 0; }
+  ul.clean li { margin-bottom: 6px; padding-left: 18px; position: relative; }
+  ul.clean li:before { content: "◆"; color:#c09050; position:absolute; left:0; font-size: 9px; top: 3px; }
+  b.green { color:#2e7d32; }
+</style>
+</head>
+<body>
+
+  <h1>How to Edit Your Website</h1>
+  <div class="sub">The Peace Practice — Simple Guide</div>
+
+  <div class="intro">
+    <b>Good news — you can update your website yourself, free, from any computer.</b><br>
+    Your website is hosted free on <b>Vercel</b>, and its files live on a website called <b>GitHub</b>.
+    You make all your changes on GitHub (just typing in your web browser). When you save,
+    your live website <b class="green">updates automatically in about 2 minutes</b> — no apps, no coding.
+  </div>
+
+  <!-- PART 1 -->
+  <div class="section">
+    <h2>Part 1 · How to Edit &amp; Publish (do this every time)</h2>
+    <ol>
+      <li>Go to <code>github.com</code> and sign in, then open your project (your developer will send you the link).</li>
+      <li>Open the folder <code>src</code>, then the folder <code>config</code>.</li>
+      <li>Click the file you want to change (see Part 2 and Part 3 below).</li>
+      <li>Click the <b>pencil ✏️ button</b> (top-right of the file) to start editing.</li>
+      <li>Make your change — only the words <b>inside the "quotes"</b>.</li>
+      <li>Click the green <b>"Commit changes"</b> button, then <b>"Commit changes"</b> again in the pop-up.</li>
+      <li>Wait about 2 minutes, then refresh your website — your change is live. <b class="green">Done!</b></li>
+    </ol>
+  </div>
+
+  <!-- PART 2 -->
+  <div class="section">
+    <h2>Part 2 · Change a Picture</h2>
+    <p class="small" style="margin:0 0 6px">File: <code>src/config/siteImages.js</code></p>
+    <ol>
+      <li>First, upload your new image to the <code>public/new</code> folder.<br>
+        <span class="small">(On GitHub: open <code>public</code> &rarr; <code>new</code> &rarr; "Add file" &rarr; "Upload files" &rarr; drag your image in &rarr; Commit changes.)</span></li>
+      <li>Open <code>src/config/siteImages.js</code> and edit it (Part 1 steps 4–7).</li>
+      <li>Find the picture you want to change — each line has a note saying where it appears.</li>
+      <li>Change the name inside the quotes to your new image, e.g. <code>"/new/my-new-photo.jpg"</code></li>
+      <li>Commit changes. Your picture updates in a couple of minutes.</li>
+    </ol>
+    <div class="box small">
+      <b>Picture tips:</b> Always start with <code>/new/</code> · Type the file name <b>exactly</b>, including <code>.jpg</code> or <code>.png</code> · Keep the quotes <code>" "</code>.
+    </div>
+  </div>
+
+  <!-- PART 3 -->
+  <div class="section">
+    <h2>Part 3 · Edit the "Upcoming Training" Section</h2>
+    <p class="small" style="margin:0 0 6px">File: <code>src/config/upcomingTraining.js</code> — everything is in here.</p>
+
+    <p style="margin:6px 0 4px"><span class="tag">A</span> &nbsp;<b>Show or hide the whole section</b></p>
+    <ol>
+      <li>At the top, find <code>active: true</code></li>
+      <li><code>active: true</code> &rarr; the section <span class="yes">shows</span> &nbsp;·&nbsp; <code>active: false</code> &rarr; <span class="no">hidden</span> (use when no training is coming up).</li>
+    </ol>
+
+    <p style="margin:10px 0 4px"><span class="tag">B</span> &nbsp;<b>Change the training details</b></p>
+    <ol>
+      <li><code>when:</code> — type the dates, e.g. <code>"March 14–16, 2026"</code></li>
+      <li><code>where:</code> — type the location, e.g. <code>"Atlanta, GA · In person"</code></li>
+      <li>Also change title, cost, etc. inside their quotes.</li>
+      <li><b>Bullet points</b> (<code>whatToExpect</code>): each line is one bullet — copy a line to add one, delete a line to remove one.</li>
+    </ol>
+
+    <p style="margin:10px 0 4px"><span class="tag">C</span> &nbsp;<b>You have two trainings (ART &amp; SĀF-T)</b></p>
+    <ul class="clean">
+      <li>Each training has its own <code>active: true</code> — set one to <code>false</code> to hide just that one.</li>
+      <li>To add a new training, copy a whole block <code>{ ... }</code> and change the words.</li>
+    </ul>
+  </div>
+
+  <hr class="hr" />
+
+  <!-- GOLDEN RULES -->
+  <div class="section box rules">
+    <b>3 Golden Rules (never break these)</b>
+    <ul class="clean" style="margin-top:8px">
+      <li>Only change the words <b>inside the "quotes"</b>.</li>
+      <li>Never delete the quotes <code>" "</code> or the commas <code>,</code>.</li>
+      <li>File names must match the real file <b>exactly</b> (letters, dashes, <code>.jpg</code>/<code>.png</code>).</li>
+    </ul>
+  </div>
+
+  <p class="small" style="margin-top:14px">
+    <b>Your web address:</b> your custom domain is connected to the site one time by your developer — after that, you never have to touch it. Every edit you make on GitHub goes live on your domain automatically.
+  </p>
+
+</body>
+</html>
