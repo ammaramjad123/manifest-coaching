@@ -52,7 +52,7 @@ export const images = {
 
   // ───────────── ABOUT PAGE ─────────────
   about: {
-    headshot: "/new/ayana-headshot.jpg", // Ayana's main photo on the About page
+    headshot: "/new/abc.jpeg", // Ayana's main photo on the About page
     legacyPhoto: "/ayana.jpg",           // Ayana's photo (older About component)
     storyPhoto: "/new/yoann-boyer-i14h2xyPr18-unsplash.jpg", // Photo in "The Story Behind the Practice" section
   },
