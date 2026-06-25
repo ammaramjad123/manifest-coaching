@@ -34,7 +34,7 @@ export const images = {
     doorCoaching: "/new/meg-jenson-WtT3XFmpiMg-unsplash.jpg",       // "Three Pathways" — Coaching card
     doorPartnership: "/new/kreative-kwame-oUXhw8SEqlM-unsplash.jpg",// "Three Pathways" — Partnership card
     testimonialCommunity: "/new/zac-durant-axXWe7dd1ts-unsplash.jpg",      // "Community Voices" testimonial photo
-    testimonialCoaching: "/new/zacqueline-baldwin-K7IvqBpE5uY-unsplash.jpg",// "Coaching Voices" testimonial photo
+    testimonialCoaching: "/new/brett-jordan-Pd3ml1YRPlg-unsplash%20(1).jpg",// "Coaching Voices" testimonial photo
   },
 
   // ───────────── FAQ SECTION ─────────────
