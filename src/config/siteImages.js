@@ -64,7 +64,7 @@ export const images = {
 
   // ───────────── ACT PAGE (Acceptance & Commitment Therapy) ─────────────
   act: {
-    hero: "/new/kylo-YrVe-fEqtYM-unsplash.jpg",              // Top banner
+    hero: "/new/iwaria-inc-1Wr4U5yRw2M-unsplash.jpg",              // Top banner
     section1: "/new/billy-pasco-se3tHNszbkM-unsplash.jpg",   // 1st content section photo
     section2: "/new/alonso-reyes-JCaw4DRqekk-unsplash.jpg",  // 2nd content section photo
     section3: "/new/katarzyna-zygnerska-G4rGkoRnoNw-unsplash.jpg", // 3rd content section photo
@@ -89,7 +89,7 @@ export const images = {
     section2: "/new/deniz-altindas-t1XLQvDqt_4-unsplash.jpg",// 2nd content section photo
     section3: "/new/gregory-upper-4jQk5sFM27U-unsplash.jpg",// 3rd content section photo
     section4: "/new/aakifah-shaikh-Dh1pFElYVpI-unsplash.jpg",// 4th content section photo
-    cta: "/new/pawel-czerwinski-WVEKM88v9VM-unsplash.jpg",   // Bottom "Begin your journey" background
+    cta: "/new/dian-yu-f18mZ_kI4Mk-unsplash.jpg",   // Bottom "Begin your journey" background
   },
 
   // ───────────── SĀF-T PAGE ─────────────
