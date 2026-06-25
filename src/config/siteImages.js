@@ -52,7 +52,8 @@ export const images = {
 
   // ───────────── ABOUT PAGE ─────────────
   about: {
-    headshot: "/new/abc.jpeg", // Ayana's main photo on the About page
+    headshot: "/new/Foluke McKanney_AYANA_Default_Circle Crop - Office_Headshot (1).jpeg
+", // Ayana's main photo on the About page
     legacyPhoto: "/ayana.jpg",           // Ayana's photo (older About component)
     storyPhoto: "/new/yoann-boyer-i14h2xyPr18-unsplash.jpg", // Photo in "The Story Behind the Practice" section
   },
