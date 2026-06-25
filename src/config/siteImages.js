@@ -98,7 +98,7 @@ export const images = {
     section1: "/new/hardingferrent-IpZ89zebL18-unsplash.jpg",// 1st content section photo
     section2: "/new/dylann-hendricks-z2rC_O-TosY-unsplash.jpg",// 2nd content section photo
     section3: "/new/sincerely-media-kSeo6slWMQE-unsplash.jpg",// 3rd content section photo
-    section4: "/new/deniz-altindas-t1XLQvDqt_4-unsplash.jpg",// 4th content section photo
+    section4: "/new/amanda-schmidt-wWaK2LISiAE-unsplash.jpg",// 4th content section photo
     cta: "/new/linus-nylund-Q5QspluNZmM-unsplash.jpg",       // Bottom "Begin your journey" background
   },
 
