@@ -128,7 +128,7 @@ export const images = {
   // ───────────── The Process ANXIETY & DEPRESSION PAGE ─────────────
   anxiety: {
     hero: "/new/hydra-4x-LDHtgcPrkY8-unsplash.jpg",    // Top banner
-    section1: "/new/arturo-anez-9yhBvC2ykoc-unsplash.jpg",
+    section1: "/new/ijaz-rafi-U0Yq5XALADs-unsplash.jpg",
     section2: "/new/kyle-glenn-nXt5HtLmlgE-unsplash.jpg",
     section3: "/new/robina-weermeijer-3KGF9R_0oHs-unsplash.jpg",
     section4: "/new/priscilla-du-preez-aPa843frIzI-unsplash.jpg",
