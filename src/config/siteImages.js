@@ -59,7 +59,7 @@ export const images = {
 
   // ───────────── CONTACT PAGE ─────────────
   contact: {
-    hero: "/new/jeffrey-hamilton-oq0f6ew3fAs-unsplash.jpg", // Top banner of the Contact page
+    hero: "/new/tehzeeb-kazmi-fvLmjqqHHy4-unsplash.jpg", // Top banner of the Contact page
   },
 
   // ───────────── ACT PAGE (Acceptance & Commitment Therapy) ─────────────
