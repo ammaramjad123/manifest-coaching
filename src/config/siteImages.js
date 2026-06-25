@@ -78,7 +78,7 @@ export const images = {
     section1: "/new/jakob-braun-HfOOKAPsE28-unsplash.jpg",   // 1st content section photo
     section2: "/new/nadine-e-DRzYMtae-vA-unsplash-1.jpg", // 2nd content section photo
     section3: "/new/tsd-studio-9_jvKRbNdTM-unsplash.jpg",  // 3rd content section photo
-    section4: "/new/ivan-aviles-opStzxYG00c-unsplash.jpg.jpg",       // 4th content section photo
+    section4: "/new/ivan-aviles-opStzxYG00c-unsplash.jpg",       // 4th content section photo
     cta: "/new/zach-key-rKE6rXOl14U-unsplash.jpg",           // Bottom "Begin your journey" background
   },
 
@@ -174,7 +174,7 @@ export const images = {
 
   // ───────────── MANIFEST METHOD PAGE ─────────────
   manifest: {
-    hero: "/new/jordan-mcqueen-956I1peiMi4-unsplash.jpg",    // Top banner
+    hero: "/new/rita-ox-eH5gAM2X2wQ-unsplash.jpg",    // Top banner
     workbook: "/new/lakeisha-bennett-znBJkXzo8ik-unsplash.jpg",// Workbooks "coming soon" section
   },
 
