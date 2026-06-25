@@ -68,8 +68,8 @@ export const images = {
     section1: "/new/womanizer-toys-8oB43mw658c-unsplash.jpg",   // 1st content section photo
     section2: "/new/alonso-reyes-JCaw4DRqekk-unsplash.jpg",  // 2nd content section photo
     section3: "/new/katarzyna-zygnerska-G4rGkoRnoNw-unsplash.jpg", // 3rd content section photo
-    section4: "/new/gary-yost--iZGedR1uJo-unsplash.jpg",     // 4th content section photo
-    cta: "/new/hester-qiang-95t94hZTESw-unsplash.jpg",       // Bottom "Begin your journey" background
+    section4: "/new/ben-iwara-VQ4usYBGQSo-unsplash.jpg",     // 4th content section photo
+    cta: "/new/gary-yost--iZGedR1uJo-unsplash.jpg",       // Bottom "Begin your journey" background
   },
 
   // ───────────── ART PAGE (Accelerated Resolution Therapy) ─────────────
