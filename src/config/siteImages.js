@@ -127,7 +127,7 @@ export const images = {
 
   // ───────────── ANXIETY & DEPRESSION PAGE ─────────────
   anxiety: {
-    hero: "/new/hakon-grimstad-hteXWSF9jA4-unsplash.jpg",    // Top banner
+    hero: "/new/niklas-bischop-fa59Eab92RM-unsplash.jpg",    // Top banner
     section1: "/new/arturo-anez-9yhBvC2ykoc-unsplash.jpg",
     section2: "/new/kyle-glenn-nXt5HtLmlgE-unsplash.jpg",
     section3: "/new/robina-weermeijer-3KGF9R_0oHs-unsplash.jpg",
