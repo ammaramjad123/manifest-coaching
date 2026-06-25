@@ -36,7 +36,7 @@ export const upcomingTraining = {
       tabName: "ART Training",             //  short label on the switch button
 
       presenter: "The Peace Practice & RCRR Present",
-      title: "Accelerated Resolution Therapy (ART) Training",
+      title: "",
       subtitle: "For mental health clinicians only",
 
       whatToExpect: [
@@ -88,5 +88,35 @@ export const upcomingTraining = {
       trainerImage: "/new/ayana-headshot.jpg",
     },
 
+// ─────────────── Training 3 ───────────────
+    {
+      active: true,
+      tabName: "ABC Training",
+
+      presenter: "The Peace Practice Presents",
+      title: "SĀF-T — Sensations Awareness Focused Technique",
+      subtitle: "For mental health clinicians & coaches",
+
+      whatToExpect: [
+        "Learn SĀF-T, a body-centered technique drawn from ART that targets distressing physical sensations.",
+        "Help clients release tension and promote rapid calming and a felt sense of safety.",
+        "Master practical tools to regulate the nervous system and restore steadiness.",
+        "Apply SĀF-T confidently in both clinical therapy and coaching settings.",
+      ],
+
+      when: "Dates to be announced",
+      where: "Location to be announced",
+      trainer: "Ayana F. McKanney, LCSW — Founder of The Peace Practice",
+      cost: "Contact for details",
+      website: "",                          //  leave "" to hide the website link
+
+      ctaText: "Reserve Your Spot",
+      ctaLink: "https://calendly.com/manifestcoachingllc/clarity-call",
+
+      topicImage: "/new/lesly-juarez-DFtjXYd5Pto-unsplash.jpg",
+      trainerImage: "/new/ayana-headshot.jpg",
+    },
+
+    
   ],
 };
