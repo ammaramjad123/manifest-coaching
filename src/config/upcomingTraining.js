@@ -26,7 +26,7 @@
 
 export const upcomingTraining = {
 
-  active: true,        //  master switch:   true = show  |  false = hide
+  active: false,        //  master switch:   true = show  |  false = hide
 
   trainings: [
 
