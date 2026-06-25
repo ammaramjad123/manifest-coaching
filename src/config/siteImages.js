@@ -33,7 +33,7 @@ export const images = {
     doorTherapy: "/new/hakon-grimstad-hteXWSF9jA4-unsplash-1.jpg",  // "Three Pathways" — Clinical Therapy card
     doorCoaching: "/new/meg-jenson-WtT3XFmpiMg-unsplash.jpg",       // "Three Pathways" — Coaching card
     doorPartnership: "/new/kreative-kwame-oUXhw8SEqlM-unsplash.jpg",// "Three Pathways" — Partnership card
-    testimonialCommunity: "/new/zac-durant-axXWe7dd1ts-unsplash.jpg",      // "Community Voices" testimonial photo
+    testimonialCommunity: "/new/public/new/alan-villegas-5wXV1ZoqsU4-unsplash (1).jpg",      // "Community Voices" testimonial photo
     testimonialCoaching: "/new/brett-jordan-Pd3ml1YRPlg-unsplash%20(1).jpg",// "Coaching Voices" testimonial photo
   },
 
