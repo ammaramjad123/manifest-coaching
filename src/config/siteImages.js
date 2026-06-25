@@ -65,7 +65,7 @@ export const images = {
   // ───────────── ACT PAGE (Acceptance & Commitment Therapy) ─────────────
   act: {
     hero: "/new/iwaria-inc-1Wr4U5yRw2M-unsplash.jpg",              // Top banner
-    section1: "/new/billy-pasco-se3tHNszbkM-unsplash.jpg",   // 1st content section photo
+    section1: "/new/womanizer-toys-8oB43mw658c-unsplash.jpg",   // 1st content section photo
     section2: "/new/alonso-reyes-JCaw4DRqekk-unsplash.jpg",  // 2nd content section photo
     section3: "/new/katarzyna-zygnerska-G4rGkoRnoNw-unsplash.jpg", // 3rd content section photo
     section4: "/new/gary-yost--iZGedR1uJo-unsplash.jpg",     // 4th content section photo
