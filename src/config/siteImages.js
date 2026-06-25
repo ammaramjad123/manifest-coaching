@@ -87,7 +87,7 @@ export const images = {
     hero: "/new/daniele-levis-pelusi-Vey6fioB1eI-unsplash.jpg",  // Top banner
     section1: "/new/and_picture.png",                        // 1st content section photo
     section2: "/new/deniz-altindas-t1XLQvDqt_4-unsplash.jpg",// 2nd content section photo
-    section3: "/new/markus-winkler-aXkQK_mc5Dw-unsplash.jpg",// 3rd content section photo
+    section3: "/new/gregory-upper-4jQk5sFM27U-unsplash.jpg",// 3rd content section photo
     section4: "/new/aakifah-shaikh-Dh1pFElYVpI-unsplash.jpg",// 4th content section photo
     cta: "/new/pawel-czerwinski-WVEKM88v9VM-unsplash.jpg",   // Bottom "Begin your journey" background
   },
