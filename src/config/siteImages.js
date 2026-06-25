@@ -175,7 +175,7 @@ export const images = {
   // ───────────── MANIFEST METHOD PAGE ─────────────
   manifest: {
     hero: "/new/rita-ox-eH5gAM2X2wQ-unsplash.jpg",    // Top banner
-    workbook: "/new/danilo-d-agostino-TmSaH54lLG4-unsplash.jpg",// Workbooks "coming soon" section
+    workbook: "/new/tehzeeb-kazmi-fvLmjqqHHy4-unsplash.jpg",// Workbooks "coming soon" section
   },
 
   // ───────────── bARTer BALANCE PAGE ─────────────
