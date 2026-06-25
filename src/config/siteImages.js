@@ -125,7 +125,7 @@ export const images = {
     cta: "/new/nik-NP2uSurUzf8-unsplash.jpg",                // Bottom "Begin your journey" background
   },
 
-  // ───────────── ANXIETY & DEPRESSION PAGE ─────────────
+  // ───────────── The Process ANXIETY & DEPRESSION PAGE ─────────────
   anxiety: {
     hero: "/new/niklas-bischop-fa59Eab92RM-unsplash.jpg",    // Top banner
     section1: "/new/arturo-anez-9yhBvC2ykoc-unsplash.jpg",
@@ -138,7 +138,7 @@ export const images = {
     cta: "/new/ralph-katieb-RO8_uFA-lhY-unsplash.jpg",       // Bottom "Begin your journey" background
   },
 
-  // ───────────── LIFE COACHING PAGE ─────────────
+  // ───────────── The Pivot LIFE COACHING PAGE ─────────────
   lifeCoaching: {
     hero: "/new/alfred-schrock-shoE2y51uX0-unsplash.jpg",    // Top banner
     section1: "/new/gary-yost--iZGedR1uJo-unsplash.jpg",
@@ -151,7 +151,7 @@ export const images = {
     cta: "/new/annie-pm-OEewhKC5rIc-unsplash.jpg",           // Bottom "Begin your journey" background
   },
 
-  // ───────────── WOMEN'S ISSUES PAGE ─────────────
+  // ─────────────The Partnership WOMEN'S ISSUES PAGE ─────────────
   women: {
     hero: "/new/sincerely-media-Y9uctIXlUzQ-unsplash.jpg",   // Top banner
     section1: "/new/yoann-boyer-i14h2xyPr18-unsplash.jpg",
