@@ -74,7 +74,7 @@ export const images = {
 
   // ───────────── ART PAGE (Accelerated Resolution Therapy) ─────────────
   art: {
-    hero: "/new/nadine-e-DRzYMtae-vA-unsplash-1.jpg",          // Top banner
+    hero: "/new/annie-pm-OEewhKC5rIc-unsplash.jpg",          // Top banner
     section1: "/new/jakob-braun-HfOOKAPsE28-unsplash.jpg",   // 1st content section photo
     section2: "/new/nadine-e-DRzYMtae-vA-unsplash-1.jpg", // 2nd content section photo
     section3: "/new/robina-weermeijer-3KGF9R_0oHs-unsplash.jpg",  // 3rd content section photo
@@ -84,7 +84,7 @@ export const images = {
 
   // ───────────── DBT PAGE (Dialectical Behavior Therapy) ─────────────
   dbt: {
-    hero: "/new/pawel-czerwinski-WVEKM88v9VM-unsplash.jpg",  // Top banner
+    hero: "/new/daniele-levis-pelusi-Vey6fioB1eI-unsplash.jpg",  // Top banner
     section1: "/new/and_picture.png",                        // 1st content section photo
     section2: "/new/deniz-altindas-t1XLQvDqt_4-unsplash.jpg",// 2nd content section photo
     section3: "/new/markus-winkler-aXkQK_mc5Dw-unsplash.jpg",// 3rd content section photo
