@@ -76,7 +76,7 @@ export const images = {
   art: {
     hero: "/new/nadine-e-DRzYMtae-vA-unsplash-1.jpg",          // Top banner
     section1: "/new/jakob-braun-HfOOKAPsE28-unsplash.jpg",   // 1st content section photo
-    section2: "/new/priscilla-du-preez-aPa843frIzI-unsplash.jpg", // 2nd content section photo
+    section2: "/new/nadine-e-DRzYMtae-vA-unsplash-1.jpg", // 2nd content section photo
     section3: "/new/robina-weermeijer-3KGF9R_0oHs-unsplash.jpg",  // 3rd content section photo
     section4: "/new/javardh-FL6rma2jePU-unsplash.jpg",       // 4th content section photo
     cta: "/new/zach-key-rKE6rXOl14U-unsplash.jpg",           // Bottom "Begin your journey" background
