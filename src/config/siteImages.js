@@ -94,7 +94,7 @@ export const images = {
 
   // ───────────── SĀF-T PAGE ─────────────
   saft: {
-    hero: "/new/julia-elliot-DzGzcVzUGZI-unsplash.jpg",      // Top banner
+    hero: "/new/amanda-schmidt-wWaK2LISiAE-unsplash.jpg",      // Top banner
     section1: "/new/hardingferrent-IpZ89zebL18-unsplash.jpg",// 1st content section photo
     section2: "/new/dylann-hendricks-z2rC_O-TosY-unsplash.jpg",// 2nd content section photo
     section3: "/new/sincerely-media-kSeo6slWMQE-unsplash.jpg",// 3rd content section photo
