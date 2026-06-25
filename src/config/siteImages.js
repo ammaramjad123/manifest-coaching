@@ -52,8 +52,8 @@ export const images = {
 
   // ───────────── ABOUT PAGE ─────────────
   about: {
-    headshot: "/new/public/ayana.jpg", // Ayana's main photo on the About page
-    legacyPhoto: "public/ayana.jpg",           // Ayana's photo (older About component)
+    headshot: "/new/ayana-headshot.jpg", // Ayana's main photo on the About page
+    legacyPhoto: "/new/ayana.jpg",           // Ayana's photo (older About component)
     storyPhoto: "/new/yoann-boyer-i14h2xyPr18-unsplash.jpg", // Photo in "The Story Behind the Practice" section
   },
 
@@ -75,7 +75,7 @@ export const images = {
   // ───────────── ART PAGE (Accelerated Resolution Therapy) ─────────────
   art: {
     hero: "/new/annie-pm-OEewhKC5rIc-unsplash.jpg",          // Top banner
-    section1: "/new/jakob-braun-HfOOKAPsE28-unsplash.jpg",   // 1st content section photo
+    section1: "/new/sumit-jaswal-gzUj4xFysEc-unsplash.jpg",   // 1st content section photo
     section2: "/new/nadine-e-DRzYMtae-vA-unsplash-1.jpg", // 2nd content section photo
     section3: "/new/tsd-studio-9_jvKRbNdTM-unsplash.jpg",  // 3rd content section photo
     section4: "/new/ivan-aviles-opStzxYG00c-unsplash.jpg",       // 4th content section photo
