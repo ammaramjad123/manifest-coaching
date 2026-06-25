@@ -105,7 +105,7 @@ export const images = {
   // ───────────── INCLUSIVE & AFFIRMING CARE PAGE ─────────────
   inclusive: {
     hero: "/new/sincerely-media-kSeo6slWMQE-unsplash.jpg",   // Top banner
-    section1: "/new/nick-fewings-BAZejJdZ57w-unsplash.jpg",  // 1st content section photo
+    section1: "/new/new/juja-han-TORI6YW1fHE-unsplash.jpg",  // 1st content section photo
     section2: "/new/vijesh-datt-OuAyzIWfvGQ-unsplash.jpg",   // 2nd content section photo
     section3: "/new/priscilla-du-preez-aPa843frIzI-unsplash.jpg", // 3rd content section photo (Clinical Pillars)
     section4: "/new/deniz-altindas-t1XLQvDqt_4-unsplash.jpg",// 4th content section photo (What to Expect)
