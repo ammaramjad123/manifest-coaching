@@ -181,7 +181,7 @@ export const images = {
   // ───────────── bARTer BALANCE PAGE ─────────────
   barter: {
     section1: "/new/openhands.jpg",                          // 1st content section photo
-    section2: "/new/nature_img.png",                         // 2nd content section photo
+    section2: "/new/sandra-grunewald-fLl5j9l_0UE-unsplash.jpg",                         // 2nd content section photo
     section3: "/new/hardingferrent-IpZ89zebL18-unsplash.jpg",// 3rd content section photo
     logo1: "/new/acceleratedresart.png",                     // ART logo
     logo2: "/new/is-art-logo-large.png",                     // IS-ART logo
