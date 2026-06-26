@@ -46,11 +46,11 @@ export const upcomingTraining = {
         "A 3-day BASIC ART training will equip you to quickly help clients release emotional pain.",
       ],
 
-      when: "Dates to be announced",       //  e.g. "March 14–16, 2026"
-      where: "Location to be announced",   //  e.g. "Atlanta, GA · In person"
+      when: "2026 dates coming soon!",       //  e.g. "March 14–16, 2026"
+      where: "GA & NYC coming soon!",   //  e.g. "Atlanta, GA · In person"
       trainer: "Ayana F. McKanney, LCSW — Founder of The Peace Practice",
       cost: "$1,700",
-      website: "https://www.acceleratedresolutiontherapy.com",
+      website: "",
 
       ctaText: "Reserve Your Spot",
       ctaLink: "https://calendly.com/manifestcoachingllc/clarity-call",
@@ -75,10 +75,10 @@ export const upcomingTraining = {
         "Apply SĀF-T confidently in both clinical therapy and coaching settings.",
       ],
 
-      when: "Dates to be announced",
-      where: "Location to be announced",
+      when: "2026 dates coming soon!",
+      where: "GA & NYC coming soon!",
       trainer: "Ayana F. McKanney, LCSW — Founder of The Peace Practice",
-      cost: "Contact for details",
+      cost: "$199",
       website: "",                          //  leave "" to hide the website link
 
       ctaText: "Reserve Your Spot",
