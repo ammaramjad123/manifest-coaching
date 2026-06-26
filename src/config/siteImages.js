@@ -33,13 +33,13 @@ export const images = {
     doorTherapy: "/new/hakon-grimstad-hteXWSF9jA4-unsplash-1.jpg",  // "Three Pathways" — Clinical Therapy card
     doorCoaching: "/new/meg-jenson-WtT3XFmpiMg-unsplash.jpg",       // "Three Pathways" — Coaching card
     doorPartnership: "/new/kreative-kwame-oUXhw8SEqlM-unsplash.jpg",// "Three Pathways" — Partnership card
-    testimonialCommunity: "/new/alan-villegas-5wXV1ZoqsU4-unsplash (1).jpg",      // "Community Voices" testimonial photo
+    testimonialCommunity: "/new/dylann-hendricks-oxaBYAbpWgI-unsplash.jpg",      // "Community Voices" testimonial photo
     testimonialCoaching: "/new/brett-jordan-Pd3ml1YRPlg-unsplash%20(1).jpg",// "Coaching Voices" testimonial photo
   },
 
   // ───────────── FAQ SECTION ─────────────
   faq: {
-    image: "/new/yumu-81PkOTYkN2Y-unsplash.jpg", // Photo beside the FAQ questions
+    image: "/new/milad-fakurian-iKzm8QvVpB8-unsplash.jpg", // Photo beside the FAQ questions
   },
 
   // ───────────── SERVICES PAGE ─────────────
