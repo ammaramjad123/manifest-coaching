@@ -145,8 +145,8 @@ export const images = {
     section2: "/new/sumit-jaswal-gzUj4xFysEc-unsplash.jpg",
     section3: "/new/charlotte-knight-aUw2sgqnG9s-unsplash.jpg",
     section4: "/new/arturo-anez-9yhBvC2ykoc-unsplash.jpg",
-    section5: "/new/annie-pm-OEewhKC5rIc-unsplash.jpg",
-    section6: "/new/imre-zsolt-h7zZWJQ4DMs-unsplash.jpg",
+    section5: "/new/rebecca-niver-IUUuyoM_1IE-unsplash.jpg",
+    section6: "/new/annie-pm-OEewhKC5rIc-unsplash.jpg",
     section7: "/new/dylann-hendricks-z2rC_O-TosY-unsplash.jpg",
     cta: "/new/alfred-schrock-shoE2y51uX0-unsplash-1.jpg",           // Bottom "Begin your journey" background
   },
