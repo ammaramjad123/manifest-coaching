@@ -148,7 +148,7 @@ export const images = {
     section5: "/new/claiton-conto-8PiSDuUGP0Y-unsplash.jpg",
     section6: "/new/imre-zsolt-h7zZWJQ4DMs-unsplash.jpg",
     section7: "/new/muhammed-disu-XKpD3AUa-zA-unsplash.jpg",
-    cta: "/new/valerii-ladomyriak-7oGXQII7AWc-unsplash (1).jpg",           // Bottom "Begin your journey" background
+    cta: "/new/alfred-schrock-shoE2y51uX0-unsplash-1.jpg",           // Bottom "Begin your journey" background
   },
 
   // ─────────────The Partnership WOMEN'S ISSUES PAGE ─────────────
