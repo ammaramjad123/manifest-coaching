@@ -144,11 +144,11 @@ export const images = {
     section1: "/new/gary-yost--iZGedR1uJo-unsplash.jpg",
     section2: "/new/sumit-jaswal-gzUj4xFysEc-unsplash.jpg",
     section3: "/new/matthew-tenbruggencate-mEctnMdXQ0M-unsplash.jpg",
-    section4: "/new/alonso-reyes-JCaw4DRqekk-unsplash.jpg",
+    section4: "/new/philippe-spitalier-kumAXJ9r834-unsplash.jpg.jpg",
     section5: "/new/claiton-conto-8PiSDuUGP0Y-unsplash.jpg",
     section6: "/new/imre-zsolt-h7zZWJQ4DMs-unsplash.jpg",
-    section7: "/new/valerii-ladomyriak-7oGXQII7AWc-unsplash (1).jpg",
-    cta: "/new/annie-pm-OEewhKC5rIc-unsplash.jpg",           // Bottom "Begin your journey" background
+    section7: "/new/muhammed-disu-XKpD3AUa-zA-unsplash.jpg",
+    cta: "/new/valerii-ladomyriak-7oGXQII7AWc-unsplash (1).jpg",           // Bottom "Begin your journey" background
   },
 
   // ─────────────The Partnership WOMEN'S ISSUES PAGE ─────────────
