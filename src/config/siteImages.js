@@ -143,7 +143,7 @@ export const images = {
     hero: "/new/imre-zsolt-h7zZWJQ4DMs-unsplash.jpg",    // Top banner
     section1: "/new/gary-yost--iZGedR1uJo-unsplash.jpg",
     section2: "/new/sumit-jaswal-gzUj4xFysEc-unsplash.jpg",
-    section3: "/new/matthew-tenbruggencate-mEctnMdXQ0M-unsplash.jpg",
+    section3: "/new/charlotte-knight-aUw2sgqnG9s-unsplash.jpg",
     section4: "/new/philippe-spitalier-kumAXJ9r834-unsplash.jpg.jpg",
     section5: "/new/claiton-conto-8PiSDuUGP0Y-unsplash.jpg",
     section6: "/new/imre-zsolt-h7zZWJQ4DMs-unsplash.jpg",
