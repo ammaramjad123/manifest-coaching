@@ -153,15 +153,15 @@ export const images = {
 
   // ─────────────The Partnership WOMEN'S ISSUES PAGE ─────────────
   women: {
-    hero: "/new/sincerely-media-Y9uctIXlUzQ-unsplash.jpg",   // Top banner
-    section1: "/new/yoann-boyer-i14h2xyPr18-unsplash.jpg",
+    hero: "/new/gregory-upper-4jQk5sFM27U-unsplash.jpg",   // Top banner
+    section1: "/new/sincerely-media-Y9uctIXlUzQ-unsplash.jpg",
     section2: "/new/satit-wongsampan-9SM7OgDXmQY-unsplash (1).jpg",
     section3: "/new/hardingferrent-IpZ89zebL18-unsplash.jpg",
     section4: "/new/valerii-ladomyriak-7oGXQII7AWc-unsplash (1).jpg",
     section5: "/new/katarzyna-zygnerska-G4rGkoRnoNw-unsplash.jpg",
     section6: "/new/venwardo-F-ga6WwcqOQ-unsplash.jpg",
     section7: "/new/alonso-reyes-JCaw4DRqekk-unsplash.jpg",
-    cta: "/new/kamil-kalkan-BTpIUnszs_Q-unsplash.jpg",       // Bottom "Begin your journey" background
+    cta: "/new/sian-cooper-4kEobPqPgKw-unsplash.jpg",       // Bottom "Begin your journey" background
   },
 
   // ───────────── IMMIGRATION EVALUATIONS PAGE ─────────────
