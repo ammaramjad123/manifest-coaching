@@ -135,7 +135,7 @@ export const images = {
     section5: "/new/hester-qiang-95t94hZTESw-unsplash.jpg",
     section6: "/new/ricardo-gomez-angel-D9kOnC_1AHw-unsplash.jpg",
     section7: "/new/abel-marquez-0chVl3b15MQ-unsplash.jpg",
-    cta: "/new/ralph-katieb-RO8_uFA-lhY-unsplash.jpg",       // Bottom "Begin your journey" background
+    cta: "/new/thomas-elliott-sIR_6bXcMrk-unsplash.jpg",       // Bottom "Begin your journey" background
   },
 
   // ───────────── The Pivot LIFE COACHING PAGE ─────────────
