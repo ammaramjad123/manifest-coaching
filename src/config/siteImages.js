@@ -87,7 +87,7 @@ export const images = {
     hero: "/new/kuba_-lVqWBjepH1I-unsplash.jpg",  // Top banner
     section1: "/new/and_picture.png",                        // 1st content section photo
     section2: "/new/qwerqu-mcbrew-K1pPL5QSF4A-unsplash.jpg",// 2nd content section photo
-    section3: "/new/thierry-biland-Ki4tcEcdqIc-unsplash.jpg",// 3rd content section photo
+    section3: "/new/8machine-_-GVAYgLlpeZ8-unsplash.jpg",// 3rd content section photo
     section4: "/new/gilbert-beltran-a_sviiqnSes-unsplash.jpg",// 4th content section photo
     cta: "/new/dian-yu-f18mZ_kI4Mk-unsplash.jpg",   // Bottom "Begin your journey" background
   },
@@ -134,7 +134,7 @@ export const images = {
     section4: "/new/priscilla-du-preez-aPa843frIzI-unsplash.jpg",
     section5: "/new/hester-qiang-95t94hZTESw-unsplash.jpg",
     section6: "/new/ricardo-gomez-angel-D9kOnC_1AHw-unsplash.jpg",
-    section7: "/new/abel-marquez-0chVl3b15MQ-unsplash.jpg",
+    section7: "/new/lucas-gouvea-Kbmt6r2YpXM-unsplash.jpg",
     cta: "/new/thomas-elliott-sIR_6bXcMrk-unsplash.jpg",       // Bottom "Begin your journey" background
   },
 
