@@ -33,7 +33,7 @@ export const images = {
     doorTherapy: "/new/hakon-grimstad-hteXWSF9jA4-unsplash-1.jpg",  // "Three Pathways" — Clinical Therapy card
     doorCoaching: "/new/meg-jenson-WtT3XFmpiMg-unsplash.jpg",       // "Three Pathways" — Coaching card
     doorPartnership: "/new/kreative-kwame-oUXhw8SEqlM-unsplash.jpg",// "Three Pathways" — Partnership card
-    testimonialCommunity: "/new/dylann-hendricks-oxaBYAbpWgI-unsplash.jpg",      // "Community Voices" testimonial photo
+    testimonialCommunity: "/new/supriya-chauhan-5Ti_6e-OBs0-unsplash.jpg",      // "Community Voices" testimonial photo
     testimonialCoaching: "/new/brett-jordan-Pd3ml1YRPlg-unsplash%20(1).jpg",// "Coaching Voices" testimonial photo
   },
 
@@ -166,7 +166,7 @@ export const images = {
 
   // ───────────── IMMIGRATION EVALUATIONS PAGE ─────────────
   immigration: {
-    card1: "/new/supriya-chauhan-5Ti_6e-OBs0-unsplash.jpg",    // 1st service card image
+    card1: "/new/dylann-hendricks-oxaBYAbpWgI-unsplash.jpg",    // 1st service card image
     card2: "/new/markus-winkler-aXkQK_mc5Dw-unsplash.jpg",   // 2nd service card image
     showcase: "/new/jack-blueberry-50JM0vCCEUo-unsplash.jpg",  // Large banner photo
     cta: "/new/elena-mozhvilo-j06gLuKK0GM-unsplash.jpg",     // Bottom call-to-action background
