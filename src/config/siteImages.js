@@ -186,10 +186,10 @@ export const images = {
     logo1: "/new/acceleratedresart.png",                     // ART logo
     logo2: "/new/is-art-logo-large.png",                     // IS-ART logo
     logo3: "/new/manifest-coaching-logo.png",                // MANIFEST Coaching logo
-    showcase: "/new/sincerely-media-kSeo6slWMQE-unsplash.jpg",// Showcase photo
-    cta: "/new/kyle-glenn-nXt5HtLmlgE-unsplash.jpg",         // Call-to-action background
+    showcase: "/new/pete-godfrey-3TSShf9Uidg-unsplash.jpg",// b2b banner photo
+    cta: "/new/alexey-demidov-t47aoza7BWk-unsplash.jpg",         // 1st picture b2b
     ayanaHeadshot: "/new/ayana-headshot.jpg",                // Ayana's photo on this page
-    closing: "/new/komal-g-VPozsd9WgiY-unsplash.jpg",// Closing section photo
+    closing: "/new/vinu-t-V0vT7qaWhIw-unsplash.jpg",// Closing section photo
   },
 
 };
