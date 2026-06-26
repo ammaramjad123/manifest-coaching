@@ -68,7 +68,7 @@ export const images = {
     section1: "/new/womanizer-toys-8oB43mw658c-unsplash.jpg",   // 1st content section photo
     section2: "/new/marquise-kamanke-jfQGc8Emf1Q-unsplash.jpg",  // 2nd content section photo
     section3: "/new/kamil-kalkan-BTpIUnszs_Q-unsplash.jpg", // 3rd content section photo
-    section4: "/new/ben-iwara-VQ4usYBGQSo-unsplash.jpg",     // 4th content section photo
+    section4: "/new/sonayon-oluwatosin-LrDQfDXGDko-unsplash.jpg.jpg",     // 4th content section photo
     cta: "/new/gary-yost--iZGedR1uJo-unsplash.jpg",       // Bottom "Begin your journey" background
   },
 
