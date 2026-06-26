@@ -107,7 +107,7 @@ export const images = {
     hero: "/new/philip-oroni-8kpm32LzzCU-unsplash.jpg",   // Top banner
     section1: "/new/kateryna-hliznitsova-CkHGwyJcI6k-unsplash.jpg",  // 1st content section photo
     section2: "/new/vijesh-datt-OuAyzIWfvGQ-unsplash.jpg",   // 2nd content section photo
-    section3: "/new/sincerely-media-kSeo6slWMQE-unsplash.jpg", // 3rd content section photo (Clinical Pillars)
+    section3: "/new/molly-blackbird-WvXPoIKsmOM-unsplash.jpg", // 3rd content section photo (Clinical Pillars)
     section4: "/new/priscilla-du-preez-aPa843frIzI-unsplash.jpg",// 4th content section photo (What to Expect)
     cta: "/new/aaron-burden-clokmlaUwaU-unsplash.jpg",           // Bottom "Begin your journey" background
   },
@@ -166,7 +166,7 @@ export const images = {
 
   // ───────────── IMMIGRATION EVALUATIONS PAGE ─────────────
   immigration: {
-    card1: "/new/edward-howell-VlTJdP8ZY1c-unsplash.jpg",    // 1st service card image
+    card1: "/new/supriya-chauhan-5Ti_6e-OBs0-unsplash.jpg",    // 1st service card image
     card2: "/new/markus-winkler-aXkQK_mc5Dw-unsplash.jpg",   // 2nd service card image
     showcase: "/new/michael-wave-_wMJkbRDgNU-unsplash.jpg",  // Large showcase photo
     cta: "/new/elena-mozhvilo-j06gLuKK0GM-unsplash.jpg",     // Bottom call-to-action background
