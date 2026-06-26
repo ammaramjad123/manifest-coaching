@@ -104,12 +104,12 @@ export const images = {
 
   // ───────────── INCLUSIVE & AFFIRMING CARE PAGE ─────────────
   inclusive: {
-    hero: "/new/sincerely-media-kSeo6slWMQE-unsplash.jpg",   // Top banner
-    section1: "/new/juja-han-TORI6YW1fHE-unsplash.jpg",  // 1st content section photo
+    hero: "/new/philip-oroni-8kpm32LzzCU-unsplash.jpg",   // Top banner
+    section1: "/new/kateryna-hliznitsova-CkHGwyJcI6k-unsplash.jpg",  // 1st content section photo
     section2: "/new/vijesh-datt-OuAyzIWfvGQ-unsplash.jpg",   // 2nd content section photo
-    section3: "/new/priscilla-du-preez-aPa843frIzI-unsplash.jpg", // 3rd content section photo (Clinical Pillars)
-    section4: "/new/deniz-altindas-t1XLQvDqt_4-unsplash.jpg",// 4th content section photo (What to Expect)
-    cta: "/new/annie-pm-OEewhKC5rIc-unsplash.jpg",           // Bottom "Begin your journey" background
+    section3: "/new/sincerely-media-kSeo6slWMQE-unsplash.jpg", // 3rd content section photo (Clinical Pillars)
+    section4: "/new/priscilla-du-preez-aPa843frIzI-unsplash.jpg",// 4th content section photo (What to Expect)
+    cta: "/new/aaron-burden-clokmlaUwaU-unsplash.jpg",           // Bottom "Begin your journey" background
   },
 
   // ───────────── TRAUMA & PTSD PAGE ─────────────
