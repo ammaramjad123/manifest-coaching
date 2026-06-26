@@ -164,11 +164,11 @@ export const images = {
     cta: "/new/sian-cooper-4kEobPqPgKw-unsplash.jpg",       // Bottom "Begin your journey" background
   },
 
-  // ───────────── IMMIGRATION EVALUATIONS PAGE ??cant change banner??─────────────
+  // ───────────── IMMIGRATION EVALUATIONS PAGE ─────────────
   immigration: {
     card1: "/new/supriya-chauhan-5Ti_6e-OBs0-unsplash.jpg",    // 1st service card image
     card2: "/new/markus-winkler-aXkQK_mc5Dw-unsplash.jpg",   // 2nd service card image
-    showcase: "/new/michael-wave-_wMJkbRDgNU-unsplash.jpg",  // Large showcase photo
+    showcase: "/new/jack-blueberry-50JM0vCCEUo-unsplash.jpg",  // Large banner photo
     cta: "/new/elena-mozhvilo-j06gLuKK0GM-unsplash.jpg",     // Bottom call-to-action background
   },
 
