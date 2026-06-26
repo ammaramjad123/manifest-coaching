@@ -74,8 +74,8 @@ export const images = {
 
   // ───────────── ART PAGE (Accelerated Resolution Therapy) ─────────────
   art: {
-    hero: "/new/annie-pm-OEewhKC5rIc-unsplash.jpg",          // Top banner
-    section1: "/new/sumit-jaswal-gzUj4xFysEc-unsplash.jpg",   // 1st content section photo
+    hero: "/new/mirella-callage-nI0d850_UhQ-unsplash.jpg",          // Top banner
+    section1: "/new/nick-andreka-0GK3okK9DcY-unsplash.jpg",   // 1st content section photo
     section2: "/new/nadine-e-DRzYMtae-vA-unsplash-1.jpg", // 2nd content section photo
     section3: "/new/tsd-studio-9_jvKRbNdTM-unsplash.jpg",  // 3rd content section photo
     section4: "/new/ivan-aviles-opStzxYG00c-unsplash.jpg",       // 4th content section photo
