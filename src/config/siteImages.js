@@ -153,8 +153,8 @@ export const images = {
 
   // ─────────────The Partnership WOMEN'S ISSUES PAGE ─────────────
   women: {
-    hero: "/new/gregory-upper-4jQk5sFM27U-unsplash.jpg",   // Top banner
-    section1: "/new/sincerely-media-Y9uctIXlUzQ-unsplash.jpg",
+    hero: "/new/manifest-coaching-logo.png",   // Top banner
+    section1: "/new/gregory-upper-4jQk5sFM27U-unsplash.jpg",
     section2: "/new/satit-wongsampan-9SM7OgDXmQY-unsplash (1).jpg",
     section3: "/new/hardingferrent-IpZ89zebL18-unsplash.jpg",
     section4: "/new/valerii-ladomyriak-7oGXQII7AWc-unsplash (1).jpg",
@@ -181,15 +181,15 @@ export const images = {
   // ───────────── bARTer BALANCE PAGE ─────────────
   barter: {
     section1: "/new/openhands.jpg",                          // 1st content section photo
-    section2: "/new/sandra-grunewald-fLl5j9l_0UE-unsplash.jpg",                         // 2nd content section photo
-    section3: "/new/hardingferrent-IpZ89zebL18-unsplash.jpg",// 3rd content section photo
+    section2: "/new/yunona-uritsky-Jut18mfth7I-unsplash.jpg",                         // 2nd content section photo
+    section3: "/new/brett-jordan-O3QGr8EtXig-unsplash.jpg",// 3rd content section photo
     logo1: "/new/acceleratedresart.png",                     // ART logo
     logo2: "/new/is-art-logo-large.png",                     // IS-ART logo
     logo3: "/new/manifest-coaching-logo.png",                // MANIFEST Coaching logo
     showcase: "/new/sincerely-media-kSeo6slWMQE-unsplash.jpg",// Showcase photo
     cta: "/new/kyle-glenn-nXt5HtLmlgE-unsplash.jpg",         // Call-to-action background
     ayanaHeadshot: "/new/ayana-headshot.jpg",                // Ayana's photo on this page
-    closing: "/new/sincerely-media-kSeo6slWMQE-unsplash.jpg",// Closing section photo
+    closing: "/new/komal-g-VPozsd9WgiY-unsplash.jpg",// Closing section photo
   },
 
 };
