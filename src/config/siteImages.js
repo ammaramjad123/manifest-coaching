@@ -86,9 +86,9 @@ export const images = {
   dbt: {
     hero: "/new/daniele-levis-pelusi-Vey6fioB1eI-unsplash.jpg",  // Top banner
     section1: "/new/and_picture.png",                        // 1st content section photo
-    section2: "/new/deniz-altindas-t1XLQvDqt_4-unsplash.jpg",// 2nd content section photo
-    section3: "/new/gregory-upper-4jQk5sFM27U-unsplash.jpg",// 3rd content section photo
-    section4: "/new/aakifah-shaikh-Dh1pFElYVpI-unsplash.jpg",// 4th content section photo
+    section2: "/new/qwerqu-mcbrew-K1pPL5QSF4A-unsplash.jpg",// 2nd content section photo
+    section3: "/new/thierry-biland-Ki4tcEcdqIc-unsplash.jpg",// 3rd content section photo
+    section4: "/new/brett-jordan-O3QGr8EtXig-unsplash.jpg",// 4th content section photo
     cta: "/new/dian-yu-f18mZ_kI4Mk-unsplash.jpg",   // Bottom "Begin your journey" background
   },
 
