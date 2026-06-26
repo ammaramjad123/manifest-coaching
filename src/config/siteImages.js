@@ -59,7 +59,7 @@ export const images = {
 
   // ───────────── CONTACT PAGE ─────────────
   contact: {
-    hero: "/new/priscilla-du-preez-KNf9AeHpI9o-unsplash.jpg", // Top banner of the Contact page
+    hero: "/new/seyi-ariyo-cGfKCMJa6Vw-unsplash.jpg", // Top banner of the Contact page
   },
 
   // ───────────── ACT PAGE (Acceptance & Commitment Therapy) ─────────────
