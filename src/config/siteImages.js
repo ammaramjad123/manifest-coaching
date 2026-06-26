@@ -112,7 +112,7 @@ export const images = {
     cta: "/new/aaron-burden-clokmlaUwaU-unsplash.jpg",           // Bottom "Begin your journey" background
   },
 
-  // ───────────── TRAUMA & PTSD PAGE ─────────────
+  // ─────────────???? TRAUMA & PTSD PAGE ─────────────
   trauma: {
     hero: "/new/nadine-e-DRzYMtae-vA-unsplash.jpg",          // Top banner
     section1: "/new/kreative-kwame-oUXhw8SEqlM-unsplash.jpg",
@@ -164,7 +164,7 @@ export const images = {
     cta: "/new/sian-cooper-4kEobPqPgKw-unsplash.jpg",       // Bottom "Begin your journey" background
   },
 
-  // ───────────── IMMIGRATION EVALUATIONS PAGE ─────────────
+  // ───────────── IMMIGRATION EVALUATIONS PAGE ??cant change banner??─────────────
   immigration: {
     card1: "/new/supriya-chauhan-5Ti_6e-OBs0-unsplash.jpg",    // 1st service card image
     card2: "/new/markus-winkler-aXkQK_mc5Dw-unsplash.jpg",   // 2nd service card image
