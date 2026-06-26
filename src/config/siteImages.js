@@ -129,7 +129,7 @@ export const images = {
   anxiety: {
     hero: "/new/hydra-4x-LDHtgcPrkY8-unsplash.jpg",    // Top banner
     section1: "/new/ijaz-rafi-U0Yq5XALADs-unsplash.jpg",
-    section2: "/new/kyle-glenn-nXt5HtLmlgE-unsplash.jpg",
+    section2: "/new/kingsley-osei-abrah-9Y06DbOzUOs-unsplash.jpg",
     section3: "/new/robina-weermeijer-3KGF9R_0oHs-unsplash.jpg",
     section4: "/new/priscilla-du-preez-aPa843frIzI-unsplash.jpg",
     section5: "/new/hester-qiang-95t94hZTESw-unsplash.jpg",
