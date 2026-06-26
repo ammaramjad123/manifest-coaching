@@ -140,7 +140,7 @@ export const images = {
 
   // ───────────── The Pivot LIFE COACHING PAGE ─────────────
   lifeCoaching: {
-    hero: "/new/alfred-schrock-shoE2y51uX0-unsplash.jpg",    // Top banner
+    hero: "/new/imre-zsolt-h7zZWJQ4DMs-unsplash.jpg",    // Top banner
     section1: "/new/gary-yost--iZGedR1uJo-unsplash.jpg",
     section2: "/new/sumit-jaswal-gzUj4xFysEc-unsplash.jpg",
     section3: "/new/matthew-tenbruggencate-mEctnMdXQ0M-unsplash.jpg",
