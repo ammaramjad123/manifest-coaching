@@ -84,11 +84,11 @@ export const images = {
 
   // ───────────── DBT PAGE (Dialectical Behavior Therapy) ─────────────
   dbt: {
-    hero: "/new/daniele-levis-pelusi-Vey6fioB1eI-unsplash.jpg",  // Top banner
+    hero: "/new/jet-stouten-lTxwC-3G_VU-unsplash.jpg",  // Top banner
     section1: "/new/and_picture.png",                        // 1st content section photo
     section2: "/new/qwerqu-mcbrew-K1pPL5QSF4A-unsplash.jpg",// 2nd content section photo
     section3: "/new/thierry-biland-Ki4tcEcdqIc-unsplash.jpg",// 3rd content section photo
-    section4: "/new/brett-jordan-O3QGr8EtXig-unsplash.jpg",// 4th content section photo
+    section4: "new/sandra-grunewald-fLl5j9l_0UE-unsplash.jpg",// 4th content section photo
     cta: "/new/dian-yu-f18mZ_kI4Mk-unsplash.jpg",   // Bottom "Begin your journey" background
   },
 
