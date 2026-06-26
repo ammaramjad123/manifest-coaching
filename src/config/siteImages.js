@@ -174,7 +174,7 @@ export const images = {
 
   // ───────────── MANIFEST METHOD PAGE ─────────────
   manifest: {
-    hero: "/new/jelena-mirkovic-AI5zwllDGgU-unsplash.jpg",    // Top banner
+    hero: "/new/sandra-grunewald-fLl5j9l_0UE-unsplash.jpg",    // Top banner
     workbook: "/new/content-pixie-DRmDrlqMZsU-unsplash.jpg",// Workbooks "coming soon" section
   },
 
