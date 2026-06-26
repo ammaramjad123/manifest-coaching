@@ -44,7 +44,7 @@ export const images = {
 
   // ───────────── SERVICES PAGE ─────────────
   services: {
-    hero: "/new/anubhav-sonker-rfsY03Stekw-unsplash (1).jpg", // Top banner of the Services page
+    hero: "/new/tim-cooper-Mqm9pG8Vpuc-unsplash.jpg", // Top banner of the Services page
     trainingLogo: "/new/manifest-coaching-logo.png",       // Logo in the Professional Training card
     showcase: "/new/robert-lukeman-_RBcxo9AU-U-unsplash.jpg",// Wide stone-circles background (Service Showcase)
     twoHatsCrown: "/new/crown_bg.png",                     // Crown background in "The Two Hats" section
