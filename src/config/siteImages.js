@@ -180,9 +180,9 @@ export const images = {
 
   // ───────────── bARTer BALANCE PAGE ─────────────
   barter: {
-    section1: "/new/openhands.jpg",                          // 1st content section photo
+    section1: "/new/alonso-reyes-JCaw4DRqekk-unsplash.jpg",                          // 1st content section photo
     section2: "/new/yunona-uritsky-Jut18mfth7I-unsplash.jpg",                         // 2nd content section photo
-    section3: "/new/brett-jordan-O3QGr8EtXig-unsplash.jpg",// 3rd content section photo
+    section3: "/new/emmanuel-anderson-MGXSVqffa_Y-unsplash.jpg",// 3rd content section photo
     logo1: "/new/acceleratedresart.png",                     // ART logo
     logo2: "/new/is-art-logo-large.png",                     // IS-ART logo
     logo3: "/new/manifest-coaching-logo.png",                // MANIFEST Coaching logo
