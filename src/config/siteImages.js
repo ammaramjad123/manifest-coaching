@@ -46,7 +46,7 @@ export const images = {
   services: {
     hero: "/new/sincerely-media-kSeo6slWMQE-unsplash.jpg", // Top banner of the Services page
     trainingLogo: "/new/manifest-coaching-logo.png",       // Logo in the Professional Training card
-    showcase: "/public/logo.png",// Wide stone-circles background (Service Showcase)
+    showcase: "/new/logo.png",// Wide stone-circles background (Service Showcase)
     twoHatsCrown: "/new/crown_bg.png",                     // Crown background in "The Two Hats" section
   },
 
