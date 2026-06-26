@@ -133,7 +133,7 @@ export const images = {
     section3: "/new/robina-weermeijer-3KGF9R_0oHs-unsplash.jpg",
     section4: "/new/priscilla-du-preez-aPa843frIzI-unsplash.jpg",
     section5: "/new/hester-qiang-95t94hZTESw-unsplash.jpg",
-    section6: "/new/venwardo-F-ga6WwcqOQ-unsplash.jpg",
+    section6: "/new/ricardo-gomez-angel-D9kOnC_1AHw-unsplash.jpg",
     section7: "/new/abel-marquez-0chVl3b15MQ-unsplash.jpg",
     cta: "/new/ralph-katieb-RO8_uFA-lhY-unsplash.jpg",       // Bottom "Begin your journey" background
   },
