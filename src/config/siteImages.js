@@ -59,7 +59,7 @@ export const images = {
 
   // ───────────── CONTACT PAGE ─────────────
   contact: {
-    hero: "/new/christian-buehner-K8xJPpHEO7M-unsplash.jpg", // Top banner of the Contact page
+    hero: "/new/susan-wilkinson-sZLVOi7x0dc-unsplash.jpg", // Top banner of the Contact page
   },
 
   // ───────────── ACT PAGE (Acceptance & Commitment Therapy) ─────────────
@@ -108,7 +108,7 @@ export const images = {
     section1: "/new/kateryna-hliznitsova-CkHGwyJcI6k-unsplash.jpg",  // 1st content section photo
     section2: "/new/vijesh-datt-OuAyzIWfvGQ-unsplash.jpg",   // 2nd content section photo
     section3: "/new/molly-blackbird-WvXPoIKsmOM-unsplash.jpg", // 3rd content section photo (Clinical Pillars)
-    section4: "/new/priscilla-du-preez-aPa843frIzI-unsplash.jpg",// 4th content section photo (What to Expect)
+    section4: "/new/christian-buehner-K8xJPpHEO7M-unsplash.jpg",// 4th content section photo (What to Expect)
     cta: "/new/aaron-burden-clokmlaUwaU-unsplash.jpg",           // Bottom "Begin your journey" background
   },
 
