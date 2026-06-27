@@ -67,17 +67,17 @@ export const images = {
     hero: "/new/iwaria-inc-1Wr4U5yRw2M-unsplash.jpg",              // Top banner
     section1: "/new/womanizer-toys-8oB43mw658c-unsplash.jpg",   // 1st content section photo
     section2: "/new/marquise-kamanke-jfQGc8Emf1Q-unsplash.jpg",  // 2nd content section photo
-    section3: "/new/kamil-kalkan-BTpIUnszs_Q-unsplash.jpg", // 3rd content section photo
+    section3: "/new/kingsley-osei-abrah-9Y06DbOzUOs-unsplash.jpg", // 3rd content section photo
     section4: "/new/sonayon-oluwatosin-LrDQfDXGDko-unsplash.jpg",     // 4th content section photo
     cta: "/new/gary-yost--iZGedR1uJo-unsplash.jpg",       // Bottom "Begin your journey" background
   },
 
   // ───────────── ART PAGE (Accelerated Resolution Therapy) ─────────────
   art: {
-    hero: "/new/mirella-callage-nI0d850_UhQ-unsplash.jpg",          // Top banner
+    hero: "/new/rebecca-niver-IUUuyoM_1IE-unsplash.jpg",          // Top banner
     section1: "/new/nick-andreka-0GK3okK9DcY-unsplash.jpg",   // 1st content section photo
     section2: "/new/nadine-e-DRzYMtae-vA-unsplash-1.jpg", // 2nd content section photo
-    section3: "/new/tsd-studio-9_jvKRbNdTM-unsplash.jpg",  // 3rd content section photo
+    section3: "/new/mirella-callage-nI0d850_UhQ-unsplash.jpg",  // 3rd content section photo
     section4: "/new/ivan-aviles-opStzxYG00c-unsplash.jpg",       // 4th content section photo
     cta: "/new/zach-key-rKE6rXOl14U-unsplash.jpg",           // Bottom "Begin your journey" background
   },
@@ -87,7 +87,7 @@ export const images = {
     hero: "/new/kuba_-lVqWBjepH1I-unsplash.jpg",  // Top banner
     section1: "/new/and_picture.png",                        // 1st content section photo
     section2: "/new/qwerqu-mcbrew-K1pPL5QSF4A-unsplash.jpg",// 2nd content section photo
-    section3: "/new/igor-omilaev-16LHsyGpyTw-unsplash.jpg",// 3rd content section photo
+    section3: "/new/kamil-kalkan-BTpIUnszs_Q-unsplash.jpg",// 3rd content section photo
     section4: "/new/antony-stanford-Pl6_9GIBJ0w-unsplash.jpg",// 4th content section photo
     cta: "/new/dian-yu-f18mZ_kI4Mk-unsplash.jpg",   // Bottom "Begin your journey" background
   },
