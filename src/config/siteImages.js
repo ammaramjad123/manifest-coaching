@@ -96,7 +96,7 @@ export const images = {
   saft: {
     hero: "/new/amanda-schmidt-wWaK2LISiAE-unsplash.jpg",      // Top banner
     section1: "/new/beatrice-labbe-qTtpavekE2M-unsplash.jpg",// 1st content section photo
-    section2: "/new/dylann-hendricks-z2rC_O-TosY-unsplash.jpg",// 2nd content section photo
+    section2: "/new/rosa-rafael-Lw-ahUKYhiY-unsplash.jpg",// 2nd content section photo
     section3: "/new/sincerely-media-kSeo6slWMQE-unsplash.jpg",// 3rd content section photo
     section4: "/new/mirella-callage-nI0d850_UhQ-unsplash.jpg",// 4th content section photo
     cta: "/new/thomas-elliott-qsONHwF3e68-unsplash.jpg",       // Bottom "Begin your journey" background
@@ -141,7 +141,7 @@ export const images = {
   // ───────────── The Pivot LIFE COACHING PAGE ─────────────
   lifeCoaching: {
     hero: "/new/katriona-mccarthy-sGYlyg_U92I-unsplash.jpg",    // Top banner
-    section1: "/new/kosma-kurlowicz-iDHiyF7LvU0-unsplash.jpg",
+    section1: "/new/jd-mason-qzrzTAQQaZI-unsplash.jpg",
     section2: "/new/pete-godfrey-3TSShf9Uidg-unsplash.jpg",
     section3: "/new/charlotte-knight-aUw2sgqnG9s-unsplash.jpg",
     section4: "/new/arturo-anez-9yhBvC2ykoc-unsplash.jpg",
