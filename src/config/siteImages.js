@@ -186,7 +186,7 @@ export const images = {
     logo1: "/new/acceleratedresart.png",                     // ART logo
     logo2: "/new/is-art-logo-large.png",                     // IS-ART logo
     logo3: "/new/manifest-coaching-logo.png",                // MANIFEST Coaching logo
-    showcase: "/new/pete-godfrey-3TSShf9Uidg-unsplash.jpg",// b2b banner photo
+    showcase: "/new/hoyoun-lee-1x7BfgXcIn4-unsplash (1).jpg",// b2b banner photo
     cta: "/new/alexey-demidov-t47aoza7BWk-unsplash.jpg",         // 1st picture b2b
     ayanaHeadshot: "/new/ayana-headshot.jpg",                // Ayana's photo on this page
     closing: "/new/vinu-t-V0vT7qaWhIw-unsplash.jpg",// Closing section photo
