@@ -65,9 +65,9 @@ export const images = {
   // ───────────── ACT PAGE (Acceptance & Commitment Therapy) ─────────────
   act: {
     hero: "/new/iwaria-inc-1Wr4U5yRw2M-unsplash.jpg",              // Top banner
-    section1: "/new/womanizer-toys-8oB43mw658c-unsplash.jpg",   // 1st content section photo
+    section1: "/new/danie-franco-tnxRFtXI9dI-unsplash.jpg",   // 1st content section photo
     section2: "/new/marquise-kamanke-jfQGc8Emf1Q-unsplash.jpg",  // 2nd content section photo
-    section3: "/new/danie-franco-tnxRFtXI9dI-unsplash.jpg", // 3rd content section photo
+    section3: "/new/womanizer-toys-8oB43mw658c-unsplash.jpg", // 3rd content section photo
     section4: "/new/sonayon-oluwatosin-LrDQfDXGDko-unsplash.jpg",     // 4th content section photo
     cta: "/new/gary-yost--iZGedR1uJo-unsplash.jpg",       // Bottom "Begin your journey" background
   },
