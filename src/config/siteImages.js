@@ -88,7 +88,7 @@ export const images = {
     section1: "/new/and_picture.png",                        // 1st content section photo
     section2: "/new/qwerqu-mcbrew-K1pPL5QSF4A-unsplash.jpg",// 2nd content section photo
     section3: "/new/kamil-kalkan-BTpIUnszs_Q-unsplash.jpg",// 3rd content section photo
-    section4: "/new/antony-stanford-Pl6_9GIBJ0w-unsplash.jpg",// 4th content section photo
+    section4: "/new/cord-allman-Y4XyZmgY4Ik-unsplash.jpg",// 4th content section photo
     cta: "/new/dian-yu-f18mZ_kI4Mk-unsplash.jpg",   // Bottom "Begin your journey" background
   },
 
