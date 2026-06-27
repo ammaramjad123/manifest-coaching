@@ -39,7 +39,7 @@ export const images = {
 
   // ───────────── FAQ SECTION ─────────────
   faq: {
-    image: "/new/milad-fakurian-iKzm8QvVpB8-unsplash.jpg", // Photo beside the FAQ questions
+    image: "/new/julien-tromeur-QvxI2P7UCc4-unsplash.jpg", // Photo beside the FAQ questions
   },
 
   // ───────────── SERVICES PAGE ─────────────
@@ -134,7 +134,7 @@ export const images = {
     section4: "/new/priscilla-du-preez-aPa843frIzI-unsplash.jpg",
     section5: "/new/hester-qiang-95t94hZTESw-unsplash.jpg",
     section6: "/new/ricardo-gomez-angel-D9kOnC_1AHw-unsplash.jpg",
-    section7: "/new/ijaz-rafi-U0Yq5XALADs-unsplash.jpg",
+    section7: "/new/milad-fakurian-iKzm8QvVpB8-unsplash.jpg",
     cta: "/new/erik-karits-lrVXaCdKTfM-unsplash.jpg",       // Bottom "Begin your journey" background
   },
 
