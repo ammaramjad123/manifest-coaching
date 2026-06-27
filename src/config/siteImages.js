@@ -175,8 +175,8 @@ export const images = {
   // ───────────── MANIFEST METHOD PAGE ─────────────
   manifest: {
     hero: "/new/sandra-grunewald-fLl5j9l_0UE-unsplash.jpg",    // Top banner
-    workbook: "/new/sixteen-miles-out-0I75875sRVU-unsplash.jpg",// Workbooks "coming soon" section
-    workbookCard: "/new/content-pixie-DRmDrlqMZsU-unsplash.jpg",// Picture inside the "Coming Soon" workbooks card (any size, won't crop)
+    workbook: "/new/content-pixie-DRmDrlqMZsU-unsplash.jpg",// bottom of page Workbooks "coming soon" section
+    workbookCard: "/new/sixteen-miles-out-0I75875sRVU-unsplash.jpg",// Picture inside the "Coming Soon" workbooks card (any size, won't crop)
   },
 
   // ───────────── bARTer BALANCE PAGE ─────────────
