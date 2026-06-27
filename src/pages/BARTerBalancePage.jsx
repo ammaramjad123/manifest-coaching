@@ -642,13 +642,6 @@ export default function BARTerBalancePage() {
         </div>
 
         <div className="relative z-20 text-center max-w-4xl mx-auto px-5 py-20">
-          <motion.div
-            initial={{ scale: 0 }} whileInView={{ scale: 1 }}
-            transition={{ type: "spring", stiffness: 200, delay: 0.2 }}
-            className="w-24 h-24 mx-auto mb-8 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center shadow-2xl"
-          >
-            <Heart className="w-12 h-12 text-white" />
-          </motion.div>
 
           <motion.h2
             initial={{ y: 30, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }}

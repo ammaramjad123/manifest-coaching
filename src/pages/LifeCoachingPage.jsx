@@ -387,15 +387,6 @@ export default function LifeCoachingPage() {
         </div>
 
         <div className="relative z-10 text-center max-w-4xl mx-auto px-5">
-          <motion.div
-            initial={{ scale: 0 }}
-            whileInView={{ scale: 1 }}
-            transition={{ type: "spring", stiffness: 200, delay: 0.2 }}
-            className="w-28 h-28 mx-auto mb-8 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center shadow-2xl"
-          >
-            <Rocket className="w-14 h-14 text-white" />
-          </motion.div>
-          
           <motion.h2
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
