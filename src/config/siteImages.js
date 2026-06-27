@@ -128,13 +128,13 @@ export const images = {
   // ───────────── The Process ANXIETY & DEPRESSION PAGE ─────────────
   anxiety: {
     hero: "/new/hydra-4x-LDHtgcPrkY8-unsplash.jpg",    // Top banner
-    section1: "/new/ijaz-rafi-U0Yq5XALADs-unsplash.jpg",
+    section1: "/new/lucas-gouvea-Kbmt6r2YpXM-unsplash.jpg",
     section2: "/new/sarah-khan-ER2NNA2fUpw-unsplash.jpg",
     section3: "/new/8machine-_-GVAYgLlpeZ8-unsplash.jpg",
     section4: "/new/priscilla-du-preez-aPa843frIzI-unsplash.jpg",
     section5: "/new/hester-qiang-95t94hZTESw-unsplash.jpg",
     section6: "/new/ricardo-gomez-angel-D9kOnC_1AHw-unsplash.jpg",
-    section7: "/new/lucas-gouvea-Kbmt6r2YpXM-unsplash.jpg",
+    section7: "/new/ijaz-rafi-U0Yq5XALADs-unsplash.jpg",
     cta: "/new/erik-karits-lrVXaCdKTfM-unsplash.jpg",       // Bottom "Begin your journey" background
   },
 
