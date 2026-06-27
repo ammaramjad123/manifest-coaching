@@ -47,7 +47,7 @@ export const images = {
     hero: "/new/alan-villegas-5wXV1ZoqsU4-unsplash (1).jpg", // Top banner of the Services page
     trainingLogo: "/new/manifest-coaching-logo.png",       // Logo in the Professional Training card
     showcase: "/new/robert-lukeman-_RBcxo9AU-U-unsplash.jpg",// Wide stone-circles background (Service Showcase)
-    twoHatsCrown: "/new/crown_bg.png",                     // Crown background in "The Two Hats" section
+    twoHatsCrown: "/new/lisa-marie-theck-9iL4kae_oSs-unsplash.jpg",                     // Crown background in "The Two Hats" section
   },
 
   // ───────────── ABOUT PAGE ─────────────
@@ -87,8 +87,8 @@ export const images = {
     hero: "/new/kuba_-lVqWBjepH1I-unsplash.jpg",  // Top banner
     section1: "/new/and_picture.png",                        // 1st content section photo
     section2: "/new/qwerqu-mcbrew-K1pPL5QSF4A-unsplash.jpg",// 2nd content section photo
-    section3: "/new/8machine-_-GVAYgLlpeZ8-unsplash.jpg",// 3rd content section photo
-    section4: "/new/gilbert-beltran-a_sviiqnSes-unsplash.jpg",// 4th content section photo
+    section3: "/new/gilbert-beltran-a_sviiqnSes-unsplash.jpg",// 3rd content section photo
+    section4: "/new/antony-stanford-Pl6_9GIBJ0w-unsplash.jpg",// 4th content section photo
     cta: "/new/dian-yu-f18mZ_kI4Mk-unsplash.jpg",   // Bottom "Begin your journey" background
   },
 
@@ -135,17 +135,17 @@ export const images = {
     section5: "/new/hester-qiang-95t94hZTESw-unsplash.jpg",
     section6: "/new/ricardo-gomez-angel-D9kOnC_1AHw-unsplash.jpg",
     section7: "/new/lucas-gouvea-Kbmt6r2YpXM-unsplash.jpg",
-    cta: "/new/thomas-elliott-sIR_6bXcMrk-unsplash.jpg",       // Bottom "Begin your journey" background
+    cta: "/new/erik-karits-lrVXaCdKTfM-unsplash.jpg",       // Bottom "Begin your journey" background
   },
 
   // ───────────── The Pivot LIFE COACHING PAGE ─────────────
   lifeCoaching: {
     hero: "/new/katriona-mccarthy-sGYlyg_U92I-unsplash.jpg",    // Top banner
     section1: "/new/kosma-kurlowicz-iDHiyF7LvU0-unsplash.jpg",
-    section2: "/new/sumit-jaswal-gzUj4xFysEc-unsplash.jpg",
+    section2: "/public/new/julien-tromeur-QvxI2P7UCc4-unsplash.jpg",
     section3: "/new/charlotte-knight-aUw2sgqnG9s-unsplash.jpg",
     section4: "/new/arturo-anez-9yhBvC2ykoc-unsplash.jpg",
-    section5: "/new/rebecca-niver-IUUuyoM_1IE-unsplash.jpg",
+    section5: "/new/matheus-viana-sl5o9vDtDbI-unsplash.jpg",
     section6: "/new/annie-pm-OEewhKC5rIc-unsplash.jpg",
     section7: "/new/dylann-hendricks-z2rC_O-TosY-unsplash.jpg",
     cta: "/new/alfred-schrock-shoE2y51uX0-unsplash-1.jpg",           // Bottom "Begin your journey" background
