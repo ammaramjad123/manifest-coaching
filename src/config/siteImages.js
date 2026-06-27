@@ -112,7 +112,7 @@ export const images = {
     cta: "/new/aaron-burden-clokmlaUwaU-unsplash.jpg",           // Bottom "Begin your journey" background
   },
 
-  // ─────────────???? TRAUMA & PTSD PAGE ─────────────
+  // ─────────────LANDING PAGE paths ─────────────
   trauma: {
     hero: "/new/nadine-e-DRzYMtae-vA-unsplash.jpg",          // Top banner
     section1: "/new/kreative-kwame-oUXhw8SEqlM-unsplash.jpg",
