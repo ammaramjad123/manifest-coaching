@@ -77,7 +77,7 @@ export const images = {
     hero: "/new/rebecca-niver-IUUuyoM_1IE-unsplash.jpg",          // Top banner
     section1: "/new/nick-andreka-0GK3okK9DcY-unsplash.jpg",   // 1st content section photo
     section2: "/new/nadine-e-DRzYMtae-vA-unsplash-1.jpg", // 2nd content section photo
-    section3: "/new/mirella-callage-nI0d850_UhQ-unsplash.jpg",  // 3rd content section photo
+    section3: "/new/igor-omilaev-16LHsyGpyTw-unsplash.jpg",  // 3rd content section photo
     section4: "/new/ivan-aviles-opStzxYG00c-unsplash.jpg",       // 4th content section photo
     cta: "/new/zach-key-rKE6rXOl14U-unsplash.jpg",           // Bottom "Begin your journey" background
   },
@@ -98,7 +98,7 @@ export const images = {
     section1: "/new/beatrice-labbe-qTtpavekE2M-unsplash.jpg",// 1st content section photo
     section2: "/new/dylann-hendricks-z2rC_O-TosY-unsplash.jpg",// 2nd content section photo
     section3: "/new/sincerely-media-kSeo6slWMQE-unsplash.jpg",// 3rd content section photo
-    section4: "/new/milad-fakurian-58Z17lnVS4U-unsplash.jpg",// 4th content section photo
+    section4: "/new/mirella-callage-nI0d850_UhQ-unsplash.jpg",// 4th content section photo
     cta: "/new/thomas-elliott-qsONHwF3e68-unsplash.jpg",       // Bottom "Begin your journey" background
   },
 
