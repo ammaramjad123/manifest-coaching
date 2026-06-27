@@ -293,42 +293,56 @@ export default function ManifestMethodPage() {
             <div className="h-1.5 bg-gradient-to-r from-[#c09050] via-[#d4a84b] to-[#c09050]" />
 
             <div className="p-8 sm:p-10 md:p-12">
-              <div className="mb-6">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#c09050]/10 border border-[#c09050]/25 mb-3">
-                  <Clock className="w-3 h-3 text-[#c09050]" />
-                  <span className="text-[10px] font-black uppercase tracking-[0.18em] text-[#c09050] font-[system-ui]">Coming Soon</span>
-                </div>
-                <h3 className="text-2xl sm:text-3xl font-black text-black font-[system-ui] leading-tight">
-                  The Pivot &amp; The Process
-                  <br />
-                  <span className="bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent">
-                    Workbooks
-                  </span>
-                </h3>
-              </div>
+              <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                {/* Left column — text */}
+                <div>
+                  <div className="mb-6">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#c09050]/10 border border-[#c09050]/25 mb-3">
+                      <Clock className="w-3 h-3 text-[#c09050]" />
+                      <span className="text-[10px] font-black uppercase tracking-[0.18em] text-[#c09050] font-[system-ui]">Coming Soon</span>
+                    </div>
+                    <h3 className="text-2xl sm:text-3xl font-black text-black font-[system-ui] leading-tight">
+                      The Pivot &amp; The Process
+                      <br />
+                      <span className="bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent">
+                        Workbooks
+                      </span>
+                    </h3>
+                  </div>
 
-              <p className="text-gray-600 text-base sm:text-lg leading-relaxed font-[system-ui] mb-6 max-w-2xl">
-                Two companion workbooks rooted in the MANIFEST Method — designed to deepen the work between sessions, anchor your progress, and keep the journey moving forward. These tools are available exclusively for clients enrolled in Intensives.
-              </p>
+                  <p className="text-gray-600 text-base sm:text-lg leading-relaxed font-[system-ui] mb-6">
+                    Two companion workbooks rooted in the MANIFEST Method — designed to deepen the work between sessions, anchor your progress, and keep the journey moving forward. These tools are available exclusively for clients enrolled in Intensives.
+                  </p>
 
-              <div className="flex flex-col sm:flex-row gap-4">
-                <div className="flex items-center gap-3 px-5 py-3.5 rounded-2xl bg-[#c09050]/8 border border-[#c09050]/20">
-                  <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#c09050] to-[#d4a84b] flex items-center justify-center flex-shrink-0">
-                    <BookOpen className="w-4 h-4 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-sm font-black text-black font-[system-ui]">The Pivot</p>
-                    <p className="text-xs text-gray-500 font-[system-ui]">For Coaching Intensives</p>
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <div className="flex items-center gap-3 px-5 py-3.5 rounded-2xl bg-[#c09050]/8 border border-[#c09050]/20">
+                      <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#c09050] to-[#d4a84b] flex items-center justify-center flex-shrink-0">
+                        <BookOpen className="w-4 h-4 text-white" />
+                      </div>
+                      <div>
+                        <p className="text-sm font-black text-black font-[system-ui]">The Pivot</p>
+                        <p className="text-xs text-gray-500 font-[system-ui]">For Coaching Intensives</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3 px-5 py-3.5 rounded-2xl bg-[#c09050]/8 border border-[#c09050]/20">
+                      <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#c09050] to-[#d4a84b] flex items-center justify-center flex-shrink-0">
+                        <BookOpen className="w-4 h-4 text-white" />
+                      </div>
+                      <div>
+                        <p className="text-sm font-black text-black font-[system-ui]">The Process</p>
+                        <p className="text-xs text-gray-500 font-[system-ui]">For Therapy Intensives</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div className="flex items-center gap-3 px-5 py-3.5 rounded-2xl bg-[#c09050]/8 border border-[#c09050]/20">
-                  <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#c09050] to-[#d4a84b] flex items-center justify-center flex-shrink-0">
-                    <BookOpen className="w-4 h-4 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-sm font-black text-black font-[system-ui]">The Process</p>
-                    <p className="text-xs text-gray-500 font-[system-ui]">For Therapy Intensives</p>
-                  </div>
+
+                {/* Right column — picture (fixed area, any image fits without cropping) */}
+                <div className="rounded-2xl bg-gradient-to-br from-[#c09050]/8 to-[#d4a84b]/5 border border-[#c09050]/20 p-4 flex items-center justify-center">
+                  <img
+                    src={images.manifest.workbookCard}
+                    alt="The Pivot & The Process Workbooks"
+                    className="w-full h-72 object-contain rounded-xl"
+                  />
                 </div>
               </div>
 

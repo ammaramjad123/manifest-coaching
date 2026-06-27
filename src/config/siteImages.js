@@ -176,6 +176,7 @@ export const images = {
   manifest: {
     hero: "/new/sandra-grunewald-fLl5j9l_0UE-unsplash.jpg",    // Top banner
     workbook: "/new/content-pixie-DRmDrlqMZsU-unsplash.jpg",// Workbooks "coming soon" section
+    workbookCard: "/new/content-pixie-DRmDrlqMZsU-unsplash.jpg",// Picture inside the "Coming Soon" workbooks card (any size, won't crop)
   },
 
   // ───────────── bARTer BALANCE PAGE ─────────────
