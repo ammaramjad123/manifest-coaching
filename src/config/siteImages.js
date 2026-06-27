@@ -175,7 +175,7 @@ export const images = {
   // ───────────── MANIFEST METHOD PAGE ─────────────
   manifest: {
     hero: "/new/sandra-grunewald-fLl5j9l_0UE-unsplash.jpg",    // Top banner
-    workbook: "/new/content-pixie-DRmDrlqMZsU-unsplash.jpg",// Workbooks "coming soon" section
+    workbook: "/new/sixteen-miles-out-0I75875sRVU-unsplash.jpg",// Workbooks "coming soon" section
     workbookCard: "/new/content-pixie-DRmDrlqMZsU-unsplash.jpg",// Picture inside the "Coming Soon" workbooks card (any size, won't crop)
   },
 
