@@ -29,12 +29,12 @@ export const images = {
 
   // ───────────── HOME PAGE ─────────────
   home: {
-    hero: "/hero.jpg",                                              // Big banner at the very top of the home page
+    hero: "/new/modar-kajo-iPHsDwlYGmI-unsplash.jpg",                                              // Big banner at the very top of the home page
     doorTherapy: "/new/hakon-grimstad-hteXWSF9jA4-unsplash-1.jpg",  // "Three Pathways" — Clinical Therapy card
     doorCoaching: "/new/meg-jenson-WtT3XFmpiMg-unsplash.jpg",       // "Three Pathways" — Coaching card
     doorPartnership: "/new/kreative-kwame-oUXhw8SEqlM-unsplash.jpg",// "Three Pathways" — Partnership card
     testimonialCommunity: "/new/supriya-chauhan-5Ti_6e-OBs0-unsplash.jpg",      // "Community Voices" testimonial photo
-    testimonialCoaching: "/new/anubhav-sonker-rfsY03Stekw-unsplash (1).jpg",// "Coaching Voices" testimonial photo
+    testimonialCoaching: "/new/paul-zoetemeijer-VjNSLjSsdhg-unsplash.jpg",// "Coaching Voices" testimonial photo
   },
 
   // ───────────── FAQ SECTION ─────────────
@@ -129,8 +129,8 @@ export const images = {
   anxiety: {
     hero: "/new/hydra-4x-LDHtgcPrkY8-unsplash.jpg",    // Top banner
     section1: "/new/ijaz-rafi-U0Yq5XALADs-unsplash.jpg",
-    section2: "/new/kingsley-osei-abrah-9Y06DbOzUOs-unsplash.jpg",
-    section3: "/new/robina-weermeijer-3KGF9R_0oHs-unsplash.jpg",
+    section2: "/new/sarah-khan-ER2NNA2fUpw-unsplash.jpg",
+    section3: "/new/8machine-_-GVAYgLlpeZ8-unsplash.jpg",
     section4: "/new/priscilla-du-preez-aPa843frIzI-unsplash.jpg",
     section5: "/new/hester-qiang-95t94hZTESw-unsplash.jpg",
     section6: "/new/ricardo-gomez-angel-D9kOnC_1AHw-unsplash.jpg",
