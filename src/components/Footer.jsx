@@ -212,7 +212,7 @@ export default function Footer() {
 
             <div className="flex items-center gap-4">
               <a
-                href="https://www.instagram.com/manifestcoachingllc/"
+                href="https://www.instagram.com/thepeacepractice.me"
                 target="_blank"
                 className="text-gray-400 hover:text-[#c09050] transition-all duration-300 hover:scale-110"
                 aria-label="Instagram"

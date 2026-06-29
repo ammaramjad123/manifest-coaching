@@ -245,7 +245,7 @@ export default function HeroSection() {
             variants={itemVariants}
             className="text-white/80 max-w-3xl mx-auto text-base sm:text-lg md:text-xl font-medium leading-relaxed mb-8 px-4 font-[system-ui]"
           >
-            With nearly 30 years of experience, compassionate therapy, life coaching, and professional partnerships are offered to help navigate life's challenges and discover your path to peace.
+            With nearly 30 years of experience, The Peace Practice offers compassionate therapy, life coaching, and professional partnerships to help you navigate life's challenges and discover your path to peace.
           </motion.p>
 
           {/* CTA Buttons */}

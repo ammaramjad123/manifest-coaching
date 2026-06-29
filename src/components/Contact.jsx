@@ -500,7 +500,7 @@ export default function ContactSection() {
                   <p className="text-gray-500 text-sm font-[system-ui] mb-4">Stay connected for insights and updates.</p>
                   <div className="flex gap-3">
                     <a
-                      href="https://www.instagram.com/manifestcoachingllc/"
+                      href="https://www.instagram.com/thepeacepractice.me"
                       target="_blank"
                       className="w-10 h-10 rounded-xl bg-gray-100 hover:bg-[#c09050] flex items-center justify-center transition-all duration-300 hover:scale-110 group"
                     >

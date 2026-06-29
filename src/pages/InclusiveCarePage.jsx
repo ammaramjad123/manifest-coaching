@@ -36,7 +36,7 @@ const data = {
     },
     {
       subtitle: "Clinical Pillars",
-      title: "Three Pillars of Truly Affirming Practice",
+      title: "Four Pillars of Truly Affirming Practice",
       imageLeft: false,
       image: images.inclusive.section3,
       approaches: [

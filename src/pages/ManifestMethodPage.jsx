@@ -1,5 +1,5 @@
 import { images } from "../config/siteImages";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
@@ -14,6 +14,8 @@ import {
   Zap,
   BookOpen,
   Clock,
+  Plus,
+  Minus,
 } from "lucide-react";
 
 const phases = [
@@ -84,6 +86,20 @@ const phases = [
 ];
 
 export default function ManifestMethodPage() {
+  // First phase open by default so the section isn't a stack of closed bars
+  const [openItems, setOpenItems] = useState({ M: true });
+
+  const togglePhase = (letter) =>
+    setOpenItems((prev) => ({ ...prev, [letter]: !prev[letter] }));
+
+  // Clicking a quick-scan letter opens that phase and scrolls to it
+  const openAndScroll = (letter) => {
+    setOpenItems((prev) => ({ ...prev, [letter]: true }));
+    document
+      .getElementById(`phase-${letter}`)
+      ?.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
+
   return (
     <div className="relative bg-white overflow-hidden">
 
@@ -206,9 +222,10 @@ export default function ManifestMethodPage() {
 
           <div className="grid grid-cols-4 sm:grid-cols-8 gap-3">
             {phases.map((phase, i) => (
-              <motion.a
+              <motion.button
                 key={phase.letter}
-                href={`#phase-${phase.letter}`}
+                type="button"
+                onClick={() => openAndScroll(phase.letter)}
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: i * 0.05 }}
@@ -221,54 +238,84 @@ export default function ManifestMethodPage() {
                 <span className="text-[10px] font-black text-gray-500 group-hover:text-[#c09050] font-[system-ui] text-center leading-tight transition-colors duration-200">
                   {phase.word.split(" · ")[0]}
                 </span>
-              </motion.a>
+              </motion.button>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ══ 2-COLUMN PHASE CARDS ══ */}
+      {/* ══ PHASE REVEAL DROPDOWNS (tap to reveal — FAQ-style flow) ══ */}
       <section className="relative py-16 sm:py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6">
-            {phases.map((phase, i) => (
-              <motion.div
-                key={phase.letter}
-                id={`phase-${phase.letter}`}
-                initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: (i % 2) * 0.08 }}
-                viewport={{ once: true, margin: "-40px" }}
-                className="group relative bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg hover:border-[#c09050]/25 transition-all duration-300 overflow-hidden"
-              >
-                {/* Top gold accent bar */}
-                <div className="h-[3px] bg-gradient-to-r from-[#c09050] to-[#d4a84b]" />
+        <div className="max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="text-center mb-10"
+          >
+            <h2 className="text-2xl sm:text-3xl font-black text-black font-[system-ui]">
+              Explore Each Phase
+            </h2>
+            <p className="text-gray-500 text-sm sm:text-base font-[system-ui] mt-2">
+              Tap any phase to reveal what it holds.
+            </p>
+          </motion.div>
 
-                <div className="p-6 sm:p-7">
-                  {/* Header row */}
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#c09050] to-[#d4a84b] flex items-center justify-center shadow-sm flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
+          <div className="space-y-3 sm:space-y-4">
+            {phases.map((phase, i) => {
+              const isOpen = openItems[phase.letter];
+              return (
+                <motion.div
+                  key={phase.letter}
+                  id={`phase-${phase.letter}`}
+                  initial={{ opacity: 0, y: 16 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: i * 0.04 }}
+                  viewport={{ once: true, margin: "-40px" }}
+                  className={`scroll-mt-28 rounded-2xl border bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 ${
+                    isOpen ? "border-[#c09050]/40" : "border-gray-200"
+                  }`}
+                >
+                  <button
+                    type="button"
+                    onClick={() => togglePhase(phase.letter)}
+                    className="w-full flex items-center gap-4 p-4 sm:p-5 text-left hover:bg-gray-50 transition-colors duration-300"
+                  >
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#c09050] to-[#d4a84b] flex items-center justify-center shadow-sm flex-shrink-0">
                       <span className="text-white text-xl font-black font-[system-ui] leading-none">{phase.letter}</span>
                     </div>
-                    <div>
-                      <p className="text-base font-black text-black font-[system-ui] leading-tight">{phase.word}</p>
-                      <p className="text-xs text-[#c09050] font-[system-ui] mt-0.5">{phase.subtitle}</p>
+                    <div className="flex-1 min-w-0">
+                      <p className="text-base sm:text-lg font-black text-black font-[system-ui] leading-tight">{phase.word}</p>
+                      <p className="text-xs sm:text-sm text-[#c09050] font-[system-ui] mt-0.5">{phase.subtitle}</p>
+                    </div>
+                    <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 ${isOpen ? "bg-[#c09050]" : "bg-[#c09050]/10"}`}>
+                      {isOpen ? (
+                        <Minus className="w-4 h-4 text-white" />
+                      ) : (
+                        <Plus className="w-4 h-4 text-[#c09050]" />
+                      )}
+                    </div>
+                  </button>
+
+                  <div
+                    className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                      isOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
+                    }`}
+                  >
+                    <div className="px-4 sm:px-5 pb-5 pt-0 sm:pl-[5.25rem]">
+                      <p className="text-gray-600 text-sm sm:text-base leading-relaxed font-[system-ui] mb-4">
+                        {phase.description}
+                      </p>
+                      <div className="flex items-start gap-2 px-3 py-2.5 rounded-xl bg-[#c09050]/5 border border-[#c09050]/10">
+                        <Quote className="w-3 h-3 text-[#c09050] flex-shrink-0 mt-0.5" />
+                        <span className="text-xs text-gray-500 italic font-[system-ui] leading-snug">{phase.stat}</span>
+                      </div>
                     </div>
                   </div>
-
-                  {/* Description */}
-                  <p className="text-gray-600 text-sm leading-relaxed font-[system-ui] mb-4">
-                    {phase.description}
-                  </p>
-
-                  {/* Stat quote */}
-                  <div className="flex items-start gap-2 px-3 py-2.5 rounded-xl bg-[#c09050]/5 border border-[#c09050]/10">
-                    <Quote className="w-3 h-3 text-[#c09050] flex-shrink-0 mt-0.5" />
-                    <span className="text-xs text-gray-500 italic font-[system-ui] leading-snug">{phase.stat}</span>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -336,12 +383,12 @@ export default function ManifestMethodPage() {
                   </div>
                 </div>
 
-                {/* Right column — picture (fixed area, any image fits without cropping) */}
-                <div className="rounded-2xl bg-gradient-to-br from-[#c09050]/8 to-[#d4a84b]/5 border border-[#c09050]/20 p-4 flex items-center justify-center">
+                {/* Right column — picture (no frame, image fits without cropping) */}
+                <div className="flex items-center justify-center">
                   <img
                     src={images.manifest.workbookCard}
                     alt="The Pivot & The Process Workbooks"
-                    className="w-full h-72 object-contain rounded-xl"
+                    className="w-full h-80 object-contain"
                   />
                 </div>
               </div>
