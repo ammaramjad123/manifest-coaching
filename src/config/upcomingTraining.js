@@ -84,7 +84,7 @@ export const upcomingTraining = {
       ctaText: "Reserve Your Spot",
       ctaLink: "https://calendly.com/manifestcoachingllc/clarity-call",
 
-      topicImage: "/new/gilbert-beltran-a_sviiqnSes-unsplash.jpg",
+      topicImage: "/new/egor-litvinov-7UI8bszs1X0-unsplash.jpg",
       trainerImage: "/new/ayana-headshot.jpg",
     },
 
