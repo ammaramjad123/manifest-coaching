@@ -55,7 +55,7 @@ export const upcomingTraining = {
       ctaText: "Reserve Your Spot",
       ctaLink: "https://calendly.com/manifestcoachingllc/clarity-call",
 
-      topicImage: "/new/gilbert-beltran-a_sviiqnSes-unsplash.jpg",  // round topic photo
+      topicImage: "/new/tsd-studio-9_jvKRbNdTM-unsplash.jpg",  // round topic photo
       trainerImage: "/new/ayana-headshot.jpg",                  // Ayana's round photo
     },
 
@@ -84,7 +84,7 @@ export const upcomingTraining = {
       ctaText: "Reserve Your Spot",
       ctaLink: "https://calendly.com/manifestcoachingllc/clarity-call",
 
-      topicImage: "/new/marcin-sajur-iABH96Zn0TM-unsplash.jpg",
+      topicImage: "new/gilbert-beltran-a_sviiqnSes-unsplash.jpg",
       trainerImage: "/new/ayana-headshot.jpg",
     },
 
