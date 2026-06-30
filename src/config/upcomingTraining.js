@@ -46,8 +46,8 @@ export const upcomingTraining = {
         "A 3-day BASIC ART training will equip you to quickly help clients release emotional pain.",
       ],
 
-      when: ")9/29/26, 09/30/26, 10/01/26 8:30am- 5:00pm (3days)!",       //  e.g. "March 14–16, 2026"
-      where: "Acworth, GA (<60min-Hartsfield Atlanta,GA Airport;<90min-Chattanooga, TN Airport; <2hrs- Birmingham, AL Airport)!",   //  e.g. "Atlanta, GA · In person"
+      when: "9/29/26 - 10/01/26 8:30am- 5:00pm (3days)",       //  e.g. "March 14–16, 2026"
+      where: "Acworth, GA (<60min fom Metro Atlanta, GA)",   //  e.g. "Atlanta, GA · In person"
       trainer: "Ayana F. McKanney, LCSW — Founder of The Peace Practice",
       cost: "$1,700",
       website: "",
@@ -55,7 +55,7 @@ export const upcomingTraining = {
       ctaText: "Reserve Your Spot",
       ctaLink: "https://calendly.com/manifestcoachingllc/clarity-call",
 
-      topicImage: "/new/yoann-boyer-i14h2xyPr18-unsplash.jpg",  // round topic photo
+      topicImage: "/new/marcin-sajur-iABH96Zn0TM-unsplash.jpg",  // round topic photo
       trainerImage: "/new/ayana-headshot.jpg",                  // Ayana's round photo
     },
 
@@ -66,7 +66,7 @@ export const upcomingTraining = {
 
       presenter: "The Peace Practice Presents",
       title: "SĀF-T — Sensations Awareness Focused Technique",
-      subtitle: "For mental health clinicians & coaches",
+      subtitle: "For mental health clinicians, first responders, coaches & more!",
 
       whatToExpect: [
         "Learn SĀF-T, a body-centered technique drawn from ART that targets distressing physical sensations.",
@@ -75,8 +75,8 @@ export const upcomingTraining = {
         "Apply SĀF-T confidently in both clinical therapy and coaching settings.",
       ],
 
-      when: "Friday- 10/02/2026- 9:00am-3:00pm!",
-      where: "Acworth, GA (<60min-Hartsfield Atlanta,GA Airport;<90min-Chattanooga, TN Airport; <2hrs- Birmingham, AL Airport)",
+      when: "Friday- 10/02/2026-9:00am-3:00pm",
+      where: "Acworth, GA (<60min fom Metro Atlanta, GA)",
       trainer: "Ayana F. McKanney, LCSW — Founder of The Peace Practice",
       cost: "$199",
       website: "",                          //  leave "" to hide the website link
@@ -84,7 +84,7 @@ export const upcomingTraining = {
       ctaText: "Reserve Your Spot",
       ctaLink: "https://calendly.com/manifestcoachingllc/clarity-call",
 
-      topicImage: "/new/lesly-juarez-DFtjXYd5Pto-unsplash.jpg",
+      topicImage: "/new/marcin-sajur-iABH96Zn0TM-unsplash.jpg",
       trainerImage: "/new/ayana-headshot.jpg",
     },
 
