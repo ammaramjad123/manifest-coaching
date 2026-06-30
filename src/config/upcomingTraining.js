@@ -47,7 +47,7 @@ export const upcomingTraining = {
       ],
 
       when: "9/29/26 - 10/01/26 8:30am- 5:00pm (3days)",       //  e.g. "March 14–16, 2026"
-      where: "Acworth, GA (<60min fom Metro Atlanta, GA)",   //  e.g. "Atlanta, GA · In person"
+      where: "Acworth, GA (< 60min from Metro Atlanta, GA)",   //  e.g. "Atlanta, GA · In person"
       trainer: "Ayana F. McKanney, LCSW — Founder of The Peace Practice",
       cost: "$1,700",
       website: "",
@@ -55,7 +55,7 @@ export const upcomingTraining = {
       ctaText: "Reserve Your Spot",
       ctaLink: "https://calendly.com/manifestcoachingllc/clarity-call",
 
-      topicImage: "/new/marcin-sajur-iABH96Zn0TM-unsplash.jpg",  // round topic photo
+      topicImage: "/new/gilbert-beltran-a_sviiqnSes-unsplash.jpg",  // round topic photo
       trainerImage: "/new/ayana-headshot.jpg",                  // Ayana's round photo
     },
 
@@ -76,7 +76,7 @@ export const upcomingTraining = {
       ],
 
       when: "Friday- 10/02/2026-9:00am-3:00pm",
-      where: "Acworth, GA (<60min fom Metro Atlanta, GA)",
+      where: "Acworth, GA (< 60min from Metro Atlanta, GA)",
       trainer: "Ayana F. McKanney, LCSW — Founder of The Peace Practice",
       cost: "$199",
       website: "",                          //  leave "" to hide the website link
