@@ -30,9 +30,9 @@ export const images = {
   // ───────────── HOME PAGE ─────────────
   home: {
     hero: "/new/modar-kajo-iPHsDwlYGmI-unsplash.jpg",                                              // Big banner at the very top of the home page
-    doorTherapy: "/new/hakon-grimstad-hteXWSF9jA4-unsplash-1.jpg",  // "Three Pathways" — Clinical Therapy card
-    doorCoaching: "/new/meg-jenson-WtT3XFmpiMg-unsplash.jpg",       // "Three Pathways" — Coaching card
-    doorPartnership: "/new/kreative-kwame-oUXhw8SEqlM-unsplash.jpg",// "Three Pathways" — Partnership card
+    doorTherapy: "/new/suzanne-d-williams-VMKBFR6r_jg-unsplash.jpg",  // "Three Pathways" — Clinical Therapy card
+    doorCoaching: "/new/dare-artworks-_tbCvz_nHdU-unsplash.jpg",       // "Three Pathways" — Coaching card
+    doorPartnership: "/new/gregory-upper-4jQk5sFM27U-unsplash.jpg",// "Three Pathways" — Partnership card
     testimonialCommunity: "/new/supriya-chauhan-5Ti_6e-OBs0-unsplash.jpg",      // "Community Voices" testimonial photo
     testimonialCoaching: "/new/paul-zoetemeijer-VjNSLjSsdhg-unsplash.jpg",// "Coaching Voices" testimonial photo
   },
@@ -115,7 +115,7 @@ export const images = {
   // ─────────────LANDING PAGE paths ─────────────
   trauma: {
     hero: "/new/nadine-e-DRzYMtae-vA-unsplash.jpg",          // Top banner
-    section1: "/new/kreative-kwame-oUXhw8SEqlM-unsplash.jpg",
+    section1: "/new/kreative-kwame-oUXhw8SEqlM-unsplash.jpg",     //partnership
     section2: "/new/claiton-conto-8PiSDuUGP0Y-unsplash.jpg",
     section3: "/new/koen-emmers-Da1Wv-XC43k-unsplash.jpg",
     section4: "/new/ricardo-gomez-angel-D9kOnC_1AHw-unsplash.jpg",
