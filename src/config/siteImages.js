@@ -141,7 +141,7 @@ export const images = {
   // ───────────── The Pivot LIFE COACHING PAGE ─────────────
   lifeCoaching: {
     hero: "/new/katriona-mccarthy-sGYlyg_U92I-unsplash.jpg",    // Top banner
-    section1: "/new/jd-mason-qzrzTAQQaZI-unsplash.jpg",
+    section1: "/new/godfred-kwakye-FD_xtDvqy8I-unsplash.jpg",
     section2: "/new/pete-godfrey-3TSShf9Uidg-unsplash.jpg",
     section3: "/new/charlotte-knight-aUw2sgqnG9s-unsplash.jpg",
     section4: "/new/arturo-anez-9yhBvC2ykoc-unsplash.jpg",
