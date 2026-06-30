@@ -46,8 +46,8 @@ export const upcomingTraining = {
         "A 3-day BASIC ART training will equip you to quickly help clients release emotional pain.",
       ],
 
-      when: "2026 dates coming soon!",       //  e.g. "March 14–16, 2026"
-      where: "GA & NYC coming soon!",   //  e.g. "Atlanta, GA · In person"
+      when: ")9/29/26, 09/30/26, 10/01/26 8:30am- 5:00pm (3days)!",       //  e.g. "March 14–16, 2026"
+      where: "Acworth, GA (<60min-Hartsfield Atlanta,GA Airport;<90min-Chattanooga, TN Airport; <2hrs- Birmingham, AL Airport)!",   //  e.g. "Atlanta, GA · In person"
       trainer: "Ayana F. McKanney, LCSW — Founder of The Peace Practice",
       cost: "$1,700",
       website: "",
@@ -75,8 +75,8 @@ export const upcomingTraining = {
         "Apply SĀF-T confidently in both clinical therapy and coaching settings.",
       ],
 
-      when: "2026 dates coming soon!",
-      where: "GA & NYC coming soon!",
+      when: "Friday- 10/02/2026- 9:00am-3:00pm!",
+      where: "Acworth, GA (<60min-Hartsfield Atlanta,GA Airport;<90min-Chattanooga, TN Airport; <2hrs- Birmingham, AL Airport)",
       trainer: "Ayana F. McKanney, LCSW — Founder of The Peace Practice",
       cost: "$199",
       website: "",                          //  leave "" to hide the website link
