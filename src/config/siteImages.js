@@ -99,7 +99,7 @@ export const images = {
     section2: "/new/abel-marquez-0chVl3b15MQ-unsplash.jpg",// 2nd content section photo
     section3: "/new/sincerely-media-kSeo6slWMQE-unsplash.jpg",// 3rd content section photo
     section4: "/new/mirella-callage-nI0d850_UhQ-unsplash.jpg",// 4th content section photo
-    cta: "/new/thomas-elliott-qsONHwF3e68-unsplash.jpg",       // Bottom "Begin your journey" background
+    cta: "/new/rosario-janza-LHI32I1iodw-unsplash.jpg",       // Bottom "Begin your journey" background
   },
 
   // ───────────── INCLUSIVE & AFFIRMING CARE PAGE ─────────────
