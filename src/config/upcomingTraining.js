@@ -79,10 +79,10 @@ export const upcomingTraining = {
       where: "Acworth, GA (< 30 min from Atlanta, GA)",
       trainer: "Ayana F. McKanney, LCSW — Founder of The Peace Practice",
       cost: "$199",
-      website: "https://acceleratedresolutiontherapy.com/reg/enroll.php?class=SAF-T1+10%2F02%2F26+ACCGA&savesrch=%2Freg%2Ficat.php%3Fcourse%3DSAF-T1",                          //  leave "" to hide the website link
+      website: "",                          //  leave "" to hide the website link
 
       ctaText: "Reserve Your Spot",
-      ctaLink: "https://calendly.com/manifestcoachingllc/clarity-call",
+      ctaLink: "https://acceleratedresolutiontherapy.com/reg/enroll.php?class=SAF-T1+10%2F02%2F26+ACCGA&savesrch=%2Freg%2Ficat.php%3Fcourse%3DSAF-T1",
 
       topicImage: "/new/egor-litvinov-7UI8bszs1X0-unsplash.jpg",
       trainerImage: "/new/ayana-headshot.jpg",
