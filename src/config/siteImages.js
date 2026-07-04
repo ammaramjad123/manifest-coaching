@@ -164,11 +164,11 @@ export const images = {
     cta: "/new/sian-cooper-4kEobPqPgKw-unsplash.jpg",       // Bottom "Begin your journey" background
   },
 
-  // ───────────── IMMIGRATION EVALUATIONS PAGE ─────────────
+  // ───────────── The PIVOT-IMMIGRATION EVALUATIONS PAGE ─────────────
   immigration: {
     card1: "/new/dylann-hendricks-oxaBYAbpWgI-unsplash.jpg",    // 1st service card image
     card2: "/new/markus-winkler-aXkQK_mc5Dw-unsplash.jpg",   // 2nd service card image
-    showcase: "/new/jack-blueberry-50JM0vCCEUo-unsplash.jpg",  // Large banner photo
+    showcase: "/new/mohammad-paknezhad-rBxYAfgnlqo-unsplash.jpg",  // Large banner photo
     cta: "/new/elena-mozhvilo-j06gLuKK0GM-unsplash.jpg",     // Bottom call-to-action background
   },
 
