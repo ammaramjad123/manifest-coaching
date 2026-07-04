@@ -53,7 +53,7 @@ export const upcomingTraining = {
       website: "",
 
       ctaText: "Reserve Your Spot",
-      ctaLink: "https://calendly.com/manifestcoachingllc/clarity-call",
+      ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=Basic&loc=acworthga&inst=ayanamckanney",
 
       topicImage: "/new/tsd-studio-9_jvKRbNdTM-unsplash.jpg",  // round topic photo
       trainerImage: "/new/ayana-headshot.jpg",                  // Ayana's round photo
