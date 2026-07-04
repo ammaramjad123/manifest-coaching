@@ -79,7 +79,7 @@ export const images = {
     section2: "/new/nadine-e-DRzYMtae-vA-unsplash-1.jpg", // 2nd content section photo
     section3: "/new/igor-omilaev-16LHsyGpyTw-unsplash.jpg",  // 3rd content section photo
     section4: "/new/ivan-aviles-opStzxYG00c-unsplash.jpg",       // 4th content section photo
-    cta: "/new/zach-key-rKE6rXOl14U-unsplash.jpg",           // Bottom "Begin your journey" background
+    cta: "/new/sydney-moore-tOY4_Xk6QDg-unsplash.jpg",           // Bottom "Begin your journey" background
   },
 
   // ───────────── DBT PAGE (Dialectical Behavior Therapy) ─────────────
@@ -148,7 +148,7 @@ export const images = {
     section5: "/new/matheus-viana-sl5o9vDtDbI-unsplash.jpg",
     section6: "/new/annie-pm-OEewhKC5rIc-unsplash.jpg",
     section7: "/new/dylann-hendricks-z2rC_O-TosY-unsplash.jpg",
-    cta: "/new/alfred-schrock-shoE2y51uX0-unsplash-1.jpg",           // Bottom "Begin your journey" background
+    cta: "/new/joshua-gaunt-pT8wCKAYm7k-unsplash.jpg",           // Bottom "Begin your journey" background
   },
 
   // ─────────────The Partnership WOMEN'S ISSUES PAGE ─────────────
