@@ -190,7 +190,7 @@ export const images = {
     showcase: "/new/hoyoun-lee-1x7BfgXcIn4-unsplash (1).jpg",// b2b banner photo
     cta: "/new/alexey-demidov-t47aoza7BWk-unsplash.jpg",         // 1st picture b2b
     ayanaHeadshot: "/new/ayana-headshot.jpg",                // Ayana's photo on this page
-    closing: "/new/vinu-t-V0vT7qaWhIw-unsplash.jpg",// Closing section photo
+    closing: "/new/erick-beltran-I9qD2fEAxQ4-unsplash.jpg",// Closing section photo
   },
 
 };
