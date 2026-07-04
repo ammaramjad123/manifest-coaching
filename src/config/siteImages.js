@@ -69,7 +69,7 @@ export const images = {
     section2: "/new/marquise-kamanke-jfQGc8Emf1Q-unsplash.jpg",  // 2nd content section photo
     section3: "/new/womanizer-toys-8oB43mw658c-unsplash.jpg", // 3rd content section photo
     section4: "/new/sonayon-oluwatosin-LrDQfDXGDko-unsplash.jpg",     // 4th content section photo
-    cta: "/new/gary-yost--iZGedR1uJo-unsplash.jpg",       // Bottom "Begin your journey" background
+    cta: "/new/dietra-alyssa-semple-d-RqbXT3GkA-unsplash.jpg",       // Bottom "Begin your journey" background
   },
 
   // ───────────── ART PAGE (Accelerated Resolution Therapy) ─────────────
