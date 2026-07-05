@@ -226,9 +226,9 @@ export const images = {
 export const trainingLinks = {
 
   // ART® Basic Training  →  "Register" button link
-  artBasic: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=Basic",
+  artBasic: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=Basic&loc=acworthga&inst=ayanamckanney",
 
   // SĀF-T Training  →  "Register" button link
-  saft: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=SAF-T1",
+  saft: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=SAF-T1&loc=acworthga",
 
 };
