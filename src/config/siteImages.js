@@ -166,7 +166,7 @@ export const images = {
 
   // ───────────── The PIVOT-IMMIGRATION EVALUATIONS PAGE ─────────────
   immigration: {
-    card1: "/new/dylann-hendricks-oxaBYAbpWgI-unsplash.jpg",    // 1st service card image
+    card1: "/new/global-residence-index-wOj5HTw2YMc-unsplash.jpg",    // 1st service card image
     card2: "/new/markus-winkler-aXkQK_mc5Dw-unsplash.jpg",   // 2nd service card image
     showcase: "/new/marina-yalanska-kt8Qn_2U9r8-unsplash.jpg",  // Large banner photo
     cta: "/new/david-clode-13PjNBaDMcg-unsplash.jpg",     // Bottom call-to-action background
