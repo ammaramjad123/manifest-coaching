@@ -194,3 +194,41 @@ export const images = {
   },
 
 };
+
+
+// ============================================================================
+//  TRAINING REGISTRATION LINKS  (the "Register" buttons for your trainings)
+// ============================================================================
+//
+//  These are the web addresses (links) that open when someone clicks the
+//  "Register" buttons for your ART® Basic Training and SĀF-T Training.
+//
+//  They are used on the Partnership page (the 3 training cards), the ART page,
+//  the SĀF-T page, and the bARTer Balance page — so changing a link HERE
+//  changes it EVERYWHERE on the website automatically. You only edit it once.
+//
+//  ── HOW TO CHANGE A LINK (no coding needed): ──
+//
+//   1. Copy your direct registration link from your browser's address bar.
+//   2. Find the training below (artBasic or saft).
+//   3. Replace ONLY the web address inside the quotes "  ".
+//
+//      Example — to point ART® Basic Training at your own direct link:
+//         BEFORE:  artBasic: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=Basic",
+//         AFTER:   artBasic: "https://your-direct-registration-link-here.com",
+//
+//  RULES:
+//   • Always keep the quotes "  " and the comma , at the end.
+//   • Paste the WHOLE link, including the "https://" at the start.
+//   • Do not add spaces before or after the link inside the quotes.
+// ============================================================================
+
+export const trainingLinks = {
+
+  // ART® Basic Training  →  "Register" button link
+  artBasic: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=Basic",
+
+  // SĀF-T Training  →  "Register" button link
+  saft: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=SAF-T1",
+
+};

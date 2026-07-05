@@ -1,4 +1,4 @@
-import { images } from "../config/siteImages";
+import { images, trainingLinks } from "../config/siteImages";
 import React, { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -778,7 +778,7 @@ export default function ServicesPage() {
 
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                     <a
-                      href="https://acceleratedresolutiontherapy.com/reg/icat.php?course=Basic"
+                      href={trainingLinks.artBasic}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex flex-col items-center text-center p-4 rounded-xl bg-white/10 border border-[#c09050]/30 hover:bg-[#c09050]/20 hover:border-[#c09050] transition-all duration-300 group/card"
@@ -789,7 +789,7 @@ export default function ServicesPage() {
                       <span className="text-white/60 text-xs font-[system-ui]">Register via RCRR →</span>
                     </a>
                     <a
-                      href="https://acceleratedresolutiontherapy.com/reg/icat.php?course=SAF-T1"
+                      href={trainingLinks.saft}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex flex-col items-center text-center p-4 rounded-xl bg-white/10 border border-[#c09050]/30 hover:bg-[#c09050]/20 hover:border-[#c09050] transition-all duration-300 group/card"

@@ -1,4 +1,4 @@
-import { images } from "../config/siteImages";
+import { images, trainingLinks } from "../config/siteImages";
 import SpecialtyPageTemplate from '../components/SpecialtyPageTemplate';
 import { Activity, Zap, Shield } from 'lucide-react';
 
@@ -93,7 +93,7 @@ const data = {
     },
     {
       q: "How can I become certified in SĀF-T?",
-      a: <>Ayana Foluke McKanney is a certified SĀF-T provider and trainer. SĀF-T training is open to professionals, paraprofessionals, and parents — coaches, first responders, clergy, educators, and healthcare professionals — no clinical license required. To register for a training facilitated by Ayana, visit the <a href="https://acceleratedresolutiontherapy.com/reg/icat.php?course=SAF-T1" target="_blank" rel="noopener noreferrer" className="text-[#c09050] underline hover:text-[#d4a84b] transition-colors font-semibold">RCRR registration page</a>, select the training Ayana is offering, and complete your registration there. Training is $199.</>
+      a: <>Ayana Foluke McKanney is a certified SĀF-T provider and trainer. SĀF-T training is open to professionals, paraprofessionals, and parents — coaches, first responders, clergy, educators, and healthcare professionals — no clinical license required. To register for a training facilitated by Ayana, visit the <a href={trainingLinks.saft} target="_blank" rel="noopener noreferrer" className="text-[#c09050] underline hover:text-[#d4a84b] transition-colors font-semibold">RCRR registration page</a>, select the training Ayana is offering, and complete your registration there. Training is $199.</>
     },
     {
       q: "Is SĀF-T a substitute for medical treatment?",

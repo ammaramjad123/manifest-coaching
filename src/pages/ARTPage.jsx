@@ -1,4 +1,4 @@
-import { images } from "../config/siteImages";
+import { images, trainingLinks } from "../config/siteImages";
 import SpecialtyPageTemplate from '../components/SpecialtyPageTemplate';
 import { Zap, Shield, Brain } from 'lucide-react';
 
@@ -87,7 +87,7 @@ const data = {
     },
     {
       q: "What is RCRR and what does it have to do with ART®?",
-      a: <>RCRR (Rosenzweig Center for Rapid Recovery) is the leading ART® certification and training body. Ayana Foluke McKanney is a Certified Master ART® Trainer — the highest level of certification available. ART® therapy sessions are offered at The Peace Practice. Separately, professional ART® training for clinicians is also offered by Ayana — participants register and pay directly on the <a href="https://acceleratedresolutiontherapy.com/reg/icat.php?course=Basic" target="_blank" rel="noopener noreferrer" className="text-[#c09050] underline hover:text-[#d4a84b] transition-colors font-semibold">RCRR website</a>.</>
+      a: <>RCRR (Rosenzweig Center for Rapid Recovery) is the leading ART® certification and training body. Ayana Foluke McKanney is a Certified Master ART® Trainer — the highest level of certification available. ART® therapy sessions are offered at The Peace Practice. Separately, professional ART® training for clinicians is also offered by Ayana — participants register and pay directly on the <a href={trainingLinks.artBasic} target="_blank" rel="noopener noreferrer" className="text-[#c09050] underline hover:text-[#d4a84b] transition-colors font-semibold">RCRR website</a>.</>
     }
   ],
 

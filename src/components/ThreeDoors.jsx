@@ -1,4 +1,4 @@
-import { images } from "../config/siteImages";
+import { images, trainingLinks } from "../config/siteImages";
 import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -434,7 +434,7 @@ export default function ThreeDoors() {
                       <div>
                         <p className="font-bold text-black text-sm md:text-base">ART® Training</p>
                         <p className="text-xs text-gray-500 mb-1">For mental health professionals only · CE credits available · Facilitated by Ayana</p>
-                        <a href="https://acceleratedresolutiontherapy.com/reg/icat.php?course=Basic" target="_blank" rel="noopener noreferrer" className="text-xs text-[#c09050] underline hover:text-[#d4a84b] transition-colors">Registration through RCRR — $1,700</a>
+                        <a href={trainingLinks.artBasic} target="_blank" rel="noopener noreferrer" className="text-xs text-[#c09050] underline hover:text-[#d4a84b] transition-colors">Registration through RCRR — $1,700</a>
                       </div>
                     </div>
                     <div className="flex items-start gap-2 md:gap-3">
@@ -444,7 +444,7 @@ export default function ThreeDoors() {
                       <div>
                         <p className="font-bold text-black text-sm md:text-base">SĀF-T Training</p>
                         <p className="text-xs text-gray-500 mb-1">For coaches, first responders, clergy, parents, educators & healthcare professionals · Facilitated by Ayana</p>
-                        <a href="https://acceleratedresolutiontherapy.com/reg/icat.php?course=SAF-T1" target="_blank" rel="noopener noreferrer" className="text-xs text-[#c09050] underline hover:text-[#d4a84b] transition-colors">Registration through RCRR — $199</a>
+                        <a href={trainingLinks.saft} target="_blank" rel="noopener noreferrer" className="text-xs text-[#c09050] underline hover:text-[#d4a84b] transition-colors">Registration through RCRR — $199</a>
                       </div>
                     </div>
                     <div className="flex items-start gap-2 md:gap-3">

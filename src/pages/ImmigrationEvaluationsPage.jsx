@@ -1,4 +1,4 @@
-import { images } from "../config/siteImages";
+import { images, trainingLinks } from "../config/siteImages";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import UpcomingTraining from "../components/UpcomingTraining";
@@ -70,7 +70,7 @@ const trainings = [
     badge: "$1,700 · 20 CE Credits",
     description: "Become certified in Accelerated Resolution Therapy — one of the fastest-growing, evidence-based trauma modalities in the field. Facilitated by a Certified Master ART® Trainer.",
     cta: "Register via RCRR",
-    href: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=Basic",
+    href: trainingLinks.artBasic,
     external: true
   },
   {
@@ -79,7 +79,7 @@ const trainings = [
     badge: "$199 · No License Required",
     description: "\"Keep the Knowledge, Lose the Pain.\" Sensations Awareness Focused Technique training — open to professionals, paraprofessionals, and parents. No clinical license required.",
     cta: "Register via RCRR",
-    href: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=SAF-T1",
+    href: trainingLinks.saft,
     external: true
   },
   {

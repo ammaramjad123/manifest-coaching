@@ -1,4 +1,4 @@
-import { images } from "../config/siteImages";
+import { images, trainingLinks } from "../config/siteImages";
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import {
@@ -56,7 +56,7 @@ const trainings = [
     description:
       "Become certified in Accelerated Resolution Therapy — one of the fastest-growing, evidence-based trauma modalities in the field. Complete the foundational training and earn 20 continuing education credits upon completion.",
     cta: "Register Now",
-    href: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=Basic",
+    href: trainingLinks.artBasic,
     external: true
   },
   {
@@ -66,7 +66,7 @@ const trainings = [
     description:
       "\"Keep the Knowledge, Lose the Pain.\" Sensations Awareness Focused Technique training — no drugs, no hypnosis. Safe for adults and children. Open to professionals, paraprofessionals, and parents. No clinical license required.",
     cta: "Register Now",
-    href: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=SAF-T1",
+    href: trainingLinks.saft,
     external: true
   },
   {
@@ -548,7 +548,7 @@ export default function BARTerBalancePage() {
                 <p className="text-xs text-gray-400 font-[system-ui] mt-1">
                   To register for a training facilitated by Ayana, visit the{" "}
                   <a
-                    href="https://acceleratedresolutiontherapy.com/reg/icat.php?course=SAF-T1"
+                    href={trainingLinks.saft}
                     target="_blank" rel="noopener noreferrer"
                     className="text-[#c09050] underline hover:text-[#d4a84b] transition-colors"
                   >
