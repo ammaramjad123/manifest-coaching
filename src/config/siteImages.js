@@ -46,7 +46,7 @@ export const images = {
   services: {
     hero: "/new/artur-aldyrkhanov-yjfXE6xdJmE-unsplash.jpg", // Top banner of the Services page
     trainingLogo: "/new/manifest-coaching-logo.png",       // Logo in the Professional Training card
-    showcase: "/new/robert-lukeman-_RBcxo9AU-U-unsplash.jpg",// Wide stone-circles background (Service Showcase)
+    showcase: "/new/kati-web-_30ygW82AnE-unsplash.jpg",// Wide stone-circles background (Service Showcase)
     twoHatsCrown: "/new/revisedlisa-marie-theck-9iL4kae_oSs-unsplash.jpg",                     // Crown background in "The Two Hats" section
   },
 
