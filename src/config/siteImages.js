@@ -170,7 +170,7 @@ export const images = {
     card2: "/new/surface-CqQWt4a-XfY-unsplash.jpg",   // 2nd service card specialization image
     showcase: "/new/marina-yalanska-kt8Qn_2U9r8-unsplash.jpg",  // Large banner photo
     cta: "/new/david-clode-13PjNBaDMcg-unsplash.jpg",     // Bottom call-to-action background
-    trainingsTab: "/new/marina-yalanska-kt8Qn_2U9r8-unsplash.jpg",  // Picture in the "Professional Trainings" tab (Partnership page)
+    trainingsTab: "/new/christina-wocintechchat-com-m-rg1y72eKw6o-unsplash.jpg",  // Picture in the "Professional Trainings" tab (Partnership page)
   },
 
   // ───────────── MANIFEST METHOD PAGE ─────────────
