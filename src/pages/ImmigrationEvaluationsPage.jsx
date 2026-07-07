@@ -5,7 +5,7 @@ import UpcomingTraining from "../components/UpcomingTraining";
 import {
   ArrowRight, Calendar, Phone, Brain, Heart, Shield,
   Sparkles, Clock, Quote, Globe, FileText, Users as UsersIcon,
-  HeartHandshake, Gavel, CheckCircle, Award, BookOpen, ExternalLink,
+  HeartHandshake, Gavel, CheckCircle, Award, ExternalLink,
   Scale, Video
 } from "lucide-react";
 
@@ -60,6 +60,17 @@ const tabData = [
       }
     ],
     stat: "Licensed in NY, NJ & RI · Virtual evaluations · Deposit secures appointment"
+  },
+  {
+    id: "trainings",
+    label: "Professional Trainings",
+    image: images.immigration.trainingsTab,
+    imageAlt: "ART® and SĀF-T professional trainings",
+    heading: "Professional Trainings & Certification",
+    badge: "ART® · SĀF-T · Corporate & Community",
+    intro: "ART® and SĀF-T trainings facilitated by a Certified Master Trainer — open to clinicians, paraprofessionals, and community professionals. Choose a path below to register or inquire.",
+    isTrainings: true,
+    stat: "ART® · SĀF-T · Corporate & Community formats"
   }
 ];
 
@@ -230,7 +241,7 @@ export default function ImmigrationEvaluationsPage() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, ease: "easeOut" }}
-            className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start"
+            className="max-w-5xl mx-auto space-y-10"
           >
             {/* Content side */}
             <div>
@@ -294,6 +305,46 @@ export default function ImmigrationEvaluationsPage() {
                 </div>
               )}
 
+              {tab.isTrainings && (
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 lg:gap-6 mb-8">
+                  {trainings.map((t, i) => {
+                    const Icon = t.icon;
+                    return (
+                      <motion.div
+                        key={i}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: i * 0.1 }}
+                        className="group flex flex-col bg-white rounded-2xl border border-gray-100 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-500 overflow-hidden"
+                      >
+                        <div className="h-1 bg-gradient-to-r from-[#c09050] to-[#d4a84b]" />
+                        <div className="flex flex-col flex-1 p-6">
+                          <div className="flex items-start justify-between mb-4">
+                            <div className="w-11 h-11 rounded-xl bg-[#c09050]/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                              <Icon className="w-5 h-5 text-[#c09050]" />
+                            </div>
+                            <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-[#c09050]/10 text-[#c09050] text-[11px] font-black font-[system-ui] tracking-wide">
+                              {t.badge}
+                            </span>
+                          </div>
+                          <h3 className="text-lg font-black text-black mb-2 font-[system-ui]">{t.title}</h3>
+                          <p className="text-gray-600 text-sm leading-relaxed font-[system-ui] flex-1 mb-5">{t.description}</p>
+                          <a
+                            href={t.href}
+                            target={t.external ? "_blank" : undefined}
+                            rel={t.external ? "noopener noreferrer" : undefined}
+                            className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-[#c09050] to-[#d4a84b] text-white text-sm font-black font-[system-ui] hover:shadow-lg hover:scale-[1.02] transition-all duration-300"
+                          >
+                            {t.cta}
+                            {t.external ? <ExternalLink className="w-4 h-4" /> : <ArrowRight className="w-4 h-4" />}
+                          </a>
+                        </div>
+                      </motion.div>
+                    );
+                  })}
+                </div>
+              )}
+
               {tab.note && (
                 <div className="p-5 rounded-2xl bg-[#c09050]/5 border border-[#c09050]/20">
                   <div className="flex items-center gap-2 mb-2">
@@ -304,17 +355,19 @@ export default function ImmigrationEvaluationsPage() {
                 </div>
               )}
 
-              <div className="mt-6">
-                <a
-                  href="https://calendly.com/manifestcoachingllc/immigration"
-                  target="_blank"
-                  className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-black border-2 border-[#c09050] text-white font-bold text-sm hover:bg-[#c09050] hover:border-[#c09050] transition-all duration-300 font-[system-ui]"
-                >
-                  <Calendar className="w-4 h-4" />
-                  Schedule Evaluation
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </a>
-              </div>
+              {!tab.isTrainings && (
+                <div className="mt-6">
+                  <a
+                    href="https://calendly.com/manifestcoachingllc/immigration"
+                    target="_blank"
+                    className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-black border-2 border-[#c09050] text-white font-bold text-sm hover:bg-[#c09050] hover:border-[#c09050] transition-all duration-300 font-[system-ui]"
+                  >
+                    <Calendar className="w-4 h-4" />
+                    Schedule Evaluation
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                </div>
+              )}
             </div>
 
             {/* Image side */}
@@ -322,7 +375,7 @@ export default function ImmigrationEvaluationsPage() {
               <img
                 src={tab.image}
                 alt={tab.imageAlt}
-                className="w-full h-auto object-cover aspect-[4/3]"
+                className="w-full h-64 sm:h-80 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-[#c09050]/10 to-transparent" />
               <div className="absolute bottom-5 left-5 right-5">
@@ -333,78 +386,6 @@ export default function ImmigrationEvaluationsPage() {
               </div>
             </div>
           </motion.div>
-        </div>
-      </section>
-
-      {/* ── TRAINING OFFERINGS ── */}
-      <section className="py-16 sm:py-24 bg-[#fefcf7]" id="trainings">
-        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-
-          <div className="text-center mb-14">
-            <motion.div
-              initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#c09050]/10 border border-[#c09050]/20 mb-5"
-            >
-              <BookOpen className="w-4 h-4 text-[#c09050]" />
-              <span className="text-xs font-black uppercase tracking-[0.16em] text-[#c09050] font-[system-ui]">Professional Training</span>
-            </motion.div>
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="text-3xl sm:text-4xl md:text-5xl font-black text-black font-[system-ui] mb-4"
-            >
-              Trainings{" "}
-              <span className="bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent">
-                Offered
-              </span>
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.15 }}
-              viewport={{ once: true }}
-              className="text-gray-600 max-w-2xl mx-auto text-base md:text-lg font-[system-ui]"
-            >
-              ART® and SĀF-T trainings facilitated by a Certified Master Trainer — open to clinicians, paraprofessionals, and community professionals.
-            </motion.p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-            {trainings.map((t, i) => {
-              const Icon = t.icon;
-              return (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: i * 0.1 }}
-                  viewport={{ once: true }}
-                  className="group flex flex-col bg-white rounded-2xl border border-gray-100 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-500 overflow-hidden"
-                >
-                  <div className="h-1 bg-gradient-to-r from-[#c09050] to-[#d4a84b]" />
-                  <div className="flex flex-col flex-1 p-7">
-                    <div className="flex items-start justify-between mb-5">
-                      <div className="w-12 h-12 rounded-xl bg-[#c09050]/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <Icon className="w-6 h-6 text-[#c09050]" />
-                      </div>
-                      <span className="inline-flex items-center px-3 py-1 rounded-full bg-[#c09050]/10 text-[#c09050] text-xs font-black font-[system-ui] tracking-wide">
-                        {t.badge}
-                      </span>
-                    </div>
-                    <h3 className="text-xl font-black text-black mb-3 font-[system-ui]">{t.title}</h3>
-                    <p className="text-gray-600 text-sm leading-relaxed font-[system-ui] flex-1 mb-6">{t.description}</p>
-                    <a
-                      href={t.href}
-                      target={t.external ? "_blank" : undefined}
-                      rel={t.external ? "noopener noreferrer" : undefined}
-                      className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-[#c09050] to-[#d4a84b] text-white text-sm font-black font-[system-ui] hover:shadow-lg hover:scale-[1.02] transition-all duration-300"
-                    >
-                      {t.cta}
-                      {t.external ? <ExternalLink className="w-4 h-4" /> : <ArrowRight className="w-4 h-4" />}
-                    </a>
-                  </div>
-                </motion.div>
-              );
-            })}
-          </div>
         </div>
       </section>
 
