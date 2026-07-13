@@ -1,18 +1,19 @@
 import { images, trainingLinks } from "../config/siteImages";
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import React, { useState, useRef, useEffect, useCallback } from "react";
+import { motion, AnimatePresence, useInView } from "framer-motion";
 import UpcomingTraining from "../components/UpcomingTraining";
 import {
   ArrowRight, Calendar, Phone, Brain, Heart, Shield,
   Sparkles, Clock, Quote, Globe, FileText, Users as UsersIcon,
   HeartHandshake, Gavel, CheckCircle, Award, ExternalLink,
-  Scale, Video
+  Scale, Video, ChevronDown
 } from "lucide-react";
 
 const tabData = [
   {
     id: "overview",
     label: "Evaluations Overview",
+    icon: FileText,
     image: images.immigration.card1,
     imageAlt: "Clinical Immigration Evaluation",
     heading: "Clinical Immigration Assessments: A Forensic Approach",
@@ -32,6 +33,7 @@ const tabData = [
   {
     id: "cases",
     label: "Case Specializations",
+    icon: Scale,
     image: images.immigration.card2,
     imageAlt: "Case types and specializations",
     heading: "What's Provided for Clinical Immigration Evaluations",
@@ -64,6 +66,7 @@ const tabData = [
   {
     id: "trainings",
     label: "Professional Trainings",
+    icon: Award,
     image: images.immigration.trainingsTab,
     imageAlt: "ART® and SĀF-T professional trainings",
     heading: "Professional Trainings & Certification",
@@ -104,9 +107,203 @@ const trainings = [
   }
 ];
 
+function AccordionItem({ tab, isOpen, onToggle, onReveal }) {
+  const HeaderIcon = tab.icon;
+  const headerRef = useRef(null);
+  // Trigger when the header enters the central band of the viewport,
+  // so each section opens itself as the visitor scrolls down to it.
+  const inView = useInView(headerRef, { margin: "-35% 0px -55% 0px" });
+
+  useEffect(() => {
+    if (inView) onReveal(tab.id);
+  }, [inView, tab.id, onReveal]);
+
+  return (
+    <div
+      className={`rounded-2xl border overflow-hidden transition-all duration-300 ${
+        isOpen
+          ? "border-[#c09050] shadow-xl bg-white"
+          : "border-gray-200 shadow-sm bg-white hover:border-[#c09050]/40 hover:shadow-md"
+      }`}
+    >
+      {/* Header — always visible, so options are never off-screen */}
+      <button
+        ref={headerRef}
+        onClick={() => onToggle(tab.id)}
+        aria-expanded={isOpen}
+        className="w-full flex items-center gap-4 sm:gap-5 px-5 sm:px-7 py-5 sm:py-6 text-left scroll-mt-28"
+      >
+        <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center flex-shrink-0 transition-colors duration-300 ${
+          isOpen ? "bg-[#c09050] text-white" : "bg-[#c09050]/10 text-[#c09050]"
+        }`}>
+          <HeaderIcon className="w-6 h-6" />
+        </div>
+        <div className="flex-1 min-w-0">
+          <h3 className="text-lg sm:text-xl font-black text-black font-[system-ui] leading-tight">{tab.label}</h3>
+          <p className="text-[#c09050] text-xs sm:text-sm font-bold font-[system-ui] mt-0.5">{tab.badge}</p>
+        </div>
+        <div className={`w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
+          isOpen ? "bg-[#c09050]/10" : "bg-gray-100"
+        }`}>
+          <ChevronDown className={`w-5 h-5 text-[#c09050] transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} />
+        </div>
+      </button>
+
+      {/* Expandable body */}
+      <AnimatePresence initial={false}>
+        {isOpen && (
+          <motion.div
+            key="body"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.35, ease: "easeInOut" }}
+            className="overflow-hidden"
+          >
+            <div className="px-5 sm:px-7 pb-7 pt-1 space-y-8">
+              <p className="text-gray-600 text-base sm:text-lg leading-relaxed font-[system-ui]">
+                {tab.intro}
+              </p>
+
+              {tab.points && (
+                <div className="space-y-4">
+                  {tab.points.map((p, i) => {
+                    const Icon = p.icon;
+                    return (
+                      <div key={i} className="flex items-start gap-4 p-4 rounded-xl bg-gray-50 border border-gray-100">
+                        <div className="w-10 h-10 rounded-xl bg-[#c09050]/10 flex items-center justify-center flex-shrink-0">
+                          <Icon className="w-5 h-5 text-[#c09050]" />
+                        </div>
+                        <div>
+                          <p className="font-black text-black text-sm font-[system-ui] mb-1">{p.title}</p>
+                          <p className="text-gray-600 text-sm font-[system-ui] leading-relaxed">{p.desc}</p>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+
+              {tab.cases && (
+                <div className="space-y-4">
+                  {tab.cases.map((c, i) => {
+                    const Icon = c.icon;
+                    return (
+                      <div key={i} className="flex items-start gap-4 p-4 rounded-xl bg-gray-50 border border-gray-100">
+                        <div className="w-10 h-10 rounded-xl bg-[#c09050]/10 flex items-center justify-center flex-shrink-0">
+                          <Icon className="w-5 h-5 text-[#c09050]" />
+                        </div>
+                        <div>
+                          <p className="font-black text-black text-sm font-[system-ui] mb-1">{c.name}</p>
+                          <p className="text-gray-600 text-sm font-[system-ui] leading-relaxed">{c.desc}</p>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+
+              {tab.isTrainings && (
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 lg:gap-6">
+                  {trainings.map((t, i) => {
+                    const Icon = t.icon;
+                    return (
+                      <div
+                        key={i}
+                        className="group flex flex-col bg-white rounded-2xl border border-gray-100 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-500 overflow-hidden"
+                      >
+                        <div className="h-1 bg-gradient-to-r from-[#c09050] to-[#d4a84b]" />
+                        <div className="flex flex-col flex-1 p-6">
+                          <div className="flex items-start justify-between mb-4">
+                            <div className="w-11 h-11 rounded-xl bg-[#c09050]/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                              <Icon className="w-5 h-5 text-[#c09050]" />
+                            </div>
+                            <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-[#c09050]/10 text-[#c09050] text-[11px] font-black font-[system-ui] tracking-wide">
+                              {t.badge}
+                            </span>
+                          </div>
+                          <h3 className="text-lg font-black text-black mb-2 font-[system-ui]">{t.title}</h3>
+                          <p className="text-gray-600 text-sm leading-relaxed font-[system-ui] flex-1 mb-5">{t.description}</p>
+                          <a
+                            href={t.href}
+                            target={t.external ? "_blank" : undefined}
+                            rel={t.external ? "noopener noreferrer" : undefined}
+                            className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-[#c09050] to-[#d4a84b] text-white text-sm font-black font-[system-ui] hover:shadow-lg hover:scale-[1.02] transition-all duration-300"
+                          >
+                            {t.cta}
+                            {t.external ? <ExternalLink className="w-4 h-4" /> : <ArrowRight className="w-4 h-4" />}
+                          </a>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+
+              {tab.note && (
+                <div className="p-5 rounded-2xl bg-[#c09050]/5 border border-[#c09050]/20">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Gavel className="w-4 h-4 text-[#c09050]" />
+                    <p className="font-black text-[#c09050] text-sm font-[system-ui] uppercase tracking-wider">{tab.note.heading}</p>
+                  </div>
+                  <p className="text-gray-700 text-sm font-[system-ui] leading-relaxed">{tab.note.body}</p>
+                </div>
+              )}
+
+              {/* Image */}
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <img
+                  src={tab.image}
+                  alt={tab.imageAlt}
+                  className="w-full h-64 sm:h-80 object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-tr from-[#c09050]/10 to-transparent" />
+                <div className="absolute bottom-5 left-5 right-5">
+                  <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/60 backdrop-blur-sm border border-white/20">
+                    <Quote className="w-3 h-3 text-[#c09050]" />
+                    <span className="text-white/80 text-xs font-[system-ui]">{tab.stat}</span>
+                  </div>
+                </div>
+              </div>
+
+              {!tab.isTrainings && (
+                <div>
+                  <a
+                    href="https://calendly.com/manifestcoachingllc/immigration"
+                    target="_blank"
+                    className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-black border-2 border-[#c09050] text-white font-bold text-sm hover:bg-[#c09050] hover:border-[#c09050] transition-all duration-300 font-[system-ui]"
+                  >
+                    <Calendar className="w-4 h-4" />
+                    Schedule Evaluation
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                </div>
+              )}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
 export default function ImmigrationEvaluationsPage() {
-  const [activeTab, setActiveTab] = useState("overview");
-  const tab = tabData.find(t => t.id === activeTab);
+  // A section opens itself as you scroll to it and stays open (progressive reveal).
+  // Clicking a header still lets the visitor open/close any section manually.
+  const [openIds, setOpenIds] = useState(() => new Set(["overview"]));
+
+  const reveal = useCallback((id) => {
+    setOpenIds(prev => (prev.has(id) ? prev : new Set(prev).add(id)));
+  }, []);
+
+  const toggle = useCallback((id) => {
+    setOpenIds(prev => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  }, []);
 
   return (
     <div className="relative bg-white overflow-hidden">
@@ -214,178 +411,33 @@ export default function ImmigrationEvaluationsPage() {
       {/* ── UPCOMING TRAINING (editable + toggle in src/config/upcomingTraining.js) ── */}
       <UpcomingTraining />
 
-      {/* ── TABBED EVALUATION SECTIONS ── */}
+      {/* ── ACCORDION EVALUATION SECTIONS ── */}
       <section className="py-16 sm:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto px-5 sm:px-6 lg:px-8">
 
-          {/* Tab buttons */}
-          <div className="flex gap-3 justify-center mb-12 flex-wrap">
-            {tabData.map(t => (
-              <button
-                key={t.id}
-                onClick={() => setActiveTab(t.id)}
-                className={`px-7 py-3 rounded-full font-bold text-sm font-[system-ui] transition-all duration-300 ${
-                  activeTab === t.id
-                    ? "bg-[#c09050] text-white border-2 border-[#c09050] shadow-lg"
-                    : "bg-[#c09050]/15 text-[#c09050] border-2 border-[#c09050]/30 hover:bg-[#c09050]/25"
-                }`}
-              >
-                {t.label}
-              </button>
-            ))}
+          <div className="text-center mb-10 sm:mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#c09050]/10 border border-[#c09050]/20 mb-4">
+              <Sparkles className="w-4 h-4 text-[#c09050]" />
+              <span className="text-xs font-black uppercase tracking-wider text-[#c09050]">Explore the Partnership</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black font-[system-ui] leading-tight">
+              Select an area to learn more
+            </h2>
+            <p className="text-gray-500 text-sm mt-3 font-[system-ui]">Tap any option below to open it — tap again to close.</p>
           </div>
 
-          {/* Tab content */}
-          <motion.div
-            key={activeTab}
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, ease: "easeOut" }}
-            className="max-w-5xl mx-auto space-y-10"
-          >
-            {/* Content side */}
-            <div>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#c09050]/10 border border-[#c09050]/20 mb-6">
-                <span className="text-xs font-black uppercase tracking-wider text-[#c09050]">{tab.badge}</span>
-              </div>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-5 font-[system-ui] leading-tight">
-                {tab.heading}
-              </h2>
-              <p className="text-gray-600 text-lg leading-relaxed mb-8 font-[system-ui]">
-                {tab.intro}
-              </p>
-
-              {tab.points && (
-                <div className="space-y-4 mb-8">
-                  {tab.points.map((p, i) => {
-                    const Icon = p.icon;
-                    return (
-                      <motion.div
-                        key={i}
-                        initial={{ opacity: 0, y: 12 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: i * 0.08 }}
-                        className="flex items-start gap-4 p-4 rounded-xl bg-gray-50 border border-gray-100"
-                      >
-                        <div className="w-10 h-10 rounded-xl bg-[#c09050]/10 flex items-center justify-center flex-shrink-0">
-                          <Icon className="w-5 h-5 text-[#c09050]" />
-                        </div>
-                        <div>
-                          <p className="font-black text-black text-sm font-[system-ui] mb-1">{p.title}</p>
-                          <p className="text-gray-600 text-sm font-[system-ui] leading-relaxed">{p.desc}</p>
-                        </div>
-                      </motion.div>
-                    );
-                  })}
-                </div>
-              )}
-
-              {tab.cases && (
-                <div className="space-y-4 mb-8">
-                  {tab.cases.map((c, i) => {
-                    const Icon = c.icon;
-                    return (
-                      <motion.div
-                        key={i}
-                        initial={{ opacity: 0, y: 12 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: i * 0.08 }}
-                        className="flex items-start gap-4 p-4 rounded-xl bg-gray-50 border border-gray-100"
-                      >
-                        <div className="w-10 h-10 rounded-xl bg-[#c09050]/10 flex items-center justify-center flex-shrink-0">
-                          <Icon className="w-5 h-5 text-[#c09050]" />
-                        </div>
-                        <div>
-                          <p className="font-black text-black text-sm font-[system-ui] mb-1">{c.name}</p>
-                          <p className="text-gray-600 text-sm font-[system-ui] leading-relaxed">{c.desc}</p>
-                        </div>
-                      </motion.div>
-                    );
-                  })}
-                </div>
-              )}
-
-              {tab.isTrainings && (
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 lg:gap-6 mb-8">
-                  {trainings.map((t, i) => {
-                    const Icon = t.icon;
-                    return (
-                      <motion.div
-                        key={i}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: i * 0.1 }}
-                        className="group flex flex-col bg-white rounded-2xl border border-gray-100 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-500 overflow-hidden"
-                      >
-                        <div className="h-1 bg-gradient-to-r from-[#c09050] to-[#d4a84b]" />
-                        <div className="flex flex-col flex-1 p-6">
-                          <div className="flex items-start justify-between mb-4">
-                            <div className="w-11 h-11 rounded-xl bg-[#c09050]/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                              <Icon className="w-5 h-5 text-[#c09050]" />
-                            </div>
-                            <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-[#c09050]/10 text-[#c09050] text-[11px] font-black font-[system-ui] tracking-wide">
-                              {t.badge}
-                            </span>
-                          </div>
-                          <h3 className="text-lg font-black text-black mb-2 font-[system-ui]">{t.title}</h3>
-                          <p className="text-gray-600 text-sm leading-relaxed font-[system-ui] flex-1 mb-5">{t.description}</p>
-                          <a
-                            href={t.href}
-                            target={t.external ? "_blank" : undefined}
-                            rel={t.external ? "noopener noreferrer" : undefined}
-                            className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-[#c09050] to-[#d4a84b] text-white text-sm font-black font-[system-ui] hover:shadow-lg hover:scale-[1.02] transition-all duration-300"
-                          >
-                            {t.cta}
-                            {t.external ? <ExternalLink className="w-4 h-4" /> : <ArrowRight className="w-4 h-4" />}
-                          </a>
-                        </div>
-                      </motion.div>
-                    );
-                  })}
-                </div>
-              )}
-
-              {tab.note && (
-                <div className="p-5 rounded-2xl bg-[#c09050]/5 border border-[#c09050]/20">
-                  <div className="flex items-center gap-2 mb-2">
-                    <Gavel className="w-4 h-4 text-[#c09050]" />
-                    <p className="font-black text-[#c09050] text-sm font-[system-ui] uppercase tracking-wider">{tab.note.heading}</p>
-                  </div>
-                  <p className="text-gray-700 text-sm font-[system-ui] leading-relaxed">{tab.note.body}</p>
-                </div>
-              )}
-
-              {!tab.isTrainings && (
-                <div className="mt-6">
-                  <a
-                    href="https://calendly.com/manifestcoachingllc/immigration"
-                    target="_blank"
-                    className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-black border-2 border-[#c09050] text-white font-bold text-sm hover:bg-[#c09050] hover:border-[#c09050] transition-all duration-300 font-[system-ui]"
-                  >
-                    <Calendar className="w-4 h-4" />
-                    Schedule Evaluation
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </a>
-                </div>
-              )}
-            </div>
-
-            {/* Image side */}
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src={tab.image}
-                alt={tab.imageAlt}
-                className="w-full h-64 sm:h-80 object-cover"
+          {/* Accordion — sections reveal themselves as you scroll */}
+          <div className="space-y-4">
+            {tabData.map((tab) => (
+              <AccordionItem
+                key={tab.id}
+                tab={tab}
+                isOpen={openIds.has(tab.id)}
+                onToggle={toggle}
+                onReveal={reveal}
               />
-              <div className="absolute inset-0 bg-gradient-to-tr from-[#c09050]/10 to-transparent" />
-              <div className="absolute bottom-5 left-5 right-5">
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/60 backdrop-blur-sm border border-white/20">
-                  <Quote className="w-3 h-3 text-[#c09050]" />
-                  <span className="text-white/80 text-xs font-[system-ui]">{tab.stat}</span>
-                </div>
-              </div>
-            </div>
-          </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 

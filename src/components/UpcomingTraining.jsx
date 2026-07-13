@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Sparkles,
@@ -6,6 +6,8 @@ import {
   MapPin,
   Globe,
   ArrowRight,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react";
 import { upcomingTraining as CONFIG } from "../config/upcomingTraining";
 
@@ -127,8 +129,12 @@ function TrainingPoster({ tr }) {
   );
 }
 
+// Seconds each training stays on screen before auto-advancing.
+const AUTOPLAY_SECONDS = 6;
+
 export default function UpcomingTraining() {
   const [selected, setSelected] = useState(0);
+  const [paused, setPaused] = useState(false);
 
   // Master switch off → nothing renders.
   if (!CONFIG.active) return null;
@@ -137,7 +143,22 @@ export default function UpcomingTraining() {
   const trainings = (CONFIG.trainings || []).filter((t) => t.active);
   if (trainings.length === 0) return null;
 
-  const active = Math.min(selected, trainings.length - 1);
+  const len = trainings.length;
+  const active = Math.min(selected, len - 1);
+  const goTo = (i) => setSelected((i + len) % len);   // wrap-around
+  const goPrev = () => goTo(active - 1);
+  const goNext = () => goTo(active + 1);
+
+  // Auto-advance. Pauses on hover, and the timer resets whenever `active`
+  // changes (i.e. after a manual click), so it never feels rushed.
+  useEffect(() => {
+    if (len <= 1 || paused) return;
+    const reduce = typeof window !== "undefined" && window.matchMedia
+      && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce) return;
+    const id = setTimeout(() => setSelected((s) => (Math.min(s, len - 1) + 1) % len), AUTOPLAY_SECONDS * 1000);
+    return () => clearTimeout(id);
+  }, [active, paused, len]);
 
   return (
     <section className="relative py-16 md:py-24 overflow-hidden bg-gradient-to-b from-[#fefcf7] to-white" id="upcoming-training">
@@ -157,27 +178,34 @@ export default function UpcomingTraining() {
           </div>
         </div>
 
-        {/* Switch buttons — only when there's more than one training */}
-        {trainings.length > 1 && (
-          <div className="flex justify-center flex-wrap gap-3 mb-8">
-            {trainings.map((t, i) => (
+        {/* Carousel — arrows flank the poster, indicators sit below,
+            so switching never requires scrolling back to the top.
+            Auto-advances every few seconds; pauses while hovered. */}
+        <div
+          className="relative"
+          onMouseEnter={() => setPaused(true)}
+          onMouseLeave={() => setPaused(false)}
+        >
+          {/* Side arrows (desktop) — sit just outside the poster */}
+          {len > 1 && (
+            <>
               <button
-                key={i}
-                onClick={() => setSelected(i)}
-                className={`px-5 py-2.5 rounded-full text-sm font-bold font-[system-ui] transition-all duration-300 border-2 ${
-                  i === active
-                    ? "bg-black border-[#c09050] text-white shadow-lg"
-                    : "bg-white border-gray-200 text-gray-600 hover:border-[#c09050] hover:text-[#c09050]"
-                }`}
+                onClick={goPrev}
+                aria-label="Previous training"
+                className="hidden lg:flex items-center justify-center absolute -left-16 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white border-2 border-[#c09050]/30 text-[#c09050] shadow-lg hover:bg-[#c09050] hover:text-white hover:border-[#c09050] transition-all duration-300"
               >
-                {t.tabName || t.title}
+                <ChevronLeft className="w-6 h-6" />
               </button>
-            ))}
-          </div>
-        )}
+              <button
+                onClick={goNext}
+                aria-label="Next training"
+                className="hidden lg:flex items-center justify-center absolute -right-16 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white border-2 border-[#c09050]/30 text-[#c09050] shadow-lg hover:bg-[#c09050] hover:text-white hover:border-[#c09050] transition-all duration-300"
+              >
+                <ChevronRight className="w-6 h-6" />
+              </button>
+            </>
+          )}
 
-        {/* Sliding poster */}
-        <div className="relative">
           <AnimatePresence mode="wait">
             <motion.div
               key={active}
@@ -190,6 +218,56 @@ export default function UpcomingTraining() {
             </motion.div>
           </AnimatePresence>
         </div>
+
+        {/* Indicator bar below the poster — works on every screen size */}
+        {len > 1 && (
+          <div
+            className="mt-8 flex items-center justify-center gap-5"
+            onMouseEnter={() => setPaused(true)}
+            onMouseLeave={() => setPaused(false)}
+          >
+            {/* Prev (shown on mobile/tablet where side arrows are hidden) */}
+            <button
+              onClick={goPrev}
+              aria-label="Previous training"
+              className="lg:hidden flex items-center justify-center w-11 h-11 rounded-full bg-white border-2 border-[#c09050]/30 text-[#c09050] shadow-md hover:bg-[#c09050] hover:text-white transition-all duration-300"
+            >
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+
+            {/* Dots + current name */}
+            <div className="flex flex-col items-center gap-3">
+              <div className="flex items-center gap-2.5">
+                {trainings.map((t, i) => (
+                  <button
+                    key={i}
+                    onClick={() => goTo(i)}
+                    aria-label={`Go to ${t.tabName || t.title}`}
+                    className={`rounded-full transition-all duration-300 ${
+                      i === active
+                        ? "w-8 h-2.5 bg-gradient-to-r from-[#c09050] to-[#d4a84b]"
+                        : "w-2.5 h-2.5 bg-[#c09050]/25 hover:bg-[#c09050]/50"
+                    }`}
+                  />
+                ))}
+              </div>
+              <p className="text-xs font-bold text-gray-500 font-[system-ui]">
+                <span className="text-[#c09050]">{trainings[active].tabName || trainings[active].title}</span>
+                <span className="mx-2 text-gray-300">·</span>
+                {active + 1} / {len}
+              </p>
+            </div>
+
+            {/* Next (shown on mobile/tablet where side arrows are hidden) */}
+            <button
+              onClick={goNext}
+              aria-label="Next training"
+              className="lg:hidden flex items-center justify-center w-11 h-11 rounded-full bg-white border-2 border-[#c09050]/30 text-[#c09050] shadow-md hover:bg-[#c09050] hover:text-white transition-all duration-300"
+            >
+              <ChevronRight className="w-5 h-5" />
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
