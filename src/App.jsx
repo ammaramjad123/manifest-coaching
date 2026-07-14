@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -43,7 +43,9 @@ function App() {
           <Route path="/specialties/trauma-ptsd" element={<TraumaPTSDPage />} />
           <Route path="/specialties/women-issues" element={<WomenIssuesPage />} />
           <Route path="/specialties/life-coaching" element={<LifeCoachingPage />} />
-          <Route path="/specialties/immigration" element={<ImmigrationEvaluationsPage />} />
+          <Route path="/specialties/partnership" element={<ImmigrationEvaluationsPage />} />
+          {/* Old URL kept as a redirect so existing links/bookmarks still work */}
+          <Route path="/specialties/immigration" element={<Navigate to="/specialties/partnership" replace />} />
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/specialties/act" element={<ACTPage />} />
           <Route path="/specialties/dbt" element={<DBTPage />} />

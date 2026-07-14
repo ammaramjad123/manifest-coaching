@@ -184,15 +184,15 @@ export default function AnxietyDepressionPage() {
             </motion.div>
             
             <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white mb-6 font-[system-ui] leading-tight">
-              Anxiety &{" "}
+              The{" "}
               <span className="bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent">
-                Depression
+                Process
               </span>
             </h1>
-            
+
             <p className="text-white/80 text-lg sm:text-xl max-w-2xl mx-auto mb-8 font-[system-ui] leading-relaxed">
-              Break free from the weight of anxious thoughts and heavy feelings. 
-              Evidence-based therapy tailored to your unique journey.
+              Evidence-based therapy for anxiety, depression, intrusive thoughts, grief and sadness,
+              parenting, communication, and relationship challenges — and more. Care tailored to your unique journey.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

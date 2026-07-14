@@ -340,7 +340,7 @@ export default function ImmigrationEvaluationsPage() {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6"
             >
               <Sparkles className="w-4 h-4 text-[#c09050]" />
-              <span className="text-xs font-black uppercase tracking-wider text-white">The Partnership — Training & Immigration</span>
+              <span className="text-xs font-black uppercase tracking-wider text-white">Training · Education · Professional Services</span>
             </motion.div>
 
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-black text-white mb-6 font-[system-ui] leading-tight">
@@ -351,29 +351,8 @@ export default function ImmigrationEvaluationsPage() {
             </h1>
 
             <p className="text-white/80 text-lg sm:text-xl max-w-2xl mx-auto mb-8 font-[system-ui] leading-relaxed">
-              Three distinct offerings serve professionals and institutions: professional trainings, education, and trauma-informed immigration assessments.
+              Three distinct offerings for professionals, organizations, and institutions — professional trainings, education, and trauma-informed clinical services.
             </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.a
-                whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
-                href="https://calendly.com/manifestcoachingllc/immigration"
-                target="_blank"
-                className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-[#c09050] to-[#d4a84b] text-white font-bold hover:shadow-2xl transition-all duration-500 font-[system-ui]"
-              >
-                <Calendar className="w-5 h-5" />
-                Schedule Evaluation
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </motion.a>
-              <motion.a
-                whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
-                href="/contact"
-                className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/30 text-white font-bold hover:bg-white/20 transition-all duration-500 font-[system-ui]"
-              >
-                <Phone className="w-5 h-5" />
-                Contact
-              </motion.a>
-            </div>
 
             <motion.div
               initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}
@@ -385,13 +364,13 @@ export default function ImmigrationEvaluationsPage() {
               </div>
               <div className="w-px h-4 bg-white/20" />
               <div className="flex items-center gap-2">
-                <FileText className="w-4 h-4 text-[#c09050]" />
-                <span className="text-white/60 text-xs">Forensic Documentation</span>
+                <Video className="w-4 h-4 text-[#c09050]" />
+                <span className="text-white/60 text-xs">Virtual Forensic Evaluations</span>
               </div>
               <div className="w-px h-4 bg-white/20" />
               <div className="flex items-center gap-2">
-                <Video className="w-4 h-4 text-[#c09050]" />
-                <span className="text-white/60 text-xs">Virtual Evaluations</span>
+                <Award className="w-4 h-4 text-[#c09050]" />
+                <span className="text-white/60 text-xs">Professional Trainings</span>
               </div>
             </motion.div>
           </motion.div>
