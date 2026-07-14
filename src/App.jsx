@@ -39,7 +39,9 @@ function App() {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/specialties/anxiety-depression" element={<AnxietyDepressionPage />} />
+          <Route path="/specialties/process" element={<AnxietyDepressionPage />} />
+          {/* Old URL kept as a redirect so existing links/bookmarks still work */}
+          <Route path="/specialties/anxiety-depression" element={<Navigate to="/specialties/process" replace />} />
           <Route path="/specialties/trauma-ptsd" element={<TraumaPTSDPage />} />
           <Route path="/specialties/women-issues" element={<WomenIssuesPage />} />
           <Route path="/specialties/life-coaching" element={<LifeCoachingPage />} />

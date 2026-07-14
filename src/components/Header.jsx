@@ -102,7 +102,7 @@ export default function Header() {
   };
 
   const specialtiesList = [
-    { label: "The Process", icon: Heart, desc: "Clinical Therapy — Anxiety, Depression & Trauma", href: "/specialties/anxiety-depression" },
+    { label: "The Process", icon: Heart, desc: "Clinical Therapy — Anxiety, Depression & Trauma", href: "/specialties/process" },
     { label: "The Pivot", icon: Brain, desc: "Life Coaching — Mindset transformation & peak personal evolution", href: "/specialties/life-coaching" },
     { label: "The Partnership", icon: BookOpen, desc: "Training, Education & Immigration", href: "/specialties/partnership" },
     { label: "bARTer Balance", icon: Sparkles, desc: "Organizational wellness program", href: "/specialties/barter-balance" },
