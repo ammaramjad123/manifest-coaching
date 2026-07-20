@@ -53,7 +53,7 @@ export const upcomingTraining = {
       website: "",
 
       ctaText: "Reserve Your Spot",
-      ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=Basic&loc=acworthga&inst=ayanamckanney",
+      ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=Basic&inst=ayanamckanney",
 
       topicImage: "/new/tsd-studio-9_jvKRbNdTM-unsplash.jpg",  // round topic photo
       trainerImage: "/new/ayana-headshot.jpg",                  // Ayana's round photo
@@ -82,7 +82,7 @@ export const upcomingTraining = {
       website: "",                          //  leave "" to hide the website link
 
       ctaText: "Reserve Your Spot",
-      ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=SAF-T1&loc=acworthga",
+      ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=SAF-T1&inst=ayanamckanney",
 
       topicImage: "/new/egor-litvinov-7UI8bszs1X0-unsplash.jpg",
       trainerImage: "/new/ayana-headshot.jpg",
@@ -92,3 +92,30 @@ export const upcomingTraining = {
     
   ],
 };
+  {
+      active: true,                        //  show this one?  true / false
+      tabName: "ART Training",             //  short label on the switch button
+
+      presenter: "The Peace Practice & RCRR Present",
+      title: "",
+      subtitle: "For mental health clinicians only",
+
+      whatToExpect: [
+        "A hands-on, revolutionary, effective, and quick modality to guide clients interested in healing.",
+        "Effectively help clients process distressing past events, grief, phobias, obsessive thinking, and many other common struggles.",
+        "Learn the power of eye movements in facilitating relaxation and processing trauma.",
+        "A 3-day BASIC ART training will equip you to quickly help clients release emotional pain.",
+      ],
+
+      when: "01/05/27 - 01/07/27 8:30am- 5:00pm (3days)",       //  e.g. "March 14–16, 2026"
+      where: "New York City, NY"   //  e.g. "Atlanta, GA · In person"
+      trainer: "Ayana F. McKanney, LCSW — Founder of The Peace Practice",
+      cost: "$1,700",
+      website: "",
+
+      ctaText: "Reserve Your Spot",
+      ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=Basic&inst=ayanamckanney",
+
+      topicImage: "/new/tsd-studio-9_jvKRbNdTM-unsplash.jpg",  // round topic photo
+      trainerImage: "/new/ayana-headshot.jpg",                  // Ayana's round photo
+    }
