@@ -27,6 +27,12 @@ function SessionRow({ s, i }) {
 
   const hasDetail = s.whatToExpect?.length > 0 || s.trainer;
 
+  // Split "date · time" (on the middot) so the date sits on one line and the
+  // time on the next. Falls back to the whole string if there's no middot.
+  const [datePart, ...timeParts] = (s.date.when || "").split("·");
+  const dateLine = datePart.trim();
+  const timeLine = timeParts.join("·").trim();
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 24 }}
@@ -71,13 +77,20 @@ function SessionRow({ s, i }) {
             <p className="text-[#c09050] text-sm italic font-semibold mb-2.5 font-[system-ui]">{s.subtitle}</p>
           )}
 
-          <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-5">
-            <p className="flex items-center gap-2 text-gray-700 text-sm font-semibold font-[system-ui]">
-              <Calendar className="w-4 h-4 text-[#c09050] flex-shrink-0" />
-              {s.date.when}
-            </p>
-            <p className="flex items-center gap-2 text-gray-600 text-sm font-[system-ui]">
-              <MapPin className="w-4 h-4 text-[#c09050] flex-shrink-0" />
+          <div className="flex flex-col sm:flex-row sm:items-start gap-1.5 sm:gap-6">
+            {/* Date column — fixed width so the location lines up across cards */}
+            <div className="flex items-start gap-2 sm:w-56 flex-shrink-0">
+              <Calendar className="w-4 h-4 text-[#c09050] flex-shrink-0 mt-0.5" />
+              <span className="font-[system-ui] leading-snug">
+                <span className="block text-gray-700 text-sm font-semibold">{dateLine}</span>
+                {timeLine && (
+                  <span className="block text-gray-500 text-sm">{timeLine}</span>
+                )}
+              </span>
+            </div>
+            {/* Location column — aligned across all cards */}
+            <p className="flex items-start gap-2 text-gray-600 text-sm font-[system-ui] leading-snug">
+              <MapPin className="w-4 h-4 text-[#c09050] flex-shrink-0 mt-0.5" />
               {s.date.where}
             </p>
           </div>
