@@ -305,8 +305,11 @@ export default function ImmigrationEvaluationsPage() {
     });
   }, []);
 
+  // Root uses overflow-x-clip (not overflow-hidden): it still clips the hero
+  // glow sideways but does NOT create a scroll container — overflow-hidden here
+  // would break the position: sticky pin in the Upcoming Training scroll section.
   return (
-    <div className="relative bg-white overflow-hidden">
+    <div className="relative bg-white overflow-x-clip">
 
       {/* ── HERO ── */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-22 sm:pt-32">

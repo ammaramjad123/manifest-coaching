@@ -2,25 +2,35 @@
 //   UPCOMING TRAININGS  —  edit your training announcements here
 // ════════════════════════════════════════════════════════════════
 //
-//   HOW TO USE  (no coding needed — just change the words):
+//   HOW IT WORKS (no coding — just change the words in "quotes"):
 //
-//   1) SHOW or HIDE the whole section on the website:
-//        active: true   →  shows the "Upcoming Training" section
-//        active: false  →  hides it completely
+//   • Each  { ... }  block below is ONE PROGRAM (e.g. ART, SĀF-T).
+//     A program shows as ONE card on the website.
 //
-//   2) You can list MORE THAN ONE training below. Each  { ... }  block
-//      is one training. Visitors switch between them with the buttons
-//      at the top of the section.
-//        • To hide just ONE training:  set its own  active: false
-//        • To add a training:  copy a whole  { ... }  block and edit it
+//   • A program can have MANY DATES. Every date goes in the
+//     "dates: [ ... ]" list inside that program. All the dates show
+//     together on the same card, so visitors never scroll or click
+//     through duplicate posters.
 //
-//   3) Only change the words inside the "quotes".
-//      Keep the quotes ""  and the commas ,  exactly where they are.
+//   ────────────────────────────────────────────────────────────
+//   TO ADD A NEW DATE to a program (most common):
+//     Inside that program's  dates: [ ... ]  list, copy one
+//     { when: ..., where: ..., cost: ..., ctaLink: ... } row,
+//     paste it right after another one, and edit the words.
+//     Keep the commas exactly where they are.
 //
-//   4) The bullet list ("whatToExpect"): each line is one bullet point.
+//   TO ADD A WHOLE NEW PROGRAM:
+//     Copy one entire program  { ... }  block (from the "{" after
+//     "trainings: [" down to its matching "}," ) and paste it before
+//     the closing  ]  . Then edit its words.
+//   ────────────────────────────────────────────────────────────
 //
-//   5) Pictures: put the image file in the  "public/new"  folder, then
-//      write its name here like:  "/new/my-photo.jpg"
+//   • SHOW / HIDE:
+//       active: true / false   works on the whole section (top),
+//       on a single program, and on a single date.
+//
+//   • Pictures: put the file in the  "public/new"  folder, then write
+//     its name here like:  "/new/my-photo.jpg"
 //
 // ════════════════════════════════════════════════════════════════
 
@@ -30,13 +40,13 @@ export const upcomingTraining = {
 
   trainings: [
 
-    // ─────────────── Training 1 ───────────────
+    // ═══════════════ PROGRAM 1 — ART Training ═══════════════
     {
-      active: true,                        //  show this one?  true / false
-      tabName: "ART Training",             //  short label on the switch button
+      active: true,                        //  show this program?  true / false
+      tabName: "ART Training",
 
       presenter: "The Peace Practice & RCRR Present",
-      title: "",
+      title: "ART — Accelerated Resolution Therapy",
       subtitle: "For mental health clinicians only",
 
       whatToExpect: [
@@ -46,20 +56,32 @@ export const upcomingTraining = {
         "A 3-day BASIC ART training will equip you to quickly help clients release emotional pain.",
       ],
 
-      when: "9/29/26 - 10/01/26 8:30am- 5:00pm (3days)",       //  e.g. "March 14–16, 2026"
-      where: "Acworth, GA (< 30 min from Atlanta, GA)",   //  e.g. "Atlanta, GA · In person"
       trainer: "Ayana F. McKanney, LCSW — Founder of The Peace Practice",
-      cost: "$1,700",
-      website: "",
-
-      ctaText: "Reserve Your Spot",
-      ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=Basic&inst=ayanamckanney",
-
       topicImage: "/new/tsd-studio-9_jvKRbNdTM-unsplash.jpg",  // round topic photo
       trainerImage: "/new/ayana-headshot.jpg",                  // Ayana's round photo
+
+      //  All the dates/locations this program is offered on:
+      dates: [
+        {
+          active: true,
+          when: "9/29/26 – 10/01/26 · 8:30am–5:00pm (3 days)",
+          where: "Acworth, GA (< 30 min from Atlanta, GA)",
+          cost: "$1,700",
+          ctaText: "Reserve Your Spot",
+          ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=Basic&inst=ayanamckanney",
+        },
+        {
+          active: true,
+          when: "01/05/27 – 01/07/27 · 8:30am–5:00pm (3 days)",
+          where: "New York City, NY",
+          cost: "$1,700",
+          ctaText: "Reserve Your Spot",
+          ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=Basic&inst=ayanamckanney",
+        },
+      ],
     },
 
-    // ─────────────── Training 2 ───────────────
+    // ═══════════════ PROGRAM 2 — SĀF-T Training ═══════════════
     {
       active: true,
       tabName: "SĀF-T Training",
@@ -75,46 +97,20 @@ export const upcomingTraining = {
         "Apply SĀF-T confidently in both clinical therapy and coaching settings.",
       ],
 
-      when: "Friday- 10/02/2026-9:00am-3:00pm",
-      where: "Acworth, GA (< 30 min from Atlanta, GA)",
       trainer: "Ayana F. McKanney, LCSW — Founder of The Peace Practice",
-      cost: "$199",
-      website: "",                          //  leave "" to hide the website link
-
-      ctaText: "Reserve Your Spot",
-      ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=SAF-T1&inst=ayanamckanney",
-
       topicImage: "/new/egor-litvinov-7UI8bszs1X0-unsplash.jpg",
       trainerImage: "/new/ayana-headshot.jpg",
-    },
 
-    // ─────────────── Training 3 ───────────────
-    {
-      active: true,                        //  show this one?  true / false
-      tabName: "ART Training — NYC",       //  short label on the switch button
-
-      presenter: "The Peace Practice & RCRR Present",
-      title: "",
-      subtitle: "For mental health clinicians only",
-
-      whatToExpect: [
-        "A hands-on, revolutionary, effective, and quick modality to guide clients interested in healing.",
-        "Effectively help clients process distressing past events, grief, phobias, obsessive thinking, and many other common struggles.",
-        "Learn the power of eye movements in facilitating relaxation and processing trauma.",
-        "A 3-day BASIC ART training will equip you to quickly help clients release emotional pain.",
+      dates: [
+        {
+          active: true,
+          when: "Friday 10/02/2026 · 9:00am–3:00pm",
+          where: "Acworth, GA (< 30 min from Atlanta, GA)",
+          cost: "$199",
+          ctaText: "Reserve Your Spot",
+          ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=SAF-T1&inst=ayanamckanney",
+        },
       ],
-
-      when: "01/05/27 - 01/07/27 8:30am- 5:00pm (3days)",       //  e.g. "March 14–16, 2026"
-      where: "New York City, NY",   //  e.g. "Atlanta, GA · In person"
-      trainer: "Ayana F. McKanney, LCSW — Founder of The Peace Practice",
-      cost: "$1,700",
-      website: "",
-
-      ctaText: "Reserve Your Spot",
-      ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=Basic&inst=ayanamckanney",
-
-      topicImage: "/new/tsd-studio-9_jvKRbNdTM-unsplash.jpg",  // round topic photo
-      trainerImage: "/new/ayana-headshot.jpg",                  // Ayana's round photo
     },
 
   ],
