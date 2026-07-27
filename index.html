@@ -14,7 +14,7 @@
     <meta name="author" content="Ayana Foluke McKanney, LCSW" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#c09050" />
-    <link rel="canonical" href="https://thepeacepractice.me/" />
+    <link rel="canonical" href="https://www.thepeacepractice.me/" />
 
     <!-- Favicon / app icons -->
     <link rel="icon" type="image/png" href="/logo.png" />
@@ -27,9 +27,9 @@
     <meta property="og:site_name" content="The Peace Practice" />
     <meta property="og:title" content="The Peace Practice — Therapy, Coaching & Training" />
     <meta property="og:description" content="Compassionate clinical therapy, transformational coaching, and professional training with Ayana F. McKanney, LCSW. Licensed in NY, NJ & RI. Your journey, our partnership." />
-    <meta property="og:url" content="https://thepeacepractice.me/" />
-    <meta property="og:image" content="https://thepeacepractice.me/og-image.jpg" />
-    <meta property="og:image:secure_url" content="https://thepeacepractice.me/og-image.jpg" />
+    <meta property="og:url" content="https://www.thepeacepractice.me/" />
+    <meta property="og:image" content="https://www.thepeacepractice.me/og-image.jpg" />
+    <meta property="og:image:secure_url" content="https://www.thepeacepractice.me/og-image.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -42,7 +42,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="The Peace Practice — Therapy, Coaching & Training" />
     <meta name="twitter:description" content="Compassionate clinical therapy, transformational coaching, and professional training with Ayana F. McKanney, LCSW. Licensed in NY, NJ & RI." />
-    <meta name="twitter:image" content="https://thepeacepractice.me/og-image.jpg" />
+    <meta name="twitter:image" content="https://www.thepeacepractice.me/og-image.jpg" />
     <meta name="twitter:image:alt" content="The Peace Practice — Ayana Foluke McKanney, LCSW" />
 
     <!-- ============================================================
@@ -51,39 +51,132 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "The Peace Practice",
-      "alternateName": "MANIFEST Coaching LLC d/b/a The Peace Practice",
-      "description": "Compassionate clinical therapy, transformational coaching, and professional training with Ayana F. McKanney, LCSW.",
-      "url": "https://thepeacepractice.me/",
-      "image": "https://thepeacepractice.me/og-image.jpg",
-      "logo": "https://thepeacepractice.me/logo.png",
-      "telephone": "+1-929-900-3056",
-      "slogan": "Your Journey. Our Partnership.",
-      "founder": {
-        "@type": "Person",
-        "name": "Ayana Foluke McKanney",
-        "honorificSuffix": "LCSW",
-        "jobTitle": "Licensed Clinical Social Worker"
-      },
-      "areaServed": [
-        { "@type": "State", "name": "New York" },
-        { "@type": "State", "name": "New Jersey" },
-        { "@type": "State", "name": "Rhode Island" }
-      ],
-      "knowsAbout": [
-        "Clinical Therapy",
-        "Transformational Coaching",
-        "Accelerated Resolution Therapy (ART)",
-        "Trauma Therapy",
-        "DBT",
-        "ACT",
-        "Immigration Evaluations",
-        "Professional Training"
-      ],
-      "sameAs": [
-        "https://www.instagram.com/thepeacepractice.me",
-        "https://www.linkedin.com/in/ayana-mckanney-lcsw-18879023/"
+      "@graph": [
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://www.thepeacepractice.me/#business",
+          "name": "The Peace Practice",
+          "alternateName": "MANIFEST Coaching LLC d/b/a The Peace Practice",
+          "description": "Compassionate clinical therapy, transformational coaching, and professional training with Ayana F. McKanney, LCSW.",
+          "url": "https://www.thepeacepractice.me/",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://www.thepeacepractice.me/og-image.jpg",
+            "width": 1200,
+            "height": 630
+          },
+          "logo": "https://www.thepeacepractice.me/logo.png",
+          "telephone": "+1-929-900-3056",
+          "priceRange": "$$",
+          "slogan": "Your Journey. Our Partnership.",
+          "founder": { "@id": "https://www.thepeacepractice.me/#practitioner" },
+          "employee": { "@id": "https://www.thepeacepractice.me/#practitioner" },
+          "areaServed": [
+            { "@type": "State", "name": "New York" },
+            { "@type": "State", "name": "New Jersey" },
+            { "@type": "State", "name": "Rhode Island" }
+          ],
+          "knowsAbout": [
+            "Clinical Therapy",
+            "Transformational Coaching",
+            "Accelerated Resolution Therapy (ART)",
+            "Trauma Therapy",
+            "DBT",
+            "ACT",
+            "Immigration Evaluations",
+            "Professional Training"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "The Peace Practice Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Clinical Therapy",
+                  "serviceType": "Psychotherapy",
+                  "provider": { "@id": "https://www.thepeacepractice.me/#practitioner" },
+                  "areaServed": [
+                    { "@type": "State", "name": "New York" },
+                    { "@type": "State", "name": "New Jersey" },
+                    { "@type": "State", "name": "Rhode Island" }
+                  ]
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Transformational Coaching",
+                  "serviceType": "Life Coaching",
+                  "provider": { "@id": "https://www.thepeacepractice.me/#practitioner" }
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Professional Training",
+                  "serviceType": "Professional Training and Consultation",
+                  "provider": { "@id": "https://www.thepeacepractice.me/#practitioner" }
+                }
+              }
+            ]
+          },
+          "sameAs": [
+            "https://www.instagram.com/thepeacepractice.me",
+            "https://www.linkedin.com/in/ayana-mckanney-lcsw-18879023/"
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.thepeacepractice.me/#practitioner",
+          "name": "Ayana Foluke McKanney",
+          "honorificSuffix": "LCSW",
+          "jobTitle": "Licensed Clinical Social Worker",
+          "worksFor": { "@id": "https://www.thepeacepractice.me/#business" },
+          "hasCredential": [
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "license",
+              "name": "Licensed Clinical Social Worker (LCSW) — New York, License #098940",
+              "recognizedBy": { "@type": "State", "name": "New York" }
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "license",
+              "name": "Licensed Clinical Social Worker (LCSW) — New Jersey, License #44SL06739500",
+              "recognizedBy": { "@type": "State", "name": "New Jersey" }
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "license",
+              "name": "Licensed Clinical Social Worker (LCSW) — Rhode Island, License #ISW04317",
+              "recognizedBy": { "@type": "State", "name": "Rhode Island" }
+            }
+          ],
+          "sameAs": [
+            "https://www.instagram.com/thepeacepractice.me",
+            "https://www.linkedin.com/in/ayana-mckanney-lcsw-18879023/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.thepeacepractice.me/#website",
+          "url": "https://www.thepeacepractice.me/",
+          "name": "The Peace Practice",
+          "publisher": { "@id": "https://www.thepeacepractice.me/#business" }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.thepeacepractice.me/#webpage",
+          "url": "https://www.thepeacepractice.me/",
+          "name": "The Peace Practice — Therapy, Coaching & Training | Ayana F. McKanney, LCSW",
+          "isPartOf": { "@id": "https://www.thepeacepractice.me/#website" },
+          "about": { "@id": "https://www.thepeacepractice.me/#business" },
+          "primaryImageOfPage": "https://www.thepeacepractice.me/og-image.jpg"
+        }
       ]
     }
     </script>
