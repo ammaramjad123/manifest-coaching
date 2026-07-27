@@ -138,7 +138,10 @@ export default function LifeCoachingPage() {
 
   return (
     <div ref={containerRef} className="relative bg-white overflow-hidden">
-      
+      <title>Transformational Life Coaching | The Peace Practice</title>
+      <meta name="description" content="Transformational coaching using the MANIFEST Method to help you move from functioning to flourishing, with Ayana F. McKanney, LCSW." />
+      <link rel="canonical" href="https://www.thepeacepractice.me/specialties/life-coaching" />
+
       {/* EPIC HERO SECTION */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-22 sm:pt-32">
         
