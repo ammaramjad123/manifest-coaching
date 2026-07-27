@@ -93,5 +93,12 @@ const data = {
 };
 
 export default function ACTPage() {
-  return <SpecialtyPageTemplate data={data} />;
+  return (
+    <>
+      <title>Acceptance & Commitment Therapy (ACT) | The Peace Practice</title>
+      <meta name="description" content="ACT teaches psychological flexibility — staying present with difficult thoughts and feelings while committing to a values-aligned life. Evidence-based therapy with Ayana F. McKanney, LCSW." />
+      <link rel="canonical" href="https://www.thepeacepractice.me/specialties/act" />
+      <SpecialtyPageTemplate data={data} />
+    </>
+  );
 }
