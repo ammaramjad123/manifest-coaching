@@ -103,5 +103,12 @@ const data = {
 };
 
 export default function InclusiveCarePage() {
-  return <SpecialtyPageTemplate data={data} />;
+  return (
+    <>
+      <title>Inclusive & Affirming Care | The Peace Practice</title>
+      <meta name="description" content="Culturally responsive clinical care that honors your race, faith, identity, and lived experience as part of your healing, with Ayana F. McKanney, LCSW." />
+      <link rel="canonical" href="https://www.thepeacepractice.me/specialties/inclusive-affirming-care" />
+      <SpecialtyPageTemplate data={data} />
+    </>
+  );
 }
