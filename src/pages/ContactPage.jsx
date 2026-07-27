@@ -200,6 +200,9 @@ export default function ContactPage() {
 
   return (
     <div className="relative w-full bg-white overflow-hidden py-39 md:py-38 lg:py-46">
+      <title>Contact & Schedule a Consultation | The Peace Practice</title>
+      <meta name="description" content="Reach out to The Peace Practice to schedule a free consultation with Ayana F. McKanney, LCSW. Licensed clinical therapy and coaching in NY, NJ & RI." />
+      <link rel="canonical" href="https://www.thepeacepractice.me/contact" />
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-20 pointer-events-none">
         <div className="absolute top-0 left-0 w-full h-full" style={{
