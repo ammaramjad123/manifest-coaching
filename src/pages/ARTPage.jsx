@@ -98,5 +98,12 @@ const data = {
 };
 
 export default function ARTPage() {
-  return <SpecialtyPageTemplate data={data} />;
+  return (
+    <>
+      <title>Accelerated Resolution Therapy (ART) | The Peace Practice</title>
+      <meta name="description" content="ART is a peer-reviewed therapy that rapidly resolves distressing memories, often in as few as 1-5 sessions, with Ayana F. McKanney, LCSW." />
+      <link rel="canonical" href="https://www.thepeacepractice.me/specialties/art" />
+      <SpecialtyPageTemplate data={data} />
+    </>
+  );
 }
