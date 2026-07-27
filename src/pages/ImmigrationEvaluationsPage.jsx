@@ -310,6 +310,9 @@ export default function ImmigrationEvaluationsPage() {
   // would break the position: sticky pin in the Upcoming Training scroll section.
   return (
     <div className="relative bg-white overflow-x-clip">
+      <title>Immigration Psychological Evaluations | The Peace Practice</title>
+      <meta name="description" content="Comprehensive, defensible clinical documentation for immigration petitions from a licensed LCSW, tailored to the specific needs of each case." />
+      <link rel="canonical" href="https://www.thepeacepractice.me/specialties/partnership" />
 
       {/* ── HERO ── */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-22 sm:pt-32">
