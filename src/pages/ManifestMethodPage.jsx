@@ -102,6 +102,9 @@ export default function ManifestMethodPage() {
 
   return (
     <div className="relative bg-white overflow-hidden">
+      <title>The MANIFEST Method | The Peace Practice</title>
+      <meta name="description" content="The MANIFEST Method is Ayana F. McKanney's proprietary transformational coaching framework, guiding clients from core motivation through lasting fulfillment." />
+      <link rel="canonical" href="https://www.thepeacepractice.me/specialties/manifest-method" />
 
       {/* ══ HERO ══ */}
       <section className="relative flex items-center justify-center overflow-hidden pt-36 pb-28 sm:pt-48 sm:pb-36">
