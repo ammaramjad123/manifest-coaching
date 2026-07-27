@@ -103,5 +103,12 @@ const data = {
 };
 
 export default function DBTPage() {
-  return <SpecialtyPageTemplate data={data} />;
+  return (
+    <>
+      <title>Dialectical Behavior Therapy (DBT) | The Peace Practice</title>
+      <meta name="description" content="Evidence-based DBT combining cognitive-behavioral techniques with radical acceptance and mindfulness, offered by Ayana F. McKanney, LCSW." />
+      <link rel="canonical" href="https://www.thepeacepractice.me/specialties/dbt" />
+      <SpecialtyPageTemplate data={data} />
+    </>
+  );
 }
