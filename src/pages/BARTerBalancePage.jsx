@@ -135,6 +135,9 @@ export default function BARTerBalancePage() {
 
   return (
     <div className="relative bg-white overflow-hidden">
+      <title>bARTer Balance & ART Training for Therapists | The Peace Practice</title>
+      <meta name="description" content="A peer exchange program and ART® certification training for ART-certified therapists, offered by Ayana F. McKanney, LCSW." />
+      <link rel="canonical" href="https://www.thepeacepractice.me/specialties/barter-balance" />
 
       {/* ══ CINEMATIC HERO ══ */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-42 sm:pt-48">
