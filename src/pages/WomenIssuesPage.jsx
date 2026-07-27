@@ -136,7 +136,10 @@ export default function WomenIssuesPage() {
 
   return (
     <div ref={containerRef} className="relative bg-white overflow-hidden">
-      
+      <title>Therapy for Women's Issues | The Peace Practice</title>
+      <meta name="description" content="Clinical therapy addressing women's mental health, motherhood, and life transitions with Ayana F. McKanney, LCSW. Licensed in NY, NJ & RI." />
+      <link rel="canonical" href="https://www.thepeacepractice.me/specialties/women-issues" />
+
       {/* EPIC HERO SECTION */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-22 sm:pt-32">
         
