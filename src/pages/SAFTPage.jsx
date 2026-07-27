@@ -108,5 +108,12 @@ const data = {
 };
 
 export default function SAFTPage() {
-  return <SpecialtyPageTemplate data={data} />;
+  return (
+    <>
+      <title>SĀF-T: Sensations Awareness Focused Technique | The Peace Practice</title>
+      <meta name="description" content="SĀF-T is a somatic component of the ART® protocol that targets distressing body sensations directly to promote nervous system regulation, with Ayana F. McKanney, LCSW." />
+      <link rel="canonical" href="https://www.thepeacepractice.me/specialties/safety-sensation" />
+      <SpecialtyPageTemplate data={data} />
+    </>
+  );
 }
