@@ -135,7 +135,10 @@ export default function TraumaPTSDPage() {
 
   return (
     <div ref={containerRef} className="relative bg-white overflow-hidden">
-      
+      <title>Trauma & PTSD Therapy | The Peace Practice</title>
+      <meta name="description" content="Specialized trauma and PTSD treatment with Ayana F. McKanney, LCSW, using evidence-based clinical approaches. Licensed therapy in NY, NJ & RI." />
+      <link rel="canonical" href="https://www.thepeacepractice.me/specialties/trauma-ptsd" />
+
       {/* EPIC HERO SECTION */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-22 sm:pt-32">
         
