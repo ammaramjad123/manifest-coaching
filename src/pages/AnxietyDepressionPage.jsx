@@ -136,7 +136,10 @@ export default function AnxietyDepressionPage() {
 
   return (
     <div ref={containerRef} className="relative bg-white overflow-hidden">
-      
+      <title>Anxiety & Depression Therapy | The Peace Practice</title>
+      <meta name="description" content="Understanding and treating anxiety and depression with licensed clinical therapy from Ayana F. McKanney, LCSW. Compassionate, evidence-based care in NY, NJ & RI." />
+      <link rel="canonical" href="https://www.thepeacepractice.me/specialties/process" />
+
       {/* EPIC HERO SECTION */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 sm:pt-44 pb-10">
         
