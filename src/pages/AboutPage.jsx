@@ -89,7 +89,10 @@ export default function AboutPage() {
 
   return (
     <div className="bg-white overflow-hidden">
-      
+      <title>About Ayana McKanney, LCSW | The Peace Practice</title>
+      <meta name="description" content="Meet Ayana Foluke McKanney, LCSW — a licensed clinical social worker with 26+ years of experience grounded in compassion, integrity, and excellence. Licensed in NY, NJ & RI." />
+      <link rel="canonical" href="https://www.thepeacepractice.me/about" />
+
       {/* ========== ABOUT — COMBINED BIO (Intro · Journey · Story) ========== */}
       <section className="relative bg-gradient-to-b from-white to-gray-50 overflow-hidden lg:pt-44 pt-36 pb-16 md:pb-20">
         
