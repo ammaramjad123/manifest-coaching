@@ -310,8 +310,8 @@ export default function ImmigrationEvaluationsPage() {
   // would break the position: sticky pin in the Upcoming Training scroll section.
   return (
     <div className="relative bg-white overflow-x-clip">
-      <title>Immigration Psychological Evaluations | The Peace Practice</title>
-      <meta name="description" content="Comprehensive, defensible clinical documentation for immigration petitions from a licensed LCSW, tailored to the specific needs of each case." />
+      <title>Immigration Psychological Evaluations NY, NJ & RI | The Peace Practice</title>
+      <meta name="description" content="Comprehensive, defensible psychological evaluations for asylum, VAWA, and extreme hardship immigration cases from a licensed LCSW in New York, New Jersey, and Rhode Island." />
       <link rel="canonical" href="https://www.thepeacepractice.me/specialties/partnership" />
 
       {/* ── HERO ── */}
