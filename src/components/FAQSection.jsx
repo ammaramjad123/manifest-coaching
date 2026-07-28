@@ -200,11 +200,6 @@ export default function FAQSection() {
           </motion.div>
         </div>
 
-        {/* Grain */}
-        <div className="absolute inset-0 opacity-[0.03] pointer-events-none z-10">
-          <div className="w-full h-full bg-[url('https://grainy-gradients.vercel.app/noise.svg')] mix-blend-overlay" />
-        </div>
-
         {/* Particles — Small */}
         <div className="absolute inset-0 z-10 pointer-events-none">
           {[...Array(50)].map((_, i) => (
