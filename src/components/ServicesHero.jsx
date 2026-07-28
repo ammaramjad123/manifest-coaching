@@ -159,8 +159,6 @@ export default function ServicesHero() {
         </div>
       </motion.div>
 
-      {/* Grain Overlay */}
-      <div className="absolute inset-0 opacity-[0.015] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')] z-20 mix-blend-overlay" />
     </section>
   );
 }
