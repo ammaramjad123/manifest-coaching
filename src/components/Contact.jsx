@@ -198,10 +198,6 @@ export default function ContactSection() {
 
   return (
     <section className="relative w-full bg-white overflow-hidden py-14 md:py-20" id="contact">
-      {/* Background Elements */}
-      <div className="absolute inset-0 opacity-20 pointer-events-none">
-        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] bg-repeat" />
-      </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
