@@ -327,11 +327,13 @@ export default function PathForwardAssessment() {
                         setCurrentQuestion(idx);
                         setSelectedOption(answers[questions[idx].id] || null);
                       }}
+                      aria-label={`Go to question ${idx + 1} of ${questions.length}`}
+                      aria-current={idx === currentQuestion ? "step" : undefined}
                       className={`h-2 rounded-full transition-all duration-300 ${
-                        idx === currentQuestion 
-                          ? "w-6 bg-[#c09050]" 
-                          : answers[questions[idx].id] 
-                            ? "w-2 bg-[#c09050]/50" 
+                        idx === currentQuestion
+                          ? "w-6 bg-[#c09050]"
+                          : answers[questions[idx].id]
+                            ? "w-2 bg-[#c09050]/50"
                             : "w-2 bg-gray-200"
                       }`}
                     />
