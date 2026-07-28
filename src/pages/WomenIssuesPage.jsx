@@ -365,11 +365,6 @@ export default function WomenIssuesPage() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         
         <div className="absolute inset-0 z-0">
-          <img
-            src={images.women.cta}
-            alt="Healing journey"
-            className="w-full h-full object-cover"
-          />
           <div className="absolute inset-0 bg-gradient-to-br from-[#c09050]/90 to-[#d4a84b]/90" />
           <div className="absolute inset-0 bg-black/20" />
         </div>
