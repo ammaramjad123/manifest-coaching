@@ -7,14 +7,18 @@
 
     <!-- ============================================================
          PRIMARY META  ·  Live domain: https://thepeacepractice.me
+
+         NOTE: <title>, <meta name="description">, and <link rel="canonical">
+         are intentionally NOT set here. Each page component under src/pages/
+         renders its own via React 19's native head-tag support. Defining them
+         here as well produces TWO of each tag in the DOM (React appends rather
+         than replaces), which made every sub-page emit a canonical pointing at
+         the homepage — telling Google not to index it. Keep them per-page only.
     ============================================================ -->
-    <title>The Peace Practice — Therapy, Coaching & Training | Ayana F. McKanney, LCSW</title>
-    <meta name="description" content="Compassionate clinical therapy, transformational coaching, and professional training with Ayana F. McKanney, LCSW. Licensed in NY, NJ & RI with 26+ years of experience. Your journey, our partnership." />
     <meta name="keywords" content="The Peace Practice, Ayana McKanney LCSW, clinical therapy, transformational coaching, ART therapy, Accelerated Resolution Therapy, trauma therapy, DBT, ACT, life coaching, immigration evaluations, professional training, New York, New Jersey, Rhode Island" />
     <meta name="author" content="Ayana Foluke McKanney, LCSW" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#c09050" />
-    <link rel="canonical" href="https://www.thepeacepractice.me/" />
 
     <!-- Favicon / app icons -->
     <link rel="icon" type="image/png" href="/logo.png" />
