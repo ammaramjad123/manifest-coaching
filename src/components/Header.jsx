@@ -337,6 +337,7 @@ export default function Header() {
               {/* MOBILE MENU TOGGLE */}
               <button
                 onClick={() => setMobileOpen(true)}
+                aria-label="Open menu"
                 className="lg:hidden flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full transition hover:bg-gray-100"
               >
                 <Menu size={24} className="sm:w-6 sm:h-6 text-[#c09050]" />
@@ -382,6 +383,7 @@ export default function Header() {
               <button
                 type="button"
                 onClick={() => setMobileOpen(false)}
+                aria-label="Close menu"
                 className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full transition hover:bg-gray-100"
               >
                 <X size={24} className="sm:w-6 sm:h-6 text-gray-700" />
