@@ -498,6 +498,7 @@ export default function ContactSection() {
                     <a
                       href="https://www.instagram.com/thepeacepractice.me"
                       target="_blank"
+                      aria-label="Instagram"
                       className="w-10 h-10 rounded-xl bg-gray-100 hover:bg-[#c09050] flex items-center justify-center transition-all duration-300 hover:scale-110 group"
                     >
                       <svg className="w-5 h-5 text-gray-600 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -509,6 +510,7 @@ export default function ContactSection() {
                     <a
                       href="https://www.linkedin.com/in/ayana-mckanney-lcsw-18879023/"
                       target="_blank"
+                      aria-label="LinkedIn"
                       className="w-10 h-10 rounded-xl bg-gray-100 hover:bg-[#c09050] flex items-center justify-center transition-all duration-300 hover:scale-110 group"
                     >
                       <svg className="w-5 h-5 text-gray-600 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24">
