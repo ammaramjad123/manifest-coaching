@@ -57,7 +57,7 @@ export const upcomingTraining = {
       ],
 
       trainer: "Ayana F. McKanney, LCSW — Founder of The Peace Practice",
-      topicImage: "/new/ART logo.pdf",  // round topic photo
+      topicImage: "/new/ART logo.jpeg",  // round topic photo
       trainerImage: "/new/ayana-headshot.jpg",                  // Ayana's round photo
 
       //  All the dates/locations this program is offered on:
@@ -106,7 +106,7 @@ export const upcomingTraining = {
       ],
 
       trainer: "Ayana F. McKanney, LCSW — Founder of The Peace Practice",
-      topicImage: "/new/SAFt logo.pdf",
+      topicImage: "/new/SAFT logo.jpeg",
       trainerImage: "/new/ayana-headshot.jpg",
 
       dates: [
