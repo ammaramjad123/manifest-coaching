@@ -110,6 +110,15 @@ export const upcomingTraining = {
           ctaText: "Reserve Your Spot",
           ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=SAF-T1&inst=ayanamckanney",
         },
+
+        {
+          active: true,
+          when: "Tuesday. 01/04/2027 · 9:00am–3:00pm; Tuesday 07/06/2027  9:00am-3:00pm",
+          where: "New York City, NY",
+          cost: "$199",
+          ctaText: "Reserve Your Spot",
+          ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=SAF-T1&inst=ayanamckanney",
+        },
       ],
     },
 
