@@ -78,6 +78,14 @@ export const upcomingTraining = {
           ctaText: "Reserve Your Spot",
           ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=Basic&inst=ayanamckanney",
         },
+        {
+          active: true,
+          when: "07/06/27 – 07/09/27 · 8:30am–5:00pm (3 days)",
+          where: "New York City, NY",
+          cost: "$1,700",
+          ctaText: "Reserve Your Spot",
+          ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=Basic&inst=ayanamckanney",
+        },
       ],
     },
 
@@ -113,7 +121,15 @@ export const upcomingTraining = {
 
         {
           active: true,
-          when: "Tuesday. 01/04/2027 · 9:00am–3:00pm",  when: "Tuesday. 01/04/2027 · 9:00am–3:00pm",
+          when: "Tuesday. 01/04/2027 · 9:00am–3:00pm",
+          where: "New York City, NY",
+          cost: "$199",
+          ctaText: "Reserve Your Spot",
+          ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=SAF-T1&inst=ayanamckanney",
+        },
+         {
+          active: true,
+          when: "Tuesday. 07/06/2027 · 9:00am–3:00pm",
           where: "New York City, NY",
           cost: "$199",
           ctaText: "Reserve Your Spot",
