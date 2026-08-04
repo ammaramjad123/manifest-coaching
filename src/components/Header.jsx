@@ -300,6 +300,20 @@ export default function Header() {
 </Link>
 
                <Link
+  to="/blog"
+  className={`group relative whitespace-nowrap text-base xl:text-lg font-semibold transition-colors duration-300 ${
+    isActive("/blog") ? "text-[#c09050]" : "text-gray-700 hover:text-[#c09050]"
+  }`}
+>
+  Blog
+  <span
+    className={`absolute left-0 top-full mt-1 h-0.5 rounded-full transition-all duration-300 group-hover:w-full ${
+      isActive("/blog") ? "w-full bg-[#c09050]" : "w-0 bg-[#c09050]"
+    }`}
+  />
+</Link>
+
+               <Link
   to="/contact"
   className={`group relative whitespace-nowrap text-base xl:text-lg font-semibold transition-colors duration-300 ${
     location.pathname === "/contact" ? "text-[#c09050]" : "text-gray-700 hover:text-[#c09050]"
@@ -499,6 +513,18 @@ export default function Header() {
   onClick={() => setMobileOpen(false)}
 >
   FAQ
+</Link>
+
+              <Link
+  to="/blog"
+  className={`py-3 px-4 rounded-xl text-lg sm:text-xl font-semibold transition-all duration-300 ${
+    isActive("/blog")
+      ? "bg-[#c09050]/10 text-[#c09050] border-l-4 border-[#c09050]"
+      : "text-gray-800 hover:bg-gray-100"
+  }`}
+  onClick={() => setMobileOpen(false)}
+>
+  Blog
 </Link>
 
               <Link
