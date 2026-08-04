@@ -208,12 +208,12 @@ export default function ContactSection() {
               Get in Touch
             </span>
           </div>
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 font-[system-ui]">
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 font-[system-ui]">
             Start Your Journey
             <span className="block bg-gradient-to-r from-[#c09050] to-[#d4a84b] bg-clip-text text-transparent mt-2 leading-[1.15] pb-2">
               Today
             </span>
-          </h1>
+          </h2>
           <p className="text-gray-500 max-w-3xl mx-auto text-base sm:text-lg lg:text-xl font-[system-ui]">
             Have questions about therapy, coaching, or training? Ready to book your first session?
             We're here to support you every step of the way.
