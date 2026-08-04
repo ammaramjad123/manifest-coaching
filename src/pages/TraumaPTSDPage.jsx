@@ -72,7 +72,7 @@ export default function TraumaPTSDPage() {
         "Nightmares or sleep disturbances",
         "Emotional numbness or detachment",
         "Exaggerated startle response",
-        "Birth trauma or pregnancy loss",
+        <>Birth trauma or <Link to="/specialties/women-issues" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">pregnancy loss</Link></>,
         "Caregiver burnout & invisible wounds",
         "Grief from infertility or miscarriage"
       ],
@@ -84,7 +84,11 @@ export default function TraumaPTSDPage() {
       id: 2,
       title: "The Science of Trauma Recovery",
       subtitle: "Your brain can heal",
-      description: "Trauma changes the brain—but the brain can change back. Through neuroplasticity and evidence-based approaches like ART® (Accelerated Resolution Therapy) and SĀF-T, we can reprocess traumatic memories, reduce their emotional charge, and restore a sense of safety in your body and relationships.",
+      description: (
+        <>
+          Trauma changes the brain—but the brain can change back. Through neuroplasticity and evidence-based approaches like <Link to="/specialties/art" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">ART® (Accelerated Resolution Therapy)</Link> and <Link to="/specialties/safety-sensation" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">SĀF-T</Link>, we can reprocess traumatic memories, reduce their emotional charge, and restore a sense of safety in your body and relationships.
+        </>
+      ),
       image: images.trauma.section3,
       imagePosition: "right",
       stat: "ART has been shown to resolve trauma in 1-5 sessions"
@@ -295,9 +299,9 @@ export default function TraumaPTSDPage() {
                   </h2>
                   
                   {section.isSymptoms ? (
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
                       {section.symptoms.map((symptom, i) => (
-                        <motion.div
+                        <motion.li
                           key={i}
                           initial={{ opacity: 0, x: -20 }}
                           whileInView={{ opacity: 1, x: 0 }}
@@ -306,9 +310,9 @@ export default function TraumaPTSDPage() {
                         >
                           <div className="w-2 h-2 rounded-full bg-[#c09050]" />
                           <span className="text-gray-700 text-sm font-[system-ui]">{symptom}</span>
-                        </motion.div>
+                        </motion.li>
                       ))}
-                    </div>
+                    </ul>
                   ) : section.isApproaches ? (
                     <div className="space-y-4 mb-8">
                       {section.approaches.map((approach, i) => (
