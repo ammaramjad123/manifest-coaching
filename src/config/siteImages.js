@@ -194,6 +194,16 @@ export const images = {
     closing: "/new/erick-beltran-I9qD2fEAxQ4-unsplash.jpg",// Closing section photo
   },
 
+  // ───────────── BLOG ─────────────
+  blog: {
+    traumaWithoutTalking: {
+      hero: "/blog/andy-feliciotti-B4aWPSPXcoY-unsplash.jpg",       // Top banner — "Trauma Therapy Without Talking About It"
+      whatArtIs: "/blog/ionut-vlad-iL9Ucm18HCE-unsplash.jpg",       // "What ART Actually Is" section photo
+      howSessionWorks: "/blog/mila-albrecht-VUu9rAmb9R0-unsplash.jpg",// "How a Session Works" section photo
+      closing: "/blog/leo-wieling-A41RDv4xoMI-unsplash.jpg",        // Closing / "Getting Started" section photo
+    },
+  },
+
 };
 
 
