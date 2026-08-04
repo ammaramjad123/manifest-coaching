@@ -154,9 +154,9 @@ export default function SpecialtyPageTemplate({ data }) {
                   </h2>
 
                   {section.items ? (
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                       {section.items.map((item, i) => (
-                        <motion.div
+                        <motion.li
                           key={i}
                           initial={{ opacity: 0, x: -20 }}
                           whileInView={{ opacity: 1, x: 0 }}
@@ -165,9 +165,9 @@ export default function SpecialtyPageTemplate({ data }) {
                         >
                           <div className="w-2 h-2 rounded-full bg-[#c09050] flex-shrink-0" />
                           <span className="text-gray-700 text-sm font-[system-ui]">{item}</span>
-                        </motion.div>
+                        </motion.li>
                       ))}
-                    </div>
+                    </ul>
                   ) : section.approaches ? (
                     <div className="space-y-4">
                       {section.approaches.map((approach, i) => {
