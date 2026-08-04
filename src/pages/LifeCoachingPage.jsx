@@ -68,11 +68,7 @@ export default function LifeCoachingPage() {
       id: 1,
       title: "The MANIFEST Method",
       subtitle: "A proprietary framework for transformation",
-      description: (
-        <>
-          <Link to="/specialties/manifest-method" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">The MANIFEST Method</Link> is a proprietary coaching framework designed to help you bridge the gap between where you are and where you want to be. Each letter represents a phase of your journey toward self-actualization.
-        </>
-      ),
+      description: "The MANIFEST Method is a proprietary coaching framework designed to help you bridge the gap between where you are and where you want to be. Each letter represents a phase of your journey toward self-actualization.",
       symptoms: [
         "M - Motivating: Identifying the 'Grit' behind change",
         "A - And: Holding space for history AND future",
@@ -198,7 +194,7 @@ export default function LifeCoachingPage() {
             </h1>
             
             <p className="text-white/80 text-lg sm:text-xl max-w-2xl mx-auto mb-8 font-[system-ui] leading-relaxed">
-              The MANIFEST Method coaching for those ready to move from functioning to flourishing.
+              <Link to="/specialties/manifest-method" className="underline decoration-white/40 hover:decoration-white underline-offset-2">The MANIFEST Method</Link> coaching for those ready to move from functioning to flourishing.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
