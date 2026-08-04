@@ -62,17 +62,17 @@ export default function WomenIssuesPage() {
       description: "The mental load of managing households, careers, relationships, and self-care. The pressure to be everything to everyone. The guilt of taking time for yourself. These aren't personal failings—they're systemic challenges that women have been navigating for generations. You deserve a space where you can exhale.",
       image: images.women.section1,
       imagePosition: "right",
-      stat: "Women are twice as likely as men to experience anxiety and depression"
+      stat: (
+        <>
+          Women are twice as likely as men to experience <Link to="/specialties/process" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">anxiety and depression</Link>
+        </>
+      )
     },
     {
       id: 1,
       title: "The Motherhood Journey",
       subtitle: "Perinatal & Postpartum Mental Health",
-      description: (
-        <>
-          From pregnancy to postpartum, motherhood brings profound joy—and unexpected challenges. <Link to="/specialties/process" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Perinatal anxiety, postpartum depression</Link>, <Link to="/specialties/trauma-ptsd" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">birth trauma</Link>, and the identity shift of becoming a mother are real, common, and treatable. You don't have to suffer in silence.
-        </>
-      ),
+      description: "From pregnancy to postpartum, motherhood brings profound joy—and unexpected challenges. Perinatal anxiety, postpartum depression, birth trauma, and the identity shift of becoming a mother are real, common, and treatable. You don't have to suffer in silence.",
       symptoms: [
         "Overwhelming sadness or emptiness after birth",
         "Intrusive thoughts about baby's safety",
