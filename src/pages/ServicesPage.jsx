@@ -324,7 +324,11 @@ export default function ServicesPage() {
       iconBg: "bg-[#c09050]/15",
       iconColor: "text-[#c09050]",
       description: "Deep healing for trauma, distress, and emotional regulation.",
-      longDescription: "A safe, compassionate space to heal from past wounds, process complex emotions, and build emotional regulation skills — using ART®, DBT, ACT, and the individualized MANIFEST Method.",
+      longDescription: (
+        <>
+          A safe, compassionate space to heal from past wounds, process complex emotions, and build emotional regulation skills — using <Link to="/specialties/art" className="underline decoration-white/40 hover:decoration-white underline-offset-2">ART®</Link>, <Link to="/specialties/dbt" className="underline decoration-white/40 hover:decoration-white underline-offset-2">DBT</Link>, <Link to="/specialties/act" className="underline decoration-white/40 hover:decoration-white underline-offset-2">ACT</Link>, and the individualized <Link to="/specialties/manifest-method" className="underline decoration-white/40 hover:decoration-white underline-offset-2">MANIFEST Method</Link>.
+        </>
+      ),
       modalities: ["ART", "DBT", "ACT"],
       features: ["Individual therapy ages 17+", "Virtual HIPAA-compliant sessions", "Flexible scheduling", "Insurance accepted"],
       locations: ["NY (#098940)", "NJ (#44SL06739500)", "RI (#ISW04317)"],
@@ -364,7 +368,11 @@ export default function ServicesPage() {
       iconBg: "bg-[#c09050]/15",
       iconColor: "text-[#c09050]",
       description: "A professional exchange protocol for ART® therapists and their immediate family members.",
-      longDescription: "The bARTer Balance Benefit is a peer-to-peer professional exchange protocol for ART® therapists and their immediate family members — a way for fellow practitioners to receive evidence-based trauma resolution through the MANIFEST Coaching LLC platform.",
+      longDescription: (
+        <>
+          The <Link to="/specialties/barter-balance" className="underline decoration-white/40 hover:decoration-white underline-offset-2">bARTer Balance Benefit</Link> is a peer-to-peer professional exchange protocol for <Link to="/specialties/art" className="underline decoration-white/40 hover:decoration-white underline-offset-2">ART®</Link> therapists and their immediate family members — a way for fellow practitioners to receive evidence-based trauma resolution through the MANIFEST Coaching LLC platform.
+        </>
+      ),
       modalities: ["ART® Therapy", "SĀF-T", "Coaching"],
       features: ["For ART® therapists & their immediate family", "Peer-to-peer professional exchange protocol", "Conducted through MANIFEST Coaching LLC", "Inquire for enrollment details"],
       locations: ["Available Nationwide"],
@@ -384,7 +392,11 @@ export default function ServicesPage() {
       iconBg: "bg-[#c09050]/15",
       iconColor: "text-[#c09050]",
       description: "Evidence-based training for organizations and professionals.",
-      longDescription: "ART® & SĀF-T trainings, EAP services, immigration assessments, and the bARTer Balance Benefit — all conducted through MANIFEST Coaching LLC.",
+      longDescription: (
+        <>
+          <Link to="/specialties/art" className="underline decoration-white/40 hover:decoration-white underline-offset-2">ART®</Link> & <Link to="/specialties/safety-sensation" className="underline decoration-white/40 hover:decoration-white underline-offset-2">SĀF-T</Link> trainings, EAP services, <Link to="/specialties/partnership" className="underline decoration-white/40 hover:decoration-white underline-offset-2">immigration assessments</Link>, and the <Link to="/specialties/barter-balance" className="underline decoration-white/40 hover:decoration-white underline-offset-2">bARTer Balance Benefit</Link> — all conducted through MANIFEST Coaching LLC.
+        </>
+      ),
       modalities: ["ART® Training", "SĀF-T Certification", "EAP & Corporate"],
       features: ["ART® Training (CE credits — ART only)", "In-person & virtual options", "Group rates available", "Through MANIFEST Coaching LLC"],
       locations: ["In-person (NY, GA) + Virtual Nationwide"],
@@ -935,9 +947,9 @@ export default function ServicesPage() {
                         <p className={`text-xs md:text-sm font-bold uppercase tracking-wider ${activeData.textColor}`}>
                           {activeData.subtitle}
                         </p>
-                        <h2 className="text-xl md:text-2xl lg:text-3xl font-black text-white font-[system-ui]">
+                        <h3 className="text-xl md:text-2xl lg:text-3xl font-black text-white font-[system-ui]">
                           {activeData.title}
-                        </h2>
+                        </h3>
                       </div>
                     </div>
 
