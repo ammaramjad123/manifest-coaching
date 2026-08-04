@@ -27,6 +27,8 @@ import InclusiveCarePage from './pages/InclusiveCarePage';
 import SAFTPage from './pages/SAFTPage';
 import BARTerBalancePage from './pages/BARTerBalancePage';
 import ManifestMethodPage from './pages/ManifestMethodPage';
+import BlogPage from './pages/BlogPage';
+import BlogPostPage from './pages/BlogPostPage';
 
 function App() {
   return (
@@ -56,6 +58,8 @@ function App() {
           <Route path="/specialties/safety-sensation" element={<SAFTPage />} />
           <Route path="/specialties/barter-balance" element={<BARTerBalancePage />} />
           <Route path="/specialties/manifest-method" element={<ManifestMethodPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:slug" element={<BlogPostPage />} />
         </Routes>
       </main>
       <Footer />
