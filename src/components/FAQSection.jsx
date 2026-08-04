@@ -2,6 +2,7 @@ import { images } from "../config/siteImages";
 import React, { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-router-dom";
 import {
   Plus,
   Minus,
@@ -81,7 +82,11 @@ export default function FAQSection() {
       id: 3,
       category: "therapy",
       question: "What therapeutic approaches do you use?",
-      answer: "Evidence-based approaches used include Accelerated Resolution Therapy (ART®), SĀF-T, Dialectical Behavior Therapy (DBT), Acceptance and Commitment Therapy (ACT), and Mindfulness-Based Therapy."
+      answer: (
+        <>
+          Evidence-based approaches used include Accelerated Resolution Therapy (<Link to="/specialties/art" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">ART®</Link>), <Link to="/specialties/safety-sensation" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">SĀF-T</Link>, Dialectical Behavior Therapy (<Link to="/specialties/dbt" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">DBT</Link>), Acceptance and Commitment Therapy (<Link to="/specialties/act" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">ACT</Link>), and Mindfulness-Based Therapy.
+        </>
+      )
     },
     {
       id: 4,
@@ -99,7 +104,11 @@ export default function FAQSection() {
       id: 6,
       category: "coaching",
       question: "What is the MANIFEST Method?",
-      answer: "The MANIFEST Method is a proprietary coaching framework designed to help you bridge the gap between where you are and where you want to be. It's a high-accountability partnership focused on actionable steps, mindset shifts, and personal evolution."
+      answer: (
+        <>
+          The <Link to="/specialties/manifest-method" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">MANIFEST Method</Link> is a proprietary coaching framework designed to help you bridge the gap between where you are and where you want to be. It's a high-accountability partnership focused on actionable steps, mindset shifts, and personal evolution.
+        </>
+      )
     },
     {
       id: 7,
