@@ -85,7 +85,11 @@ export default function AnxietyDepressionPage() {
       id: 2,
       title: "The Science of Healing",
       subtitle: "Evidence-based approaches that work",
-      description: "Through ART®, DBT, ACT, and mindfulness, we can rewire thought patterns, reduce symptoms, and restore balance. Your brain has neuroplasticity—it can change, adapt, and heal. Science shows that therapy is as effective as medication for many people, with lasting results.",
+      description: (
+        <>
+          Through <Link to="/specialties/art" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">ART®</Link>, <Link to="/specialties/dbt" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">DBT</Link>, <Link to="/specialties/act" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">ACT</Link>, and mindfulness, we can rewire thought patterns, reduce symptoms, and restore balance. Your brain has neuroplasticity—it can change, adapt, and heal. Science shows that therapy is as effective as medication for many people, with lasting results.
+        </>
+      ),
       image: images.anxiety.section3,
       imagePosition: "right",
       stat: "80% of people improve with evidence-based therapy"
@@ -296,9 +300,9 @@ export default function AnxietyDepressionPage() {
                   </h2>
                   
                   {section.isSymptoms ? (
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
                       {section.symptoms.map((symptom, i) => (
-                        <motion.div
+                        <motion.li
                           key={i}
                           initial={{ opacity: 0, x: -20 }}
                           whileInView={{ opacity: 1, x: 0 }}
@@ -307,9 +311,9 @@ export default function AnxietyDepressionPage() {
                         >
                           <div className="w-2 h-2 rounded-full bg-[#c09050]" />
                           <span className="text-gray-700 text-sm font-[system-ui]">{symptom}</span>
-                        </motion.div>
+                        </motion.li>
                       ))}
-                    </div>
+                    </ul>
                   ) : section.isApproaches ? (
                     <div className="space-y-4 mb-8">
                       {section.approaches.map((approach, i) => (
