@@ -68,7 +68,11 @@ export default function LifeCoachingPage() {
       id: 1,
       title: "The MANIFEST Method",
       subtitle: "A proprietary framework for transformation",
-      description: "The MANIFEST Method is a proprietary coaching framework designed to help you bridge the gap between where you are and where you want to be. Each letter represents a phase of your journey toward self-actualization.",
+      description: (
+        <>
+          <Link to="/specialties/manifest-method" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">The MANIFEST Method</Link> is a proprietary coaching framework designed to help you bridge the gap between where you are and where you want to be. Each letter represents a phase of your journey toward self-actualization.
+        </>
+      ),
       symptoms: [
         "M - Motivating: Identifying the 'Grit' behind change",
         "A - And: Holding space for history AND future",
@@ -293,9 +297,9 @@ export default function LifeCoachingPage() {
                   </h2>
                   
                   {section.isSymptoms ? (
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
                       {section.symptoms.map((symptom, i) => (
-                        <motion.div
+                        <motion.li
                           key={i}
                           initial={{ opacity: 0, x: -20 }}
                           whileInView={{ opacity: 1, x: 0 }}
@@ -304,9 +308,9 @@ export default function LifeCoachingPage() {
                         >
                           <div className="w-2 h-2 rounded-full bg-[#c09050]" />
                           <span className="text-gray-700 text-sm font-[system-ui]">{symptom}</span>
-                        </motion.div>
+                        </motion.li>
                       ))}
-                    </div>
+                    </ul>
                   ) : section.isApproaches ? (
                     <div className="space-y-4 mb-8">
                       {section.approaches.map((approach, i) => (
