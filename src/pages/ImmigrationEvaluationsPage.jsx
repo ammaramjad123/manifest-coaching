@@ -1,6 +1,7 @@
 import { images, trainingLinks } from "../config/siteImages";
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
+import { Link } from "react-router-dom";
 import UpcomingTraining from "../components/UpcomingTraining";
 import {
   ArrowRight, Calendar, Phone, Brain, Heart, Shield,
@@ -18,7 +19,11 @@ const tabData = [
     imageAlt: "Clinical Immigration Evaluation",
     heading: "Clinical Immigration Assessments: A Forensic Approach",
     badge: "Comprehensive · Defensible · Tailored",
-    intro: "As a licensed LCSW, expert clinical documentation is provided that strengthens immigration petitions — translating complex trauma and psychological distress into clear, DSM-5-supported narratives for the cases that matter most.",
+    intro: (
+      <>
+        As a licensed LCSW, expert clinical documentation is provided that strengthens immigration petitions — translating <Link to="/specialties/trauma-ptsd" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">complex trauma</Link> and psychological distress into clear, DSM-5-supported narratives for the cases that matter most.
+      </>
+    ),
     points: [
       { icon: FileText, title: "Case-Specific Customization", desc: "Every report is built from the ground up based on the client's unique history — no templates, no shortcuts." },
       { icon: Brain, title: "Clinical Rigor", desc: "High-level analysis of credibility, symptom mapping, and long-term prognosis grounded in DSM-5 standards." },
