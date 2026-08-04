@@ -68,7 +68,11 @@ export default function WomenIssuesPage() {
       id: 1,
       title: "The Motherhood Journey",
       subtitle: "Perinatal & Postpartum Mental Health",
-      description: "From pregnancy to postpartum, motherhood brings profound joy—and unexpected challenges. Perinatal anxiety, postpartum depression, birth trauma, and the identity shift of becoming a mother are real, common, and treatable. You don't have to suffer in silence.",
+      description: (
+        <>
+          From pregnancy to postpartum, motherhood brings profound joy—and unexpected challenges. <Link to="/specialties/process" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Perinatal anxiety, postpartum depression</Link>, <Link to="/specialties/trauma-ptsd" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">birth trauma</Link>, and the identity shift of becoming a mother are real, common, and treatable. You don't have to suffer in silence.
+        </>
+      ),
       symptoms: [
         "Overwhelming sadness or emptiness after birth",
         "Intrusive thoughts about baby's safety",
@@ -291,9 +295,9 @@ export default function WomenIssuesPage() {
                   </h2>
                   
                   {section.isSymptoms ? (
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
                       {section.symptoms.map((symptom, i) => (
-                        <motion.div
+                        <motion.li
                           key={i}
                           initial={{ opacity: 0, x: -20 }}
                           whileInView={{ opacity: 1, x: 0 }}
@@ -302,9 +306,9 @@ export default function WomenIssuesPage() {
                         >
                           <div className="w-2 h-2 rounded-full bg-[#c09050]" />
                           <span className="text-gray-700 text-sm font-[system-ui]">{symptom}</span>
-                        </motion.div>
+                        </motion.li>
                       ))}
-                    </div>
+                    </ul>
                   ) : section.isApproaches ? (
                     <div className="space-y-4 mb-8">
                       {section.approaches.map((approach, i) => (
