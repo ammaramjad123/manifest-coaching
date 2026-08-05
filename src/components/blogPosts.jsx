@@ -14,7 +14,7 @@ export const blogPosts = [
     updatedDate: "2026-08-05",
     readTime: "6 min read",
     heroImage: images.blog.imposterSyndrome.hero,
-    heroImageAlt: "Sunlight bursting through trees in a dynamic, energetic motion blur",
+    heroImageAlt: "Warm morning light falling across a sunlit home office desk",
     hubLink: { href: "/specialties/safety-sensation", label: "Explore SĀF-T" },
 
     content: [
@@ -170,8 +170,8 @@ export const blogPosts = [
     excerpt: "You don't have to describe what happened to heal from it. Here's how Accelerated Resolution Therapy works, how it's different from EMDR, and how to know if it's right for you.",
     category: "Trauma & PTSD",
     author: "Ayana F. McKanney, LCSW",
-    publishDate: "2026-08-05",
-    updatedDate: "2026-08-05",
+    publishDate: "2026-08-04",
+    updatedDate: "2026-08-04",
     readTime: "7 min read",
     heroImage: images.blog.traumaWithoutTalking.hero,
     heroImageAlt: "Warm sunlight filtering through green leaves",
