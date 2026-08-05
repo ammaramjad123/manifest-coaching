@@ -93,7 +93,7 @@ export default function BlogPostTemplate({ post }) {
         <img
           src={post.heroImage}
           alt={post.heroImageAlt}
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover object-[35%_15%] sm:object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10" />
         <div className="relative max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 pt-40 sm:pt-48 pb-10 sm:pb-14">
