@@ -52,12 +52,13 @@ export default function BlogPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.5 }}
+                className="h-full"
               >
                 <Link
                   to={`/blog/${post.slug}`}
-                  className="group block rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300"
+                  className="group flex flex-col h-full rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300"
                 >
-                  <div className="relative h-56 overflow-hidden">
+                  <div className="relative h-56 overflow-hidden flex-shrink-0">
                     <img
                       src={post.heroImage}
                       alt={post.heroImageAlt}
@@ -68,7 +69,7 @@ export default function BlogPage() {
                       {post.category}
                     </span>
                   </div>
-                  <div className="p-6">
+                  <div className="p-6 flex flex-col flex-1">
                     <div className="flex items-center gap-4 text-xs text-gray-500 mb-3 font-[system-ui]">
                       <span className="flex items-center gap-1.5">
                         <Calendar className="w-3.5 h-3.5" />
@@ -85,7 +86,7 @@ export default function BlogPage() {
                     <p className="text-gray-600 text-sm leading-relaxed mb-4 font-[system-ui]">
                       {post.excerpt}
                     </p>
-                    <span className="inline-flex items-center gap-1.5 text-sm font-bold text-[#c09050]">
+                    <span className="inline-flex items-center gap-1.5 text-sm font-bold text-[#c09050] mt-auto">
                       Read the article
                       <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                     </span>
