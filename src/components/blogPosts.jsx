@@ -14,7 +14,7 @@ export const blogPosts = [
     updatedDate: "2026-08-05",
     readTime: "6 min read",
     heroImage: images.blog.imposterSyndrome.hero,
-    heroImageAlt: "A woman laughing warmly, full of genuine confidence and energy",
+    heroImageAlt: "Sunlight bursting through trees in a dynamic, energetic motion blur",
     hubLink: { href: "/specialties/safety-sensation", label: "Explore SĀF-T" },
 
     content: [
