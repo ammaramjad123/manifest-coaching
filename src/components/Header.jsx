@@ -163,7 +163,7 @@ export default function Header() {
                       window.scrollTo({ top: 0, behavior: 'smooth' });
                     }
                   }}
-                  className={`group relative whitespace-nowrap text-sm xl:text-base font-semibold transition-colors duration-300 ${
+                  className={`group relative whitespace-nowrap text-sm xl:text-lg font-semibold transition-colors duration-300 ${
                     isActive("/") ? "text-[#c09050]" : "text-gray-700 hover:text-[#c09050]"
                   }`}
                 >
@@ -177,7 +177,7 @@ export default function Header() {
 
                 <Link
                   to="/services"
-                  className={`group relative whitespace-nowrap text-sm xl:text-base font-semibold transition-colors duration-300 ${
+                  className={`group relative whitespace-nowrap text-sm xl:text-lg font-semibold transition-colors duration-300 ${
                     location.pathname === "/services" ? "text-[#c09050]" : "text-gray-700 hover:text-[#c09050]"
                   }`}
                 >
@@ -191,7 +191,7 @@ export default function Header() {
 
                <Link
   to="/about"
-  className={`group relative whitespace-nowrap text-sm xl:text-base font-semibold transition-colors duration-300 ${
+  className={`group relative whitespace-nowrap text-sm xl:text-lg font-semibold transition-colors duration-300 ${
     location.pathname === "/about" ? "text-[#c09050]" : "text-gray-700 hover:text-[#c09050]"
   }`}
 >
@@ -209,7 +209,7 @@ export default function Header() {
                   onMouseLeave={handleDropdownLeave}
                 >
                   <button
-                    className="group relative whitespace-nowrap text-sm xl:text-base font-semibold transition-colors duration-300 flex items-center gap-1 text-gray-700 hover:text-[#c09050]"
+                    className="group relative whitespace-nowrap text-sm xl:text-lg font-semibold transition-colors duration-300 flex items-center gap-1 text-gray-700 hover:text-[#c09050]"
                   >
                     Specialties
                     <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${showDropdown ? 'rotate-180' : ''}`} />
@@ -287,7 +287,7 @@ export default function Header() {
 
                <Link
   to="/faq"
-  className={`group relative whitespace-nowrap text-sm xl:text-base font-semibold transition-colors duration-300 ${
+  className={`group relative whitespace-nowrap text-sm xl:text-lg font-semibold transition-colors duration-300 ${
     location.pathname === "/faq" ? "text-[#c09050]" : "text-gray-700 hover:text-[#c09050]"
   }`}
 >
@@ -301,7 +301,7 @@ export default function Header() {
 
                <Link
   to="/blog"
-  className={`group relative whitespace-nowrap text-sm xl:text-base font-semibold transition-colors duration-300 ${
+  className={`group relative whitespace-nowrap text-sm xl:text-lg font-semibold transition-colors duration-300 ${
     isActive("/blog") ? "text-[#c09050]" : "text-gray-700 hover:text-[#c09050]"
   }`}
 >
@@ -315,7 +315,7 @@ export default function Header() {
 
                <Link
   to="/contact"
-  className={`group relative whitespace-nowrap text-sm xl:text-base font-semibold transition-colors duration-300 ${
+  className={`group relative whitespace-nowrap text-sm xl:text-lg font-semibold transition-colors duration-300 ${
     location.pathname === "/contact" ? "text-[#c09050]" : "text-gray-700 hover:text-[#c09050]"
   }`}
 >
@@ -333,16 +333,16 @@ export default function Header() {
                 <a
                   href="https://calendly.com/manifestcoachingllc/"
                   target="_blank"
-                  className="flex items-center whitespace-nowrap gap-1.5 xl:gap-2 px-4 xl:px-5 py-2.5 xl:py-2.5 rounded-full font-bold text-sm xl:text-base bg-[#c09050]/10 border border-[#c09050]/20 text-[#c09050] shadow-lg hover:bg-[#c09050] hover:text-white hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
+                  className="flex items-center whitespace-nowrap gap-1.5 xl:gap-2 px-3 xl:px-4 py-2 xl:py-2 rounded-full font-bold text-xs xl:text-sm bg-[#c09050]/10 border border-[#c09050]/20 text-[#c09050] shadow-lg hover:bg-[#c09050] hover:text-white hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
                 >
-                  <Calendar size={16} className="xl:w-[18px] xl:h-[18px] flex-shrink-0" />
+                  <Calendar size={14} className="xl:w-4 xl:h-4 flex-shrink-0" />
                   <span>Book Consultation</span>
                 </a>
                 <a href="tel:+19299003056">
                   <button
-                    className="flex items-center whitespace-nowrap gap-1.5 xl:gap-2 px-5 xl:px-6 py-2.5 xl:py-2.5 rounded-full font-bold text-sm xl:text-base bg-black border-2 border-[#c09050] text-white shadow-lg hover:bg-[#c09050] hover:border-[#c09050] hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
+                    className="flex items-center whitespace-nowrap gap-1.5 xl:gap-2 px-4 xl:px-5 py-2 xl:py-2 rounded-full font-bold text-xs xl:text-sm bg-black border-2 border-[#c09050] text-white shadow-lg hover:bg-[#c09050] hover:border-[#c09050] hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
                   >
-                    <Phone size={17} className="xl:w-[18px] xl:h-[18px] flex-shrink-0" />
+                    <Phone size={16} className="xl:w-4 xl:h-4 flex-shrink-0" />
                     <span>Call Now</span>
                   </button>
                 </a>
