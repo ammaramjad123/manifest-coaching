@@ -14,7 +14,7 @@ export const blogPosts = [
     updatedDate: "2026-08-05",
     readTime: "6 min read",
     heroImage: images.blog.imposterSyndrome.hero,
-    heroImageAlt: "Warm morning light falling across a sunlit home office desk",
+    heroImageAlt: "A man pressing his temples in genuine tension at his desk",
     hubLink: { href: "/specialties/safety-sensation", label: "Explore SĀF-T" },
 
     content: [
@@ -91,7 +91,7 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.imposterSyndrome.howSessionWorks,
-        alt: "A quiet, minimalist desk and chair bathed in daylight",
+        alt: "A warm, sunlit seating area with leather chairs",
         caption: "Sessions are structured, brief, and stay entirely within your control.",
       },
       {
