@@ -3,6 +3,166 @@ import { Link } from "react-router-dom";
 
 export const blogPosts = [
   {
+    slug: "imposter-syndrome-lives-in-your-body",
+    title: "Imposter Syndrome Isn't a Mindset Problem — Here's How to Actually Move It",
+    metaTitle: "How to Actually Move Imposter Syndrome | Peace Practice",
+    metaDescription: "Imposter syndrome isn't just a mindset issue — it lives in your nervous system. Learn how SĀF-T helps you move it, not just manage it.",
+    excerpt: "Affirmations and confidence tricks work on the story. SĀF-T works on the sensation underneath it — here's how that difference actually plays out for high-achievers.",
+    category: "Coaching",
+    author: "Ayana F. McKanney, LCSW",
+    publishDate: "2026-08-05",
+    updatedDate: "2026-08-05",
+    readTime: "6 min read",
+    heroImage: images.blog.imposterSyndrome.hero,
+    heroImageAlt: "Warm morning light falling across a sunlit home office desk",
+    hubLink: { href: "/specialties/safety-sensation", label: "Explore SĀF-T" },
+
+    content: [
+      {
+        type: "paragraph",
+        content:
+          "You know the feeling before it has a name: the chest that tightens right before you speak up in a meeting, the stomach that drops before you hit send on a proposal, the voice that shrinks the moment someone asks what you think. You've told yourself to just be more confident. You've made the list of everything you've actually accomplished. It helps for about a day. Here's why: imposter syndrome isn't only a thinking problem, so thinking your way out of it only gets you so far. SĀF-T works with the part logic can't reach — the sensation itself.",
+      },
+      {
+        type: "heading",
+        text: "Why Imposter Syndrome Doesn't Respond to Logic",
+      },
+      {
+        type: "paragraph",
+        content:
+          "About 70% of people experience imposter syndrome at some point, and it tends to hit hardest at the moments that should feel like proof you've made it — the promotion, the bigger stage, the room you worked years to get into. That's not a coincidence. Your body braces for exposure before your conscious mind even registers the trigger. The evidence of your competence is real, but the bracing pattern doesn't update just because you show it more evidence. It's not stored as a belief. It's stored as a physical response, which is exactly why it can survive contact with an impressive resume.",
+      },
+      {
+        type: "image",
+        src: images.blog.imposterSyndrome.whatSaftIs,
+        alt: "A notebook and pen resting on a sunlit wooden table",
+        caption: "SĀF-T starts by finding exactly where the feeling lives — not by talking around it.",
+      },
+      {
+        type: "heading",
+        text: "What SĀF-T Actually Is",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            <Link to="/specialties/safety-sensation" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">SĀF-T — Sensations Awareness Focused Technique</Link> — is a somatic component drawn from the Basic ART® protocol. Instead of talking through the situation that triggers your self-doubt, we locate exactly where it shows up in your body — the tight chest, the dropped stomach, the closed throat — and work with that sensation directly using guided eye movements and focused body awareness.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content:
+          "You're not asked to narrate every moment you've felt like a fraud. You identify the general area — “before I present,” “right before I ask for what I'm worth” — and notice what's happening in your body while we work. The goal isn't to talk you out of the feeling. It's to help your nervous system actually move it, the same way it would move any other stored physical tension.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Most people notice a real, within-session shift in intensity — not because the achievement gap in their head closed, but because the bracing pattern underneath it did.",
+      },
+      {
+        type: "heading",
+        text: "SĀF-T vs. “Just Practice Confidence”",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Power poses, affirmations, rehearsed talking points — most confidence-building advice works at the level of story and behavior, and it genuinely helps some of the time. But if the underlying bracing pattern is still there, it tends to resurface the moment the stakes go back up, which is why confidence work can feel like it doesn't stick under real pressure. You did the exercises. You said the affirmations. And your chest still tightened the second it mattered.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "SĀF-T doesn't compete with that work — it targets something underneath it. Instead of adding another layer of coping strategy on top of the bracing, it works with the physical activation directly, so it has less room to silently rebuild before your next high-stakes moment.",
+      },
+      {
+        type: "image",
+        src: images.blog.imposterSyndrome.howSessionWorks,
+        alt: "A quiet, minimalist desk and chair bathed in daylight",
+        caption: "Sessions are structured, brief, and stay entirely within your control.",
+      },
+      {
+        type: "heading",
+        text: "How This Works in a Coaching Session",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            This is offered through <Link to="/specialties/life-coaching" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">coaching</Link>, not clinical therapy — a consultative, forward-focused container, not a diagnostic one. We start by identifying the specific moment that triggers the feeling: before a presentation, before a difficult ask, before you walk into a room where you're the least experienced person there.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content:
+          "From there, I'll guide you through sensation awareness and focused eye movements while you notice what shifts. You stay in control the entire time — nothing requires you to dissect your full professional history or relive a specific embarrassing moment in detail. Most clients describe it as surprisingly direct: locate the sensation, work with it, notice it move.",
+      },
+      {
+        type: "faq",
+        heading: "Common Questions About SĀF-T for Imposter Syndrome",
+        items: [
+          {
+            q: "Is this therapy, or coaching?",
+            a: "Coaching. SĀF-T here is offered as part of a consultative, forward-focused coaching relationship, not clinical therapy — it's private pay, not billed to insurance, and isn't a diagnostic or treatment process. If what you're carrying feels more clinical than performance-related, that's a conversation worth having up front, and I can help point you toward the right fit.",
+          },
+          {
+            q: "Do I have to talk about specific moments I felt like a fraud?",
+            a: "No. You'll name the general situation — a type of meeting, a specific kind of ask — but you're never required to narrate or relive a specific embarrassing memory in detail. SĀF-T works with the sensation, not the story.",
+          },
+          {
+            q: "How is this different from breathing exercises or affirmations?",
+            a: "Breathing and affirmations work at the surface — they can calm you in the moment, but the underlying bracing pattern is often still there afterward. SĀF-T targets that stored physical activation directly, which is why the shift tends to hold rather than needing to be re-triggered every time.",
+          },
+          {
+            q: "Is SĀF-T only useful for imposter syndrome?",
+            a: "No — it's a general nervous-system regulation technique, also used with first responders and high-performers for acute stress, performance anxiety, and general overwhelm. Imposter syndrome is simply one of the most common reasons coaching clients bring it up.",
+          },
+          {
+            q: "How many sessions does this take?",
+            a: "Rapid, within-session shifts are typical of SĀF-T — many clients notice a real difference in a single session. It can be used as a standalone technique for a specific trigger or woven into a longer coaching relationship, depending on what you're working on.",
+          },
+        ],
+      },
+      {
+        type: "heading",
+        text: "Who This Tends to Help",
+      },
+      {
+        type: "list",
+        items: [
+          "High-achievers stepping into a bigger role or more visibility",
+          "New leaders and recent promotions",
+          "Founders and career-changers entering rooms where they feel “behind”",
+          "Public speakers and anyone who goes quiet under scrutiny",
+          "Coaching clients whose confidence work “hasn't stuck” under real pressure",
+        ],
+      },
+      {
+        type: "image",
+        src: images.blog.imposterSyndrome.closing,
+        alt: "Potted plants growing on a sunlit windowsill",
+        caption: "You don't need a full rewrite — just enough room for the feeling to actually move.",
+      },
+      {
+        type: "heading",
+        text: "Getting Started",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            You don't have to know yet whether this is the right fit. A free 15-minute consultation is a low-pressure way to talk through what you're experiencing and figure out together whether SĀF-T coaching makes sense for you. <Link to="/contact" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Reach out here</Link> whenever you're ready.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content:
+          "I'm a Certified SĀF-T Provider and Trainer, and sessions are conducted by secure telehealth wherever you are. The goal was never to talk you out of the feeling. It's to help you actually move it.",
+      },
+    ],
+  },
+  {
     slug: "trauma-therapy-without-talking-about-it",
     title: "Trauma Therapy That Doesn't Require You to Talk About What Happened",
     metaTitle: "Trauma Therapy Without Talking About It | Peace Practice",
