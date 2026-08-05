@@ -14,7 +14,7 @@ export const blogPosts = [
     updatedDate: "2026-08-05",
     readTime: "6 min read",
     heroImage: images.blog.imposterSyndrome.hero,
-    heroImageAlt: "Warm morning light falling across a sunlit home office desk",
+    heroImageAlt: "A woman laughing warmly, full of genuine confidence and energy",
     hubLink: { href: "/specialties/safety-sensation", label: "Explore SĀF-T" },
 
     content: [
@@ -140,7 +140,7 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.imposterSyndrome.closing,
-        alt: "Potted plants growing on a sunlit windowsill",
+        alt: "A woman smiling with quiet, genuine confidence",
         caption: "You don't need a full rewrite — just enough room for the feeling to actually move.",
       },
       {
