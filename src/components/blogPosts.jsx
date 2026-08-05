@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const blogPosts = [
   {
     slug: "imposter-syndrome-lives-in-your-body",
-    title: "Imposter Syndrome Isn't a Mindset Problem, and Here's How to Actually Move It",
+    title: "Imposter Syndrome Isn't a Mindset Problem — Here's How to Actually Move It",
     metaTitle: "How to Actually Move Imposter Syndrome | Peace Practice",
     metaDescription: "Imposter syndrome isn't just a mindset issue. It lives in your nervous system. Learn how SĀF-T helps you move it, not just manage it.",
     excerpt: "Affirmations and confidence tricks work on the story. SĀF-T works on the sensation underneath it, and here's how that difference actually plays out for high-achievers.",
@@ -236,7 +236,7 @@ export const blogPosts = [
       },
       {
         type: "heading",
-        text: "How ART Is Actually Different From EMDR",
+        text: "ART vs. EMDR — What's Actually Different",
       },
       {
         type: "paragraph",
