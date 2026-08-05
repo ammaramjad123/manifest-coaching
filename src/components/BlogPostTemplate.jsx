@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Calendar, Clock, ArrowRight, ArrowLeft, Quote } from "lucide-react";
+import { Calendar, Clock, ArrowRight, ArrowLeft } from "lucide-react";
+import { images } from "../config/siteImages";
 
 function formatDate(dateStr) {
   const d = new Date(dateStr + "T00:00:00");
@@ -143,9 +144,11 @@ export default function BlogPostTemplate({ post }) {
       {/* AUTHOR BIO */}
       <div className="max-w-3xl mx-auto px-5 sm:px-6 lg:px-8 pb-4">
         <div className="rounded-2xl bg-[#fdf9f2] border border-[#c09050]/20 p-6 sm:p-8 flex flex-col sm:flex-row gap-5 items-start">
-          <div className="w-14 h-14 rounded-full bg-[#c09050]/15 flex items-center justify-center flex-shrink-0">
-            <Quote className="w-6 h-6 text-[#c09050]" />
-          </div>
+          <img
+            src={images.ayanaHeadshot}
+            alt={post.author}
+            className="w-14 h-14 rounded-full object-cover flex-shrink-0 border-2 border-[#c09050]/20"
+          />
           <div>
             <p className="font-black text-black text-lg font-[system-ui]">{post.author}</p>
             <p className="text-sm text-gray-600 mt-1 leading-relaxed font-[system-ui]">
