@@ -203,10 +203,10 @@ export const images = {
       closing: "/blog/leo-wieling-A41RDv4xoMI-unsplash.jpg",        // Closing / "Getting Started" section photo
     },
     imposterSyndrome: {
-      hero: "/blog/andrii-solok-t6vwJ1WBH8g-unsplash.jpg",          // Top banner — "Imposter Syndrome Isn't a Mindset Problem"
+      hero: "/blog/vitaly-gariev-i17eqik0l2A-unsplash.jpg",         // Top banner — "Imposter Syndrome Isn't a Mindset Problem"
       whatSaftIs: "/blog/kelly-sikkema-ChsnZBAX6wA-unsplash.jpg",   // "What SAF-T Actually Is" section photo
       howSessionWorks: "/blog/annie-spratt-cpDBPCwTs2s-unsplash.jpg",// "How This Works in a Coaching Session" section photo
-      closing: "/blog/kyle-austin-Q-5tt6mqkbQ-unsplash.jpg",         // Closing / "Getting Started" section photo
+      closing: "/blog/vitaly-gariev-ooIkYBBYlgg-unsplash.jpg",       // Closing / "Getting Started" section photo
     },
   },
 
