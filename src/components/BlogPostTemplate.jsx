@@ -101,7 +101,7 @@ export default function BlogPostTemplate({ post }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#c09050]/20 border border-[#c09050]/40 text-xs font-black uppercase tracking-wider text-[#f0d9b8] mb-4 font-[system-ui]">
+            <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/35 backdrop-blur-md border border-[#c09050]/30 text-xs font-black uppercase tracking-wider text-[#f0d9b8] mb-4 font-[system-ui]">
               {post.category}
             </span>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-white leading-tight font-[system-ui] mb-4">
