@@ -25,6 +25,20 @@ export const blogPosts = [
       },
       {
         type: "heading",
+        text: "The Moment It Shows Up",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Picture the moment right before your name gets called. You've read the deck twice. You know the material cold. And still — your chest tightens first, a half-second before your brain catches up. Your palms go damp. The sentence you rehearsed on the way in suddenly feels like someone else's words in your mouth. You open your mouth to speak, and for one beat, your voice doesn't sound like yours.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "It passes. You get through it — you always do. But that same bracing shows up again before the next room, the next inbox, the next person who might finally notice you don't belong there. The exhaustion was never really about the meeting. It's about carrying that brace into every room that matters.",
+      },
+      {
+        type: "heading",
         text: "Why Imposter Syndrome Doesn't Respond to Logic",
       },
       {
