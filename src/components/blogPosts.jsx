@@ -14,7 +14,7 @@ export const blogPosts = [
     updatedDate: "2026-08-05",
     readTime: "6 min read",
     heroImage: images.blog.imposterSyndrome.hero,
-    heroImageAlt: "Warm morning light falling across a sunlit home office desk",
+    heroImageAlt: "A woman wrapped in a blanket, withdrawn and lost in thought",
     hubLink: { href: "/specialties/safety-sensation", label: "Explore SĀF-T" },
 
     content: [
@@ -49,7 +49,7 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.imposterSyndrome.whatSaftIs,
-        alt: "A thoughtful person resting their hand near their chin, present and attentive",
+        alt: "A hand resting gently on the surface of calm water",
         caption: "SĀF-T starts by finding exactly where the feeling lives — not by talking around it.",
       },
       {
