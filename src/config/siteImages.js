@@ -204,7 +204,7 @@ export const images = {
     },
     imposterSyndrome: {
       hero: "/blog/stress-hero-PsV8ypwsd-0-unsplash.jpg",           // Top banner — "Imposter Syndrome Isn't a Mindset Problem"
-      whatSaftIs: "/blog/prince-akachi-l3IHXOdMyHQ-unsplash.jpg",   // "What SAF-T Actually Is" section photo
+      whatSaftIs: "/blog/josh-hild-cdLAm_cooqw-unsplash.jpg",       // "What SAF-T Actually Is" section photo
       howSessionWorks: "/blog/khanh-do-cr_ur6Jb0Vw-unsplash.jpg",   // "How This Works in a Coaching Session" section photo
       closing: "/blog/vitaly-gariev-ooIkYBBYlgg-unsplash.jpg",       // Closing / "Getting Started" section photo
     },
