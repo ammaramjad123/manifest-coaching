@@ -88,14 +88,14 @@ export default function BlogPostTemplate({ post }) {
   return (
     <div className="bg-white">
       {/* HERO */}
-      <div className="relative w-full h-[52vh] sm:h-[60vh] min-h-[360px] overflow-hidden">
+      <div className="relative w-full min-h-[420px] sm:min-h-[480px] overflow-hidden">
         <img
           src={post.heroImage}
           alt={post.heroImageAlt}
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10" />
-        <div className="relative h-full max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 flex flex-col justify-end pb-10 sm:pb-14">
+        <div className="relative max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 pt-40 sm:pt-48 pb-10 sm:pb-14">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
