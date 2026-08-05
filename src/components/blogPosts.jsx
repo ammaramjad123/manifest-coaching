@@ -49,7 +49,7 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.imposterSyndrome.whatSaftIs,
-        alt: "A woman covering her face with her hand, visibly distressed",
+        alt: "A hand reaching into calm water at dusk",
         caption: "SĀF-T starts by finding exactly where the feeling lives — not by talking around it.",
       },
       {
