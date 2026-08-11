@@ -105,6 +105,23 @@ export default function ManifestMethodPage() {
       <title>The MANIFEST Method | The Peace Practice</title>
       <meta name="description" content="The MANIFEST Method is Ayana F. McKanney's proprietary transformational coaching framework, guiding clients from core motivation through lasting fulfillment." />
       <link rel="canonical" href="https://www.thepeacepractice.me/specialties/manifest-method" />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="The Peace Practice" />
+      <meta property="og:title" content="The MANIFEST Method | The Peace Practice" />
+      <meta property="og:description" content="The MANIFEST Method is Ayana F. McKanney's proprietary transformational coaching framework, guiding clients from core motivation through lasting fulfillment." />
+      <meta property="og:url" content="https://www.thepeacepractice.me/specialties/manifest-method" />
+      <meta property="og:image" content="https://www.thepeacepractice.me/og-image.jpg" />
+      <meta property="og:image:secure_url" content="https://www.thepeacepractice.me/og-image.jpg" />
+      <meta property="og:image:type" content="image/jpeg" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content="The Peace Practice — Ayana Foluke McKanney, LCSW" />
+      <meta property="og:locale" content="en_US" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="The MANIFEST Method | The Peace Practice" />
+      <meta name="twitter:description" content="The MANIFEST Method is Ayana F. McKanney's proprietary transformational coaching framework, guiding clients from core motivation through lasting fulfillment." />
+      <meta name="twitter:image" content="https://www.thepeacepractice.me/og-image.jpg" />
+      <meta name="twitter:image:alt" content="The Peace Practice — Ayana Foluke McKanney, LCSW" />
 
       {/* ══ HERO ══ */}
       <section className="relative flex items-center justify-center overflow-hidden pt-36 pb-28 sm:pt-48 sm:pb-36">
