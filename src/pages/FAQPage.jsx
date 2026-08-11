@@ -93,6 +93,23 @@ export default function FAQPage() {
       <title>Frequently Asked Questions | The Peace Practice</title>
       <meta name="description" content="Answers to common questions about therapy, coaching, licensing, insurance, and what to expect when working with The Peace Practice." />
       <link rel="canonical" href="https://www.thepeacepractice.me/faq" />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="The Peace Practice" />
+      <meta property="og:title" content="Frequently Asked Questions | The Peace Practice" />
+      <meta property="og:description" content="Answers to common questions about therapy, coaching, licensing, insurance, and what to expect when working with The Peace Practice." />
+      <meta property="og:url" content="https://www.thepeacepractice.me/faq" />
+      <meta property="og:image" content="https://www.thepeacepractice.me/og-image.jpg" />
+      <meta property="og:image:secure_url" content="https://www.thepeacepractice.me/og-image.jpg" />
+      <meta property="og:image:type" content="image/jpeg" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content="The Peace Practice — Ayana Foluke McKanney, LCSW" />
+      <meta property="og:locale" content="en_US" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Frequently Asked Questions | The Peace Practice" />
+      <meta name="twitter:description" content="Answers to common questions about therapy, coaching, licensing, insurance, and what to expect when working with The Peace Practice." />
+      <meta name="twitter:image" content="https://www.thepeacepractice.me/og-image.jpg" />
+      <meta name="twitter:image:alt" content="The Peace Practice — Ayana Foluke McKanney, LCSW" />
       <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       <FAQSection />
     </>
