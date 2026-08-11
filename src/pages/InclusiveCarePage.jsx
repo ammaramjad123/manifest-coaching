@@ -108,6 +108,23 @@ export default function InclusiveCarePage() {
       <title>Inclusive & Affirming Care | The Peace Practice</title>
       <meta name="description" content="Culturally responsive clinical care that honors your race, faith, identity, and lived experience as part of your healing, with Ayana F. McKanney, LCSW." />
       <link rel="canonical" href="https://www.thepeacepractice.me/specialties/inclusive-affirming-care" />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="The Peace Practice" />
+      <meta property="og:title" content="Inclusive & Affirming Care | The Peace Practice" />
+      <meta property="og:description" content="Culturally responsive clinical care that honors your race, faith, identity, and lived experience as part of your healing, with Ayana F. McKanney, LCSW." />
+      <meta property="og:url" content="https://www.thepeacepractice.me/specialties/inclusive-affirming-care" />
+      <meta property="og:image" content="https://www.thepeacepractice.me/og-image.jpg" />
+      <meta property="og:image:secure_url" content="https://www.thepeacepractice.me/og-image.jpg" />
+      <meta property="og:image:type" content="image/jpeg" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content="The Peace Practice — Ayana Foluke McKanney, LCSW" />
+      <meta property="og:locale" content="en_US" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Inclusive & Affirming Care | The Peace Practice" />
+      <meta name="twitter:description" content="Culturally responsive clinical care that honors your race, faith, identity, and lived experience as part of your healing, with Ayana F. McKanney, LCSW." />
+      <meta name="twitter:image" content="https://www.thepeacepractice.me/og-image.jpg" />
+      <meta name="twitter:image:alt" content="The Peace Practice — Ayana Foluke McKanney, LCSW" />
       <SpecialtyPageTemplate data={data} />
     </>
   );
