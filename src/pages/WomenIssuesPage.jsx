@@ -143,6 +143,23 @@ export default function WomenIssuesPage() {
       <title>Therapy for Women's Issues | The Peace Practice</title>
       <meta name="description" content="Clinical therapy addressing women's mental health, motherhood, and life transitions with Ayana F. McKanney, LCSW. Licensed in NY, NJ & RI." />
       <link rel="canonical" href="https://www.thepeacepractice.me/specialties/women-issues" />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="The Peace Practice" />
+      <meta property="og:title" content="Therapy for Women's Issues | The Peace Practice" />
+      <meta property="og:description" content="Clinical therapy addressing women's mental health, motherhood, and life transitions with Ayana F. McKanney, LCSW. Licensed in NY, NJ & RI." />
+      <meta property="og:url" content="https://www.thepeacepractice.me/specialties/women-issues" />
+      <meta property="og:image" content="https://www.thepeacepractice.me/og-image.jpg" />
+      <meta property="og:image:secure_url" content="https://www.thepeacepractice.me/og-image.jpg" />
+      <meta property="og:image:type" content="image/jpeg" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content="The Peace Practice — Ayana Foluke McKanney, LCSW" />
+      <meta property="og:locale" content="en_US" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Therapy for Women's Issues | The Peace Practice" />
+      <meta name="twitter:description" content="Clinical therapy addressing women's mental health, motherhood, and life transitions with Ayana F. McKanney, LCSW. Licensed in NY, NJ & RI." />
+      <meta name="twitter:image" content="https://www.thepeacepractice.me/og-image.jpg" />
+      <meta name="twitter:image:alt" content="The Peace Practice — Ayana Foluke McKanney, LCSW" />
 
       {/* EPIC HERO SECTION */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-22 sm:pt-32">
