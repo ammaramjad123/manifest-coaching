@@ -25,15 +25,38 @@
     <link rel="apple-touch-icon" href="/logo.png" />
 
     <!-- ============================================================
-         OPEN GRAPH / TWITTER CARD
+         OPEN GRAPH / TWITTER CARD  ·  general fallback (logo image)
 
-         NOTE: og:*/twitter:* tags are intentionally NOT set here, for the
-         same reason as title/description/canonical above — static tags
-         here don't get deduped against the per-page React ones, so every
-         route (including blog posts) would show the homepage's image
-         when shared. Each page component sets its own via React 19's
-         head-tag support (see HomePage.jsx, BlogPage.jsx, BlogPostPage.jsx).
+         NOTE: unlike title/canonical, these ARE kept here as static HTML
+         on purpose. This is a client-rendered SPA with no SSR — most
+         link-preview crawlers (WhatsApp, iMessage, Slack, LinkedIn,
+         Twitter/X) do NOT execute JavaScript, so they only ever see this
+         static markup, never the per-page tags React renders after JS
+         runs. Removing this would leave those crawlers with NO image at
+         all on every page. Blog posts get their own hero image instead
+         of this fallback via middleware.js, which intercepts bot
+         requests to /blog/:slug before they reach this file — see that
+         file for details. Page components additionally render their own
+         og:*/twitter:* tags for JS-executing crawlers/browsers; a brief
+         tag duplication for those is an accepted, low-stakes tradeoff.
     ============================================================ -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="The Peace Practice" />
+    <meta property="og:title" content="The Peace Practice — Therapy, Coaching & Training" />
+    <meta property="og:description" content="Compassionate clinical therapy, transformational coaching, and professional training with Ayana F. McKanney, LCSW. Licensed in NY, NJ & RI. Your journey, our partnership." />
+    <meta property="og:url" content="https://www.thepeacepractice.me/" />
+    <meta property="og:image" content="https://www.thepeacepractice.me/og-image.jpg" />
+    <meta property="og:image:secure_url" content="https://www.thepeacepractice.me/og-image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="The Peace Practice — Ayana Foluke McKanney, LCSW" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Peace Practice — Therapy, Coaching & Training" />
+    <meta name="twitter:description" content="Compassionate clinical therapy, transformational coaching, and professional training with Ayana F. McKanney, LCSW. Licensed in NY, NJ & RI." />
+    <meta name="twitter:image" content="https://www.thepeacepractice.me/og-image.jpg" />
+    <meta name="twitter:image:alt" content="The Peace Practice — Ayana Foluke McKanney, LCSW" />
 
     <!-- ============================================================
          STRUCTURED DATA (Google rich results)
