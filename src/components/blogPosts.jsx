@@ -5,7 +5,7 @@ export const blogPosts = [
   {
     slug: "imposter-syndrome-lives-in-your-body",
     title: "Imposter Syndrome Isn't a Mindset Problem — Here's How to Actually Move It",
-    metaTitle: "How to Actually Move Imposter Syndrome | Peace Practice",
+    metaTitle: "Imposter Syndrome Isn't a Mindset Problem | Peace Practice",
     metaDescription: "Imposter syndrome isn't just a mindset issue. It lives in your nervous system. Learn how SĀF-T helps you move it, not just manage it.",
     excerpt: "Affirmations and confidence tricks work on the story. SĀF-T works on the sensation underneath it, and here's how that difference actually plays out for high-achievers.",
     category: "Coaching",
@@ -195,7 +195,7 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "If the idea of therapy makes you picture retelling everything, every detail, in order, out loud, to someone you just met, it makes sense that you've been putting it off. For a lot of people, that expectation alone is enough to keep them stuck. Most people don't know this, but you don't have to describe what happened to heal from it. Accelerated Resolution Therapy (ART) was built around exactly that. You stay in control of what you say and don't say. Your nervous system does the processing; your voice doesn't have to.",
+          "If the idea of trauma therapy makes you picture retelling everything, every detail, in order, out loud, to someone you just met, it makes sense that you've been putting it off. For a lot of people, that expectation alone is enough to keep them stuck. Most people don't know this, but you don't have to describe what happened to heal from it. Accelerated Resolution Therapy (ART) was built around exactly that. You stay in control of what you say and don't say. Your nervous system does the processing; your voice doesn't have to.",
       },
       {
         type: "heading",
