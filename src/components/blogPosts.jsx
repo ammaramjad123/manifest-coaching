@@ -181,7 +181,7 @@ export const blogPosts = [
     title: "Trauma Therapy That Doesn't Require You to Talk About What Happened",
     metaTitle: "Trauma Therapy Without Talking About It | Peace Practice",
     metaDescription: "ART lets you process trauma without retelling what happened. Learn how it works, how it differs from EMDR, and if it's right for you.",
-    excerpt: "You don't have to describe what happened to heal from it. Here's how Accelerated Resolution Therapy works, how it's different from EMDR, and how to know if it's right for you.",
+    excerpt: "You don't have to describe what happened to heal from it. Here's how Accelerated Resolution Therapy (ART) works, how it's different from EMDR, and how to know if it's right for you.",
     category: "Trauma & PTSD",
     author: "Ayana F. McKanney, LCSW",
     publishDate: "2026-08-04",
@@ -370,16 +370,16 @@ export const blogPosts = [
     slug: "panic-attacks-arent-a-breathing-problem",
     title: "Panic Attacks Aren't a Breathing Problem — Here's What Actually Stops Them",
     metaTitle: "Panic Attacks Aren't a Breathing Problem | Peace Practice",
-    metaDescription: "Breathing exercises don't stop panic attacks for everyone. Learn why, and how SAF-T works with the nervous system directly instead of fighting it.",
-    excerpt: "Box breathing, 4-7-8, paced breathing. If they've never landed for you mid-panic, that's not a personal failure. Here's why, and what SĀF-T does instead.",
-    category: "Coaching",
+    metaDescription: "Breathing exercises don't stop panic attacks for everyone, especially when they keep recurring. Learn why, and how ART can help resolve the trigger behind them.",
+    excerpt: "Box breathing, 4-7-8, paced breathing. If they've never landed for you mid-panic, that's not a personal failure. Here's why, and how ART can help panic attacks stop recurring.",
+    category: "Anxiety & Depression",
     author: "Ayana F. McKanney, LCSW",
     publishDate: "2026-08-14",
     updatedDate: "2026-08-14",
     readTime: "6 min read",
     heroImage: images.blog.panicAttacks.hero,
-    heroImageAlt: "A man covering his face with both hands in genuine distress, alone outdoors",
-    hubLink: { href: "/specialties/safety-sensation", label: "Explore SĀF-T" },
+    heroImageAlt: "A man with his head bowed and hand raised to his temple, visibly troubled, alone outdoors",
+    hubLink: { href: "/specialties/art", label: "Explore ART (Accelerated Resolution Therapy)" },
 
     content: [
       {
@@ -413,20 +413,20 @@ export const blogPosts = [
       },
       {
         type: "heading",
-        text: "Where SĀF-T Comes In",
+        text: "Where ART Comes In",
       },
       {
         type: "paragraph",
         content: (
           <>
-            <Link to="/specialties/safety-sensation" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">SĀF-T (Sensations Awareness Focused Technique)</Link> takes a different route than talking yourself down or trying to out-breathe the panic. Instead of managing the moment from the outside, we locate exactly where the sensation lives, the tight chest, the closed throat, the racing pulse, and work with it directly using guided eye movements and focused body awareness. You're not fighting the alarm system or trying to think your way past it. You're helping your body finish the response it's already having, so it can actually turn off.
+            <Link to="/specialties/art" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Accelerated Resolution Therapy (ART)</Link> works differently because it doesn't try to manage the moment at all. Recurring panic often traces back to a specific memory or trigger, a near-miss, a humiliation, a moment your body decided was dangerous, even if your conscious mind has mostly moved on from it. ART uses guided eye movements to reprocess that underlying memory directly, then helps you consciously replace the images your mind keeps returning to with new ones you choose. The memory that something happened doesn't disappear. The grip it has on your nervous system does.
           </>
         ),
       },
       {
         type: "paragraph",
         content:
-          "This isn't about replacing breathing techniques that already work for you. It's for the moments they don't, and for people who've started to dread panic on top of the panic itself because a tool that's supposed to help keeps making them feel like they're doing it wrong.",
+          "This isn't about replacing breathing techniques that already work for you in the moment. It's for the panic that keeps coming back no matter how well you manage each individual episode, because the trigger underneath it was never actually addressed.",
       },
       {
         type: "image",
@@ -441,36 +441,36 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "We start by identifying the specific pattern, whether that's a full panic attack, a spike of acute stress before something high-stakes, or a version of anxiety that shows up in your body before your mind even catches up. From there, I'll guide you through sensation awareness and focused eye movements while you notice what shifts. You stay in control the entire time. Nothing requires you to relive a specific trigger in detail or narrate what's happening, only to notice it.",
+          "We start by identifying what tends to trigger the panic, not in detail, just enough for us both to know what we're working on. From there, I'll guide you through sets of horizontal eye movements while you notice what comes up: images, sensations, emotions. You stay in control the entire time. Nothing requires you to narrate the moment out loud or relive it in detail, only to notice what's there.",
       },
       {
         type: "paragraph",
         content:
-          "Most clients notice a real, within-session shift, not because the fear disappeared, but because the bracing pattern underneath it actually moved.",
+          "As the intensity eases, we move toward voluntary image replacement, consciously choosing new images to associate with the memory. Most clients notice a real shift within a handful of sessions, not because the memory disappeared, but because it stopped having the same grip on their body.",
       },
       {
         type: "faq",
-        heading: "Common Questions About SĀF-T for Panic Attacks",
+        heading: "Common Questions About ART for Panic Attacks",
         items: [
           {
-            q: "Do I have to be having a panic attack for this to help?",
-            a: "No. Most of this work happens outside of an active panic attack, using a recent or recurring episode as the starting point. You identify the general pattern and notice what's happening in your body while we work, you don't have to be mid-crisis for it to be effective.",
+            q: "Do I have to know exactly what triggers my panic for this to help?",
+            a: "No. Many clients don't consciously connect their panic to a specific memory going in. Part of the process is simply identifying the general pattern together, you don't need a fully worked-out theory before we start.",
           },
           {
             q: "Is this instead of breathing exercises, or does it work alongside them?",
-            a: "Either. If breathing techniques already help you, there's no reason to drop them. SĀF-T is for the moments they don't land, or for people who want something that works with the nervous system more directly.",
+            a: "Either. If breathing techniques already help you manage an episode in the moment, there's no reason to drop them. ART is for what's underneath the pattern, the reason panic keeps returning in the first place.",
           },
           {
             q: "Is this therapy, or coaching?",
-            a: "Coaching. SĀF-T here is offered as part of a consultative, forward-focused coaching relationship, not clinical therapy. It's private pay, not billed to insurance, and isn't a diagnostic or treatment process. If your panic feels tied to a broader clinical picture, that's worth a conversation up front, and I can help point you toward the right fit.",
+            a: "Therapy. As clinical therapy, ART sessions are billed the same way as other therapy sessions at The Peace Practice, and most major insurance plans are accepted, including Aetna, Anthem, Blue Cross Blue Shield, Cigna, Optum, UnitedHealthcare, Oxford, and Oscar.",
           },
           {
-            q: "How is this different from CBT for panic attacks?",
-            a: "CBT for panic typically works by changing how you interpret the physical sensations and reducing avoidance over time, often through gradual exposure. SĀF-T doesn't ask you to reinterpret the sensation, it works with the sensation directly using guided eye movements, which is why some people notice a shift faster than they expect.",
+            q: "How is this different from EMDR?",
+            a: "They share real similarities, both use bilateral eye movements and are evidence-based. ART was designed to work faster, often in one to five sessions, and doesn't require narrating the memory out loud at any point, which is why it tends to fit well for panic that's hard to talk about.",
           },
           {
             q: "How many sessions does this take?",
-            a: "Rapid, within-session shifts are typical, and many clients notice a real difference in a single session. It can be used as a standalone tool for a specific pattern or woven into a longer coaching relationship.",
+            a: "Most clients notice meaningful change within one to five sessions. Some patterns resolve in a single session, more complex or layered ones may take longer.",
           },
         ],
       },
@@ -481,18 +481,18 @@ export const blogPosts = [
       {
         type: "list",
         items: [
-          "People who've tried breathing exercises and felt like they were failing at them",
+          "Anyone whose panic attacks keep recurring despite trying breathing techniques",
+          "People whose panic traces back to a specific memory or near-miss, even a small one",
           "High-achievers whose panic shows up before high-stakes moments",
           "Anyone who feels more anxious, not less, when they focus on their breath",
-          "First responders and people managing recurring acute stress",
-          "Coaching clients whose anxiety spikes in their body before their mind catches up",
+          "People who've tried talk therapy for panic and felt like they hit a wall",
         ],
       },
       {
         type: "image",
         src: images.blog.panicAttacks.closing,
-        alt: "A sunlit path winding through green trees",
-        caption: "You don't have to out-breathe the panic. You just need it to actually move.",
+        alt: "A man smiling with quiet, genuine warmth",
+        caption: "You don't have to out-breathe the panic. You just need the pattern underneath it to actually move.",
       },
       {
         type: "heading",
@@ -502,14 +502,14 @@ export const blogPosts = [
         type: "paragraph",
         content: (
           <>
-            You don't have to know yet whether this is the right fit. A free 15-minute consultation is a low-pressure way to talk through what you're experiencing and figure out together whether SĀF-T coaching makes sense for you. <Link to="/contact" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Reach out here</Link> whenever you're ready.
+            You don't have to know yet whether this is the right fit. A free 15-minute consultation is a low-pressure way to talk through what you're experiencing and figure out together whether ART is the right next step. <Link to="/contact" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Reach out here</Link> whenever you're ready.
           </>
         ),
       },
       {
         type: "paragraph",
         content:
-          "I'm a Certified SĀF-T Provider and Trainer, and sessions are conducted by secure telehealth wherever you are. The goal was never to force the breath to work. It's to help your body actually let go of what it's holding.",
+          "I'm a licensed clinical social worker in New York, New Jersey, and Rhode Island, and all sessions are conducted by secure telehealth, no commute, no waiting room, just a private space you choose. The goal was never to force the breath to work. It's to help your body stop treating an ordinary moment like a threat.",
       },
     ],
   },
