@@ -208,6 +208,12 @@ export const images = {
       howSessionWorks: "/blog/khanh-do-cr_ur6Jb0Vw-unsplash.jpg",   // "How This Works in a Coaching Session" section photo
       closing: "/blog/vitaly-gariev-ooIkYBBYlgg-unsplash.jpg",       // Closing / "Getting Started" section photo
     },
+    panicAttacks: {
+      hero: "/blog/francis-odeyemi-GaXP0fSlVRM-unsplash.jpg",       // Top banner — "Panic Attacks Aren't a Breathing Problem"
+      whyBreathingFails: "/blog/sunlit-curtains-ninCiZ_k6jI-unsplash.jpg", // "Why 'Just Breathe' Can Backfire" section photo
+      howSessionWorks: "/blog/aleksandr-zaitsev-f3G3lPqxrfQ-unsplash.jpg", // "How This Works in a Session" section photo
+      closing: "/blog/denny-sachtleben-tuYnkOjw6k4-unsplash.jpg",   // Closing / "Getting Started" section photo
+    },
   },
 
 };
