@@ -366,6 +366,153 @@ export const blogPosts = [
       },
     ],
   },
+  {
+    slug: "panic-attacks-arent-a-breathing-problem",
+    title: "Panic Attacks Aren't a Breathing Problem — Here's What Actually Stops Them",
+    metaTitle: "Panic Attacks Aren't a Breathing Problem | Peace Practice",
+    metaDescription: "Breathing exercises don't stop panic attacks for everyone. Learn why, and how SAF-T works with the nervous system directly instead of fighting it.",
+    excerpt: "Box breathing, 4-7-8, paced breathing. If they've never landed for you mid-panic, that's not a personal failure. Here's why, and what SĀF-T does instead.",
+    category: "Coaching",
+    author: "Ayana F. McKanney, LCSW",
+    publishDate: "2026-08-14",
+    updatedDate: "2026-08-14",
+    readTime: "6 min read",
+    heroImage: images.blog.panicAttacks.hero,
+    heroImageAlt: "A man covering his face with both hands in genuine distress, alone outdoors",
+    hubLink: { href: "/specialties/safety-sensation", label: "Explore SĀF-T" },
+
+    content: [
+      {
+        type: "paragraph",
+        content:
+          "Your chest goes tight first. Then your heart rate spikes, your hands go cold, and the room feels like it's closing in. Someone tells you to breathe, in for four, hold for four, out for four, and you try, you really try, but it doesn't land. If anything, focusing on your breath makes the panic louder. You start to wonder what's wrong with you that a technique everyone swears by just doesn't work. Nothing is wrong with you. Breathing exercises help some people some of the time, but they were never built to override a nervous system that's already mid-alarm.",
+      },
+      {
+        type: "heading",
+        text: "Why “Just Breathe” Can Backfire Mid-Panic",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Conscious breathing techniques ask you to do something very specific under very bad conditions. Box breathing, 4-7-8 breathing, paced breathing, they all require you to count, hold a pattern, and stay mentally present with your breath while your body is flooded with adrenaline and convinced you're in danger. That takes working memory and executive function, the exact resources your brain pulls offline the moment it decides you need to survive something instead of think about it. For some people, paying close attention to their breath in that state doesn't calm things down. It puts a spotlight directly on the sensations that are already scaring them, which can make the panic worse, not better.",
+      },
+      {
+        type: "heading",
+        text: "What's Actually Happening in Your Body",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A panic attack isn't your mind overreacting to nothing. It's your nervous system reacting to something it's already decided is a threat, correctly or not. Adrenaline floods your system, your heart rate climbs to move blood to your limbs, your breathing gets shallow and fast to get more oxygen out fast, and your thinking brain takes a back seat to the part of you built purely for survival. None of that is a character flaw or a failure of willpower. It's biology doing exactly what it's designed to do, just at the wrong moment, in response to a threat that usually isn't a tiger.",
+      },
+      {
+        type: "image",
+        src: images.blog.panicAttacks.whyBreathingFails,
+        alt: "Warm sunlight filtering through sheer curtains in a quiet room",
+        caption: "The goal isn't to out-breathe the panic. It's to help your body finish the response it's already having.",
+      },
+      {
+        type: "heading",
+        text: "Where SĀF-T Comes In",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            <Link to="/specialties/safety-sensation" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">SĀF-T (Sensations Awareness Focused Technique)</Link> takes a different route than talking yourself down or trying to out-breathe the panic. Instead of managing the moment from the outside, we locate exactly where the sensation lives, the tight chest, the closed throat, the racing pulse, and work with it directly using guided eye movements and focused body awareness. You're not fighting the alarm system or trying to think your way past it. You're helping your body finish the response it's already having, so it can actually turn off.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content:
+          "This isn't about replacing breathing techniques that already work for you. It's for the moments they don't, and for people who've started to dread panic on top of the panic itself because a tool that's supposed to help keeps making them feel like they're doing it wrong.",
+      },
+      {
+        type: "image",
+        src: images.blog.panicAttacks.howSessionWorks,
+        alt: "A warm gold armchair lit by late afternoon sun in a cozy corner",
+        caption: "Sessions are structured, brief, and stay entirely within your control.",
+      },
+      {
+        type: "heading",
+        text: "How This Works in a Session",
+      },
+      {
+        type: "paragraph",
+        content:
+          "We start by identifying the specific pattern, whether that's a full panic attack, a spike of acute stress before something high-stakes, or a version of anxiety that shows up in your body before your mind even catches up. From there, I'll guide you through sensation awareness and focused eye movements while you notice what shifts. You stay in control the entire time. Nothing requires you to relive a specific trigger in detail or narrate what's happening, only to notice it.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Most clients notice a real, within-session shift, not because the fear disappeared, but because the bracing pattern underneath it actually moved.",
+      },
+      {
+        type: "faq",
+        heading: "Common Questions About SĀF-T for Panic Attacks",
+        items: [
+          {
+            q: "Do I have to be having a panic attack for this to help?",
+            a: "No. Most of this work happens outside of an active panic attack, using a recent or recurring episode as the starting point. You identify the general pattern and notice what's happening in your body while we work, you don't have to be mid-crisis for it to be effective.",
+          },
+          {
+            q: "Is this instead of breathing exercises, or does it work alongside them?",
+            a: "Either. If breathing techniques already help you, there's no reason to drop them. SĀF-T is for the moments they don't land, or for people who want something that works with the nervous system more directly.",
+          },
+          {
+            q: "Is this therapy, or coaching?",
+            a: "Coaching. SĀF-T here is offered as part of a consultative, forward-focused coaching relationship, not clinical therapy. It's private pay, not billed to insurance, and isn't a diagnostic or treatment process. If your panic feels tied to a broader clinical picture, that's worth a conversation up front, and I can help point you toward the right fit.",
+          },
+          {
+            q: "How is this different from CBT for panic attacks?",
+            a: "CBT for panic typically works by changing how you interpret the physical sensations and reducing avoidance over time, often through gradual exposure. SĀF-T doesn't ask you to reinterpret the sensation, it works with the sensation directly using guided eye movements, which is why some people notice a shift faster than they expect.",
+          },
+          {
+            q: "How many sessions does this take?",
+            a: "Rapid, within-session shifts are typical, and many clients notice a real difference in a single session. It can be used as a standalone tool for a specific pattern or woven into a longer coaching relationship.",
+          },
+        ],
+      },
+      {
+        type: "heading",
+        text: "Who This Tends to Help",
+      },
+      {
+        type: "list",
+        items: [
+          "People who've tried breathing exercises and felt like they were failing at them",
+          "High-achievers whose panic shows up before high-stakes moments",
+          "Anyone who feels more anxious, not less, when they focus on their breath",
+          "First responders and people managing recurring acute stress",
+          "Coaching clients whose anxiety spikes in their body before their mind catches up",
+        ],
+      },
+      {
+        type: "image",
+        src: images.blog.panicAttacks.closing,
+        alt: "A sunlit path winding through green trees",
+        caption: "You don't have to out-breathe the panic. You just need it to actually move.",
+      },
+      {
+        type: "heading",
+        text: "Getting Started",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            You don't have to know yet whether this is the right fit. A free 15-minute consultation is a low-pressure way to talk through what you're experiencing and figure out together whether SĀF-T coaching makes sense for you. <Link to="/contact" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Reach out here</Link> whenever you're ready.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content:
+          "I'm a Certified SĀF-T Provider and Trainer, and sessions are conducted by secure telehealth wherever you are. The goal was never to force the breath to work. It's to help your body actually let go of what it's holding.",
+      },
+    ],
+  },
 ];
 
 export function getPostBySlug(slug) {
