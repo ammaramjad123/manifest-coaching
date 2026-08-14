@@ -34,7 +34,7 @@ function ContentBlock({ block, idx }) {
             src={block.src}
             alt={block.alt}
             loading="lazy"
-            className="w-full rounded-2xl shadow-md object-cover max-h-[480px]"
+            className="w-full rounded-2xl shadow-md object-cover aspect-[8/5]"
           />
           {block.caption && (
             <figcaption className="text-sm text-gray-500 italic mt-3 text-center font-[system-ui]">
