@@ -372,13 +372,13 @@ export const blogPosts = [
     metaTitle: "Panic Attacks Aren't a Breathing Problem | Peace Practice",
     metaDescription: "Breathing exercises don't stop panic attacks for everyone, especially when they keep recurring. Learn why, and how ART can help resolve the trigger behind them.",
     excerpt: "Box breathing, 4-7-8, paced breathing. If they've never landed for you mid-panic, that's not a personal failure. Here's why, and how ART can help panic attacks stop recurring.",
-    category: "Anxiety & Depression",
+    category: "Anxiety",
     author: "Ayana F. McKanney, LCSW",
     publishDate: "2026-08-14",
     updatedDate: "2026-08-14",
     readTime: "6 min read",
     heroImage: images.blog.panicAttacks.hero,
-    heroImageAlt: "A man with his head bowed and hand raised to his temple, visibly troubled, alone outdoors",
+    heroImageAlt: "A man in a suit gripping his head with both hands in visible distress",
     hubLink: { href: "/specialties/art", label: "Explore ART (Accelerated Resolution Therapy)" },
 
     content: [
