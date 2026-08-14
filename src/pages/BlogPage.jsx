@@ -53,7 +53,7 @@ export default function BlogPage() {
                 The Blog
               </h1>
               <p className="text-white/70 text-lg max-w-2xl mx-auto font-[system-ui]">
-                Grounded, evidence-based writing on trauma, anxiety, and healing — from a licensed clinical therapist, not a search algorithm.
+                Grounded, evidence-based writing on trauma, anxiety, and healing, from a licensed clinical therapist, not a search algorithm.
               </p>
             </motion.div>
           </div>
