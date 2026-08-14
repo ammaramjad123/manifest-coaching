@@ -209,7 +209,7 @@ export const images = {
       closing: "/blog/vitaly-gariev-ooIkYBBYlgg-unsplash.jpg",       // Closing / "Getting Started" section photo
     },
     panicAttacks: {
-      hero: "/blog/derrick-payton-j6GF6jeYaRk-unsplash.jpg",        // Top banner — "Panic Attacks Aren't a Breathing Problem"
+      hero: "/blog/amir-maleky-bqCIPPvORmM-unsplash.jpg",           // Top banner — "Panic Attacks Aren't a Breathing Problem"
       whyBreathingFails: "/blog/sunlit-curtains-ninCiZ_k6jI-unsplash.jpg", // "Why 'Just Breathe' Can Backfire" section photo
       howSessionWorks: "/blog/aleksandr-zaitsev-f3G3lPqxrfQ-unsplash.jpg", // "How This Works in a Session" section photo
       closing: "/blog/yingchou-han-IJrIeCs3D4g-unsplash.jpg",       // Closing / "Getting Started" section photo
