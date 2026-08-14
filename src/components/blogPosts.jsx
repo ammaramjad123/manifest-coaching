@@ -378,7 +378,7 @@ export const blogPosts = [
     updatedDate: "2026-08-14",
     readTime: "6 min read",
     heroImage: images.blog.panicAttacks.hero,
-    heroImageAlt: "A man leaning back with his eyes closed and hand pressed to his forehead, visibly exhausted",
+    heroImageAlt: "A man with his head bowed and hand raised to his temple, visibly troubled, warm autumn light behind him",
     hubLink: { href: "/specialties/art", label: "Explore ART (Accelerated Resolution Therapy)" },
 
     content: [
