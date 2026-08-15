@@ -408,7 +408,7 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.panicAttacks.whyBreathingFails,
-        alt: "A man sitting on the floor with his hands on his head, staring ahead in visible distress",
+        alt: "A man peering through his fingers with both hands pressed to his face, visibly overwhelmed",
         caption: "The goal isn't to out-breathe the panic. It's to help your body finish the response it's already having.",
       },
       {
