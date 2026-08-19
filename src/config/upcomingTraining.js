@@ -46,7 +46,7 @@ export const upcomingTraining = {
       tabName: "ART Training",
 
       presenter: "The Peace Practice & RCRR Present",
-      title: "ART — Accelerated Resolution Therapy",
+      title: "ART — Accelerated Resolution Therapy- 20 CEU",
       subtitle: "For mental health clinicians only",
 
       whatToExpect: [
@@ -123,7 +123,7 @@ export const upcomingTraining = {
           active: true,
           when: "Tuesday. 01/04/2027 · 9:00am–3:00pm",
           where: "New York City, NY",
-          cost: "$199",
+          cost: "$199; 6 CEU",
           ctaText: "Reserve Your Spot",
           ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=SAF-T1&inst=ayanamckanney",
         },
@@ -131,7 +131,7 @@ export const upcomingTraining = {
           active: true,
           when: "Tuesday. 07/06/2027 · 9:00am–3:00pm",
           where: "New York City, NY",
-          cost: "$199",
+          cost: "$199 - 6 CEU",
           ctaText: "Reserve Your Spot",
           ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=SAF-T1&inst=ayanamckanney",
         },
