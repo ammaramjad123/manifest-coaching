@@ -53,7 +53,7 @@ export const upcomingTraining = {
         "A hands-on, revolutionary, effective, and quick modality to guide clients interested in healing.",
         "Effectively help clients process distressing past events, grief, phobias, obsessive thinking, and many other common struggles.",
         "Learn the power of eye movements in facilitating relaxation and processing trauma.",
-        "A 3-day BASIC ART training will equip you to quickly help clients release emotional pain.",
+        "A 3-day BASIC ART training will equip you to quickly help clients release emotional pain. Earn 20 CEU!",
       ],
 
       trainer: "Ayana F. McKanney, LCSW — Founder of The Peace Practice",
