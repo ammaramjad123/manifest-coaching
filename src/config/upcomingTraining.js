@@ -102,7 +102,7 @@ export const upcomingTraining = {
         "Learn SĀF-T, a body-centered technique drawn from ART that targets distressing physical sensations.",
         "Help clients release tension and promote rapid calming and a felt sense of safety.",
         "Master practical tools to regulate the nervous system and restore steadiness.",
-        "Apply SĀF-T confidently in both clinical therapy and coaching settings.",
+        "Apply SĀF-T confidently in both clinical therapy and coaching settings. **Earn 6 CEU** NYC training only",
       ],
 
       trainer: "Ayana F. McKanney, LCSW — Founder of The Peace Practice",
