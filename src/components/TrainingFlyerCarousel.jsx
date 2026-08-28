@@ -132,46 +132,45 @@ export default function TrainingFlyerCarousel({ trainings }) {
           </motion.div>
         </AnimatePresence>
 
-        {/* Arrows */}
-        {flyers.length > 1 && (
-          <>
-            <button
-              type="button"
-              onClick={() => go(-1)}
-              aria-label="Previous flyer"
-              className="absolute left-3 top-1/2 -translate-y-1/2 md:top-1/2 w-10 h-10 rounded-full bg-white shadow-lg border border-[#c09050]/25 flex items-center justify-center text-[#c09050] hover:bg-[#c09050] hover:text-white transition-all duration-300 z-10"
-            >
-              <ChevronLeft className="w-5 h-5" />
-            </button>
-            <button
-              type="button"
-              onClick={() => go(1)}
-              aria-label="Next flyer"
-              className="absolute right-3 top-1/2 -translate-y-1/2 md:top-1/2 w-10 h-10 rounded-full bg-white shadow-lg border border-[#c09050]/25 flex items-center justify-center text-[#c09050] hover:bg-[#c09050] hover:text-white transition-all duration-300 z-10"
-            >
-              <ChevronRight className="w-5 h-5" />
-            </button>
-          </>
-        )}
       </div>
 
-      {/* Dots */}
+      {/* Bottom controls — prev / dots / next, outside the card so nothing is covered */}
       {flyers.length > 1 && (
-        <div className="flex justify-center gap-2 mt-5">
-          {flyers.map((f, i) => (
-            <button
-              key={i}
-              type="button"
-              onClick={() => {
-                setDirection(i > index ? 1 : -1);
-                setIndex(i);
-              }}
-              aria-label={`Show ${f.title} flyer`}
-              className={`h-2 rounded-full transition-all duration-300 ${
-                i === index ? "w-7 bg-[#c09050]" : "w-2 bg-[#c09050]/25 hover:bg-[#c09050]/50"
-              }`}
-            />
-          ))}
+        <div className="flex items-center justify-center gap-4 mt-5">
+          <button
+            type="button"
+            onClick={() => go(-1)}
+            aria-label="Previous flyer"
+            className="w-10 h-10 rounded-full bg-white shadow-lg border border-[#c09050]/25 flex items-center justify-center text-[#c09050] hover:bg-[#c09050] hover:text-white transition-all duration-300 flex-shrink-0"
+          >
+            <ChevronLeft className="w-5 h-5" />
+          </button>
+
+          <div className="flex justify-center items-center gap-2">
+            {flyers.map((f, i) => (
+              <button
+                key={i}
+                type="button"
+                onClick={() => {
+                  setDirection(i > index ? 1 : -1);
+                  setIndex(i);
+                }}
+                aria-label={`Show ${f.title} flyer`}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  i === index ? "w-7 bg-[#c09050]" : "w-2 bg-[#c09050]/25 hover:bg-[#c09050]/50"
+                }`}
+              />
+            ))}
+          </div>
+
+          <button
+            type="button"
+            onClick={() => go(1)}
+            aria-label="Next flyer"
+            className="w-10 h-10 rounded-full bg-white shadow-lg border border-[#c09050]/25 flex items-center justify-center text-[#c09050] hover:bg-[#c09050] hover:text-white transition-all duration-300 flex-shrink-0"
+          >
+            <ChevronRight className="w-5 h-5" />
+          </button>
         </div>
       )}
 
