@@ -76,10 +76,14 @@ export default function TrainingFlyerCarousel({ trainings }) {
 
               <div className="flex flex-wrap items-center gap-2 mb-6">
                 {t.format && (
-                  <span className="md:basis-full inline-flex items-center px-3 py-1.5 rounded-full bg-black text-white text-xs font-bold font-[system-ui]">
+                  <span className="inline-flex items-center px-3 py-1.5 rounded-full bg-black text-white text-xs font-bold font-[system-ui]">
                     {t.format}
                   </span>
                 )}
+
+                {/* Desktop-only line break so the CEU + cost badges sit on the next line */}
+                <div className="hidden md:block basis-full" aria-hidden="true" />
+
                 {t.ceu && (
                   <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#c09050]/10 border border-[#c09050]/30 text-[#a87b3a] text-xs font-bold font-[system-ui]">
                     <Award className="w-3.5 h-3.5" />
