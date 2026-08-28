@@ -101,7 +101,7 @@ export const upcomingTraining = {
       title: "SĀF-T — Sensations Awareness Focused Technique",
       flyerImage: "/new/saft-flyer.jpg",   // full poster, shown in the flyer carousel
       format: "1-Day Somatic Training",
-      ceu: "6 CEU · NYC only",
+      ceu: "6 CEU (NYC only) ",
       whoFor: "Open to all! Ideal for Parents, Educators, First Responders, Coaches, and Medical Personnel seeking advanced stress regulation skills.",
 
       whatToExpect: [
