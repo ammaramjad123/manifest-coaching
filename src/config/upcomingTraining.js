@@ -46,7 +46,7 @@ export const upcomingTraining = {
       tabName: "ART Training",
 
       presenter: "The Peace Practice Presents",
-      title: "ART — Accelerated Resolution Therapy- 20 CEU",
+      title: "ART — Accelerated Resolution Therapy",
       flyerImage: "/new/art-flyer.jpg",   // full poster, shown in the flyer carousel
       format: "3-Day Intensive Clinical Training",
       ceu: "20 CEU",

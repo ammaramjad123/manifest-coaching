@@ -76,7 +76,7 @@ export default function TrainingFlyerCarousel({ trainings }) {
 
               <div className="flex flex-wrap items-center gap-2 mb-6">
                 {t.format && (
-                  <span className="inline-flex items-center px-3 py-1.5 rounded-full bg-black text-white text-xs font-bold font-[system-ui]">
+                  <span className="md:basis-full inline-flex items-center px-3 py-1.5 rounded-full bg-black text-white text-xs font-bold font-[system-ui]">
                     {t.format}
                   </span>
                 )}
