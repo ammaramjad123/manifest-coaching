@@ -8,6 +8,7 @@ import {
   ChevronDown,
 } from "lucide-react";
 import { upcomingTraining as CONFIG } from "../config/upcomingTraining";
+import TrainingFlyerCarousel from "./TrainingFlyerCarousel";
 
 /* One session. Collapsed, it's a compact scannable row (program, date,
    location, cost, Reserve). Expanded, it reveals the full detail — "what to
@@ -177,14 +178,15 @@ export default function UpcomingTraining() {
   // Master switch off → nothing renders.
   if (!CONFIG.active) return null;
 
+  // Every live program (unflattened) — the flyer carousel shows one of these at a time.
+  const activeTrainings = (CONFIG.trainings || []).filter((t) => t.active);
+
   // Flatten every live program × its live dates into a single list of sessions.
-  const sessions = (CONFIG.trainings || [])
-    .filter((t) => t.active)
-    .flatMap((t) =>
-      (t.dates || [])
-        .filter((d) => d.active !== false)
-        .map((d) => ({ ...t, date: d }))
-    );
+  const sessions = activeTrainings.flatMap((t) =>
+    (t.dates || [])
+      .filter((d) => d.active !== false)
+      .map((d) => ({ ...t, date: d }))
+  );
   if (sessions.length === 0) return null;
 
   return (
@@ -204,6 +206,9 @@ export default function UpcomingTraining() {
             </span>
           </div>
         </div>
+
+        {/* Full flyers — one at a time, arrows loop through every program */}
+        <TrainingFlyerCarousel trainings={activeTrainings} />
 
         <h2 className="text-center text-3xl sm:text-4xl font-black text-black mb-3 font-[system-ui]">
           Every Upcoming Session
