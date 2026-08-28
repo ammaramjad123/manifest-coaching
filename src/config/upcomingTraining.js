@@ -48,6 +48,10 @@ export const upcomingTraining = {
       presenter: "The Peace Practice & RCRR Present",
       title: "ART — Accelerated Resolution Therapy- 20 CEU",
       subtitle: "For mental health clinicians only",
+      flyerImage: "/new/art-flyer.jpg",   // full poster, shown in the flyer carousel
+      format: "3-Day Intensive Clinical Training",
+      ceu: "20 CEU",
+      whoFor: "Licensed mental health professionals including Social Workers, Psychologists, Counselors, Therapists, and more.",
 
       whatToExpect: [
         "A hands-on, revolutionary, effective, and quick modality to guide clients interested in healing.",
@@ -97,6 +101,10 @@ export const upcomingTraining = {
       presenter: "The Peace Practice Presents",
       title: "SĀF-T — Sensations Awareness Focused Technique",
       subtitle: "For mental health clinicians, first responders, coaches & more!",
+      flyerImage: "/new/saft-flyer.jpg",   // full poster, shown in the flyer carousel
+      format: "1-Day Somatic Training",
+      ceu: "6 CEU",
+      whoFor: "Open to all! Ideal for Parents, Educators, First Responders, Coaches, and Medical Personnel seeking advanced stress regulation skills.",
 
       whatToExpect: [
         "Learn SĀF-T, a body-centered technique drawn from ART that targets distressing physical sensations.",
