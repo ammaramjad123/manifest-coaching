@@ -45,9 +45,8 @@ export const upcomingTraining = {
       active: true,                        //  show this program?  true / false
       tabName: "ART Training",
 
-      presenter: "The Peace Practice & RCRR Present",
+      presenter: "The Peace Practice Presents",
       title: "ART — Accelerated Resolution Therapy- 20 CEU",
-      subtitle: "For mental health clinicians only",
       flyerImage: "/new/art-flyer.jpg",   // full poster, shown in the flyer carousel
       format: "3-Day Intensive Clinical Training",
       ceu: "20 CEU",
@@ -69,7 +68,7 @@ export const upcomingTraining = {
         {
           active: true,
           when: "9/29/26 – 10/01/26 · 8:30am–5:00pm (3 days)",
-          where: "Acworth, GA (< 30 min from Atlanta, GA)",
+          where: "Acworth, GA",
           cost: "$1,700",
           ctaText: "Reserve Your Spot",
           ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=Basic&inst=ayanamckanney",
@@ -100,7 +99,6 @@ export const upcomingTraining = {
 
       presenter: "The Peace Practice Presents",
       title: "SĀF-T — Sensations Awareness Focused Technique",
-      subtitle: "For mental health clinicians, first responders, coaches & more!",
       flyerImage: "/new/saft-flyer.jpg",   // full poster, shown in the flyer carousel
       format: "1-Day Somatic Training",
       ceu: "6 CEU",
@@ -121,7 +119,7 @@ export const upcomingTraining = {
         {
           active: true,
           when: "Friday 10/02/2026 · 9:00am–3:00pm",
-          where: "Acworth, GA (< 30 min from Atlanta, GA)",
+          where: "Acworth, GA",
           cost: "$199",
           ctaText: "Reserve Your Spot",
           ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=SAF-T1&inst=ayanamckanney",
