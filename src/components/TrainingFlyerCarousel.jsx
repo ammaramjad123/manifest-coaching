@@ -94,16 +94,17 @@ export default function TrainingFlyerCarousel({ trainings }) {
               </div>
 
               {/* Dates & locations, compact */}
-              <div className="space-y-2.5 mb-6">
+              <div className="space-y-3 mb-6">
                 {(t.dates || []).filter((d) => d.active !== false).map((d, i) => (
                   <div key={i} className="flex items-start gap-2.5 text-sm font-[system-ui]">
                     <Calendar className="w-4 h-4 text-[#c09050] flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-700">{d.when}</span>
-                    <span className="text-gray-300">·</span>
-                    <span className={`flex items-center gap-1 text-gray-500 ${d.where === "Acworth, GA" ? "whitespace-nowrap" : ""}`}>
-                      <MapPin className="w-3.5 h-3.5 flex-shrink-0" />
-                      {d.where}
-                    </span>
+                    <div className="min-w-0 leading-snug">
+                      <span className="block text-gray-700">{d.when}</span>
+                      <span className="flex items-center gap-1 text-gray-500 mt-0.5">
+                        <MapPin className="w-3.5 h-3.5 flex-shrink-0" />
+                        {d.where}
+                      </span>
+                    </div>
                   </div>
                 ))}
               </div>

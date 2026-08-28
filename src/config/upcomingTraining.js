@@ -127,7 +127,7 @@ export const upcomingTraining = {
 
         {
           active: true,
-          when: "Tuesday. 01/04/2027 · 9:00am–3:00pm",
+          when: "Tuesday 01/04/2027 · 9:00am–3:00pm",
           where: "New York City, NY",
           cost: "$199; 6 CEU",
           ctaText: "Reserve Your Spot",
@@ -135,7 +135,7 @@ export const upcomingTraining = {
         },
          {
           active: true,
-          when: "Tuesday. 07/06/2027 · 9:00am–3:00pm",
+          when: "Tuesday 07/06/2027 · 9:00am–3:00pm",
           where: "New York City, NY",
           cost: "$199 - 6 CEU",
           ctaText: "Reserve Your Spot",
