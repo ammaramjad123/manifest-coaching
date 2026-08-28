@@ -100,7 +100,7 @@ export default function TrainingFlyerCarousel({ trainings }) {
                     <Calendar className="w-4 h-4 text-[#c09050] flex-shrink-0 mt-0.5" />
                     <span className="text-gray-700">{d.when}</span>
                     <span className="text-gray-300">·</span>
-                    <span className="flex items-center gap-1 text-gray-500">
+                    <span className="flex items-center gap-1 text-gray-500 whitespace-nowrap">
                       <MapPin className="w-3.5 h-3.5 flex-shrink-0" />
                       {d.where}
                     </span>

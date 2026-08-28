@@ -90,7 +90,7 @@ function SessionRow({ s, i }) {
               </span>
             </div>
             {/* Location column — aligned across all cards */}
-            <p className="flex items-start gap-2 text-gray-600 text-sm font-[system-ui] leading-snug">
+            <p className="flex items-start gap-2 text-gray-600 text-sm font-[system-ui] leading-snug whitespace-nowrap">
               <MapPin className="w-4 h-4 text-[#c09050] flex-shrink-0 mt-0.5" />
               {s.date.where}
             </p>
