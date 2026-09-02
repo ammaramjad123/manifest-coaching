@@ -895,7 +895,7 @@ export default function ServicesPage() {
         <div className="relative h-[480px] md:h-[560px] lg:h-[640px]">
           <img
             src={images.services.showcase}
-            alt=""
+            alt="Three pathways to peace: therapy, coaching, and training"
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-black" />
@@ -1160,7 +1160,7 @@ export default function ServicesPage() {
 
         {/* Crown image — in normal flow so content sits below it */}
         <div className="relative h-[580px] md:h-[660px] lg:h-[740px]">
-          <img src={images.services.twoHatsCrown} alt="" className="w-full h-full object-cover object-center" />
+          <img src={images.services.twoHatsCrown} alt="A crown, symbolizing the two hats: clinical therapist and transformational coach" className="w-full h-full object-cover object-center" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black" />
         </div>
 
