@@ -48,7 +48,7 @@ export default function ServicesHero() {
       <div className="absolute inset-0 z-0">
         <img
           src={images.services.hero}
-          alt=""
+          alt="The Peace Practice — clinical therapy, coaching, and training"
           className="w-full h-full object-cover object-center"
         />
         {/* Radial white overlay — bright in center for text, lets image breathe at edges */}
