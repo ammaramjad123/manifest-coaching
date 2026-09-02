@@ -39,12 +39,12 @@ export const blogPosts = [
       },
       {
         type: "heading",
-        text: "Why Imposter Syndrome Doesn't Respond to Logic",
+        text: "Why Imposter Syndrome Feels Physical, Not Just Mental",
       },
       {
         type: "paragraph",
         content:
-          "About 70% of people experience imposter syndrome at some point, and it tends to hit hardest at the moments that should feel like proof you've made it, like the promotion, the bigger stage, the room you worked years to get into. That's not a coincidence. Your body braces for exposure before your conscious mind even registers the trigger. The evidence of your competence is real, but the bracing pattern doesn't update just because you show it more evidence. It's not stored as a belief, it's stored as a physical response, which is exactly why it can survive contact with an impressive resume.",
+          "About 70% of people experience the signs of imposter syndrome at some point, and it tends to hit hardest at the moments that should feel like proof you've made it, like the promotion, the bigger stage, the room you worked years to get into. That's not a coincidence. Your body braces for exposure before your conscious mind even registers the trigger, and that bracing is often indistinguishable from anxiety, which is why imposter syndrome and anxiety so often show up together. The evidence of your competence is real, but the bracing pattern doesn't update just because you show it more evidence. It's not stored as a belief, it's stored as a physical response, which is exactly why it can survive contact with an impressive resume.",
       },
       {
         type: "image",
@@ -60,7 +60,7 @@ export const blogPosts = [
         type: "paragraph",
         content: (
           <>
-            <Link to="/specialties/safety-sensation" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">SĀF-T (Sensations Awareness Focused Technique)</Link> is a somatic component drawn from the Basic ART® protocol. Instead of talking through the situation that triggers your self-doubt, we locate exactly where it shows up in your body, the tight chest, the dropped stomach, the closed throat, and work with that sensation directly using guided eye movements and focused body awareness.
+            <Link to="/specialties/safety-sensation" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">SĀF-T (Sensations Awareness Focused Technique)</Link> is a somatic component drawn from the Basic ART® protocol. Instead of talking through the situation that triggers your self-doubt, we locate exactly where it shows up in your body, the tight chest, the dropped stomach, the closed throat, and address imposter syndrome at the nervous system level using guided eye movements and focused body awareness.
           </>
         ),
       },
@@ -204,7 +204,7 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "Talk therapy works well for a lot of people, and if it's working for you, that's genuinely good news. But for many trauma survivors, being asked to narrate the event in detail doesn't feel like healing, it feels like reliving it. There's a real reason for that. Trauma isn't stored the way a memory of your commute is stored. It lives in the nervous system, in the body, in reactions that fire before conscious thought catches up. Hypervigilance, a racing heart at an ordinary noise, the urge to shut down mid-sentence, none of those are failures of willpower. They're your body doing exactly what it learned to do to survive, which means healing doesn't always start with words. Sometimes it starts with helping your body learn that the danger has passed, without asking it to narrate the danger first.",
+          "Talk therapy works well for a lot of people, and if it's working for you, that's genuinely good news. But for many trauma survivors, being asked to narrate the event in detail doesn't feel like healing, it feels like reliving it. There's a real reason for that. Trauma stored in the body isn't stored the way a memory of your commute is stored, it lives in the nervous system, in reactions that fire before conscious thought catches up. Hypervigilance, a racing heart at an ordinary noise, the urge to shut down mid-sentence, none of those are failures of willpower. They're your body doing exactly what it learned to do to survive, which means healing doesn't always start with words. Sometimes it starts with helping your body learn that the danger has passed, without asking it to narrate the danger first.",
       },
       {
         type: "image",
@@ -220,7 +220,7 @@ export const blogPosts = [
         type: "paragraph",
         content: (
           <>
-            <Link to="/specialties/art" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Accelerated Resolution Therapy, or ART,</Link> is an evidence-based approach that helps you reprocess a distressing memory without requiring you to describe it out loud. During a session, you're guided through a series of horizontal eye movements, similar in spirit to EMDR, while you privately notice the images, sensations, and emotions connected to the memory. You don't narrate any of it out loud. I'm guiding the process; you're the only one who needs to know what you're seeing.
+            <Link to="/specialties/art" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Accelerated Resolution Therapy, or ART,</Link> is an evidence-based approach built to process trauma without reliving it, helping you reprocess a distressing memory without requiring you to describe it out loud. During a session, you're guided through a series of horizontal eye movements, similar in spirit to EMDR, while you privately notice the images, sensations, and emotions connected to the memory. You don't narrate any of it out loud. I'm guiding the process; you're the only one who needs to know what you're seeing.
           </>
         ),
       },
@@ -241,7 +241,7 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "If you've looked into trauma therapy before, you've probably come across EMDR (Eye Movement Desensitization and Reprocessing) too, and it's easy to assume ART is just a variation on the same thing. They do share real similarities. Both use bilateral eye movements, both are evidence-based, and both exist because trauma doesn't always respond to talking alone.",
+          "If you've looked into trauma therapy before, you've probably come across EMDR (Eye Movement Desensitization and Reprocessing) too, many people specifically search for EMDR without talking about trauma in detail, and it's easy to assume ART is just a variation on the same thing. They do share real similarities. Both use bilateral eye movements, both are evidence-based, and both exist because trauma doesn't always respond to talking alone.",
       },
       {
         type: "paragraph",
@@ -389,7 +389,7 @@ export const blogPosts = [
       },
       {
         type: "heading",
-        text: "Why “Just Breathe” Can Backfire Mid-Panic",
+        text: "Why Breathing Exercises Don't Work for Every Panic Attack",
       },
       {
         type: "paragraph",
@@ -398,12 +398,12 @@ export const blogPosts = [
       },
       {
         type: "heading",
-        text: "What's Actually Happening in Your Body",
+        text: "What's Actually Happening in Your Nervous System During a Panic Attack",
       },
       {
         type: "paragraph",
         content:
-          "A panic attack isn't your mind overreacting to nothing. It's your nervous system reacting to something it's already decided is a threat, correctly or not. Adrenaline floods your system, your heart rate climbs to move blood to your limbs, your breathing gets shallow and fast to get more oxygen out fast, and your thinking brain takes a back seat to the part of you built purely for survival. None of that is a character flaw or a failure of willpower. It's biology doing exactly what it's designed to do, just at the wrong moment, in response to a threat that usually isn't a tiger.",
+          "A panic attack isn't your mind overreacting to nothing. It's your nervous system reacting to something it's already decided is a threat, correctly or not. Adrenaline floods your system, your heart rate climbs to move blood to your limbs, your breathing gets shallow and fast, sometimes tipping into panic attack hyperventilation that leaves you dizzy or numb, and your thinking brain takes a back seat to the part of you built purely for survival. None of that is a character flaw or a failure of willpower. It's biology doing exactly what it's designed to do, just at the wrong moment, in response to a threat that usually isn't a tiger.",
       },
       {
         type: "image",
