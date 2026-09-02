@@ -21,7 +21,7 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "You know the feeling before it even has a name. It's the chest that tightens right before you speak up in a meeting, the stomach that drops before you hit send on a proposal, the voice that shrinks the moment someone asks what you think. You've told yourself to just be more confident. You've made the list of everything you've actually accomplished. It helps for about a day, then it wears off, because imposter syndrome isn't only a thinking problem. Thinking your way out of it only gets you so far. SĀF-T works with the part logic can't reach, the sensation itself.",
+          "You know the feeling before it even has a name. It's the chest that tightens right before you speak up in a meeting, the stomach that drops before you hit send on a proposal, the voice that shrinks the moment someone asks what you think. You've told yourself to just be more confident. You've made the list of everything you've actually accomplished. It helps for about a day, then it wears off, because imposter syndrome isn't a mindset problem. Thinking your way out of it only gets you so far. SĀF-T works with the part logic can't reach, the sensation itself.",
       },
       {
         type: "heading",
@@ -195,7 +195,7 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "If the idea of trauma therapy makes you picture retelling everything, every detail, in order, out loud, to someone you just met, it makes sense that you've been putting it off. For a lot of people, that expectation alone is enough to keep them stuck. Most people don't know this, but you don't have to describe what happened to heal from it. Accelerated Resolution Therapy (ART) was built around exactly that. You stay in control of what you say and don't say. Your nervous system does the processing; your voice doesn't have to.",
+          "If the idea of trauma therapy makes you picture retelling everything, every detail, in order, out loud, to someone you just met, it makes sense that you've been putting it off. For a lot of people, that expectation alone is enough to keep them stuck. Most people don't know this, but trauma therapy without talking about the trauma out loud is possible. Accelerated Resolution Therapy (ART) was built around exactly that. You stay in control of what you say and don't say. Your nervous system does the processing; your voice doesn't have to.",
       },
       {
         type: "heading",
@@ -385,7 +385,7 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "Your chest goes tight first. Then your heart rate spikes, your hands go cold, and the room feels like it's closing in. Someone tells you to breathe, in for four, hold for four, out for four, and you try, you really try, but it doesn't land. If anything, focusing on your breath makes the panic louder. You start to wonder what's wrong with you that a technique everyone swears by just doesn't work. Nothing is wrong with you. Breathing exercises help some people some of the time, but they were never built to override a nervous system that's already mid-alarm.",
+          "Your chest goes tight first. Then your heart rate spikes, your hands go cold, and the room feels like it's closing in. Someone tells you to breathe through your panic attack, in for four, hold for four, out for four, and you try, you really try, but it doesn't land. If anything, focusing on your breath makes the panic louder. You start to wonder what's wrong with you that a technique everyone swears by just doesn't work. Nothing is wrong with you. Breathing exercises help some people some of the time, but they were never built to override a nervous system that's already mid-alarm.",
       },
       {
         type: "heading",
