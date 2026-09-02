@@ -417,7 +417,7 @@ export default function ServicesPage() {
 
   return (
     <div className="bg-white overflow-hidden">
-      <title>Our Services: Clinical Therapy, Coaching & Training | The Peace Practice</title>
+      <title>Clinical Therapy, Coaching & Training | The Peace Practice</title>
       <meta name="description" content="Explore The Peace Practice's three core offerings: licensed clinical therapy, transformational coaching, and professional training & education with Ayana F. McKanney, LCSW." />
       <link rel="canonical" href="https://www.thepeacepractice.me/services" />
       <meta property="og:type" content="website" />
