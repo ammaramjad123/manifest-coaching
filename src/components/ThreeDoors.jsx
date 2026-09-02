@@ -343,7 +343,7 @@ export default function ThreeDoors() {
               >
                 <img
                   src={activeData.image}
-                  alt=""
+                  alt={`${activeData.title} — ${activeData.subtitle}`}
                   className="w-full h-auto block"
                 />
               </motion.div>
