@@ -40,7 +40,7 @@ export default function TrainingFlyerCarousel({ trainings }) {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -40 * direction }}
             transition={{ duration: 0.35, ease: "easeOut" }}
-            className="grid md:grid-cols-2"
+            className="grid md:grid-cols-2 items-start"
           >
             {/* Flyer image */}
             <button
@@ -80,10 +80,6 @@ export default function TrainingFlyerCarousel({ trainings }) {
                     {t.format}
                   </span>
                 )}
-
-                {/* Desktop-only line break so the CEU + cost badges sit on the next line */}
-                <div className="hidden md:block basis-full" aria-hidden="true" />
-
                 {t.ceu && (
                   <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#c09050]/10 border border-[#c09050]/30 text-[#a87b3a] text-xs font-bold font-[system-ui]">
                     <Award className="w-3.5 h-3.5" />
@@ -98,17 +94,16 @@ export default function TrainingFlyerCarousel({ trainings }) {
               </div>
 
               {/* Dates & locations, compact */}
-              <div className="space-y-3 mb-6">
+              <div className="space-y-2.5 mb-6">
                 {(t.dates || []).filter((d) => d.active !== false).map((d, i) => (
                   <div key={i} className="flex items-start gap-2.5 text-sm font-[system-ui]">
                     <Calendar className="w-4 h-4 text-[#c09050] flex-shrink-0 mt-0.5" />
-                    <div className="min-w-0 leading-snug">
-                      <span className="block text-gray-700">{d.when}</span>
-                      <span className="flex items-center gap-1 text-gray-500 mt-0.5">
-                        <MapPin className="w-3.5 h-3.5 flex-shrink-0" />
-                        {d.where}
-                      </span>
-                    </div>
+                    <span className="text-gray-700">{d.when}</span>
+                    <span className="text-gray-300">·</span>
+                    <span className="flex items-center gap-1 text-gray-500">
+                      <MapPin className="w-3.5 h-3.5 flex-shrink-0" />
+                      {d.where}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -137,45 +132,46 @@ export default function TrainingFlyerCarousel({ trainings }) {
           </motion.div>
         </AnimatePresence>
 
+        {/* Arrows */}
+        {flyers.length > 1 && (
+          <>
+            <button
+              type="button"
+              onClick={() => go(-1)}
+              aria-label="Previous flyer"
+              className="absolute left-3 top-1/2 -translate-y-1/2 md:top-1/2 w-10 h-10 rounded-full bg-white shadow-lg border border-[#c09050]/25 flex items-center justify-center text-[#c09050] hover:bg-[#c09050] hover:text-white transition-all duration-300 z-10"
+            >
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+            <button
+              type="button"
+              onClick={() => go(1)}
+              aria-label="Next flyer"
+              className="absolute right-3 top-1/2 -translate-y-1/2 md:top-1/2 w-10 h-10 rounded-full bg-white shadow-lg border border-[#c09050]/25 flex items-center justify-center text-[#c09050] hover:bg-[#c09050] hover:text-white transition-all duration-300 z-10"
+            >
+              <ChevronRight className="w-5 h-5" />
+            </button>
+          </>
+        )}
       </div>
 
-      {/* Bottom controls — prev / dots / next, outside the card so nothing is covered */}
+      {/* Dots */}
       {flyers.length > 1 && (
-        <div className="flex items-center justify-center gap-4 mt-5">
-          <button
-            type="button"
-            onClick={() => go(-1)}
-            aria-label="Previous flyer"
-            className="w-10 h-10 rounded-full bg-white shadow-lg border border-[#c09050]/25 flex items-center justify-center text-[#c09050] hover:bg-[#c09050] hover:text-white transition-all duration-300 flex-shrink-0"
-          >
-            <ChevronLeft className="w-5 h-5" />
-          </button>
-
-          <div className="flex justify-center items-center gap-2">
-            {flyers.map((f, i) => (
-              <button
-                key={i}
-                type="button"
-                onClick={() => {
-                  setDirection(i > index ? 1 : -1);
-                  setIndex(i);
-                }}
-                aria-label={`Show ${f.title} flyer`}
-                className={`h-2 rounded-full transition-all duration-300 ${
-                  i === index ? "w-7 bg-[#c09050]" : "w-2 bg-[#c09050]/25 hover:bg-[#c09050]/50"
-                }`}
-              />
-            ))}
-          </div>
-
-          <button
-            type="button"
-            onClick={() => go(1)}
-            aria-label="Next flyer"
-            className="w-10 h-10 rounded-full bg-white shadow-lg border border-[#c09050]/25 flex items-center justify-center text-[#c09050] hover:bg-[#c09050] hover:text-white transition-all duration-300 flex-shrink-0"
-          >
-            <ChevronRight className="w-5 h-5" />
-          </button>
+        <div className="flex justify-center gap-2 mt-5">
+          {flyers.map((f, i) => (
+            <button
+              key={i}
+              type="button"
+              onClick={() => {
+                setDirection(i > index ? 1 : -1);
+                setIndex(i);
+              }}
+              aria-label={`Show ${f.title} flyer`}
+              className={`h-2 rounded-full transition-all duration-300 ${
+                i === index ? "w-7 bg-[#c09050]" : "w-2 bg-[#c09050]/25 hover:bg-[#c09050]/50"
+              }`}
+            />
+          ))}
         </div>
       )}
 
