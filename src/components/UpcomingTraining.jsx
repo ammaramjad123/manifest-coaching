@@ -57,7 +57,7 @@ function SessionRow({ s, i }) {
         {/* Topic image */}
         {s.topicImage && (
           <div className="hidden sm:block relative w-16 h-16 rounded-full overflow-hidden ring-2 ring-[#c09050]/20 shadow flex-shrink-0">
-            <img src={s.topicImage} alt="" className="absolute inset-0 w-full h-full object-cover" />
+            <img src={s.topicImage} alt={`${s.title || s.tabName || "Training"} logo`} className="absolute inset-0 w-full h-full object-cover" />
           </div>
         )}
 
