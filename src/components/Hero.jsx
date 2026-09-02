@@ -92,12 +92,14 @@ export default function HeroSection() {
         <motion.div
           initial={{ scale: 1.1, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1.5, ease: "easeOut" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           className="w-full h-full"
         >
           <img
             src={images.home.hero}
             alt="Calm peaceful therapy environment"
+            fetchpriority="high"
+            loading="eager"
             className="w-full h-full object-cover object-center"
           />
           {/* Bright at top, fades to dark toward bottom for text readability */}
