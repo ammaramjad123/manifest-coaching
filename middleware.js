@@ -59,12 +59,12 @@ const POSTS = {
 // the same text that's already live to bots that can't run JavaScript.
 const PAGES = {
   "/": {
-    title: "The Peace Practice — Therapy, Coaching & Training | Ayana F. McKanney, LCSW",
+    title: "The Peace Practice | Therapy, Coaching & Training",
     description:
       "Compassionate clinical therapy, transformational coaching, and professional training with Ayana F. McKanney, LCSW. Licensed in NY, NJ & RI with 26+ years of experience. Your journey, our partnership.",
   },
   "/services": {
-    title: "Our Services: Clinical Therapy, Coaching & Training | The Peace Practice",
+    title: "Clinical Therapy, Coaching & Training | The Peace Practice",
     description:
       "Explore The Peace Practice's three core offerings: licensed clinical therapy, transformational coaching, and professional training & education with Ayana F. McKanney, LCSW.",
   },
