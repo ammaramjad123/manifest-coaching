@@ -137,8 +137,8 @@ export default function Footer() {
           </div>
 
           {/* Links Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+
             {/* Quick Links */}
             <div>
               <h3 className="text-black font-bold text-lg mb-4 font-[system-ui]">Quick Links</h3>
@@ -217,21 +217,23 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-          </div>
 
-          {/* Explore Our Specialties */}
-          <div className="mb-12 pb-8 border-b border-gray-200">
-            <h3 className="text-black font-bold text-lg mb-4 font-[system-ui]">Explore Our Specialties</h3>
-            <div className="flex flex-wrap gap-x-5 gap-y-2">
-              {specialties.map((specialty) => (
-                <a
-                  key={specialty.name}
-                  href={specialty.href}
-                  className="text-gray-500 hover:text-[#c09050] text-sm transition-colors duration-300"
-                >
-                  {specialty.name}
-                </a>
-              ))}
+            {/* Specialties */}
+            <div>
+              <h3 className="text-black font-bold text-lg mb-4 font-[system-ui]">Specialties</h3>
+              <ul className="space-y-2">
+                {specialties.map((specialty) => (
+                  <li key={specialty.name}>
+                    <a
+                      href={specialty.href}
+                      className="text-gray-500 hover:text-[#c09050] text-sm transition-colors duration-300 flex items-center gap-1 group"
+                    >
+                      <FaArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-all flex-shrink-0" />
+                      {specialty.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
 
