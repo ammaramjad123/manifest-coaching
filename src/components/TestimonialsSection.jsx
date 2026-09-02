@@ -211,7 +211,7 @@ export default function TestimonialsSection() {
           <div className="rounded-2xl overflow-hidden h-64 md:h-72 bg-gray-50">
             <img
               src={images.home.testimonialCommunity}
-              alt=""
+              alt="Coaching and partnership clients from The Peace Practice community"
               className="w-full h-full object-cover object-center"
             />
           </div>
@@ -270,7 +270,7 @@ export default function TestimonialsSection() {
             className="rounded-2xl overflow-hidden h-56 md:h-64 mb-6">
             <img
               src={images.home.testimonialCoaching}
-              alt=""
+              alt="Transformational coaching clients sharing their experience"
               className="w-full h-full object-cover object-center"
             />
           </motion.div>
