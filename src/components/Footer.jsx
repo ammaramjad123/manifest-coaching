@@ -46,6 +46,21 @@ export default function Footer() {
     { name: "Testimonials", href: "/#testimonials" }
   ];
 
+  const specialties = [
+    { name: "Accelerated Resolution Therapy (ART)", href: "/specialties/art" },
+    { name: "DBT", href: "/specialties/dbt" },
+    { name: "ACT", href: "/specialties/act" },
+    { name: "Anxiety & Depression", href: "/specialties/process" },
+    { name: "Trauma & PTSD", href: "/specialties/trauma-ptsd" },
+    { name: "Women's Issues", href: "/specialties/women-issues" },
+    { name: "Life Coaching", href: "/specialties/life-coaching" },
+    { name: "Inclusive & Affirming Care", href: "/specialties/inclusive-affirming-care" },
+    { name: "SĀF-T", href: "/specialties/safety-sensation" },
+    { name: "bARTer Balance", href: "/specialties/barter-balance" },
+    { name: "Immigration Evaluations & Training", href: "/specialties/partnership" },
+    { name: "The MANIFEST Method", href: "/specialties/manifest-method" }
+  ];
+
   return (
     <footer className="relative w-full bg-white overflow-hidden">
       
@@ -201,6 +216,22 @@ export default function Footer() {
                   </a>
                 </li>
               </ul>
+            </div>
+          </div>
+
+          {/* Explore Our Specialties */}
+          <div className="mb-12 pb-8 border-b border-gray-200">
+            <h3 className="text-black font-bold text-lg mb-4 font-[system-ui]">Explore Our Specialties</h3>
+            <div className="flex flex-wrap gap-x-5 gap-y-2">
+              {specialties.map((specialty) => (
+                <a
+                  key={specialty.name}
+                  href={specialty.href}
+                  className="text-gray-500 hover:text-[#c09050] text-sm transition-colors duration-300"
+                >
+                  {specialty.name}
+                </a>
+              ))}
             </div>
           </div>
 
