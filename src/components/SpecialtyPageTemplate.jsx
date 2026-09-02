@@ -15,7 +15,11 @@ export default function SpecialtyPageTemplate({ data }) {
       {/* ══════════════════════ CINEMATIC HERO ══════════════════════ */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-42 sm:pt-48">
         <div className="absolute inset-0 z-0">
-          <img src={data.heroImage} alt={data.title} className="w-full h-full object-cover scale-110" />
+          <img
+            src={data.heroImage}
+            alt={data.title || `${data.titleLine1 || ""} ${data.titleLine2 || ""}`.trim()}
+            className="w-full h-full object-cover scale-110"
+          />
           <div className="absolute inset-0 bg-gradient-to-br from-black/75 via-black/55 to-black/70" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-black/30" />
         </div>
