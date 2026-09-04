@@ -59,7 +59,7 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.manifestationMethods.whereItStalls,
-        alt: "A seated person with their hands clasped tightly together in their lap",
+        alt: "A woman pausing over an open notebook, pen in hand, looking away from the page",
         caption: "The gap is rarely belief. It is usually a body that has already decided what is safe to want.",
       },
       {

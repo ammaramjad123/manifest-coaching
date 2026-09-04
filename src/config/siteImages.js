@@ -216,7 +216,7 @@ export const images = {
     },
     manifestationMethods: {
       hero: "/blog/prince-akachi-l3IHXOdMyHQ-unsplash.jpg",         // Top banner — "Manifestation Methods That Actually Work"
-      whereItStalls: "/blog/hands-clasped-b0qXRTFYVUM-unsplash.jpg", // "The Part Repetition Cannot Reach" section photo
+      whereItStalls: "/blog/vitaly-gariev-aotrm-bpAAk-unsplash.jpg", // "The Part Repetition Cannot Reach" section photo
       whatChanges: "/blog/annie-spratt-cpDBPCwTs2s-unsplash.jpg",   // "What Changes When the Clinical Work Comes First" section photo
       closing: "/blog/vitaly-gariev-i17eqik0l2A-unsplash.jpg",      // Closing / "Getting Started" section photo
     },
