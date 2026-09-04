@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const blogPosts = [
   {
     slug: "manifestation-methods-that-actually-work",
-    title: "Manifestation Methods That Actually Work — And Why Yours Stalled",
+    title: "Manifestation Methods That Actually Work, and Why Yours Stalled",
     metaTitle: "Manifestation Methods That Actually Work | Peace Practice",
     metaDescription: "A licensed therapist's honest take on manifestation methods: what scripting, 369 and visualization really do, why they stall, and what makes them stick.",
     excerpt: "Scripting, the 369 method, vision boards. They're not nonsense, and they're not magic either. Here's what they actually do, the part repetition can't reach, and why that's the reason yours stopped working.",
@@ -59,7 +59,7 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.manifestationMethods.whereItStalls,
-        alt: "A woman looking down and away, wrapped in a heavy jacket, lit against a dark background",
+        alt: "A seated person with their hands clasped tightly together in their lap",
         caption: "The gap is rarely belief. It is usually a body that has already decided what is safe to want.",
       },
       {
@@ -103,8 +103,8 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.manifestationMethods.whatChanges,
-        alt: "A blank spiral notebook and a pen on a wooden table, lit by daylight from a window",
-        caption: "The same page, the same practice. What changes is what your body does while you write on it.",
+        alt: "A quiet desk beside a window with plants and an empty chair",
+        caption: "Regulation comes first. The goal work lands differently once the body is not braced against it.",
       },
       {
         type: "heading",
@@ -164,7 +164,7 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.manifestationMethods.closing,
-        alt: "Daylight coming through sheer curtains into a quiet, dim room",
+        alt: "A woman smiling easily, relaxed, in a bright room",
         caption: "Nothing dramatic. Just enough room to want something without bracing against it.",
       },
       {
