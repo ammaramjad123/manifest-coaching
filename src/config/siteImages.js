@@ -216,9 +216,9 @@ export const images = {
     },
     manifestationMethods: {
       hero: "/blog/prince-akachi-l3IHXOdMyHQ-unsplash.jpg",         // Top banner — "Manifestation Methods That Actually Work"
-      whereItStalls: "/blog/liz-weddon-HMT7OI6NIvM-unsplash.jpg",   // "The Part Repetition Cannot Reach" section photo
-      whatChanges: "/blog/kelly-sikkema-ChsnZBAX6wA-unsplash.jpg",  // "What Changes When the Clinical Work Comes First" section photo
-      closing: "/blog/sunlit-curtains-ninCiZ_k6jI-unsplash.jpg",    // Closing / "Getting Started" section photo
+      whereItStalls: "/blog/hands-clasped-b0qXRTFYVUM-unsplash.jpg", // "The Part Repetition Cannot Reach" section photo
+      whatChanges: "/blog/annie-spratt-cpDBPCwTs2s-unsplash.jpg",   // "What Changes When the Clinical Work Comes First" section photo
+      closing: "/blog/vitaly-gariev-i17eqik0l2A-unsplash.jpg",      // Closing / "Getting Started" section photo
     },
   },
 
