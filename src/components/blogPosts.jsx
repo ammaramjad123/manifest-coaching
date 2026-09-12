@@ -1,0 +1,704 @@
+import { images } from "../config/siteImages";
+import { Link } from "react-router-dom";
+
+export const blogPosts = [
+  {
+    slug: "manifestation-methods-that-actually-work",
+    title: "Manifestation Methods That Actually Work, and Why Yours Stalled",
+    metaTitle: "Manifestation Methods That Actually Work | Peace Practice",
+    metaDescription: "A licensed therapist's honest take on manifestation methods: what scripting, 369 and visualization really do, why they stall, and what makes them stick.",
+    excerpt: "Scripting, the 369 method, vision boards. They're not nonsense, and they're not magic either. Here's what they actually do, the part repetition can't reach, and why that's the reason yours stopped working.",
+    category: "Coaching",
+    author: "Ayana F. McKanney, LCSW",
+    publishDate: "2026-09-05",
+    updatedDate: "2026-09-05",
+    readTime: "7 min read",
+    heroImage: images.blog.manifestationMethods.hero,
+    heroImageAlt: "A woman looking directly at the camera with a thoughtful, unconvinced expression",
+    hubLink: { href: "/specialties/manifest-method", label: "Explore the MANIFEST Method" },
+
+    content: [
+      {
+        type: "paragraph",
+        content:
+          "You have done the work. The vision board is on the wall. You wrote the affirmation fifty-five times for five days straight. You scripted the whole thing in present tense, the way you were told to, and for about a week it genuinely felt like something was shifting. Then it faded. And the question that follows is almost always the same one: did I not believe it hard enough? That question is the problem, not the answer. Manifestation practices tend to stall for a reason that has nothing to do with how sincerely you wanted it.",
+      },
+      {
+        type: "heading",
+        text: "What the Popular Methods Are Actually Doing",
+      },
+      {
+        type: "paragraph",
+        content:
+          "It is worth being fair to them first, because the reflexive dismissal is just as unhelpful as the overselling. Scripting, the 369 method, the 55x5, visualization, gratitude priming. These practices are not empty. They do something measurable, and the mechanism is not mysterious.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Writing a goal repeatedly and in specific language does change what your attention selects for. You start noticing the job posting, the introduction, the opening that was probably always there. Visualization rehearses a sequence, which is why athletes and performers use it, and rehearsal lowers the friction of doing the thing for real. Naming what you want in concrete terms forces a vague ache into a decision you can actually act on. None of that is supernatural. It is attention, motivation and rehearsal, and those are real levers.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "So when someone tells me a manifestation practice helped them, I believe them. The trouble is that all of these methods operate on the same layer, and that layer is thought.",
+      },
+      {
+        type: "heading",
+        text: "The Part Repetition Cannot Reach",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Picture writing the line for the thirtieth time. I am worthy of the role I am asking for. Your hand is moving, the words are correct, and somewhere around the eighth repetition your chest tightens. Not dramatically. Just a small bracing, the kind you have stopped noticing because it has been there for years. You keep writing. The tightness stays. You finish the page and feel vaguely worse than when you started, which makes no sense, so you decide you need to be more consistent tomorrow.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "What happened is that you rehearsed the sentence and the brace at the same time. Thirty repetitions of the words, thirty repetitions of the physical response underneath them. If your body has learned to flinch at visibility, or at asking, or at being chosen, then repeating a statement about visibility while that flinch fires is not neutral practice. You are strengthening both halves.",
+      },
+      {
+        type: "image",
+        src: images.blog.manifestationMethods.whereItStalls,
+        alt: "A woman pausing over an open notebook, pen in hand, looking away from the page",
+        caption: "The gap is rarely belief. It is usually a body that has already decided what is safe to want.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "This is the piece the manifestation world tends to skip, and it is not a small omission. It is the difference between a practice that works for some people and quietly fails for the people carrying the most.",
+      },
+      {
+        type: "heading",
+        text: "Wanting Something and Being Able to Receive It Are Different Skills",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Most people who come to coaching after years of manifestation work are not short on desire. They can describe what they want in detail. They have wanted it consistently, sometimes for a decade. What is missing is the capacity to be in the room with it once it arrives, and that capacity is physical before it is psychological.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "You see it in the small self-corrections. The person who gets the offer and immediately starts explaining why the number is too high. The one who finally gets asked out and finds three reasons it will not work before the week is over. The one who builds the business and then quietly caps it just under the level where people would start paying attention. None of that is self-sabotage in the moralizing sense. It is a nervous system doing exactly what it learned to do, which is to keep you at a size that once kept you safe.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "No amount of scripting resolves that, because scripting is addressed to the part of you that already agrees.",
+      },
+      {
+        type: "heading",
+        text: "What Changes When the Clinical Work Comes First",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The MANIFEST Method puts stabilization before action deliberately, and the ordering is the whole point. Before the goal work, before the habits and the pathways, there is a phase focused on regulating the nervous system using clinical tools rather than motivational ones. Accelerated Resolution Therapy, Dialectical Behavior Therapy skills and Acceptance and Commitment Therapy all sit in that phase, and they are there because they work on the layer underneath the story.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "In practice that means we do not start by refining your affirmations. We start by finding where the bracing actually lives and giving it somewhere to go. Once that has moved, the visualization you were already doing tends to land differently, because you are no longer rehearsing the flinch alongside the sentence. The practice stops being something you have to push through.",
+      },
+      {
+        type: "image",
+        src: images.blog.manifestationMethods.whatChanges,
+        alt: "A quiet desk beside a window with plants and an empty chair",
+        caption: "Regulation comes first. The goal work lands differently once the body is not braced against it.",
+      },
+      {
+        type: "heading",
+        text: "So Which Methods Are Worth Keeping",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Keep the ones that sharpen a decision or lower the friction of acting. Drop the ones whose only function is to prove you wanted it badly enough.",
+      },
+      {
+        type: "list",
+        items: [
+          "Specific written goals, because vagueness is the real enemy and language forces precision",
+          "Visualization used as rehearsal for a real upcoming moment, not as a substitute for it",
+          "Gratitude practice, which has genuine support as a mood and attention intervention",
+          "Anything that ends in a concrete next action you can take this week",
+          "Worth questioning: any practice that treats a bad outcome as evidence you did it wrong",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Who This Tends to Fit",
+      },
+      {
+        type: "list",
+        items: [
+          "People who have done years of mindset work and hit the same ceiling anyway",
+          "High performers who can want something clearly and still flinch when it arrives",
+          "Anyone whose confidence work holds until the moment it actually matters",
+          "Those drawn to manifestation but put off by how much of it asks you to stop thinking critically",
+          "People who suspect the block is older than the goal",
+        ],
+      },
+      {
+        type: "faq",
+        heading: "Common Questions About This Approach",
+        items: [
+          {
+            q: "Is this therapy or coaching?",
+            a: "The MANIFEST Method is offered as coaching. It is forward-focused and consultative, private pay rather than billed to insurance, and it is not a diagnostic or treatment process. I am also a licensed clinical social worker, which is why clinical tools appear inside the framework, but the coaching relationship itself is distinct from therapy. If what you are carrying turns out to be more clinical than goal-related, that is a conversation worth having early, and I can help you find the right fit.",
+          },
+          {
+            q: "Are you saying manifestation does not work?",
+            a: "No. I am saying it works through ordinary mechanisms rather than magical ones, and that those mechanisms have a ceiling. Attention, motivation and rehearsal are real and they matter. They just cannot resolve a stored physical response, and that is usually what people are actually stuck on by the time they reach me.",
+          },
+          {
+            q: "Do I have to give up my existing practice?",
+            a: "Not at all. Most people keep the parts that were already helping. The difference is that once the underlying activation has shifted, those practices stop requiring so much effort to sustain, because you are no longer working against yourself while you do them.",
+          },
+          {
+            q: "How is this different from mindset coaching?",
+            a: "Mindset coaching works on beliefs and interpretation, which is genuinely useful when the belief is the obstacle. This starts a step earlier, with the physical response that keeps regenerating the belief no matter how many times you argue with it. If mindset work has held for you, you may not need this. If it keeps wearing off, that is usually the tell.",
+          },
+        ],
+      },
+      {
+        type: "image",
+        src: images.blog.manifestationMethods.closing,
+        alt: "A woman smiling easily, relaxed, in a bright room",
+        caption: "Nothing dramatic. Just enough room to want something without bracing against it.",
+      },
+      {
+        type: "heading",
+        text: "Getting Started",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            You do not need to arrive with the goal already clear. A free 15-minute consultation is a low-pressure way to talk through where things have stalled and work out together whether this is the right fit. <Link to="/contact" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Reach out here</Link> when you are ready.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content:
+          "Sessions are held by secure telehealth. The aim was never to help you want it more. It is to make sure that wanting it stops costing you so much.",
+      },
+    ],
+  },
+  {
+    slug: "imposter-syndrome-lives-in-your-body",
+    title: "Imposter Syndrome Isn't a Mindset Problem — Here's How to Actually Move It",
+    metaTitle: "Imposter Syndrome Isn't a Mindset Problem | Peace Practice",
+    metaDescription: "Imposter syndrome isn't just a mindset issue. It lives in your nervous system. Learn how SĀF-T helps you move it, not just manage it.",
+    excerpt: "Affirmations and confidence tricks work on the story. SĀF-T works on the sensation underneath it, and here's how that difference actually plays out for high-achievers.",
+    category: "Coaching",
+    author: "Ayana F. McKanney, LCSW",
+    publishDate: "2026-08-05",
+    updatedDate: "2026-08-05",
+    readTime: "6 min read",
+    heroImage: images.blog.imposterSyndrome.hero,
+    heroImageAlt: "A man pressing his temples in genuine tension at his desk, alone",
+    hubLink: { href: "/specialties/safety-sensation", label: "Explore SĀF-T" },
+
+    content: [
+      {
+        type: "paragraph",
+        content:
+          "You know the feeling before it even has a name. It's the chest that tightens right before you speak up in a meeting, the stomach that drops before you hit send on a proposal, the voice that shrinks the moment someone asks what you think. You've told yourself to just be more confident. You've made the list of everything you've actually accomplished. It helps for about a day, then it wears off, because imposter syndrome isn't a mindset problem. Thinking your way out of it only gets you so far. SĀF-T works with the part logic can't reach, the sensation itself.",
+      },
+      {
+        type: "heading",
+        text: "The Moment It Shows Up",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Picture the moment right before your name gets called. You've read the deck twice. You know the material cold. And still, your chest tightens first, a half-second before your brain catches up. Your palms go damp. The sentence you rehearsed on the way in suddenly feels like someone else's words in your mouth. You open your mouth to speak, and for one beat, your voice doesn't sound like yours.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "It passes. You get through it, you always do, but that same bracing shows up again before the next room, the next inbox, the next person who might finally notice you don't belong there. The exhaustion was never really about the meeting. It's about carrying that brace into every room that matters.",
+      },
+      {
+        type: "heading",
+        text: "Why Imposter Syndrome Feels Physical, Not Just Mental",
+      },
+      {
+        type: "paragraph",
+        content:
+          "About 70% of people experience the signs of imposter syndrome at some point, and it tends to hit hardest at the moments that should feel like proof you've made it, like the promotion, the bigger stage, the room you worked years to get into. That's not a coincidence. Your body braces for exposure before your conscious mind even registers the trigger, and that bracing is often indistinguishable from anxiety, which is why imposter syndrome and anxiety so often show up together. The evidence of your competence is real, but the bracing pattern doesn't update just because you show it more evidence. It's not stored as a belief, it's stored as a physical response, which is exactly why it can survive contact with an impressive resume.",
+      },
+      {
+        type: "image",
+        src: images.blog.imposterSyndrome.whatSaftIs,
+        alt: "A woman wincing with her hands pressed over her ears, visibly overwhelmed",
+        caption: "SĀF-T starts by finding exactly where the feeling lives, not by talking around it.",
+      },
+      {
+        type: "heading",
+        text: "What SĀF-T Actually Is",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            <Link to="/specialties/safety-sensation" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">SĀF-T (Sensations Awareness Focused Technique)</Link> is a somatic component drawn from the Basic ART® protocol. Instead of talking through the situation that triggers your self-doubt, we locate exactly where it shows up in your body, the tight chest, the dropped stomach, the closed throat, and address imposter syndrome at the nervous system level using guided eye movements and focused body awareness.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content:
+          "You're not asked to narrate every moment you've felt like a fraud. You identify the general area, something like “before I present” or “right before I ask for what I'm worth,” and notice what's happening in your body while we work. The goal isn't to talk you out of the feeling. It's to help your nervous system actually move it, the same way it would move any other stored physical tension.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Most people notice a real, within-session shift in intensity. Not because the achievement gap in their head closed, but because the bracing pattern underneath it did.",
+      },
+      {
+        type: "heading",
+        text: "SĀF-T vs. “Just Practice Confidence”",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Power poses, affirmations, rehearsed talking points. Most confidence-building advice works at the level of story and behavior, and it genuinely helps some of the time. But if the underlying bracing pattern is still there, it tends to resurface the moment the stakes go back up, which is why confidence work can feel like it doesn't stick under real pressure. You did the exercises. You said the affirmations. And your chest still tightened the second it mattered.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "SĀF-T doesn't compete with that work, it targets something underneath it. Instead of adding another layer of coping strategy on top of the bracing, it works with the physical activation directly, so it has less room to silently rebuild before your next high-stakes moment.",
+      },
+      {
+        type: "image",
+        src: images.blog.imposterSyndrome.howSessionWorks,
+        alt: "A warm, sunlit seating area with leather chairs",
+        caption: "Sessions are structured, brief, and stay entirely within your control.",
+      },
+      {
+        type: "heading",
+        text: "How This Works in a Coaching Session",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            This is offered through <Link to="/specialties/life-coaching" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">coaching</Link>, not clinical therapy. It's a consultative, forward-focused container, not a diagnostic one. We start by identifying the specific moment that triggers the feeling, whether that's before a presentation, before a difficult ask, or before you walk into a room where you're the least experienced person there.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content:
+          "From there, I'll guide you through sensation awareness and focused eye movements while you notice what shifts. You stay in control the entire time, and nothing requires you to dissect your full professional history or relive a specific embarrassing moment in detail. Most clients describe it as surprisingly direct. Locate the sensation, work with it, notice it move.",
+      },
+      {
+        type: "faq",
+        heading: "Common Questions About SĀF-T for Imposter Syndrome",
+        items: [
+          {
+            q: "Is this therapy, or coaching?",
+            a: "Coaching. SĀF-T here is offered as part of a consultative, forward-focused coaching relationship, not clinical therapy. It's private pay, not billed to insurance, and isn't a diagnostic or treatment process. If what you're carrying feels more clinical than performance-related, that's a conversation worth having up front, and I can help point you toward the right fit.",
+          },
+          {
+            q: "Do I have to talk about specific moments I felt like a fraud?",
+            a: "No. You'll name the general situation, a type of meeting, a specific kind of ask, but you're never required to narrate or relive a specific embarrassing memory in detail. SĀF-T works with the sensation, not the story.",
+          },
+          {
+            q: "How is this different from breathing exercises or affirmations?",
+            a: "Breathing and affirmations work at the surface. They can calm you in the moment, but the underlying bracing pattern is often still there afterward. SĀF-T targets that stored physical activation directly, which is why the shift tends to hold rather than needing to be re-triggered every time.",
+          },
+          {
+            q: "Is SĀF-T only useful for imposter syndrome?",
+            a: "No, it's a general nervous-system regulation technique, also used with first responders and high-performers for acute stress, performance anxiety, and general overwhelm. Imposter syndrome is simply one of the most common reasons coaching clients bring it up.",
+          },
+          {
+            q: "How many sessions does this take?",
+            a: "Rapid, within-session shifts are typical of SĀF-T, and many clients notice a real difference in a single session. It can be used as a standalone technique for a specific trigger or woven into a longer coaching relationship, depending on what you're working on.",
+          },
+        ],
+      },
+      {
+        type: "heading",
+        text: "Who This Tends to Help",
+      },
+      {
+        type: "list",
+        items: [
+          "High-achievers stepping into a bigger role or more visibility",
+          "New leaders and recent promotions",
+          "Founders and career-changers entering rooms where they feel “behind”",
+          "Public speakers and anyone who goes quiet under scrutiny",
+          "Coaching clients whose confidence work “hasn't stuck” under real pressure",
+        ],
+      },
+      {
+        type: "image",
+        src: images.blog.imposterSyndrome.closing,
+        alt: "A woman smiling with quiet, genuine confidence",
+        caption: "You don't need a full rewrite, just enough room for the feeling to actually move.",
+      },
+      {
+        type: "heading",
+        text: "Getting Started",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            You don't have to know yet whether this is the right fit. A free 15-minute consultation is a low-pressure way to talk through what you're experiencing and figure out together whether SĀF-T coaching makes sense for you. <Link to="/contact" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Reach out here</Link> whenever you're ready.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content:
+          "I'm a Certified SĀF-T Provider and Trainer, and sessions are conducted by secure telehealth wherever you are. The goal was never to talk you out of the feeling. It's to help you actually move it.",
+      },
+    ],
+  },
+  {
+    slug: "trauma-therapy-without-talking-about-it",
+    title: "Trauma Therapy That Doesn't Require You to Talk About What Happened",
+    metaTitle: "Trauma Therapy Without Talking About It | Peace Practice",
+    metaDescription: "ART lets you process trauma without retelling what happened. Learn how it works, how it differs from EMDR, and if it's right for you.",
+    excerpt: "You don't have to describe what happened to heal from it. Here's how Accelerated Resolution Therapy (ART) works, how it's different from EMDR, and how to know if it's right for you.",
+    category: "Trauma & PTSD",
+    author: "Ayana F. McKanney, LCSW",
+    publishDate: "2026-08-04",
+    updatedDate: "2026-08-04",
+    readTime: "7 min read",
+    heroImage: images.blog.traumaWithoutTalking.hero,
+    heroImageAlt: "Warm sunlight filtering through green leaves",
+    hubLink: { href: "/specialties/art", label: "Explore ART (Accelerated Resolution Therapy)" },
+
+    content: [
+      {
+        type: "paragraph",
+        content:
+          "If the idea of trauma therapy makes you picture retelling everything, every detail, in order, out loud, to someone you just met, it makes sense that you've been putting it off. For a lot of people, that expectation alone is enough to keep them stuck. Most people don't know this, but trauma therapy without talking about the trauma out loud is possible. Accelerated Resolution Therapy (ART) was built around exactly that. You stay in control of what you say and don't say. Your nervous system does the processing; your voice doesn't have to.",
+      },
+      {
+        type: "heading",
+        text: "Why “Just Talk About It” Isn't the Only Path",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Talk therapy works well for a lot of people, and if it's working for you, that's genuinely good news. But for many trauma survivors, being asked to narrate the event in detail doesn't feel like healing, it feels like reliving it. There's a real reason for that. Trauma stored in the body isn't stored the way a memory of your commute is stored, it lives in the nervous system, in reactions that fire before conscious thought catches up. Hypervigilance, a racing heart at an ordinary noise, the urge to shut down mid-sentence, none of those are failures of willpower. They're your body doing exactly what it learned to do to survive, which means healing doesn't always start with words. Sometimes it starts with helping your body learn that the danger has passed, without asking it to narrate the danger first.",
+      },
+      {
+        type: "image",
+        src: images.blog.traumaWithoutTalking.whatArtIs,
+        alt: "A warm, softly lit armchair in a cozy corner",
+        caption: "Healing doesn't require a clinical room or a script, just a safe place to start.",
+      },
+      {
+        type: "heading",
+        text: "What Accelerated Resolution Therapy (ART) Actually Is",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            <Link to="/specialties/art" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Accelerated Resolution Therapy, or ART,</Link> is an evidence-based approach built to process trauma without reliving it, helping you reprocess a distressing memory without requiring you to describe it out loud. During a session, you're guided through a series of horizontal eye movements, similar in spirit to EMDR, while you privately notice the images, sensations, and emotions connected to the memory. You don't narrate any of it out loud. I'm guiding the process; you're the only one who needs to know what you're seeing.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content:
+          "What makes ART distinct is a technique called voluntary image replacement. Once the emotional charge of a distressing memory has eased, you're guided to consciously replace the disturbing images your mind has been holding onto with new ones you choose. The memory that something happened doesn't disappear, but the images that used to trigger a flood of panic or shutdown stop having that grip on you.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Most clients notice a real shift in how a memory feels within one to five sessions. Not because the past changes, but because the way your body responds to it does.",
+      },
+      {
+        type: "heading",
+        text: "ART vs. EMDR — What's Actually Different",
+      },
+      {
+        type: "paragraph",
+        content:
+          "If you've looked into trauma therapy before, you've probably come across EMDR (Eye Movement Desensitization and Reprocessing) too, many people specifically search for EMDR without talking about trauma in detail, and it's easy to assume ART is just a variation on the same thing. They do share real similarities. Both use bilateral eye movements, both are evidence-based, and both exist because trauma doesn't always respond to talking alone.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The differences show up in a few concrete places. EMDR typically works through a longer sequence of sessions and structured phases, often over weeks or months, and generally asks you to verbally identify the memory and the negative belief attached to it. ART was designed to work faster. Many clients feel meaningful relief in a single session, and most complete the full process within one to five, and it doesn't require narrating the memory out loud at any point.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Neither approach is “better” across the board, they're just built differently. If the idea of describing what happened, even briefly, feels like the biggest barrier to starting therapy, ART is worth a closer look.",
+      },
+      {
+        type: "image",
+        src: images.blog.traumaWithoutTalking.howSessionWorks,
+        alt: "Soft morning light filtering through sheer white curtains",
+        caption: "Sessions are paced by you, quiet, gradual, and entirely within your control.",
+      },
+      {
+        type: "heading",
+        text: "How a Session Actually Works",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Here's what an ART session actually looks like, step by step, so there are no surprises going in.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "You start by identifying what's bothering you, not in detail, just enough for us both to know what we're working on. From there, I'll guide you through sets of horizontal eye movements while you notice what comes up in your body and mind, things like images, sensations, emotions. You stay in the driver's seat the entire time. If something feels like too much, we slow down or stop. Nothing happens to you; you're actively directing the process.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "As the sensations shift, we move toward voluntary image replacement, consciously choosing new, less distressing images to associate with the memory. By the end of a session, most people describe the memory as feeling more distant, more like something that happened rather than something that's still happening.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "You leave knowing you did the work. You just didn't have to say it out loud to do it.",
+      },
+      {
+        type: "faq",
+        heading: "Common Concerns About ART",
+        items: [
+          {
+            q: "Will I still have to talk at all?",
+            a: "You'll talk, just not about the traumatic content itself. You'll tell me what general area you want to work on (“a car accident,” “something from childhood”) and describe what you're noticing during the process. You're never asked to narrate the traumatic event.",
+          },
+          {
+            q: "What if I don't want to describe what happened, even briefly?",
+            a: "That's exactly what ART is built for. You can work through a memory you've never said out loud to anyone, including me. I don't need the story to help you process it.",
+          },
+          {
+            q: "Is ART only for major trauma, or does it help with smaller, everyday distressing memories too?",
+            a: "Both. ART is used for PTSD and significant trauma, but it's just as effective for the smaller, persistent stuff, a humiliating memory, a recurring conflict, a moment of panic that still has a grip on you years later.",
+          },
+          {
+            q: "How many sessions does ART typically take?",
+            a: "Most clients notice meaningful change within one to five sessions. Some concerns resolve in a single session; more complex or layered experiences may take longer. We'll check in as we go, not just assume a fixed number up front.",
+          },
+          {
+            q: "Is this covered by insurance?",
+            a: (
+              <>
+                As clinical therapy, ART sessions are billed the same way as other therapy sessions at The Peace Practice, and most major insurance plans are accepted, including Aetna, Anthem, Blue Cross Blue Shield, Cigna, Optum, UnitedHealthcare, Oxford, and Oscar. Reach out to verify your specific coverage via the <Link to="/faq" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">FAQ page</Link> or a free consultation.
+              </>
+            ),
+          },
+        ],
+      },
+      {
+        type: "heading",
+        text: "Who ART Tends to Help",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            ART was originally developed for combat veterans with <Link to="/specialties/trauma-ptsd" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">PTSD</Link>, and it's still widely used for trauma in that clinical sense, but the people who benefit from it in practice are a lot broader than that. It's often a strong fit for
+          </>
+        ),
+      },
+      {
+        type: "list",
+        items: [
+          "PTSD and complex trauma",
+          "Anxiety and panic that has a specific memory or event attached to it",
+          "Birth trauma and pregnancy loss",
+          "Grief that feels stuck rather than moving",
+          "Phobias tied to a specific incident",
+          "Recurring intrusive memories that talk therapy hasn't fully resolved",
+        ],
+      },
+      {
+        type: "paragraph",
+        content:
+          "If you've tried traditional talk therapy and felt like you hit a wall, or never started because the thought of detailing what happened kept you from booking that first appointment, ART is worth exploring.",
+      },
+      {
+        type: "image",
+        src: images.blog.traumaWithoutTalking.closing,
+        alt: "A sunlit wooden path winding through green trees",
+        caption: "You don't have to have it all figured out to take the first step.",
+      },
+      {
+        type: "heading",
+        text: "Getting Started, Without Pressure",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            You don't have to decide today that ART is the right fit, and you definitely don't have to describe anything before we've even met. A free 15-minute consultation is the lowest-pressure way to ask questions, hear more about how sessions work, and figure out together whether this is the right next step. <Link to="/contact" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Reach out here</Link> whenever you're ready.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content:
+          "I'm a licensed clinical social worker in New York, New Jersey, and Rhode Island, and all sessions are conducted by secure telehealth, no commute, no waiting room, just a private space you choose. Whenever you're ready, I'm here.",
+      },
+    ],
+  },
+  {
+    slug: "panic-attacks-arent-a-breathing-problem",
+    title: "Panic Attacks Aren't a Breathing Problem — Here's What Actually Stops Them",
+    metaTitle: "Panic Attacks Aren't a Breathing Problem | Peace Practice",
+    metaDescription: "Breathing exercises don't stop panic attacks for everyone, especially when they keep recurring. Learn why, and how ART can help resolve the trigger behind them.",
+    excerpt: "Box breathing, 4-7-8, paced breathing. If they've never landed for you mid-panic, that's not a personal failure. Here's why, and how ART can help panic attacks stop recurring.",
+    category: "Anxiety",
+    author: "Ayana F. McKanney, LCSW",
+    publishDate: "2026-08-14",
+    updatedDate: "2026-08-14",
+    readTime: "6 min read",
+    heroImage: images.blog.panicAttacks.hero,
+    heroImageAlt: "A man gripping his hair with both hands, head bowed in visible distress",
+    hubLink: { href: "/specialties/art", label: "Explore ART (Accelerated Resolution Therapy)" },
+
+    content: [
+      {
+        type: "paragraph",
+        content:
+          "Your chest goes tight first. Then your heart rate spikes, your hands go cold, and the room feels like it's closing in. Someone tells you to breathe through your panic attack, in for four, hold for four, out for four, and you try, you really try, but it doesn't land. If anything, focusing on your breath makes the panic louder. You start to wonder what's wrong with you that a technique everyone swears by just doesn't work. Nothing is wrong with you. Breathing exercises help some people some of the time, but they were never built to override a nervous system that's already mid-alarm.",
+      },
+      {
+        type: "heading",
+        text: "Why Breathing Exercises Don't Work for Every Panic Attack",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Conscious breathing techniques ask you to do something very specific under very bad conditions. Box breathing, 4-7-8 breathing, paced breathing, they all require you to count, hold a pattern, and stay mentally present with your breath while your body is flooded with adrenaline and convinced you're in danger. That takes working memory and executive function, the exact resources your brain pulls offline the moment it decides you need to survive something instead of think about it. For some people, paying close attention to their breath in that state doesn't calm things down. It puts a spotlight directly on the sensations that are already scaring them, which can make the panic worse, not better.",
+      },
+      {
+        type: "heading",
+        text: "What's Actually Happening in Your Nervous System During a Panic Attack",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A panic attack isn't your mind overreacting to nothing. It's your nervous system reacting to something it's already decided is a threat, correctly or not. Adrenaline floods your system, your heart rate climbs to move blood to your limbs, your breathing gets shallow and fast, sometimes tipping into panic attack hyperventilation that leaves you dizzy or numb, and your thinking brain takes a back seat to the part of you built purely for survival. None of that is a character flaw or a failure of willpower. It's biology doing exactly what it's designed to do, just at the wrong moment, in response to a threat that usually isn't a tiger.",
+      },
+      {
+        type: "image",
+        src: images.blog.panicAttacks.whyBreathingFails,
+        alt: "A man peering through his fingers with both hands pressed to his face, visibly overwhelmed",
+        caption: "The goal isn't to out-breathe the panic. It's to help your body finish the response it's already having.",
+      },
+      {
+        type: "heading",
+        text: "Where ART Comes In",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            <Link to="/specialties/art" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Accelerated Resolution Therapy (ART)</Link> works differently because it doesn't try to manage the moment at all. Recurring panic often traces back to a specific memory or trigger, a near-miss, a humiliation, a moment your body decided was dangerous, even if your conscious mind has mostly moved on from it. ART uses guided eye movements to reprocess that underlying memory directly, then helps you consciously replace the images your mind keeps returning to with new ones you choose. The memory that something happened doesn't disappear. The grip it has on your nervous system does.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content:
+          "This isn't about replacing breathing techniques that already work for you in the moment. It's for the panic that keeps coming back no matter how well you manage each individual episode, because the trigger underneath it was never actually addressed.",
+      },
+      {
+        type: "image",
+        src: images.blog.panicAttacks.howSessionWorks,
+        alt: "A warm gold armchair lit by late afternoon sun in a cozy corner",
+        caption: "Sessions are structured, brief, and stay entirely within your control.",
+      },
+      {
+        type: "heading",
+        text: "How This Works in a Session",
+      },
+      {
+        type: "paragraph",
+        content:
+          "We start by identifying what tends to trigger the panic, not in detail, just enough for us both to know what we're working on. From there, I'll guide you through sets of horizontal eye movements while you notice what comes up: images, sensations, emotions. You stay in control the entire time. Nothing requires you to narrate the moment out loud or relive it in detail, only to notice what's there.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "As the intensity eases, we move toward voluntary image replacement, consciously choosing new images to associate with the memory. Most clients notice a real shift within a handful of sessions, not because the memory disappeared, but because it stopped having the same grip on their body.",
+      },
+      {
+        type: "faq",
+        heading: "Common Questions About ART for Panic Attacks",
+        items: [
+          {
+            q: "Do I have to know exactly what triggers my panic for this to help?",
+            a: "No. Many clients don't consciously connect their panic to a specific memory going in. Part of the process is simply identifying the general pattern together, you don't need a fully worked-out theory before we start.",
+          },
+          {
+            q: "Is this instead of breathing exercises, or does it work alongside them?",
+            a: "Either. If breathing techniques already help you manage an episode in the moment, there's no reason to drop them. ART is for what's underneath the pattern, the reason panic keeps returning in the first place.",
+          },
+          {
+            q: "Is this therapy, or coaching?",
+            a: "Therapy. As clinical therapy, ART sessions are billed the same way as other therapy sessions at The Peace Practice, and most major insurance plans are accepted, including Aetna, Anthem, Blue Cross Blue Shield, Cigna, Optum, UnitedHealthcare, Oxford, and Oscar.",
+          },
+          {
+            q: "How is this different from EMDR?",
+            a: "They share real similarities, both use bilateral eye movements and are evidence-based. ART was designed to work faster, often in one to five sessions, and doesn't require narrating the memory out loud at any point, which is why it tends to fit well for panic that's hard to talk about.",
+          },
+          {
+            q: "How many sessions does this take?",
+            a: "Most clients notice meaningful change within one to five sessions. Some patterns resolve in a single session, more complex or layered ones may take longer.",
+          },
+        ],
+      },
+      {
+        type: "heading",
+        text: "Who This Tends to Help",
+      },
+      {
+        type: "list",
+        items: [
+          "Anyone whose panic attacks keep recurring despite trying breathing techniques",
+          "People whose panic traces back to a specific memory or near-miss, even a small one",
+          "High-achievers whose panic shows up before high-stakes moments",
+          "Anyone who feels more anxious, not less, when they focus on their breath",
+          "People who've tried talk therapy for panic and felt like they hit a wall",
+        ],
+      },
+      {
+        type: "image",
+        src: images.blog.panicAttacks.closing,
+        alt: "A man smiling with quiet, genuine warmth",
+        caption: "You don't have to out-breathe the panic. You just need the pattern underneath it to actually move.",
+      },
+      {
+        type: "heading",
+        text: "Getting Started",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            You don't have to know yet whether this is the right fit. A free 15-minute consultation is a low-pressure way to talk through what you're experiencing and figure out together whether ART is the right next step. <Link to="/contact" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Reach out here</Link> whenever you're ready.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content:
+          "I'm a licensed clinical social worker in New York, New Jersey, and Rhode Island, and all sessions are conducted by secure telehealth, no commute, no waiting room, just a private space you choose. The goal was never to force the breath to work. It's to help your body stop treating an ordinary moment like a threat.",
+      },
+    ],
+  },
+];
+
+export function getPostBySlug(slug) {
+  return blogPosts.find((p) => p.slug === slug);
+}
