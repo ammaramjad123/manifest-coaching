@@ -7,11 +7,17 @@ import { next } from "@vercel/functions";
 // <head> tags — so for these user agents we return a small static HTML
 // document with the correct per-page title/meta/OG tags instead of letting
 // the request fall through to the SPA's index.html (which has none of that
-// until JavaScript runs). Googlebot/Bingbot are included too: they do
-// eventually render JS, but giving them the real tags on first fetch avoids
-// relying on that slower second-pass render for a young, low-authority site.
+// until JavaScript runs).
+//
+// Googlebot, Bingbot and Google's inspection tools are deliberately NOT in
+// this list. They run JavaScript, and the stub below carries none, so while
+// they were matched they only ever saw ~40 words of title and description per
+// page and never the page itself. Passed through to the SPA they render the
+// full page, which already sets the same per-page title, description and
+// canonical tags. Checked 12 Sep 2026: rendered pages carry 550-1,450 words
+// against 38-43 in the stub.
 const BOT_UA_PATTERN =
-  /facebookexternalhit|Facebot|Twitterbot|LinkedInBot|WhatsApp|TelegramBot|Slackbot|Discordbot|SkypeUriPreview|Applebot|Pinterest|redditbot|vkShare|W3C_Validator|Google-InspectionTool|GoogleOther|Bingbot|iMessage|Googlebot|Bitrix|Line\/|Snapchat|SocialShare|GPTBot|ChatGPT-User|OAI-SearchBot|ClaudeBot|Claude-User|Claude-SearchBot|anthropic-ai|PerplexityBot|Perplexity-User|Google-Extended|CCBot|Bytespider|Amazonbot|YandexBot|DuckDuckBot/i;
+  /facebookexternalhit|Facebot|Twitterbot|LinkedInBot|WhatsApp|TelegramBot|Slackbot|Discordbot|SkypeUriPreview|Applebot|Pinterest|redditbot|vkShare|W3C_Validator|iMessage|Bitrix|Line\/|Snapchat|SocialShare|GPTBot|ChatGPT-User|OAI-SearchBot|ClaudeBot|Claude-User|Claude-SearchBot|anthropic-ai|PerplexityBot|Perplexity-User|Google-Extended|CCBot|Bytespider|Amazonbot|YandexBot|DuckDuckBot/i;
 
 const SITE_IMAGE = "https://www.thepeacepractice.me/og-image.jpg";
 const SITE_IMAGE_ALT = "The Peace Practice — Ayana Foluke McKanney, LCSW";
@@ -49,6 +55,16 @@ const POSTS = {
     imageAlt: "A man gripping his hair with both hands, head bowed in visible distress",
     publishDate: "2026-08-14",
     updatedDate: "2026-08-14",
+    author: "Ayana F. McKanney, LCSW",
+  },
+  "manifestation-methods-that-actually-work": {
+    title: "Manifestation Methods That Actually Work | Peace Practice",
+    description:
+      "A licensed therapist's honest take on manifestation methods: what scripting, 369 and visualization really do, why they stall, and what makes them stick.",
+    image: "https://www.thepeacepractice.me/blog/prince-akachi-l3IHXOdMyHQ-unsplash.jpg",
+    imageAlt: "A woman looking directly at the camera with a thoughtful, unconvinced expression",
+    publishDate: "2026-09-05",
+    updatedDate: "2026-09-05",
     author: "Ayana F. McKanney, LCSW",
   },
 };
