@@ -67,14 +67,6 @@ export const upcomingTraining = {
       dates: [
         {
           active: true,
-          when: "9/29/26 – 10/01/26 · 8:30am–5:00pm (3 days)",
-          where: "Acworth, GA",
-          cost: "$1,700",
-          ctaText: "Reserve Your Spot",
-          ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=Basic&inst=ayanamckanney",
-        },
-        {
-          active: true,
           when: "01/05/27 – 01/07/27 · 8:30am–5:00pm (3 days)",
           where: "New York City, NY",
           cost: "$1,700",
@@ -83,8 +75,32 @@ export const upcomingTraining = {
         },
         {
           active: true,
+          when: "01/15/27 – 01/17/27 · 8:30am–5:00pm (Fri–Sun)",
+          where: "Acworth, GA",
+          cost: "$1,700",
+          ctaText: "Reserve Your Spot",
+          ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=Basic&inst=ayanamckanney",
+        },
+        {
+          active: true,
+          when: "04/03/27 – 04/05/27 · 8:30am–5:00pm (Sat–Mon)",
+          where: "Acworth, GA",
+          cost: "$1,700",
+          ctaText: "Reserve Your Spot",
+          ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=Basic&inst=ayanamckanney",
+        },
+        {
+          active: true,
           when: "07/06/27 – 07/09/27 · 8:30am–5:00pm (3 days)",
           where: "New York City, NY",
+          cost: "$1,700",
+          ctaText: "Reserve Your Spot",
+          ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=Basic&inst=ayanamckanney",
+        },
+        {
+          active: true,
+          when: "08/14/27 – 08/16/27 · 8:30am–5:00pm (Sat–Mon)",
+          where: "Acworth, GA",
           cost: "$1,700",
           ctaText: "Reserve Your Spot",
           ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=Basic&inst=ayanamckanney",
@@ -118,7 +134,7 @@ export const upcomingTraining = {
       dates: [
         {
           active: true,
-          when: "Friday 10/02/2026 · 9:00am–3:00pm",
+          when: "Sunday 11/22/2026 · 9:00am–3:00pm",
           where: "Acworth, GA",
           cost: "$199",
           ctaText: "Reserve Your Spot",
