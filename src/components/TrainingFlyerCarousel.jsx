@@ -95,17 +95,29 @@ export default function TrainingFlyerCarousel({ trainings }) {
 
               {/* Dates & locations, compact */}
               <div className="space-y-2.5 mb-6">
-                {(t.dates || []).filter((d) => d.active !== false).map((d, i) => (
-                  <div key={i} className="flex items-start gap-2.5 text-sm font-[system-ui]">
-                    <Calendar className="w-4 h-4 text-[#c09050] flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-700">{d.when}</span>
-                    <span className="text-gray-300">·</span>
-                    <span className="flex items-center gap-1 text-gray-500">
-                      <MapPin className="w-3.5 h-3.5 flex-shrink-0" />
-                      {d.where}
-                    </span>
-                  </div>
-                ))}
+                {(t.dates || []).filter((d) => d.active !== false).map((d, i) => {
+                  // Date on the first line, the whole time on the second, and the
+                  // location kept on one line (it drops below as a unit when narrow).
+                  const [datePart, ...timeParts] = (d.when || "").split("·");
+                  const timePart = timeParts.join("·").trim();
+                  return (
+                    <div key={i} className="flex items-start gap-2.5 text-sm font-[system-ui]">
+                      <Calendar className="w-4 h-4 text-[#c09050] flex-shrink-0 mt-0.5" />
+                      <div className="flex-1 min-w-0 flex flex-wrap items-start justify-between gap-x-4 gap-y-1">
+                        <span className="leading-snug">
+                          <span className="block text-gray-700 font-semibold whitespace-nowrap">{datePart.trim()}</span>
+                          {timePart && (
+                            <span className="block text-gray-500 whitespace-nowrap">{timePart}</span>
+                          )}
+                        </span>
+                        <span className="flex items-center gap-1 text-gray-500 whitespace-nowrap leading-snug">
+                          <MapPin className="w-3.5 h-3.5 flex-shrink-0 text-[#c09050]" />
+                          {d.where}
+                        </span>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
 
               {t.whoFor && (
