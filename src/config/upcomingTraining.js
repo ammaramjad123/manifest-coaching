@@ -83,7 +83,7 @@ export const upcomingTraining = {
         },
         {
           active: true,
-          when: "07/06/27 – 07/09/27 · 8:30am–5:00pm (3 days)",
+          when: "07/07/27 – 07/09/27 · 8:30am–5:00pm (3 days)",
           where: "New York City, NY",
           cost: "$1,700",
           ctaText: "Reserve Your Spot",
