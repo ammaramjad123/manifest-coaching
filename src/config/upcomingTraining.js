@@ -123,6 +123,9 @@ export const upcomingTraining = {
       topicImage: "/new/SAFT logo.jpeg",
       trainerImage: "/new/ayana-headshot.jpg",
 
+      //  Short line shown under the dates on the flyer card (leave "" for none)
+      note: "Dates for January, April and August 2027 in Georgia are coming soon!",
+
       dates: [
         {
           active: true,
@@ -132,7 +135,22 @@ export const upcomingTraining = {
           ctaText: "Reserve Your Spot",
           ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=SAF-T1&inst=ayanamckanney",
         },
-
+        {
+          active: true,
+          when: "Monday 01/04/2027 · 9:00am–3:00pm",
+          where: "New York City, NY",
+          cost: "$199 · 6 CEU",
+          ctaText: "Reserve Your Spot",
+          ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=SAF-T1&inst=ayanamckanney",
+        },
+        {
+          active: true,
+          when: "Tuesday 07/06/2027 · 9:00am–3:00pm",
+          where: "New York City, NY",
+          cost: "$199 · 6 CEU",
+          ctaText: "Reserve Your Spot",
+          ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=SAF-T1&inst=ayanamckanney",
+        },
       ],
     },
 
