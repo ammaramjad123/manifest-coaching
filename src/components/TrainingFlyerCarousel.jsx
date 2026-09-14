@@ -119,6 +119,12 @@ export default function TrainingFlyerCarousel({ trainings }) {
                 })}
               </div>
 
+              {t.note && (
+                <p className="-mt-3 mb-6 text-sm italic text-[#a87b3a] font-semibold font-[system-ui]">
+                  {t.note}
+                </p>
+              )}
+
               {t.whoFor && (
                 <div className="rounded-xl bg-[#fefcf7] border border-[#c09050]/15 p-4 mb-6">
                   <p className="text-[10px] font-black uppercase tracking-wider text-[#c09050] mb-1 font-[system-ui]">
