@@ -67,6 +67,14 @@ export const upcomingTraining = {
       dates: [
         {
           active: true,
+          when: "01/05/27 – 01/07/27 · 8:30am–5:00pm (Tue–Thu)",
+          where: "New York City, NY",
+          cost: "$1,700",
+          ctaText: "Reserve Your Spot",
+          ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=Basic&inst=ayanamckanney",
+        },
+        {
+          active: true,
           when: "01/15/27 – 01/17/27 · 8:30am–5:00pm (Fri–Sun)",
           where: "Acworth, GA",
           cost: "$1,700",
@@ -83,7 +91,7 @@ export const upcomingTraining = {
         },
         {
           active: true,
-          when: "08/14/27 – 08/16/27 · 8:30am–5:00pm (Sat–Mon)",
+          when: "07/07/27 – 07/09/27 · 8:30am–5:00pm (Wed–Fri)",
           where: "New York City, NY",
           cost: "$1,700",
           ctaText: "Reserve Your Spot",
