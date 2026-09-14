@@ -129,7 +129,7 @@ export const upcomingTraining = {
       dates: [
         {
           active: true,
-          when: "Sunday 11/22/2026 · 9:00am–3:00pm",
+          when: "11/22/26 · 9:00am–3:00pm (Sun)",
           where: "Acworth, GA",
           cost: "$199",
           ctaText: "Reserve Your Spot",
@@ -137,7 +137,7 @@ export const upcomingTraining = {
         },
         {
           active: true,
-          when: "Monday 01/04/2027 · 9:00am–3:00pm",
+          when: "01/04/27 · 9:00am–3:00pm (Mon)",
           where: "New York City, NY",
           cost: "$199 · 6 CEU",
           ctaText: "Reserve Your Spot",
@@ -145,7 +145,7 @@ export const upcomingTraining = {
         },
         {
           active: true,
-          when: "Tuesday 07/06/2027 · 9:00am–3:00pm",
+          when: "07/06/27 · 9:00am–3:00pm (Tue)",
           where: "New York City, NY",
           cost: "$199 · 6 CEU",
           ctaText: "Reserve Your Spot",
