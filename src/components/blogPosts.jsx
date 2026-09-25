@@ -78,7 +78,7 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.artTraining.training,
-        alt: "A therapist with a notepad sitting opposite a client in a bright, calm room",
+        alt: "A facilitator explaining something to a small group seated in a warm, lamplit room",
         caption: "Three days, and most of it is practicum rather than lecture.",
       },
       {
@@ -168,14 +168,19 @@ export const blogPosts = [
         type: "paragraph",
         content: (
           <>
-            <Link to="/specialties/safety-sensation" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">SĀF-T</Link>, the Sensations Awareness Focused Technique, is a somatic component that works within the same family. Where the core protocol organizes itself around images, SĀF-T targets distressing body sensation directly.
+            <Link to="/specialties/safety-sensation" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">SĀF-T</Link>, the Sensation Awareness Focused Technique, is widely assumed to be an advanced module of ART. <strong>It is not.</strong> It is a <strong>one-day training with no ART prerequisite and no licensure requirement</strong>, and the provider states plainly that it is intended for non-licensed professionals and parents.
           </>
         ),
       },
       {
         type: "paragraph",
         content:
-          "It becomes relevant for the presentations where there is no image to work with. Performance anxiety with no originating event. A bracing pattern that predates anything the client can name. Chronic activation that has been there long enough to feel like personality rather than symptom. Those clients have sensation but no scene, and a protocol built around images has less to grip.",
+          "The scope is narrower by design. It covers eye movements for sensation processing only rather than the full protocol, and the stated objective is relieving negative sensation tied to anxiety and physical discomfort such as headaches. The audience the provider lists is parents, teachers, couples, college students, and business and sports professionals. It runs one day at $199, against three days at $1,700 for Basic ART.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "For a licensed clinician that reframes the decision. SĀF-T is not the next rung after Basic ART, and taking it will not deepen your trauma work. What is interesting about it is who else is allowed in the room. If you work alongside parents, schools or coaches, a technique they can be trained in themselves is a different kind of useful.",
       },
       {
         type: "faq",
@@ -195,7 +200,7 @@ export const blogPosts = [
           },
           {
             q: "Does the training cover SĀF-T as well?",
-            a: "They are separate trainings. SĀF-T is its own technique with its own certification. It is most useful where the client has body activation but no specific memory or image to work from. Which one to do first depends on what your caseload is actually presenting with.",
+            a: "No, and the two are further apart than most people assume. Basic ART is three days, costs $1,700, requires a mental health license or equivalent authorization, and certifies you as a Basic ART Practitioner through IS-ART. SĀF-T is one day, costs $199, and carries no ART prerequisite and no licensure requirement at all. The provider describes it as being for non-licensed professionals and parents, covering eye movements for sensation processing only. You can take either one without the other.",
           },
         ],
       },
