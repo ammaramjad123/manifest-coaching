@@ -418,12 +418,12 @@ export default function ServicesPage() {
   return (
     <div className="bg-white overflow-hidden">
       <title>Clinical Therapy, Coaching & Training | The Peace Practice</title>
-      <meta name="description" content="Explore The Peace Practice's three core offerings: licensed clinical therapy, transformational coaching, and professional training & education with Ayana F. McKanney, LCSW." />
+      <meta name="description" content="Three core offerings from Ayana F. McKanney, LCSW: licensed clinical therapy, transformational coaching, and professional training and education." />
       <link rel="canonical" href="https://www.thepeacepractice.me/services" />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="The Peace Practice" />
       <meta property="og:title" content="Our Services: Clinical Therapy, Coaching & Training | The Peace Practice" />
-      <meta property="og:description" content="Explore The Peace Practice's three core offerings: licensed clinical therapy, transformational coaching, and professional training & education with Ayana F. McKanney, LCSW." />
+      <meta property="og:description" content="Three core offerings from Ayana F. McKanney, LCSW: licensed clinical therapy, transformational coaching, and professional training and education." />
       <meta property="og:url" content="https://www.thepeacepractice.me/services" />
       <meta property="og:image" content="https://www.thepeacepractice.me/og-image.jpg" />
       <meta property="og:image:secure_url" content="https://www.thepeacepractice.me/og-image.jpg" />
@@ -434,7 +434,7 @@ export default function ServicesPage() {
       <meta property="og:locale" content="en_US" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Our Services: Clinical Therapy, Coaching & Training | The Peace Practice" />
-      <meta name="twitter:description" content="Explore The Peace Practice's three core offerings: licensed clinical therapy, transformational coaching, and professional training & education with Ayana F. McKanney, LCSW." />
+      <meta name="twitter:description" content="Three core offerings from Ayana F. McKanney, LCSW: licensed clinical therapy, transformational coaching, and professional training and education." />
       <meta name="twitter:image" content="https://www.thepeacepractice.me/og-image.jpg" />
       <meta name="twitter:image:alt" content="The Peace Practice — Ayana Foluke McKanney, LCSW" />
 
