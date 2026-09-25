@@ -215,10 +215,10 @@ export const images = {
       closing: "/blog/yingchou-han-IJrIeCs3D4g-unsplash.jpg",       // Closing / "Getting Started" section photo
     },
     artTraining: {
-      hero: "/blog/pexels-3785423-clinician-considering.jpg",   // Top banner — "Accelerated Resolution Therapy Training"
-      training: "/blog/pexels-261651-training-notes.jpg",       // "What the Three Days Contain" section photo
-      deciding: "/blog/pexels-9300726-training-room.jpg",       // "Choosing Between This and EMDR" section photo
-      closing: "/blog/pexels-6446313-practice-room.jpg",        // Closing section photo
+      hero: "/blog/vitaly-gariev-VowOZkNUJ1k-unsplash.jpg",             // Top banner — "Accelerated Resolution Therapy Training"
+      training: "/blog/pexels-8761555-training-room-groups.jpg",        // "What the Three Days Contain" section photo
+      deciding: "/blog/pexels-9300726-training-room.jpg",               // "Choosing Between This and EMDR" section photo
+      closing: "/blog/denny-sachtleben-tuYnkOjw6k4-unsplash.jpg",       // Closing section photo
     },
     vawaEvaluation: {
       hero: "/blog/sunlit-curtains-ninCiZ_k6jI-unsplash.jpg",        // Top banner — "A VAWA Psychological Evaluation Isn't Therapy"
