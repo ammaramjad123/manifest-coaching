@@ -70,7 +70,7 @@ export const blogPosts = [
         content:
           (
           <>
-            The clinically interesting part is what the protocol does not require. <strong>The client does not have to narrate the event out loud.</strong> They identify the general area, enough for you both to know what you are working on, and the processing happens <strong>without verbal disclosure</strong>. For a caseload that includes people who shut down the moment they are asked to describe something, that is not a minor convenience. It is <strong>the difference between treatment and another stalled intake</strong>.
+            The clinically interesting part is what the protocol does not require. <strong>The client does not have to narrate the event out loud.</strong> They identify the general area, enough for you both to know what you are working on, and the processing happens without verbal disclosure. For a caseload that includes people who shut down the moment they are asked to describe something, that is not a minor convenience. It is the difference between treatment and another stalled intake.
           </>
         ),
       },
@@ -79,7 +79,7 @@ export const blogPosts = [
         content:
           (
           <>
-            The other distinguishing claim is pace. Most clients are described as completing the process <strong>within one to five sessions</strong>. Take that as the modality’s own framing rather than a guarantee. It does explain the interest from clinicians in settings where <strong>long courses of treatment are not realistic</strong>.
+            The other distinguishing claim is pace. Most clients are described as completing the process <strong>within one to five sessions</strong>. Take that as the modality’s own framing rather than a guarantee. It does explain the interest from clinicians in settings where long courses of treatment are not realistic.
           </>
         ),
       },
@@ -97,7 +97,7 @@ export const blogPosts = [
         type: "paragraph",
         content: (
           <>
-            Basic training is a <strong>three-day live, in-person intensive</strong>. The published format is lecture, video, audio and slide presentation, plus <strong>live demonstration and supervised practicum</strong>. The organization lists <strong>$1,700</strong> for the three days with a certified instructor and <strong>$2,100</strong> to train with the founder, though individual instructors set their own arrangements. It is listed at <strong>20 CE credits</strong>, though what your own board accepts can differ, so check before you book.
+            Basic training is a <strong>three-day live, in-person intensive</strong>. The published format is lecture, video, audio and slide presentation, plus live demonstration and supervised practicum. The organization lists <strong>$1,700</strong> for the three days with a certified instructor and $2,100 to train with the founder, though individual instructors set their own arrangements. It is listed at 20 CE credits, though what your own board accepts can differ, so check before you book.
           </>
         ),
       },
