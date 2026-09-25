@@ -27,6 +27,16 @@ const SITE_IMAGE_ALT = "The Peace Practice — Ayana Foluke McKanney, LCSW";
 // here too — otherwise share previews/bot fetches for that post will fall
 // back to the generic site-wide page below instead of post-specific tags.
 const POSTS = {
+  "vawa-psychological-evaluation-what-to-expect": {
+    title: "VAWA Psychological Evaluations Explained | Peace Practice",
+    description:
+      "A VAWA psychological evaluation is not therapy. Here is what USCIS asks for, what the assessment involves, and what the December 2025 guidance changed.",
+    image: "https://www.thepeacepractice.me/blog/sunlit-curtains-ninCiZ_k6jI-unsplash.jpg",
+    imageAlt: "Daylight coming through sheer curtains into a dark, quiet room",
+    publishDate: "2026-09-25",
+    updatedDate: "2026-09-25",
+    author: "Ayana F. McKanney, LCSW",
+  },
   "imposter-syndrome-lives-in-your-body": {
     title: "How to Actually Move Imposter Syndrome | Peace Practice",
     description:
