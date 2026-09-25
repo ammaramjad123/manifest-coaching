@@ -216,8 +216,8 @@ export const images = {
     },
     vawaEvaluation: {
       hero: "/blog/sunlit-curtains-ninCiZ_k6jI-unsplash.jpg",        // Top banner — "A VAWA Psychological Evaluation Isn't Therapy"
-      extremeCruelty: "/blog/hands-clasped-b0qXRTFYVUM-unsplash.jpg", // "Where an Evaluation Matters Most" section photo
-      theAppointment: "/blog/kelly-sikkema-ChsnZBAX6wA-unsplash.jpg", // "What the Appointment Is Actually Like" section photo
+      extremeCruelty: "/blog/kyle-austin-Q-5tt6mqkbQ-unsplash.jpg",    // "Where an Evaluation Matters Most" section photo
+      theAppointment: "/blog/vitaly-gariev-VowOZkNUJ1k-unsplash.jpg", // "What the Appointment Is Actually Like" section photo
       closing: "/blog/josh-hild-cdLAm_cooqw-unsplash.jpg",           // Closing / "Getting Started" section photo
     },
     manifestationMethods: {
