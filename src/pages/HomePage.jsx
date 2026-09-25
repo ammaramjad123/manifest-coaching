@@ -9,7 +9,7 @@ export default function HomePage() {
   return (
     <>
       <title>The Peace Practice | Therapy, Coaching & Training</title>
-      <meta name="description" content="Compassionate clinical therapy, transformational coaching, and professional training with Ayana F. McKanney, LCSW. Licensed in NY, NJ & RI with 26+ years of experience. Your journey, our partnership." />
+      <meta name="description" content="Clinical therapy, transformational coaching, and professional training with Ayana F. McKanney, LCSW. 26+ years of experience, licensed in NY, NJ and RI." />
       <link rel="canonical" href="https://www.thepeacepractice.me/" />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="The Peace Practice" />
