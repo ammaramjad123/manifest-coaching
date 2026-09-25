@@ -110,13 +110,13 @@ const data = {
 export default function SAFTPage() {
   return (
     <>
-      <title>SĀF-T: Sensations Awareness Focused Technique | The Peace Practice</title>
-      <meta name="description" content="SĀF-T is a somatic component of the ART® protocol that targets distressing body sensations directly to promote nervous system regulation, with Ayana F. McKanney, LCSW." />
+      <title>SĀF-T: Sensations Awareness Focused Technique | Peace Practice</title>
+      <meta name="description" content="SĀF-T is the somatic component of the ART® protocol, targeting distressing body sensations to regulate the nervous system. With Ayana McKanney, LCSW." />
       <link rel="canonical" href="https://www.thepeacepractice.me/specialties/safety-sensation" />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="The Peace Practice" />
       <meta property="og:title" content="SĀF-T: Sensations Awareness Focused Technique | The Peace Practice" />
-      <meta property="og:description" content="SĀF-T is a somatic component of the ART® protocol that targets distressing body sensations directly to promote nervous system regulation, with Ayana F. McKanney, LCSW." />
+      <meta property="og:description" content="SĀF-T is the somatic component of the ART® protocol, targeting distressing body sensations to regulate the nervous system. With Ayana McKanney, LCSW." />
       <meta property="og:url" content="https://www.thepeacepractice.me/specialties/safety-sensation" />
       <meta property="og:image" content="https://www.thepeacepractice.me/og-image.jpg" />
       <meta property="og:image:secure_url" content="https://www.thepeacepractice.me/og-image.jpg" />
@@ -127,7 +127,7 @@ export default function SAFTPage() {
       <meta property="og:locale" content="en_US" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="SĀF-T: Sensations Awareness Focused Technique | The Peace Practice" />
-      <meta name="twitter:description" content="SĀF-T is a somatic component of the ART® protocol that targets distressing body sensations directly to promote nervous system regulation, with Ayana F. McKanney, LCSW." />
+      <meta name="twitter:description" content="SĀF-T is the somatic component of the ART® protocol, targeting distressing body sensations to regulate the nervous system. With Ayana McKanney, LCSW." />
       <meta name="twitter:image" content="https://www.thepeacepractice.me/og-image.jpg" />
       <meta name="twitter:image:alt" content="The Peace Practice — Ayana Foluke McKanney, LCSW" />
       <SpecialtyPageTemplate data={data} />
