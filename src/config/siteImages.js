@@ -214,6 +214,12 @@ export const images = {
       howSessionWorks: "/blog/aleksandr-zaitsev-f3G3lPqxrfQ-unsplash.jpg", // "How This Works in a Session" section photo
       closing: "/blog/yingchou-han-IJrIeCs3D4g-unsplash.jpg",       // Closing / "Getting Started" section photo
     },
+    vawaEvaluation: {
+      hero: "/blog/sunlit-curtains-ninCiZ_k6jI-unsplash.jpg",        // Top banner — "A VAWA Psychological Evaluation Isn't Therapy"
+      extremeCruelty: "/blog/hands-clasped-b0qXRTFYVUM-unsplash.jpg", // "Where an Evaluation Matters Most" section photo
+      theAppointment: "/blog/kelly-sikkema-ChsnZBAX6wA-unsplash.jpg", // "What the Appointment Is Actually Like" section photo
+      closing: "/blog/josh-hild-cdLAm_cooqw-unsplash.jpg",           // Closing / "Getting Started" section photo
+    },
     manifestationMethods: {
       hero: "/blog/prince-akachi-l3IHXOdMyHQ-unsplash.jpg",         // Top banner — "Manifestation Methods That Actually Work"
       whereItStalls: "/blog/vitaly-gariev-aotrm-bpAAk-unsplash.jpg", // "The Part Repetition Cannot Reach" section photo
