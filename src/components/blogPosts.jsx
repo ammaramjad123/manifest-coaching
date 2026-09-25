@@ -16,7 +16,7 @@ export const blogPosts = [
     updatedDate: "2026-09-26",
     readTime: "9 min read",
     heroImage: images.blog.artTraining.hero,
-    heroImageAlt: "A clinician sitting at a desk, thinking, in a bright workspace",
+    heroImageAlt: "A clinician in profile, looking down, thinking something over",
     hubLink: { href: "/specialties/partnership", label: "Training with The Peace Practice" },
 
     content: [
@@ -78,7 +78,7 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.artTraining.training,
-        alt: "An open notebook and pen on a wooden table in daylight",
+        alt: "Hands writing notes in a spiral notebook at a table",
         caption: "Three days, and most of it is practicum rather than lecture.",
       },
       {
@@ -139,7 +139,7 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.artTraining.deciding,
-        alt: "A quiet desk beside a curtained window in late afternoon light",
+        alt: "An empty seminar room with rows of desks facing a screen",
         caption: "Let the caseload you already have decide it, not the reputation in the abstract.",
       },
       {
@@ -202,7 +202,7 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.artTraining.closing,
-        alt: "A quiet path running through green trees",
+        alt: "Pendant lights above a bookshelf in a quiet professional room",
         caption: "Choose the training that unblocks the clients already in front of you.",
       },
       {
