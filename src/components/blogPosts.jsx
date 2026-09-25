@@ -997,12 +997,12 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "As the sensations shift, we move toward voluntary image replacement, consciously choosing new, less distressing images to associate with the memory. By the end of a session, most people describe the memory as feeling more distant, more like something that happened rather than something that's still happening.",
+          "As the sensations shift, we move toward voluntary image replacement, consciously choosing new, less distressing images to associate with the memory. By the end of a session, most people describe the memory as <strong>more like something that happened rather than something that's still happening</strong>.",
       },
       {
         type: "paragraph",
         content:
-          "You leave knowing you did the work. You just didn't have to say it out loud to do it.",
+          "You leave knowing you did the work. <strong>You just didn't have to say it out loud to do it.</strong>",
       },
       {
         type: "faq",
