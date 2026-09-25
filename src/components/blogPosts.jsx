@@ -3,6 +3,230 @@ import { Link } from "react-router-dom";
 
 export const blogPosts = [
   {
+    slug: "vawa-psychological-evaluation-what-to-expect",
+    title: "A VAWA Psychological Evaluation Isn't Therapy — Here's What It Actually Is",
+    metaTitle: "VAWA Psychological Evaluations Explained | Peace Practice",
+    metaDescription:
+      "A VAWA psychological evaluation is not therapy. Here is what USCIS asks for, what the assessment involves, and what the December 2025 guidance changed.",
+    excerpt:
+      "People often book one expecting the first session of treatment and find something closer to a long, careful interview. Here is what USCIS actually asks a psychological evaluation to do, and what changed in the December 2025 policy update.",
+    category: "Immigration Evaluations",
+    author: "Ayana F. McKanney, LCSW",
+    publishDate: "2026-09-25",
+    updatedDate: "2026-09-25",
+    readTime: "8 min read",
+    heroImage: images.blog.vawaEvaluation.hero,
+    heroImageAlt: "Daylight coming through sheer curtains into a dark, quiet room",
+    hubLink: { href: "/specialties/partnership", label: "Immigration Psychological Evaluations" },
+
+    content: [
+      {
+        type: "paragraph",
+        content:
+          "The first thing worth clearing up is that a VAWA psychological evaluation is not therapy. People often arrive expecting the first session of treatment and find something that feels closer to a long, careful interview. That difference isn't a technicality. It changes what the appointment is for, what happens inside it, and what you leave with, which is a written report meant for someone else to read.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Most writing on this subject stays general. USCIS does not, and the specifics are worth knowing before you book anything.",
+      },
+      {
+        type: "heading",
+        text: "What USCIS Actually Says About Psychological Evaluations",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The USCIS Policy Manual names psychological evaluations directly as evidence of battery or extreme cruelty. It also sets out the conditions under which one carries weight, and there are four of them.",
+      },
+      {
+        type: "list",
+        items: [
+          "A qualified medical or mental health professional prepared it",
+          "That professional either treated you, or thoroughly and adequately evaluated you",
+          "The assessment used well-established assessments or tools, rather than an informal conversation",
+          "The filing included the professional's CV or certifications, so USCIS can see their level of expertise",
+        ],
+      },
+      {
+        type: "paragraph",
+        content:
+          "That last one gets missed more often than you would think. A strong report submitted without the evaluator's credentials attached is a report USCIS has no way to weigh.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "USCIS also states plainly that it gives more weight to evidence that is detailed, specific and reliable. Deciding what evidence is credible, and how much weight it gets, sits within its sole discretion. No evaluation, however thorough, removes that discretion. Anyone who tells you otherwise is overselling.",
+      },
+      {
+        type: "heading",
+        text: "Where an Evaluation Matters Most Is Extreme Cruelty",
+      },
+      {
+        type: "paragraph",
+        content:
+          "VAWA covers battery or extreme cruelty, and those two phrases do very different work.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Battery tends to leave a trail. Hospital records, police reports, photographs, a protective order. Extreme cruelty frequently leaves none of that behind.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "USCIS describes extreme cruelty as conduct reflecting an intention to gain or maintain power and control. It is explicit that hurtful conduct alone, or adverse interactions of limited severity, are not enough. Among the examples it gives are forced confinement or physical isolation, and denying access to food, family or medical treatment.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Isolation doesn't generate paperwork. Neither does controlled access to money, or a threat that was never carried out, or years of being told that speaking to anyone would get you deported. What that kind of treatment generates is a psychological pattern, and describing that pattern in clinical terms is precisely what an evaluation is built to do.",
+      },
+      {
+        type: "image",
+        src: images.blog.vawaEvaluation.extremeCruelty,
+        alt: "A seated person with their hands clasped in their lap",
+        caption: "The harm that leaves no paperwork is usually the harm an evaluation is there to document.",
+      },
+      {
+        type: "heading",
+        text: "What Changed in December 2025",
+      },
+      {
+        type: "paragraph",
+        content:
+          "On 22 December 2025, USCIS issued Policy Alert PA-2025-33 and revised the VAWA part of the Policy Manual in its entirety. It took effect immediately and applies to petitions already pending as well as new ones. Several changes matter to anyone assembling evidence now.",
+      },
+      {
+        type: "list",
+        items: [
+          "Good faith marriage now calls for primary evidence of the marital relationship, including a legally valid marriage certificate and proof that any prior marriages were legally ended",
+          "The policy was revised to require that the self-petitioner resided with the abuser during the qualifying relationship",
+          "The any credible evidence provision was given a clearer explanation, alongside a restatement that credibility and weight remain entirely USCIS's call",
+          "The sections covering battery and extreme cruelty, and good moral character, were expanded",
+        ],
+      },
+      {
+        type: "paragraph",
+        content:
+          "USCIS frames the update as codifying long-standing practice rather than inventing new rules, and says one aim is to reduce Requests for Evidence. None of it makes a psychological evaluation less relevant. A clarified evidence standard tends to raise the value of a report that is specific and well documented over one that is general and sympathetic. A second alert issued the same day changed the confidentiality rules, which is covered further down.",
+      },
+      {
+        type: "heading",
+        text: "What the Appointment Is Actually Like",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Formats vary between evaluators, but the shape is usually consistent. There is a clinical interview, sometimes across more than one session, covering your history, the timeline of the relationship, and the symptoms you have lived with since. Standardized instruments are used alongside the interview, because that is what well-established assessments or tools means in practice. Afterwards the evaluator writes a report.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The report is the deliverable, and it is written for an adjudicator rather than for you. That is the clearest way to understand why this isn't treatment. In therapy the session is the point. Here the session is how the report gets built.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "You will be asked to describe things you would rather not describe. There is no version of this that avoids that entirely, because the report has to rest on detail. What you can reasonably expect is that it happens once, at a pace you set, with someone whose job in that room is to listen carefully and record it accurately.",
+      },
+      {
+        type: "image",
+        src: images.blog.vawaEvaluation.theAppointment,
+        alt: "An open notebook and pen on a wooden table in daylight",
+        caption: "The report is the deliverable, and it is written for an adjudicator rather than for you.",
+      },
+      {
+        type: "heading",
+        text: "Who Finds Out",
+      },
+      {
+        type: "paragraph",
+        content:
+          "This is usually the first question, and it deserves a direct answer. Federal law at 8 U.S.C. 1367 restricts what the Department of Homeland Security, the Department of Justice and the State Department may disclose about people who request VAWA, T or U relief. Information about the request cannot be released to anyone outside those agencies without a need to know.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "There is a second protection. USCIS cannot make an adverse determination of admissibility or deportability using information furnished solely by a prohibited source, and an abuser is a prohibited source. Congress stated the purpose of these provisions directly, which was to ensure that abusers and criminals cannot use the immigration system against their victims.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Those protections were narrowed in the same December 2025 round. A companion alert, PA-2025-34, changed three things. USCIS now checks whether a person has been convicted of crimes listed in INA 237(a)(2) before the prohibited source protection applies at all. It limited that protection specifically to adverse determinations of admissibility or deportability, so other kinds of decisions, including rejections and deferred action, sit outside it. And it reversed earlier policy so that these confidentiality protections now end once someone naturalizes. USCIS itself called that last change a substantive shift in both policy and practice.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "How any of that applies to your situation is a question for your immigration attorney. It is worth asking early rather than assuming the older, broader version of the rule still holds.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Your evaluator is separately bound by ordinary clinical confidentiality. The report goes to you and to your attorney. It goes nowhere else unless you say so.",
+      },
+      {
+        type: "heading",
+        text: "What an Evaluation Cannot Do",
+      },
+      {
+        type: "paragraph",
+        content:
+          "It is not legal advice, and it is not a decision. A psychological evaluation is one piece of evidence inside a petition your immigration attorney assembles and argues. It doesn't establish your qualifying relationship, your residence with the abuser, or your good moral character. It speaks to psychological harm, and it speaks to that in clinical terms.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "If you don't yet have an immigration attorney, find one before you book an evaluation. The attorney decides what the petition needs and where an evaluation fits into it. Doing it the other way round tends to produce a report that answers a question nobody asked.",
+      },
+      {
+        type: "faq",
+        heading: "Common Questions About VAWA Psychological Evaluations",
+        items: [
+          {
+            q: "Is a psychological evaluation required for a VAWA self-petition?",
+            a: "No. The statute doesn't require one, and petitions are approved without them. USCIS names psychological evaluations as one form of evidence for battery or extreme cruelty, which makes them useful rather than mandatory. Whether yours needs one is a call your immigration attorney makes, based on what other evidence exists. It tends to matter most where the abuse was psychological and left little documentation behind.",
+          },
+          {
+            q: "Will my abuser find out that I filed?",
+            a: "8 U.S.C. 1367 prohibits disclosure of information about a VAWA, T or U request to anyone outside DHS, DOJ and the State Department who doesn't have a need to know. It also bars USCIS from making an adverse determination of admissibility or deportability using information furnished solely by a prohibited source, which includes an abuser. Those protections were narrowed in December 2025. USCIS now checks for convictions under INA 237(a)(2) before the prohibited source rule applies, limits that rule to admissibility and deportability determinations, and ends 8 U.S.C. 1367 protection once someone naturalizes. Your evaluator is separately bound by clinical confidentiality, and the report is released only to you and your attorney. How this applies to your own case is a question for your attorney.",
+          },
+          {
+            q: "Is the evaluation the same as starting therapy?",
+            a: "No. An evaluation is an assessment that produces a written report for a third party to read, and it has a defined endpoint. Therapy is ongoing treatment with no report attached. The two roles are distinct, and the evaluator conducting your assessment isn't acting as your treating therapist in that process. If the evaluation surfaces something you want ongoing support for, that is worth raising, and it is usually a separate arrangement.",
+          },
+          {
+            q: "Can a VAWA evaluation be done by telehealth?",
+            a: "The Policy Manual language concerns the professional's qualifications and whether they thoroughly and adequately evaluated you using well-established tools. It doesn't state that the evaluation has to happen in person. Many evaluations are now conducted by secure video, which also removes the travel and the waiting room, both of which matter when the subject matter is this heavy. Licensure rules still apply, so the evaluator needs to be licensed appropriately for where you are.",
+          },
+        ],
+      },
+      {
+        type: "image",
+        src: images.blog.vawaEvaluation.closing,
+        alt: "An open hand resting in still water at sunrise",
+        caption: "One appointment, at a pace you set.",
+      },
+      {
+        type: "heading",
+        text: "Getting Started",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            If your attorney has told you an evaluation would strengthen your petition, or you are simply trying to understand what one involves before committing to anything, a short conversation is the lowest-pressure way to ask. You don't have to describe what happened in order to ask how the process works. <Link to="/contact" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Reach out here</Link> whenever you're ready.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content:
+          "I'm a licensed clinical social worker in New York, New Jersey and Rhode Island, and evaluations are conducted by secure telehealth. This article is general information about the evaluation process and is not legal advice. Your immigration attorney is the right person to advise on your petition.",
+      },
+    ],
+  },
+  {
     slug: "manifestation-methods-that-actually-work",
     title: "Manifestation Methods That Actually Work, and Why Yours Stalled",
     metaTitle: "Manifestation Methods That Actually Work | Peace Practice",
