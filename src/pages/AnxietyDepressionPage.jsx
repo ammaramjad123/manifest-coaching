@@ -141,12 +141,12 @@ export default function AnxietyDepressionPage() {
   return (
     <div ref={containerRef} className="relative bg-white overflow-hidden">
       <title>Anxiety & Depression Therapy | The Peace Practice</title>
-      <meta name="description" content="Understanding and treating anxiety and depression with licensed clinical therapy from Ayana F. McKanney, LCSW. Compassionate, evidence-based care in NY, NJ & RI." />
+      <meta name="description" content="Evidence-based therapy for anxiety and depression with Ayana F. McKanney, LCSW. Compassionate, licensed clinical care in NY, NJ and Rhode Island." />
       <link rel="canonical" href="https://www.thepeacepractice.me/specialties/process" />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="The Peace Practice" />
       <meta property="og:title" content="Anxiety & Depression Therapy | The Peace Practice" />
-      <meta property="og:description" content="Understanding and treating anxiety and depression with licensed clinical therapy from Ayana F. McKanney, LCSW. Compassionate, evidence-based care in NY, NJ & RI." />
+      <meta property="og:description" content="Evidence-based therapy for anxiety and depression with Ayana F. McKanney, LCSW. Compassionate, licensed clinical care in NY, NJ and Rhode Island." />
       <meta property="og:url" content="https://www.thepeacepractice.me/specialties/process" />
       <meta property="og:image" content="https://www.thepeacepractice.me/og-image.jpg" />
       <meta property="og:image:secure_url" content="https://www.thepeacepractice.me/og-image.jpg" />
@@ -157,7 +157,7 @@ export default function AnxietyDepressionPage() {
       <meta property="og:locale" content="en_US" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Anxiety & Depression Therapy | The Peace Practice" />
-      <meta name="twitter:description" content="Understanding and treating anxiety and depression with licensed clinical therapy from Ayana F. McKanney, LCSW. Compassionate, evidence-based care in NY, NJ & RI." />
+      <meta name="twitter:description" content="Evidence-based therapy for anxiety and depression with Ayana F. McKanney, LCSW. Compassionate, licensed clinical care in NY, NJ and Rhode Island." />
       <meta name="twitter:image" content="https://www.thepeacepractice.me/og-image.jpg" />
       <meta name="twitter:image:alt" content="The Peace Practice — Ayana Foluke McKanney, LCSW" />
 
