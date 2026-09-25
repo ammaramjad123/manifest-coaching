@@ -16,7 +16,7 @@ export const blogPosts = [
     updatedDate: "2026-09-26",
     readTime: "9 min read",
     heroImage: images.blog.artTraining.hero,
-    heroImageAlt: "A clinician in profile, looking down, thinking something over",
+    heroImageAlt: "A clinician sitting at a desk, thinking, in a bright workspace",
     hubLink: { href: "/specialties/partnership", label: "Training with The Peace Practice" },
 
     content: [
@@ -78,7 +78,7 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.artTraining.training,
-        alt: "Hands writing notes in a spiral notebook at a table",
+        alt: "Attendees talking in small groups in a training room between sessions",
         caption: "Three days, and most of it is practicum rather than lecture.",
       },
       {
@@ -89,7 +89,7 @@ export const blogPosts = [
         type: "paragraph",
         content: (
           <>
-            Basic training is a <strong>three-day intensive</strong>. Published descriptions of it list lecture, video presentation, live demonstration and supervised practicum, with the practicum running at a <strong>3:1 ratio</strong>, one ART-trained therapist for every three trainees. Continuing education is offered, commonly cited at <strong>21 CE hours</strong>.
+            Basic training is a <strong>three-day intensive</strong>. Published descriptions of it list lecture, video presentation, live demonstration and supervised practicum, with the practicum running at a <strong>3:1 ratio</strong>, one ART-trained therapist for every three trainees. Continuing education credit is offered, but <strong>the number of hours varies by licensing board and provider</strong>, so confirm what yours will accept before you book.
           </>
         ),
       },
@@ -202,7 +202,7 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.artTraining.closing,
-        alt: "Pendant lights above a bookshelf in a quiet professional room",
+        alt: "A quiet path running through green trees",
         caption: "Choose the training that unblocks the clients already in front of you.",
       },
       {
