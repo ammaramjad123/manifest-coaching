@@ -315,13 +315,13 @@ export default function ImmigrationEvaluationsPage() {
   // would break the position: sticky pin in the Upcoming Training scroll section.
   return (
     <div className="relative bg-white overflow-x-clip">
-      <title>Immigration Psychological Evaluations NY, NJ & RI | The Peace Practice</title>
-      <meta name="description" content="Comprehensive, defensible psychological evaluations for asylum, VAWA, and extreme hardship immigration cases from a licensed LCSW in New York, New Jersey, and Rhode Island." />
+      <title>Immigration Psychological Evaluations | The Peace Practice</title>
+      <meta name="description" content="Defensible psychological evaluations for asylum, VAWA and extreme hardship immigration cases. Licensed LCSW serving New York, New Jersey and Rhode Island." />
       <link rel="canonical" href="https://www.thepeacepractice.me/specialties/partnership" />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="The Peace Practice" />
       <meta property="og:title" content="Immigration Psychological Evaluations NY, NJ & RI | The Peace Practice" />
-      <meta property="og:description" content="Comprehensive, defensible psychological evaluations for asylum, VAWA, and extreme hardship immigration cases from a licensed LCSW in New York, New Jersey, and Rhode Island." />
+      <meta property="og:description" content="Defensible psychological evaluations for asylum, VAWA and extreme hardship immigration cases. Licensed LCSW serving New York, New Jersey and Rhode Island." />
       <meta property="og:url" content="https://www.thepeacepractice.me/specialties/partnership" />
       <meta property="og:image" content="https://www.thepeacepractice.me/og-image.jpg" />
       <meta property="og:image:secure_url" content="https://www.thepeacepractice.me/og-image.jpg" />
@@ -332,7 +332,7 @@ export default function ImmigrationEvaluationsPage() {
       <meta property="og:locale" content="en_US" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Immigration Psychological Evaluations NY, NJ & RI | The Peace Practice" />
-      <meta name="twitter:description" content="Comprehensive, defensible psychological evaluations for asylum, VAWA, and extreme hardship immigration cases from a licensed LCSW in New York, New Jersey, and Rhode Island." />
+      <meta name="twitter:description" content="Defensible psychological evaluations for asylum, VAWA and extreme hardship immigration cases. Licensed LCSW serving New York, New Jersey and Rhode Island." />
       <meta name="twitter:image" content="https://www.thepeacepractice.me/og-image.jpg" />
       <meta name="twitter:image:alt" content="The Peace Practice — Ayana Foluke McKanney, LCSW" />
 
