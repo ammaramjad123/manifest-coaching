@@ -93,7 +93,7 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.vawaEvaluation.extremeCruelty,
-        alt: "A woman in a warm jacket looking down and away, lit against a dark background",
+        alt: "A woman seen from behind at a large window, looking out over a muted city",
         caption: "The harm that leaves no paperwork is usually the harm an evaluation is there to document.",
       },
       {
