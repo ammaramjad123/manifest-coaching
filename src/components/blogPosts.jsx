@@ -145,7 +145,7 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.vawaEvaluation.theAppointment,
-        alt: "A quiet home desk beside a curtained window in late afternoon light",
+        alt: "A woman sitting on a sofa at home with a laptop, beside a bright window",
         caption: "No commute and no waiting room. One long, careful conversation, in a room you choose.",
       },
       {
