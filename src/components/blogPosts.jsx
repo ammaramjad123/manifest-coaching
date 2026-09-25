@@ -68,12 +68,20 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "The clinically interesting part, and the reason most therapists look into it, is what the protocol does not require. The client does not have to narrate the event out loud. They identify the general area, enough for you both to know what you are working on, and the processing happens without verbal disclosure. For a caseload that includes people who shut down the moment they are asked to describe something, that is not a minor convenience. It is the difference between treatment and another stalled intake.",
+          (
+          <>
+            The clinically interesting part is what the protocol does not require. <strong>The client does not have to narrate the event out loud.</strong> They identify the general area, enough for you both to know what you are working on, and the processing happens <strong>without verbal disclosure</strong>. For a caseload that includes people who shut down the moment they are asked to describe something, that is not a minor convenience. It is <strong>the difference between treatment and another stalled intake</strong>.
+          </>
+        ),
       },
       {
         type: "paragraph",
         content:
-          "The other distinguishing claim is pace. Most clients are described as completing the process within one to five sessions. Take that as the modality's own framing rather than a guarantee. It does explain the interest from clinicians in settings where long courses of treatment are not realistic.",
+          (
+          <>
+            The other distinguishing claim is pace. Most clients are described as completing the process <strong>within one to five sessions</strong>. Take that as the modality’s own framing rather than a guarantee. It does explain the interest from clinicians in settings where <strong>long courses of treatment are not realistic</strong>.
+          </>
+        ),
       },
       {
         type: "image",
@@ -512,7 +520,11 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "Writing a goal repeatedly and in specific language does change what your attention selects for. You start noticing the job posting, the introduction, the opening that was probably always there. Visualization rehearses a sequence, which is why athletes and performers use it, and rehearsal lowers the friction of doing the thing for real. Naming what you want in concrete terms forces a vague ache into a decision you can actually act on. None of that is supernatural. It is attention, motivation and rehearsal, and those are real levers.",
+          (
+          <>
+            <strong>Writing a goal repeatedly and in specific language does change what your attention selects for.</strong> You start noticing the job posting, the introduction, the opening that was probably always there. Visualization rehearses a sequence, which is why athletes and performers use it, and rehearsal lowers the friction of doing the thing for real. Naming what you want in concrete terms forces a vague ache into a decision you can actually act on. None of that is supernatural. It is <strong>attention, motivation and rehearsal</strong>, and those are real levers.
+          </>
+        ),
       },
       {
         type: "paragraph",
@@ -531,7 +543,7 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "What happened is that you rehearsed the sentence and the brace at the same time. Thirty repetitions of the words, thirty repetitions of the physical response underneath them. If your body has learned to flinch at visibility, or at asking, or at being chosen, then repeating a statement about visibility while that flinch fires is not neutral practice. You are strengthening both halves.",
+          "What happened is that you rehearsed the sentence and the brace at the same time. Thirty repetitions of the words, thirty repetitions of the physical response underneath them. If your body has learned to flinch at visibility, or at asking, or at being chosen, then repeating a statement about visibility while that flinch fires is not neutral practice. <strong>You are strengthening both halves.</strong>",
       },
       {
         type: "image",
@@ -602,7 +614,11 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "Keep the ones that sharpen a decision or lower the friction of acting. Drop the ones whose only function is to prove you wanted it badly enough.",
+          (
+          <>
+            <strong>Keep the ones that sharpen a decision or lower the friction of acting.</strong> Drop the ones whose only function is to prove you wanted it badly enough.
+          </>
+        ),
       },
       {
         type: "list",
@@ -748,12 +764,12 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "You're not asked to narrate every moment you've felt like a fraud. You identify the general area, something like “before I present” or “right before I ask for what I'm worth,” and notice what's happening in your body while we work. The goal isn't to talk you out of the feeling. It's to help your nervous system actually move it, the same way it would move any other stored physical tension.",
+          "<strong>You’re not asked to narrate every moment you’ve felt like a fraud.</strong> You identify the general area, something like “before I present” or “right before I ask for what I’m worth,” and notice what’s happening in your body while we work. The goal isn’t to talk you out of the feeling. <strong>It’s to help your nervous system actually move it</strong>, the same way it would move any other stored physical tension.",
       },
       {
         type: "paragraph",
         content:
-          "Most people notice a real, within-session shift in intensity. Not because the achievement gap in their head closed, but because the bracing pattern underneath it did.",
+          "<strong>Most people notice a real, within-session shift in intensity.</strong> Not because the achievement gap in their head closed, but because the bracing pattern underneath it did.",
       },
       {
         type: "heading",
@@ -976,7 +992,7 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "You start by identifying what's bothering you, not in detail, just enough for us both to know what we're working on. From there, I'll guide you through sets of horizontal eye movements while you notice what comes up in your body and mind, things like images, sensations, emotions. You stay in the driver's seat the entire time. If something feels like too much, we slow down or stop. Nothing happens to you; you're actively directing the process.",
+          "You start by identifying what’s bothering you, not in detail, just enough for us both to know what we’re working on. From there, I’ll guide you through sets of horizontal eye movements while you notice what comes up in your body and mind, things like images, sensations, emotions. <strong>You stay in the driver’s seat the entire time.</strong> If something feels like too much, we slow down or stop. Nothing happens to you; you’re actively directing the process.",
       },
       {
         type: "paragraph",
@@ -1162,12 +1178,16 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "We start by identifying what tends to trigger the panic, not in detail, just enough for us both to know what we're working on. From there, I'll guide you through sets of horizontal eye movements while you notice what comes up: images, sensations, emotions. You stay in control the entire time. Nothing requires you to narrate the moment out loud or relive it in detail, only to notice what's there.",
+          (
+          <>
+            We start by identifying what tends to trigger the panic, not in detail, just enough for us both to know what we’re working on. From there, I’ll guide you through sets of horizontal eye movements while you notice what comes up: images, sensations, emotions. <strong>You stay in control the entire time.</strong> Nothing requires you to narrate the moment out loud or relive it in detail, only to notice what’s there. Where the activation is mostly physical with no clear memory behind it, <Link to="/specialties/safety-sensation" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">SĀF-T</Link> works on the sensation directly instead.
+          </>
+        ),
       },
       {
         type: "paragraph",
         content:
-          "As the intensity eases, we move toward voluntary image replacement, consciously choosing new images to associate with the memory. Most clients notice a real shift within a handful of sessions, not because the memory disappeared, but because it stopped having the same grip on their body.",
+          "As the intensity eases, we move toward voluntary image replacement, consciously choosing new images to associate with the memory. <strong>Most clients notice a real shift within a handful of sessions</strong>, not because the memory disappeared, but because it stopped having the same grip on their body.",
       },
       {
         type: "faq",
