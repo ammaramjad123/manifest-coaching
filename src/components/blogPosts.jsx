@@ -183,7 +183,7 @@ export const blogPosts = [
         items: [
           {
             q: "Can I use Accelerated Resolution Therapy with clients straight after basic training?",
-            a: "That is how the training is structured, and the 3:1 supervised practicum ratio is the reason it can be. Whether you should start immediately is a separate judgment about your own readiness and your caseload. Most clinicians begin with presentations they already handle confidently and widen from there rather than starting with their most complex client.",
+            a: "That is how the training is structured, and the supervised practicum is the reason it can be. Whether you should start immediately is a separate judgment about your own readiness and your caseload. Most clinicians begin with presentations they already handle confidently and widen from there rather than starting with their most complex client.",
           },
           {
             q: "Do I need EMDR training first?",
