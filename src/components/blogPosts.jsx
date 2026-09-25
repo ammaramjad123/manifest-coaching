@@ -17,7 +17,7 @@ export const blogPosts = [
     readTime: "9 min read",
     heroImage: images.blog.artTraining.hero,
     heroImageAlt: "A clinician sitting at a desk, thinking, in a bright workspace",
-    hubLink: { href: "/specialties/partnership", label: "Training with The Peace Practice" },
+    hubLink: { href: "/specialties/partnership", label: "See ART Basic Training dates" },
 
     content: [
       {
@@ -89,7 +89,7 @@ export const blogPosts = [
         type: "paragraph",
         content: (
           <>
-            Basic training is a <strong>three-day live, in-person intensive</strong>. The published format is lecture, video, audio and slide presentation, plus <strong>live demonstration and supervised practicum</strong>. The organization lists <strong>$1,700</strong> for the three days with a certified instructor and <strong>$2,100</strong> to train with the founder, though individual instructors set their own arrangements. Continuing education credit is offered, but <strong>no total is published</strong> and the hours vary by licensing board, so confirm what yours will accept before you book.
+            Basic training is a <strong>three-day live, in-person intensive</strong>. The published format is lecture, video, audio and slide presentation, plus <strong>live demonstration and supervised practicum</strong>. The organization lists <strong>$1,700</strong> for the three days with a certified instructor and <strong>$2,100</strong> to train with the founder, though individual instructors set their own arrangements. It is listed at <strong>20 CE credits</strong>, though what your own board accepts can differ, so check before you book.
           </>
         ),
       },
@@ -168,19 +168,14 @@ export const blogPosts = [
         type: "paragraph",
         content: (
           <>
-            <Link to="/specialties/safety-sensation" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">SĀF-T</Link>, the Sensation Awareness Focused Technique, is widely assumed to be an advanced module of ART. <strong>It is not.</strong> It is a <strong>one-day training with no ART prerequisite and no licensure requirement</strong>, and the provider states plainly that it is intended for non-licensed professionals and parents.
+            <Link to="/specialties/safety-sensation" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">SĀF-T</Link>, the Sensation Awareness Focused Technique, sits in a place that confuses people. Clinically it comes from the same protocol, the sensation-processing portion of Basic ART taught on its own. As a training, though, <strong>it is not a step you take after ART</strong>. It is a one-day course with no ART prerequisite and no licensure requirement at all.
           </>
         ),
       },
       {
         type: "paragraph",
         content:
-          "The scope is narrower by design. It covers eye movements for sensation processing only rather than the full protocol, and the stated objective is relieving negative sensation tied to anxiety and physical discomfort such as headaches. The audience the provider lists is parents, teachers, couples, college students, and business and sports professionals. It runs one day at $199, against three days at $1,700 for Basic ART.",
-      },
-      {
-        type: "paragraph",
-        content:
-          "For a licensed clinician that reframes the decision. SĀF-T is not the next rung after Basic ART, and taking it will not deepen your trauma work. What is interesting about it is who else is allowed in the room. If you work alongside parents, schools or coaches, a technique they can be trained in themselves is a different kind of useful.",
+          "The audience is the surprising part. It is open to non-licensed professionals and parents, and the listed attendees include teachers, couples, college students and business and sports professionals. One day at $199, against three days at $1,700 for Basic ART, covering eye movements for sensation processing rather than the full protocol. That is a different conversation from this one and deserves its own page rather than a footnote here.",
       },
       {
         type: "faq",
@@ -218,7 +213,7 @@ export const blogPosts = [
         type: "paragraph",
         content: (
           <>
-            I am a Certified SĀF-T Provider and Trainer, and a <Link to="/about" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">licensed clinical social worker</Link> in New York, New Jersey and Rhode Island. Current training dates and formats are listed under <Link to="/specialties/partnership" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">the professional trainings we run</Link>.
+            Upcoming <Link to="/specialties/partnership" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">ART Basic Training dates</Link> are listed under our professional trainings, facilitated by a Certified Master ART® Trainer with registration through the Rosenzweig Center. I am a <Link to="/about" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">licensed clinical social worker</Link> in New York, New Jersey and Rhode Island, and a Certified SĀF-T Provider and Trainer.
           </>
         ),
       },
