@@ -867,7 +867,7 @@ export const blogPosts = [
         content:
           (
           <>
-            Your chest goes tight first. Then your heart rate spikes, your hands go cold, and the room feels like it's closing in. Someone tells you to breathe through your panic attack, in for four, hold for four, out for four, and you try, you really try, but it doesn't land. If anything, focusing on your breath makes the panic louder. You start to wonder what's wrong with you that a technique everyone swears by just doesn't work. <strong>Nothing is wrong with you.</strong> Breathing exercises help some people some of the time, but <strong>they were never built to override a nervous system that's already mid-alarm</strong>.
+            Your chest goes tight first. Then your heart rate spikes, your hands go cold, and the room feels like it's closing in. Someone tells you to breathe through your panic attack, in for four, hold for four, out for four, and you try, you really try, but it doesn't land. If anything, focusing on your breath makes the panic louder. Panic sits inside the wider picture of <Link to="/specialties/process" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">anxiety</Link>, and it follows the same logic. You start to wonder what's wrong with you that a technique everyone swears by just doesn't work. <strong>Nothing is wrong with you.</strong> Breathing exercises help some people some of the time, but <strong>they were never built to override a nervous system that's already mid-alarm</strong>.
           </>
         ),
       },
