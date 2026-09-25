@@ -90,12 +90,12 @@ export default function AboutPage() {
   return (
     <div className="bg-white overflow-hidden">
       <title>About Ayana McKanney, LCSW | The Peace Practice</title>
-      <meta name="description" content="Meet Ayana Foluke McKanney, LCSW — a licensed clinical social worker with 26+ years of experience grounded in compassion, integrity, and excellence. Licensed in NY, NJ & RI." />
+      <meta name="description" content="Meet Ayana Foluke McKanney, LCSW, a licensed clinical social worker with 26+ years of experience in trauma, anxiety and coaching. Licensed in NY, NJ and RI." />
       <link rel="canonical" href="https://www.thepeacepractice.me/about" />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="The Peace Practice" />
       <meta property="og:title" content="About Ayana McKanney, LCSW | The Peace Practice" />
-      <meta property="og:description" content="Meet Ayana Foluke McKanney, LCSW — a licensed clinical social worker with 26+ years of experience grounded in compassion, integrity, and excellence. Licensed in NY, NJ & RI." />
+      <meta property="og:description" content="Meet Ayana Foluke McKanney, LCSW, a licensed clinical social worker with 26+ years of experience in trauma, anxiety and coaching. Licensed in NY, NJ and RI." />
       <meta property="og:url" content="https://www.thepeacepractice.me/about" />
       <meta property="og:image" content="https://www.thepeacepractice.me/og-image.jpg" />
       <meta property="og:image:secure_url" content="https://www.thepeacepractice.me/og-image.jpg" />
@@ -106,7 +106,7 @@ export default function AboutPage() {
       <meta property="og:locale" content="en_US" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="About Ayana McKanney, LCSW | The Peace Practice" />
-      <meta name="twitter:description" content="Meet Ayana Foluke McKanney, LCSW — a licensed clinical social worker with 26+ years of experience grounded in compassion, integrity, and excellence. Licensed in NY, NJ & RI." />
+      <meta name="twitter:description" content="Meet Ayana Foluke McKanney, LCSW, a licensed clinical social worker with 26+ years of experience in trauma, anxiety and coaching. Licensed in NY, NJ and RI." />
       <meta name="twitter:image" content="https://www.thepeacepractice.me/og-image.jpg" />
       <meta name="twitter:image:alt" content="The Peace Practice — Ayana Foluke McKanney, LCSW" />
 
