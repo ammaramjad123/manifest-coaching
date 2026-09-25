@@ -37,21 +37,29 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "The USCIS Policy Manual names psychological evaluations directly as evidence of battery or extreme cruelty. It also sets out the conditions under which one carries weight, and there are four of them.",
+          (
+          <>
+            The USCIS Policy Manual <strong>names psychological evaluations directly as evidence of battery or extreme cruelty</strong>. It also sets out the conditions under which one carries weight, and there are four of them.
+          </>
+        ),
       },
       {
         type: "list",
         items: [
-          "A qualified medical or mental health professional prepared it",
-          "That professional either treated you, or thoroughly and adequately evaluated you",
-          "The assessment used well-established assessments or tools, rather than an informal conversation",
-          "The filing included the professional's CV or certifications, so USCIS can see their level of expertise",
+          <><strong>A qualified medical or mental health professional</strong> prepared it</>,
+          <><strong>That professional either treated you, or thoroughly and adequately evaluated you</strong></>,
+          <><strong>The assessment used well-established assessments or tools</strong>, rather than an informal conversation</>,
+          <><strong>The filing included the professional's CV or certifications</strong>, so USCIS can see their level of expertise</>,
         ],
       },
       {
         type: "paragraph",
         content:
-          "That last one gets missed more often than you would think. A strong report submitted without the evaluator's credentials attached is a report USCIS has no way to weigh.",
+          (
+          <>
+            <strong>That last one gets missed more often than you would think.</strong> A strong report submitted without the evaluator's credentials attached is a report USCIS has no way to weigh.
+          </>
+        ),
       },
       {
         type: "paragraph",
@@ -85,7 +93,7 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.vawaEvaluation.extremeCruelty,
-        alt: "A seated person with their hands clasped in their lap",
+        alt: "An old window seen from inside a quiet room, plants on the sill",
         caption: "The harm that leaves no paperwork is usually the harm an evaluation is there to document.",
       },
       {
@@ -95,7 +103,11 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "On 22 December 2025, USCIS issued Policy Alert PA-2025-33 and revised the VAWA part of the Policy Manual in its entirety. It took effect immediately and applies to petitions already pending as well as new ones. Several changes matter to anyone assembling evidence now.",
+          (
+          <>
+            On 22 December 2025, USCIS issued Policy Alert PA-2025-33 and <strong>revised the VAWA part of the Policy Manual in its entirety</strong>. It took effect immediately and applies to petitions already pending as well as new ones. Several changes matter to anyone assembling evidence now.
+          </>
+        ),
       },
       {
         type: "list",
@@ -133,8 +145,8 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.vawaEvaluation.theAppointment,
-        alt: "An open notebook and pen on a wooden table in daylight",
-        caption: "The report is the deliverable, and it is written for an adjudicator rather than for you.",
+        alt: "A woman at a desk listening to a video call, hand resting at her chin",
+        caption: "One long, careful conversation, and then a report written for an adjudicator rather than for you.",
       },
       {
         type: "heading",
@@ -153,7 +165,11 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "Those protections were narrowed in the same December 2025 round. A companion alert, PA-2025-34, changed three things. USCIS now checks whether a person has been convicted of crimes listed in INA 237(a)(2) before the prohibited source protection applies at all. It limited that protection specifically to adverse determinations of admissibility or deportability, so other kinds of decisions, including rejections and deferred action, sit outside it. And it reversed earlier policy so that these confidentiality protections now end once someone naturalizes. USCIS itself called that last change a substantive shift in both policy and practice.",
+          (
+          <>
+            <strong>Those protections were narrowed in the same December 2025 round.</strong> A companion alert, PA-2025-34, changed three things. USCIS now checks whether a person has been convicted of crimes listed in INA 237(a)(2) before the prohibited source protection applies at all. It limited that protection specifically to adverse determinations of admissibility or deportability, so other kinds of decisions, including rejections and deferred action, sit outside it. And it reversed earlier policy so that <strong>these confidentiality protections now end once someone naturalizes</strong>. USCIS itself called that last change a substantive shift in both policy and practice.
+          </>
+        ),
       },
       {
         type: "paragraph",
@@ -172,7 +188,11 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "It is not legal advice, and it is not a decision. A psychological evaluation is one piece of evidence inside a petition your immigration attorney assembles and argues. It doesn't establish your qualifying relationship, your residence with the abuser, or your good moral character. It speaks to psychological harm, and it speaks to that in clinical terms.",
+          (
+          <>
+            <strong>It is not legal advice, and it is not a decision.</strong> A psychological evaluation is one piece of evidence inside a petition your immigration attorney assembles and argues. It doesn't establish your qualifying relationship, your residence with the abuser, or your good moral character. It speaks to psychological harm, and it speaks to that in clinical terms. If what surfaces during it is something you want ongoing support for, that is <Link to="/specialties/trauma-ptsd" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">separate work and a separate conversation</Link>.
+          </>
+        ),
       },
       {
         type: "paragraph",
@@ -222,7 +242,11 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "I'm a licensed clinical social worker in New York, New Jersey and Rhode Island, and evaluations are conducted by secure telehealth. This article is general information about the evaluation process and is not legal advice. Your immigration attorney is the right person to advise on your petition.",
+          (
+          <>
+            I'm a <Link to="/about" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">licensed clinical social worker</Link> in New York, New Jersey and Rhode Island, and evaluations are conducted by secure telehealth. <strong>This article is general information about the evaluation process and is not legal advice.</strong> Your immigration attorney is the right person to advise on your petition.
+          </>
+        ),
       },
     ],
   },
@@ -245,7 +269,11 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "You have done the work. The vision board is on the wall. You wrote the affirmation fifty-five times for five days straight. You scripted the whole thing in present tense, the way you were told to, and for about a week it genuinely felt like something was shifting. Then it faded. And the question that follows is almost always the same one: did I not believe it hard enough? That question is the problem, not the answer. Manifestation practices tend to stall for a reason that has nothing to do with how sincerely you wanted it.",
+          (
+          <>
+            You have done the work. The vision board is on the wall. You wrote the affirmation fifty-five times for five days straight. You scripted the whole thing in present tense, the way you were told to, and for about a week it genuinely felt like something was shifting. Then it faded. And the question that follows is almost always the same one: did I not believe it hard enough? That question is the problem, not the answer. <strong>Manifestation practices tend to stall for a reason that has nothing to do with how sincerely you wanted it.</strong>
+          </>
+        ),
       },
       {
         type: "heading",
@@ -298,12 +326,20 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "Most people who come to coaching after years of manifestation work are not short on desire. They can describe what they want in detail. They have wanted it consistently, sometimes for a decade. What is missing is the capacity to be in the room with it once it arrives, and that capacity is physical before it is psychological.",
+          (
+          <>
+            Most people who come to <Link to="/specialties/life-coaching" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">coaching</Link> after years of manifestation work are not short on desire. They can describe what they want in detail. They have wanted it consistently, sometimes for a decade. <strong>What is missing is the capacity to be in the room with it once it arrives</strong>, and that capacity is physical before it is psychological.
+          </>
+        ),
       },
       {
         type: "paragraph",
         content:
-          "You see it in the small self-corrections. The person who gets the offer and immediately starts explaining why the number is too high. The one who finally gets asked out and finds three reasons it will not work before the week is over. The one who builds the business and then quietly caps it just under the level where people would start paying attention. None of that is self-sabotage in the moralizing sense. It is a nervous system doing exactly what it learned to do, which is to keep you at a size that once kept you safe.",
+          (
+          <>
+            You see it in the small self-corrections. The person who gets the offer and immediately starts explaining why the number is too high. The one who finally gets asked out and finds three reasons it will not work before the week is over. The one who builds the business and then quietly caps it just under the level where people would start paying attention. None of that is self-sabotage in the moralizing sense. <strong>It is a nervous system doing exactly what it learned to do, which is to keep you at a size that once kept you safe.</strong> If that pattern shows up most sharply at work, it often goes by another name, and <Link to="/blog/imposter-syndrome-lives-in-your-body" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">imposter syndrome is the same bracing in a different room</Link>.
+          </>
+        ),
       },
       {
         type: "paragraph",
@@ -317,7 +353,11 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "The MANIFEST Method puts stabilization before action deliberately, and the ordering is the whole point. Before the goal work, before the habits and the pathways, there is a phase focused on regulating the nervous system using clinical tools rather than motivational ones. Accelerated Resolution Therapy, Dialectical Behavior Therapy skills and Acceptance and Commitment Therapy all sit in that phase, and they are there because they work on the layer underneath the story.",
+          (
+          <>
+            The <Link to="/specialties/manifest-method" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">MANIFEST Method</Link> puts <strong>stabilization before action</strong> deliberately, and the ordering is the whole point. Before the goal work, before the habits and the pathways, there is a phase focused on regulating the nervous system using clinical tools rather than motivational ones. <Link to="/specialties/art" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Accelerated Resolution Therapy</Link>, <Link to="/specialties/dbt" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Dialectical Behavior Therapy</Link> skills and <Link to="/specialties/act" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Acceptance and Commitment Therapy</Link> all sit in that phase, and they are there because they work on the layer underneath the story.
+          </>
+        ),
       },
       {
         type: "paragraph",
@@ -429,7 +469,11 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "You know the feeling before it even has a name. It's the chest that tightens right before you speak up in a meeting, the stomach that drops before you hit send on a proposal, the voice that shrinks the moment someone asks what you think. You've told yourself to just be more confident. You've made the list of everything you've actually accomplished. It helps for about a day, then it wears off, because imposter syndrome isn't a mindset problem. Thinking your way out of it only gets you so far. SĀF-T works with the part logic can't reach, the sensation itself.",
+          (
+          <>
+            You know the feeling before it even has a name. It's the chest that tightens right before you speak up in a meeting, the stomach that drops before you hit send on a proposal, the voice that shrinks the moment someone asks what you think. You've told yourself to just be more confident. You've made the list of everything you've actually accomplished. It helps for about a day, then it wears off, because <strong>imposter syndrome isn't a mindset problem</strong>. Thinking your way out of it only gets you so far. <Link to="/specialties/safety-sensation" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">SĀF-T</Link> works with the part logic can't reach, the sensation itself.
+          </>
+        ),
       },
       {
         type: "heading",
@@ -452,7 +496,11 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "About 70% of people experience the signs of imposter syndrome at some point, and it tends to hit hardest at the moments that should feel like proof you've made it, like the promotion, the bigger stage, the room you worked years to get into. That's not a coincidence. Your body braces for exposure before your conscious mind even registers the trigger, and that bracing is often indistinguishable from anxiety, which is why imposter syndrome and anxiety so often show up together. The evidence of your competence is real, but the bracing pattern doesn't update just because you show it more evidence. It's not stored as a belief, it's stored as a physical response, which is exactly why it can survive contact with an impressive resume.",
+          (
+          <>
+            About 70% of people experience the signs of imposter syndrome at some point, and it tends to hit hardest at the moments that should feel like proof you've made it, like the promotion, the bigger stage, the room you worked years to get into. That's not a coincidence. Your body braces for exposure before your conscious mind even registers the trigger, and that bracing is often indistinguishable from <Link to="/specialties/process" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">anxiety</Link>, which is why imposter syndrome and anxiety so often show up together. The evidence of your competence is real, but the bracing pattern doesn't update just because you show it more evidence. <strong>It's not stored as a belief, it's stored as a physical response</strong>, which is exactly why it can survive contact with an impressive resume.
+          </>
+        ),
       },
       {
         type: "image",
@@ -489,7 +537,11 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "Power poses, affirmations, rehearsed talking points. Most confidence-building advice works at the level of story and behavior, and it genuinely helps some of the time. But if the underlying bracing pattern is still there, it tends to resurface the moment the stakes go back up, which is why confidence work can feel like it doesn't stick under real pressure. You did the exercises. You said the affirmations. And your chest still tightened the second it mattered.",
+          (
+          <>
+            Power poses, <Link to="/blog/manifestation-methods-that-actually-work" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">affirmations</Link>, rehearsed talking points. Most confidence-building advice works at the level of story and behavior, and it genuinely helps some of the time. <strong>But if the underlying bracing pattern is still there, it tends to resurface the moment the stakes go back up</strong>, which is why confidence work can feel like it doesn't stick under real pressure. You did the exercises. You said the affirmations. And your chest still tightened the second it mattered.
+          </>
+        ),
       },
       {
         type: "paragraph",
@@ -580,7 +632,11 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "I'm a Certified SĀF-T Provider and Trainer, and sessions are conducted by secure telehealth wherever you are. The goal was never to talk you out of the feeling. It's to help you actually move it.",
+          (
+          <>
+            I'm a Certified SĀF-T Provider and <Link to="/specialties/partnership" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Trainer</Link>, and sessions are conducted by secure telehealth wherever you are. The goal was never to talk you out of the feeling. <strong>It's to help you actually move it.</strong>
+          </>
+        ),
       },
     ],
   },
@@ -603,7 +659,11 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "If the idea of trauma therapy makes you picture retelling everything, every detail, in order, out loud, to someone you just met, it makes sense that you've been putting it off. For a lot of people, that expectation alone is enough to keep them stuck. Most people don't know this, but trauma therapy without talking about the trauma out loud is possible. Accelerated Resolution Therapy (ART) was built around exactly that. You stay in control of what you say and don't say. Your nervous system does the processing; your voice doesn't have to.",
+          (
+          <>
+            If the idea of <Link to="/specialties/trauma-ptsd" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">trauma therapy</Link> makes you picture retelling everything, every detail, in order, out loud, to someone you just met, it makes sense that you've been putting it off. For a lot of people, that expectation alone is enough to keep them stuck. Most people don't know this, but <strong>trauma therapy without talking about the trauma out loud is possible</strong>. <Link to="/specialties/art" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Accelerated Resolution Therapy (ART)</Link> was built around exactly that. You stay in control of what you say and don't say. Your nervous system does the processing; your voice doesn't have to.
+          </>
+        ),
       },
       {
         type: "heading",
@@ -635,12 +695,20 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "What makes ART distinct is a technique called voluntary image replacement. Once the emotional charge of a distressing memory has eased, you're guided to consciously replace the disturbing images your mind has been holding onto with new ones you choose. The memory that something happened doesn't disappear, but the images that used to trigger a flood of panic or shutdown stop having that grip on you.",
+          (
+          <>
+            What makes ART distinct is a technique called <strong>voluntary image replacement</strong>. Once the emotional charge of a distressing memory has eased, you're guided to consciously replace the disturbing images your mind has been holding onto with new ones you choose. The memory that something happened doesn't disappear, but the images that used to trigger a flood of <Link to="/blog/panic-attacks-arent-a-breathing-problem" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">panic</Link> or shutdown stop having that grip on you.
+          </>
+        ),
       },
       {
         type: "paragraph",
         content:
-          "Most clients notice a real shift in how a memory feels within one to five sessions. Not because the past changes, but because the way your body responds to it does.",
+          (
+          <>
+            <strong>Most clients notice a real shift in how a memory feels within one to five sessions.</strong> Not because the past changes, but because the way your body responds to it does.
+          </>
+        ),
       },
       {
         type: "heading",
@@ -654,7 +722,11 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "The differences show up in a few concrete places. EMDR typically works through a longer sequence of sessions and structured phases, often over weeks or months, and generally asks you to verbally identify the memory and the negative belief attached to it. ART was designed to work faster. Many clients feel meaningful relief in a single session, and most complete the full process within one to five, and it doesn't require narrating the memory out loud at any point.",
+          (
+          <>
+            The differences show up in a few concrete places. EMDR typically works through a longer sequence of sessions and structured phases, often over weeks or months, and generally asks you to verbally identify the memory and the negative belief attached to it. <strong>ART was designed to work faster.</strong> Many clients feel meaningful relief in a single session, and most complete the full process within one to five, and it doesn't require narrating the memory out loud at any point.
+          </>
+        ),
       },
       {
         type: "paragraph",
@@ -793,7 +865,11 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "Your chest goes tight first. Then your heart rate spikes, your hands go cold, and the room feels like it's closing in. Someone tells you to breathe through your panic attack, in for four, hold for four, out for four, and you try, you really try, but it doesn't land. If anything, focusing on your breath makes the panic louder. You start to wonder what's wrong with you that a technique everyone swears by just doesn't work. Nothing is wrong with you. Breathing exercises help some people some of the time, but they were never built to override a nervous system that's already mid-alarm.",
+          (
+          <>
+            Your chest goes tight first. Then your heart rate spikes, your hands go cold, and the room feels like it's closing in. Someone tells you to breathe through your panic attack, in for four, hold for four, out for four, and you try, you really try, but it doesn't land. If anything, focusing on your breath makes the panic louder. You start to wonder what's wrong with you that a technique everyone swears by just doesn't work. <strong>Nothing is wrong with you.</strong> Breathing exercises help some people some of the time, but <strong>they were never built to override a nervous system that's already mid-alarm</strong>.
+          </>
+        ),
       },
       {
         type: "heading",
@@ -802,7 +878,11 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "Conscious breathing techniques ask you to do something very specific under very bad conditions. Box breathing, 4-7-8 breathing, paced breathing, they all require you to count, hold a pattern, and stay mentally present with your breath while your body is flooded with adrenaline and convinced you're in danger. That takes working memory and executive function, the exact resources your brain pulls offline the moment it decides you need to survive something instead of think about it. For some people, paying close attention to their breath in that state doesn't calm things down. It puts a spotlight directly on the sensations that are already scaring them, which can make the panic worse, not better.",
+          (
+          <>
+            Conscious breathing techniques ask you to do something very specific under very bad conditions. Box breathing, 4-7-8 breathing, paced breathing, they all require you to count, hold a pattern, and stay mentally present with your breath while your body is flooded with adrenaline and convinced you're in danger. <strong>That takes working memory and executive function, the exact resources your brain pulls offline</strong> the moment it decides you need to survive something instead of think about it. For some people, paying close attention to their breath in that state doesn't calm things down. It puts a spotlight directly on the sensations that are already scaring them, which can make the panic worse, not better.
+          </>
+        ),
       },
       {
         type: "heading",
@@ -811,7 +891,11 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "A panic attack isn't your mind overreacting to nothing. It's your nervous system reacting to something it's already decided is a threat, correctly or not. Adrenaline floods your system, your heart rate climbs to move blood to your limbs, your breathing gets shallow and fast, sometimes tipping into panic attack hyperventilation that leaves you dizzy or numb, and your thinking brain takes a back seat to the part of you built purely for survival. None of that is a character flaw or a failure of willpower. It's biology doing exactly what it's designed to do, just at the wrong moment, in response to a threat that usually isn't a tiger.",
+          (
+          <>
+            A panic attack isn't your mind overreacting to nothing. <strong>It's your nervous system reacting to something it's already decided is a threat, correctly or not.</strong> Adrenaline floods your system, your heart rate climbs to move blood to your limbs, your breathing gets shallow and fast, sometimes tipping into panic attack hyperventilation that leaves you dizzy or numb, and your thinking brain takes a back seat to the part of you built purely for survival. None of that is a character flaw or a failure of willpower. It's biology doing exactly what it's designed to do, just at the wrong moment, in response to a threat that usually isn't a tiger.
+          </>
+        ),
       },
       {
         type: "image",
@@ -834,7 +918,11 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "This isn't about replacing breathing techniques that already work for you in the moment. It's for the panic that keeps coming back no matter how well you manage each individual episode, because the trigger underneath it was never actually addressed.",
+          (
+          <>
+            This isn't about replacing breathing techniques that already work for you in the moment. <strong>It's for the panic that keeps coming back</strong> no matter how well you manage each individual episode, because the trigger underneath it was never actually addressed. <Link to="/specialties/art" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Accelerated Resolution Therapy</Link> works on that trigger, and it is the same process used for <Link to="/blog/trauma-therapy-without-talking-about-it" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">trauma without talking it through out loud</Link>.
+          </>
+        ),
       },
       {
         type: "image",
