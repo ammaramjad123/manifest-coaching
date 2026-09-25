@@ -78,7 +78,7 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.artTraining.training,
-        alt: "Attendees talking in small groups in a training room between sessions",
+        alt: "A microphone on a stand, with a warmly lit hall out of focus behind it",
         caption: "Three days, and most of it is practicum rather than lecture.",
       },
       {
