@@ -93,7 +93,7 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.vawaEvaluation.extremeCruelty,
-        alt: "An old window seen from inside a quiet room, plants on the sill",
+        alt: "A woman in a warm jacket looking down and away, lit against a dark background",
         caption: "The harm that leaves no paperwork is usually the harm an evaluation is there to document.",
       },
       {
@@ -145,8 +145,8 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.vawaEvaluation.theAppointment,
-        alt: "A woman at a desk listening to a video call, hand resting at her chin",
-        caption: "One long, careful conversation, and then a report written for an adjudicator rather than for you.",
+        alt: "A quiet home desk beside a curtained window in late afternoon light",
+        caption: "No commute and no waiting room. One long, careful conversation, in a room you choose.",
       },
       {
         type: "heading",
