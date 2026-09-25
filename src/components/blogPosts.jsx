@@ -3,6 +3,231 @@ import { Link } from "react-router-dom";
 
 export const blogPosts = [
   {
+    slug: "accelerated-resolution-therapy-training-what-to-expect",
+    title: "Accelerated Resolution Therapy Training: What It Involves, and Who It Isn't For",
+    metaTitle: "Accelerated Resolution Therapy Training | Peace Practice",
+    metaDescription:
+      "What Accelerated Resolution Therapy training actually involves, who qualifies, how it compares with EMDR training, and the clinicians it does not suit.",
+    excerpt:
+      "Written for clinicians rather than clients. What the three days actually contain, who is eligible, how the decision compares with EMDR training, and the honest case against adding it to your practice.",
+    category: "For Clinicians",
+    author: "Ayana F. McKanney, LCSW",
+    publishDate: "2026-09-26",
+    updatedDate: "2026-09-26",
+    readTime: "9 min read",
+    heroImage: images.blog.artTraining.hero,
+    heroImageAlt: "A clinician sitting at a desk, thinking, in a bright workspace",
+    hubLink: { href: "/specialties/partnership", label: "Training with The Peace Practice" },
+
+    content: [
+      {
+        type: "paragraph",
+        content: (
+          <>
+            This one is written for clinicians, not clients. If you landed here looking for help with your own trauma, the post you actually want is <Link to="/blog/trauma-therapy-without-talking-about-it" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">trauma therapy that doesn't require you to talk about what happened</Link>.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content:
+          "Most therapists arrive at this question the same way. You have a client who will not narrate what happened, and you have watched them stall at exactly that point for months. Talk therapy is working on everything except the thing they came for. So you start looking at what else is out there, and somewhere in that search you hit Accelerated Resolution Therapy.",
+      },
+      {
+        type: "heading",
+        text: "Start With the Name, Because It Will Waste Your Time",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            <strong>Do not search for "ART therapy training."</strong> You will get art therapy, the creative arts modality, which is an entirely separate and much older profession with its own degree programs, credentialing board and professional association. Every result will be about becoming an art therapist.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            Search <strong>"Accelerated Resolution Therapy"</strong> spelled out. It is a small thing, but it is the difference between finding the modality and spending twenty minutes reading about a career path you were not asking about. The collision is bad enough that it is worth spelling the name out in your own practice materials too.
+          </>
+        ),
+      },
+      {
+        type: "heading",
+        text: "What the Modality Actually Does",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            <Link to="/specialties/art" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Accelerated Resolution Therapy</Link> uses sets of horizontal eye movements alongside a protocol built around a technique called <strong>voluntary image replacement</strong>. Once the emotional charge attached to a distressing memory has eased, the client is guided to deliberately replace the images they have been carrying with ones they choose.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content:
+          "The clinically interesting part, and the reason most therapists look into it, is what the protocol does not require. The client does not have to narrate the event out loud. They identify the general area, enough for you both to know what you are working on, and the processing happens without verbal disclosure. For a caseload that includes people who shut down the moment they are asked to describe something, that is not a minor convenience. It is the difference between treatment and another stalled intake.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The other distinguishing claim is pace. Most clients are described as completing the process within one to five sessions. Take that as the modality's own framing rather than a guarantee. It does explain the interest from clinicians in settings where long courses of treatment are not realistic.",
+      },
+      {
+        type: "image",
+        src: images.blog.artTraining.training,
+        alt: "An open notebook and pen on a wooden table in daylight",
+        caption: "Three days, and most of it is practicum rather than lecture.",
+      },
+      {
+        type: "heading",
+        text: "What the Three Days Actually Contain",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            Basic training is a <strong>three-day intensive</strong>. Published descriptions of it list lecture, video presentation, live demonstration and supervised practicum, with the practicum running at a <strong>3:1 ratio</strong>, one ART-trained therapist for every three trainees. Continuing education is offered, commonly cited at <strong>21 CE hours</strong>.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content:
+          "The ratio is the part worth paying attention to when you compare trainings. It is why the program describes clinicians as able to use the protocol with clients straight after the three days rather than after a further supervision period. Whether that holds for you depends on your caseload and your own judgment about readiness, but the structure is built for it.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Eligibility is the usual shape for a clinical modality. A master's degree or higher in a mental health discipline, plus current licensure or equivalent authorization in your jurisdiction. The fields named are counseling, marriage and family therapy, psychology, psychotherapy, psychiatry, social work and psychiatric nursing. Graduate students can qualify if they have finished core coursework and are in the final practicum or internship stage. Registered nurses with psychiatric training are also eligible.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Beyond basic training there is an advanced course of a further three days, and certification as a practitioner runs through membership of the International Society of Accelerated Resolution Therapy.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "One caveat on all of the above. Training requirements, CE totals and fees change, and they vary between providers. Treat this as orientation and confirm the current detail with whoever is running the training you are considering before you book anything.",
+      },
+      {
+        type: "heading",
+        text: "If You Are Choosing Between This and EMDR Training",
+      },
+      {
+        type: "paragraph",
+        content:
+          "This is the real decision for most people reading, and the honest answer is that they are built for different things rather than one being better.",
+      },
+      {
+        type: "list",
+        items: [
+          <><strong>EMDR is built for depth.</strong> Eight structured phases, a longer arc of sessions, and it generally asks the client to identify the memory and the negative belief attached to it verbally.</>,
+          <><strong>Accelerated Resolution Therapy is built for pace.</strong> A tighter protocol, image replacement rather than belief reprocessing, and no requirement to narrate the memory at any point.</>,
+          <><strong>The credentialing differs.</strong> EMDR training runs through EMDRIA. Accelerated Resolution Therapy certification runs through IS-ART. Neither transfers to the other.</>,
+          <><strong>Your caseload should decide it.</strong> If your clients mostly stall at disclosure, the no-narration protocol is the relevant feature. If they are comfortable talking and the work is about entrenched belief, that is EMDR's territory.</>,
+        ],
+      },
+      {
+        type: "paragraph",
+        content:
+          "Plenty of clinicians end up trained in both. If you are choosing which to do first, look at your caseload. Pick the one that unblocks the clients already sitting in it, not the one with the better reputation in the abstract.",
+      },
+      {
+        type: "image",
+        src: images.blog.artTraining.deciding,
+        alt: "A quiet desk beside a curtained window in late afternoon light",
+        caption: "Let the caseload you already have decide it, not the reputation in the abstract.",
+      },
+      {
+        type: "heading",
+        text: "Who This Training Is Not For",
+      },
+      {
+        type: "paragraph",
+        content:
+          "This is the part the official pages cannot write, so here it is plainly.",
+      },
+      {
+        type: "list",
+        items: [
+          <><strong>If you are not yet licensed</strong> and not in the final practicum stage of a qualifying graduate program, you are not eligible, and there is no route around that.</>,
+          <><strong>If you want a modality you can use occasionally,</strong> this is probably not worth three days and the fee. Protocol-driven work rewards repetition. Clinicians who train and then use it twice tend to lose the fluency they paid for.</>,
+          <><strong>If you are uncomfortable with structure,</strong> be honest about that now. This is a protocol. It is not a framework you improvise inside, and therapists who work intuitively sometimes find the constraint genuinely unpleasant.</>,
+          <><strong>If you are hoping it removes the hard part of trauma work,</strong> it does not. It removes the requirement that the client narrate. The clinical judgment, the pacing, the stabilization, the knowing when not to proceed, all of that is still yours.</>,
+        ],
+      },
+      {
+        type: "heading",
+        text: "Where SĀF-T Fits",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            <Link to="/specialties/safety-sensation" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">SĀF-T</Link>, the Sensations Awareness Focused Technique, is a somatic component that works within the same family. Where the core protocol organizes itself around images, SĀF-T targets distressing body sensation directly.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content:
+          "It becomes relevant for the presentations where there is no image to work with. Performance anxiety with no originating event. A bracing pattern that predates anything the client can name. Chronic activation that has been there long enough to feel like personality rather than symptom. Those clients have sensation but no scene, and a protocol built around images has less to grip.",
+      },
+      {
+        type: "faq",
+        heading: "Common Questions From Clinicians",
+        items: [
+          {
+            q: "Can I use Accelerated Resolution Therapy with clients straight after basic training?",
+            a: "That is how the training is structured, and the 3:1 supervised practicum ratio is the reason it can be. Whether you should start immediately is a separate judgment about your own readiness and your caseload. Most clinicians begin with presentations they already handle confidently and widen from there rather than starting with their most complex client.",
+          },
+          {
+            q: "Do I need EMDR training first?",
+            a: "No. They are separate credentials through separate bodies and neither is a prerequisite for the other. If you already hold EMDR training you will recognize the bilateral eye movement component, but the protocols diverge quickly after that, and prior EMDR experience does not shorten the training.",
+          },
+          {
+            q: "Is it worth training if I only see a few trauma clients?",
+            a: "Probably not, and it is worth being honest with yourself about the number. Protocol-driven modalities reward frequent use. If trauma work is a small and occasional part of your caseload, the fluency you build over three days will fade before you get enough repetitions to keep it. Referring to a trained clinician may serve those clients better than training you rarely use.",
+          },
+          {
+            q: "Does the training cover SĀF-T as well?",
+            a: "They are separate trainings. SĀF-T is its own technique with its own certification. It is most useful where the client has body activation but no specific memory or image to work from. Which one to do first depends on what your caseload is actually presenting with.",
+          },
+        ],
+      },
+      {
+        type: "image",
+        src: images.blog.artTraining.closing,
+        alt: "A quiet path running through green trees",
+        caption: "Choose the training that unblocks the clients already in front of you.",
+      },
+      {
+        type: "heading",
+        text: "Training With The Peace Practice",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            I am a Certified SĀF-T Provider and Trainer, and a <Link to="/about" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">licensed clinical social worker</Link> in New York, New Jersey and Rhode Island. Current training dates and formats are listed under <Link to="/specialties/partnership" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">the professional trainings we run</Link>.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            If you are weighing it up and want to ask a clinician rather than read a registration page, that is a reasonable thing to want. <Link to="/contact" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Get in touch</Link> and ask whatever you need to, including whether your caseload actually warrants it. I would rather tell you it does not than have you spend three days on something you will not use.
+          </>
+        ),
+      },
+    ],
+  },
+  {
     slug: "vawa-psychological-evaluation-what-to-expect",
     title: "A VAWA Psychological Evaluation Isn't Therapy — Here's What It Actually Is",
     metaTitle: "VAWA Psychological Evaluations Explained | Peace Practice",
