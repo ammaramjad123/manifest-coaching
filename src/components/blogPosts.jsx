@@ -542,8 +542,11 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content:
-          "What happened is that you rehearsed the sentence and the brace at the same time. Thirty repetitions of the words, thirty repetitions of the physical response underneath them. If your body has learned to flinch at visibility, or at asking, or at being chosen, then repeating a statement about visibility while that flinch fires is not neutral practice. <strong>You are strengthening both halves.</strong>",
+        content: (
+          <>
+            What happened is that you rehearsed the sentence and the brace at the same time. Thirty repetitions of the words, thirty repetitions of the physical response underneath them. If your body has learned to flinch at visibility, or at asking, or at being chosen, then repeating a statement about visibility while that flinch fires is not neutral practice. <strong>You are strengthening both halves.</strong>
+          </>
+        ),
       },
       {
         type: "image",
@@ -763,13 +766,19 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content:
-          "<strong>You’re not asked to narrate every moment you’ve felt like a fraud.</strong> You identify the general area, something like “before I present” or “right before I ask for what I’m worth,” and notice what’s happening in your body while we work. The goal isn’t to talk you out of the feeling. <strong>It’s to help your nervous system actually move it</strong>, the same way it would move any other stored physical tension.",
+        content: (
+          <>
+            <strong>You’re not asked to narrate every moment you’ve felt like a fraud.</strong> You identify the general area, something like “before I present” or “right before I ask for what I’m worth,” and notice what’s happening in your body while we work. The goal isn’t to talk you out of the feeling. <strong>It’s to help your nervous system actually move it</strong>, the same way it would move any other stored physical tension.
+          </>
+        ),
       },
       {
         type: "paragraph",
-        content:
-          "<strong>Most people notice a real, within-session shift in intensity.</strong> Not because the achievement gap in their head closed, but because the bracing pattern underneath it did.",
+        content: (
+          <>
+            <strong>Most people notice a real, within-session shift in intensity.</strong> Not because the achievement gap in their head closed, but because the bracing pattern underneath it did.
+          </>
+        ),
       },
       {
         type: "heading",
@@ -991,18 +1000,27 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content:
-          "You start by identifying what’s bothering you, not in detail, just enough for us both to know what we’re working on. From there, I’ll guide you through sets of horizontal eye movements while you notice what comes up in your body and mind, things like images, sensations, emotions. <strong>You stay in the driver’s seat the entire time.</strong> If something feels like too much, we slow down or stop. Nothing happens to you; you’re actively directing the process.",
+        content: (
+          <>
+            You start by identifying what’s bothering you, not in detail, just enough for us both to know what we’re working on. From there, I’ll guide you through sets of horizontal eye movements while you notice what comes up in your body and mind, things like images, sensations, emotions. <strong>You stay in the driver’s seat the entire time.</strong> If something feels like too much, we slow down or stop. Nothing happens to you; you’re actively directing the process.
+          </>
+        ),
       },
       {
         type: "paragraph",
-        content:
-          "As the sensations shift, we move toward voluntary image replacement, consciously choosing new, less distressing images to associate with the memory. By the end of a session, most people describe the memory as <strong>more like something that happened rather than something that's still happening</strong>.",
+        content: (
+          <>
+            As the sensations shift, we move toward voluntary image replacement, consciously choosing new, less distressing images to associate with the memory. By the end of a session, most people describe the memory as <strong>more like something that happened rather than something that's still happening</strong>.
+          </>
+        ),
       },
       {
         type: "paragraph",
-        content:
-          "You leave knowing you did the work. <strong>You just didn't have to say it out loud to do it.</strong>",
+        content: (
+          <>
+            You leave knowing you did the work. <strong>You just didn't have to say it out loud to do it.</strong>
+          </>
+        ),
       },
       {
         type: "faq",
@@ -1186,8 +1204,11 @@ export const blogPosts = [
       },
       {
         type: "paragraph",
-        content:
-          "As the intensity eases, we move toward voluntary image replacement, consciously choosing new images to associate with the memory. <strong>Most clients notice a real shift within a handful of sessions</strong>, not because the memory disappeared, but because it stopped having the same grip on their body.",
+        content: (
+          <>
+            As the intensity eases, we move toward voluntary image replacement, consciously choosing new images to associate with the memory. <strong>Most clients notice a real shift within a handful of sessions</strong>, not because the memory disappeared, but because it stopped having the same grip on their body.
+          </>
+        ),
       },
       {
         type: "faq",
