@@ -78,7 +78,7 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.artTraining.training,
-        alt: "A microphone on a stand, with a warmly lit hall out of focus behind it",
+        alt: "A therapist with a notepad sitting opposite a client in a bright, calm room",
         caption: "Three days, and most of it is practicum rather than lecture.",
       },
       {
@@ -89,14 +89,14 @@ export const blogPosts = [
         type: "paragraph",
         content: (
           <>
-            Basic training is a <strong>three-day intensive</strong>. Published descriptions of it list lecture, video presentation, live demonstration and supervised practicum, with the practicum running at a <strong>3:1 ratio</strong>, one ART-trained therapist for every three trainees. Continuing education credit is offered, but <strong>the number of hours varies by licensing board and provider</strong>, so confirm what yours will accept before you book.
+            Basic training is a <strong>three-day live, in-person intensive</strong>. The published format is lecture, video, audio and slide presentation, plus <strong>live demonstration and supervised practicum</strong>. The organization lists <strong>$1,700</strong> for the three days with a certified instructor and <strong>$2,100</strong> to train with the founder, though individual instructors set their own arrangements. Continuing education credit is offered, but <strong>no total is published</strong> and the hours vary by licensing board, so confirm what yours will accept before you book.
           </>
         ),
       },
       {
         type: "paragraph",
         content:
-          "The ratio is the part worth paying attention to when you compare trainings. It is why the program describes clinicians as able to use the protocol with clients straight after the three days rather than after a further supervision period. Whether that holds for you depends on your caseload and your own judgment about readiness, but the structure is built for it.",
+          "The supervised practicum is the part worth weighing when you compare trainings. It is the difference between leaving with a protocol you have read about and one you have actually run, which is why the course is built around demonstration and practice rather than lecture alone. Whether you are ready to use it on Monday is still your own judgment, not the schedule's.",
       },
       {
         type: "paragraph",
@@ -154,7 +154,7 @@ export const blogPosts = [
       {
         type: "list",
         items: [
-          <><strong>If you are not yet licensed</strong> and not in the final practicum stage of a qualifying graduate program, you are not eligible, and there is no route around that.</>,
+          <><strong>If you are pre-licensed or still a student, check before you assume.</strong> Pre-licensed clinicians with a master's who are pursuing licensure under supervision can attend, and so can graduate students past their core coursework and into a final practicum. Both need documentation, a supervisor letter and liability cover. First-year students cannot.</>,
           <><strong>If you want a modality you can use occasionally,</strong> this is probably not worth three days and the fee. Protocol-driven work rewards repetition. Clinicians who train and then use it twice tend to lose the fluency they paid for.</>,
           <><strong>If you are uncomfortable with structure,</strong> be honest about that now. This is a protocol. It is not a framework you improvise inside, and therapists who work intuitively sometimes find the constraint genuinely unpleasant.</>,
           <><strong>If you are hoping it removes the hard part of trauma work,</strong> it does not. It removes the requirement that the client narrate. The clinical judgment, the pacing, the stabilization, the knowing when not to proceed, all of that is still yours.</>,
