@@ -1,6 +1,6 @@
 import { images, trainingLinks } from "../config/siteImages";
 import React, { useState, useRef, useEffect, useCallback } from "react";
-import { motion, AnimatePresence, useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { Link } from "react-router-dom";
 import UpcomingTraining from "../components/UpcomingTraining";
 import {
@@ -154,17 +154,18 @@ function AccordionItem({ tab, isOpen, onToggle, onReveal }) {
         </div>
       </button>
 
-      {/* Expandable body */}
-      <AnimatePresence initial={false}>
-        {isOpen && (
-          <motion.div
-            key="body"
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.35, ease: "easeInOut" }}
-            className="overflow-hidden"
-          >
+      {/* Expandable body.
+          Rendered whether or not the section is open, and collapsed with
+          height instead of being unmounted. A closed section used to render
+          nothing at all, so the trainings content was absent from the HTML
+          and crawlers never saw it; they do not click. Visually identical. */}
+      <motion.div
+        initial={false}
+        animate={{ height: isOpen ? "auto" : 0, opacity: isOpen ? 1 : 0 }}
+        transition={{ duration: 0.35, ease: "easeInOut" }}
+        className="overflow-hidden"
+        aria-hidden={!isOpen}
+      >
             <div className="px-5 sm:px-7 pb-7 pt-1 space-y-8">
               <p className="text-gray-600 text-base sm:text-lg leading-relaxed font-[system-ui]">
                 {tab.intro}
@@ -285,9 +286,7 @@ function AccordionItem({ tab, isOpen, onToggle, onReveal }) {
                 </div>
               )}
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      </motion.div>
     </div>
   );
 }
