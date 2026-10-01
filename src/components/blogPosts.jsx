@@ -16,7 +16,7 @@ export const blogPosts = [
     updatedDate: "2026-09-26",
     readTime: "9 min read",
     heroImage: images.blog.artTraining.hero,
-    heroImageAlt: "A clinician sitting at a desk, thinking, in a bright workspace",
+    heroImageAlt: "Clinicians talking around a table during a professional training session",
     hubLink: { href: "/specialties/partnership", label: "See ART Basic Training dates" },
 
     content: [
