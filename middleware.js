@@ -31,8 +31,8 @@ const POSTS = {
     title: "Accelerated Resolution Therapy Training | Peace Practice",
     description:
       "What Accelerated Resolution Therapy training actually involves, who qualifies, how it compares with EMDR training, and the clinicians it does not suit.",
-    image: "https://www.thepeacepractice.me/blog/vitaly-gariev-VowOZkNUJ1k-unsplash.jpg",
-    imageAlt: "A clinician sitting at a desk, thinking, in a bright workspace",
+    image: "https://www.thepeacepractice.me/blog/pexels-1181370-training-session.jpg",
+    imageAlt: "Clinicians talking around a table during a professional training session",
     publishDate: "2026-09-26",
     updatedDate: "2026-09-26",
     author: "Ayana F. McKanney, LCSW",
