@@ -215,7 +215,7 @@ export const images = {
       closing: "/blog/yingchou-han-IJrIeCs3D4g-unsplash.jpg",       // Closing / "Getting Started" section photo
     },
     artTraining: {
-      hero: "/blog/vitaly-gariev-VowOZkNUJ1k-unsplash.jpg",             // Top banner — "Accelerated Resolution Therapy Training"
+      hero: "/blog/pexels-1181370-training-session.jpg",               // Top banner — "Accelerated Resolution Therapy Training"
       training: "/blog/pexels-7176302-supervised-practicum.jpg",        // "What the Three Days Contain" section photo
       deciding: "/blog/pexels-9300726-training-room.jpg",               // "Choosing Between This and EMDR" section photo
       closing: "/blog/denny-sachtleben-tuYnkOjw6k4-unsplash.jpg",       // Closing section photo
