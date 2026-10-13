@@ -29,6 +29,7 @@ import BARTerBalancePage from './pages/BARTerBalancePage';
 import ManifestMethodPage from './pages/ManifestMethodPage';
 import BlogPage from './pages/BlogPage';
 import BlogPostPage from './pages/BlogPostPage';
+import PrivacyPage from './pages/PrivacyPage';
 
 function App() {
   return (
@@ -60,6 +61,7 @@ function App() {
           <Route path="/specialties/manifest-method" element={<ManifestMethodPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<BlogPostPage />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
         </Routes>
       </main>
       <Footer />
