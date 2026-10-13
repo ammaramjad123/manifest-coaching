@@ -395,6 +395,11 @@ export default function ContactSection() {
                       )}
                     </button>
 
+                    <p className="text-gray-400 text-xs text-center font-[system-ui]">
+                      Please keep health details out of this form. We'll go over them privately once we connect.{" "}
+                      <a href="/privacy" className="underline hover:text-[#c09050] transition-colors duration-300">Privacy Policy</a>
+                    </p>
+
                   </form>
                 )}
 
