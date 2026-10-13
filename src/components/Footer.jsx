@@ -241,6 +241,10 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 pt-6 border-t border-gray-200">
             <p className="text-gray-400 text-xs font-[system-ui]">
               © {currentYear} The Peace Practice. All rights reserved.
+              <span className="mx-2">|</span>
+              <a href="/privacy" className="hover:text-[#c09050] transition-colors duration-300">
+                Privacy Policy
+              </a>
             </p>
 
             <div className="flex items-center gap-4">
