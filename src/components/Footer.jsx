@@ -265,7 +265,7 @@ export default function Footer() {
                 <FaLinkedin className="w-5 h-5" />
               </a>
               <a
-                href="https://www.facebook.com/share/15vR4tMEio/"
+                href="https://www.facebook.com/profile.php?id=61592450720787"
                 target="_blank"
                 className="text-gray-400 hover:text-[#c09050] transition-all duration-300 hover:scale-110"
                 aria-label="Facebook"
