@@ -3,6 +3,274 @@ import { Link } from "react-router-dom";
 
 export const blogPosts = [
   {
+    slug: "accelerated-resolution-therapy-vs-emdr",
+    title: "Accelerated Resolution Therapy vs EMDR: How They Differ, and How to Choose",
+    metaTitle: "Accelerated Resolution Therapy vs EMDR | Peace Practice",
+    metaDescription:
+      "ART and EMDR both use eye movements to treat trauma. How sessions differ, how long each takes, what the research says, and how to choose.",
+    excerpt:
+      "Both use eye movements, and neither asks you to retell what happened in detail. Here is how Accelerated Resolution Therapy and EMDR actually differ, what the research says about each, and how to choose between them.",
+    category: "Trauma & PTSD",
+    author: "Ayana F. McKanney, LCSW",
+    publishDate: "2026-10-23",
+    updatedDate: "2026-10-23",
+    readTime: "8 min read",
+    heroImage: images.blog.artVsEmdr.hero,
+    heroImageAlt: "A forest trail that splits into two paths beside a wooden signpost",
+    hubLink: { href: "/specialties/art", label: "Explore Accelerated Resolution Therapy" },
+
+    content: [
+      {
+        type: "paragraph",
+        content: (
+          <>
+            If you are looking for help with <Link to="/specialties/trauma-ptsd" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">trauma</Link>, you have probably come across two therapies that sound alike: <strong>Accelerated Resolution Therapy (ART)</strong> and <strong>EMDR</strong> (Eye Movement Desensitization and Reprocessing). Both use side-to-side eye movements, and both were built for distressing memories. They are not the same thing, though, and the differences matter when you are deciding where to start.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            One quick note, because it trips a lot of people up. <strong>ART here means Accelerated Resolution Therapy, not art therapy</strong>, which is a different field that uses drawing and other creative work. I practice <Link to="/specialties/art" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Accelerated Resolution Therapy</Link> and I am a Certified Master ART Trainer, so I have a stake in this. I will keep it fair and point you to the research for both.
+          </>
+        ),
+      },
+      {
+        type: "heading",
+        text: "The Short Answer",
+      },
+      {
+        type: "list",
+        items: [
+          "Both use guided eye movements while you bring a distressing memory to mind.",
+          "Neither requires you to tell the therapist the details of what happened.",
+          "ART adds voluntary image replacement, where you choose new images to replace the ones that keep hurting.",
+          "ART is usually shorter. EMDR usually runs for about three months of weekly sessions.",
+          "EMDR has far more research behind it and is recommended in major treatment guidelines. ART is newer, and its early results are promising.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "What They Have in Common",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            Both therapies ask you to hold a memory in mind while your eyes follow a set of side-to-side movements. Both are aimed at the same result, which is that a memory you cannot stop reacting to becomes a memory of something that happened, rather than something that is still happening.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            And in both, <strong>you do not have to narrate the trauma out loud</strong>. The U.S. Department of Veterans Affairs puts it plainly about EMDR: you will not be asked to talk about the details, but you will be asked to think about them in session. ART works the same way. If you want more on that part, I wrote about it in <Link to="/blog/trauma-therapy-without-talking-about-it" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">trauma therapy that doesn't require you to talk about what happened</Link>.
+          </>
+        ),
+      },
+      {
+        type: "image",
+        src: images.blog.artVsEmdr.session,
+        alt: "Afternoon sunlight casting window shapes onto a pale wall",
+        caption: "Both therapies work with what you notice inside, not with what you say out loud.",
+      },
+      {
+        type: "heading",
+        text: "How a Session Differs",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            <strong>EMDR</strong> follows a structured, phased protocol. Early sessions cover how trauma affects the body and mind and how ready you are to work on the memory. During processing, you focus on the memory during sets of eye movements, and part of the work is identifying a more positive belief about yourself to hold alongside it.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            <strong>ART</strong> also uses sets of eye movements while you hold the memory in mind. Its distinctive step is <strong>voluntary image replacement</strong>. Once the emotional charge has eased, you are guided to replace the disturbing images your mind keeps replaying with new images that you choose. You keep the knowledge of what happened. What changes is the picture that used to set off panic or shutdown. I guide the structure, and you decide what you see.
+          </>
+        ),
+      },
+      {
+        type: "heading",
+        text: "How Long Each One Takes",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            For EMDR, the VA describes treatment as <strong>about three months of weekly 50 to 90 minute sessions</strong>, and notes many people start to feel better after a few sessions. England's National Institute for Health and Care Excellence (NICE) says EMDR for adults should typically run <strong>8 to 12 sessions</strong>, and more after multiple traumas.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            ART is built to be brief. In its main clinical trial, people received <strong>an average of 3.7 sessions</strong> of 60 to 75 minutes each. At The Peace Practice, a first ART session can run up to 90 minutes so the full protocol fits in one sitting. Layered or complex trauma can take longer with either therapy, and we review progress as we go rather than promising a number up front.
+          </>
+        ),
+      },
+      {
+        type: "image",
+        src: images.blog.artVsEmdr.research,
+        alt: "A plain notepad with a pencil lying across it on a white desk",
+        caption: "The research behind each therapy is worth knowing before you choose.",
+      },
+      {
+        type: "heading",
+        text: "What the Research Says",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            <strong>EMDR has decades of research behind it.</strong> The 2023 VA and Department of Defense guideline for PTSD names it as one of three recommended psychotherapies, alongside prolonged exposure and cognitive processing therapy (<a href="https://www.healthquality.va.gov/guidelines/MH/ptsd/" target="_blank" rel="noopener noreferrer" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">VA/DoD guideline</a>). NICE recommends offering it to adults with PTSD after non-combat trauma (<a href="https://www.nice.org.uk/guidance/ng116/chapter/Recommendations" target="_blank" rel="noopener noreferrer" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">NICE NG116</a>), and the VA's National Center for PTSD calls it one of the most effective treatments for PTSD (<a href="https://www.ptsd.va.gov/understand_tx/emdr.asp" target="_blank" rel="noopener noreferrer" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">National Center for PTSD</a>).
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            <strong>ART is newer.</strong> It was developed in 2008 and first appeared in published research in 2012. Its main randomized trial, published in <em>Military Medicine</em> in 2013, treated 57 service members and veterans, 68% of whom had already had PTSD treatment. ART took an average of 3.7 sessions, 94% of participants completed it, and their drops in PTSD, depression and anxiety were significantly larger than in the comparison group (<a href="https://doi.org/10.7205/MILMED-D-13-00298" target="_blank" rel="noopener noreferrer" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Kip et al., 2013</a>).
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            The first systematic review of ART, published in <em>PLOS Mental Health</em> in 2024, found five studies with 337 participants. Every one reported a significant reduction in PTSD symptoms, along with drops in depression, anxiety and sleep problems. The reviewers also said there are not yet enough high-quality studies to compare ART directly with other therapies (<a href="https://doi.org/10.1371/journal.pmen.0000123" target="_blank" rel="noopener noreferrer" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Storey et al., 2024</a>). ART is not yet among the therapies the VA/DoD guideline recommends.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            If you have searched for an <strong>ART success rate</strong>, you will not find one agreed number, and I would be wary of anyone who quotes one. What the studies show is consistent symptom relief over a short course of treatment, with more research still needed.
+          </>
+        ),
+      },
+      {
+        type: "heading",
+        text: "Pros and Cons, Side by Side",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            <strong>Accelerated Resolution Therapy</strong>
+          </>
+        ),
+      },
+      {
+        type: "list",
+        items: [
+          "Pro: a short course, averaging under four sessions in its main trial",
+          "Pro: you choose the replacement images, which many people find gentle and empowering",
+          "Pro: a first session is long enough to work through a memory from start to finish",
+          "Con: a smaller body of research so far",
+          "Con: less widely offered than EMDR, so a trained therapist can take more searching to find",
+        ],
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            <strong>EMDR</strong>
+          </>
+        ),
+      },
+      {
+        type: "list",
+        items: [
+          "Pro: decades of research and recommended in major PTSD guidelines",
+          "Pro: more widely offered, so it is easier to find a trained therapist",
+          "Pro: no homework between sessions, according to the VA",
+          "Con: usually a longer commitment, around three months of weekly sessions",
+          "Con: the early phases can feel slow if you want to get straight to the memory",
+        ],
+      },
+      {
+        type: "heading",
+        text: "How to Choose",
+      },
+      {
+        type: "list",
+        items: [
+          "If having the most established, guideline-recommended option matters most to you, EMDR is a strong choice.",
+          "If you want a shorter course and like the idea of choosing new images, ART is worth a conversation.",
+          "If you have tried trauma therapy before and stalled, you are not alone. Most people in the main ART trial had already had PTSD treatment.",
+          "Whichever you choose, the therapist's training and your sense of safety with them matter as much as the method.",
+        ],
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            Sometimes what you carry shows up mostly in the body, as a tight chest or a dropping stomach, rather than as a clear memory. I am also a certified provider and trainer in <Link to="/specialties/safety-sensation" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">SĀF-T</Link>, a separate, shorter technique that uses eye movements to calm distressing body sensations. Parents, teachers and other non-clinicians can learn it in a one-day training.
+          </>
+        ),
+      },
+      {
+        type: "faq",
+        heading: "Common Questions About ART and EMDR",
+        items: [
+          {
+            q: "Is Accelerated Resolution Therapy the same as art therapy?",
+            a: "No. Accelerated Resolution Therapy is an eye-movement therapy for trauma and distressing memories. Art therapy is a separate field that uses drawing, painting and other creative work. They only share the letters ART.",
+          },
+          {
+            q: "Is ART faster than EMDR?",
+            a: "Usually. In ART's main trial, treatment averaged 3.7 sessions. The VA describes EMDR as about three months of weekly sessions, and NICE says it typically takes 8 to 12. Complex trauma can take longer with either.",
+          },
+          {
+            q: "Do I have to talk about my trauma in ART or EMDR?",
+            a: "Not in detail. In both, you think about the memory during the eye movements, but you are not asked to describe what happened out loud.",
+          },
+          {
+            q: "Which one has more research?",
+            a: "EMDR, by a wide margin. It is recommended in the 2023 VA/DoD PTSD guideline and by NICE. ART has one main randomized trial and a 2024 systematic review, both showing symptom relief, and the reviewers have called for more high-quality studies.",
+          },
+          {
+            q: "Can I switch from EMDR to ART?",
+            a: "Yes. Many people who come to ART have tried another trauma therapy first. If EMDR helped partly or stalled, it is reasonable to ask whether ART could help with what is left.",
+          },
+        ],
+      },
+      {
+        type: "image",
+        src: images.blog.artVsEmdr.closing,
+        alt: "Morning sun shining between old trees onto tall grass",
+        caption: "Either path can lead somewhere better. The first step is the same.",
+      },
+      {
+        type: "heading",
+        text: "Getting Started",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            You do not have to decide between ART and EMDR on your own. A free 15-minute consultation is a low-pressure way to talk through what you are carrying and whether <Link to="/specialties/art" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Accelerated Resolution Therapy</Link> is the right fit. If it is not, I will tell you. <Link to="/contact" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Reach out here</Link> whenever you are ready.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content:
+          "I'm a licensed clinical social worker in New York, New Jersey, and Rhode Island, and all sessions are conducted by secure telehealth, so you can start from a private space you choose.",
+      },
+    ],
+  },
+  {
     slug: "accelerated-resolution-therapy-training-what-to-expect",
     title: "Accelerated Resolution Therapy Training: What It Involves, and Who It Isn't For",
     metaTitle: "Accelerated Resolution Therapy Training | Peace Practice",

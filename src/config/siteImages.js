@@ -196,6 +196,12 @@ export const images = {
 
   // ───────────── BLOG ─────────────
   blog: {
+    artVsEmdr: {
+      hero: "/blog/pexels-1578750-forest-trail-fork.jpg",            // Top banner — "Accelerated Resolution Therapy vs EMDR"
+      session: "/blog/pexels-35523270-window-light.jpg",             // "What They Have in Common" section photo
+      research: "/blog/pexels-7657381-notepad-pencil.jpg",           // "What the Research Says" section photo
+      closing: "/blog/pexels-23966513-morning-sun-trees.jpg",        // Closing / "Getting Started" section photo
+    },
     traumaWithoutTalking: {
       hero: "/blog/andy-feliciotti-B4aWPSPXcoY-unsplash.jpg",       // Top banner — "Trauma Therapy Without Talking About It"
       whatArtIs: "/blog/ionut-vlad-iL9Ucm18HCE-unsplash.jpg",       // "What ART Actually Is" section photo
