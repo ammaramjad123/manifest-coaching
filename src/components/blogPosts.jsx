@@ -73,7 +73,7 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.artVsEmdr.session,
-        alt: "A client relaxing in a hammock at home during a video therapy session on a laptop",
+        alt: "A therapist with a clipboard listening to a client during an in-person session",
         caption: "Both therapies work with what you notice inside, not with what you say out loud.",
       },
       {
