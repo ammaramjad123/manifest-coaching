@@ -73,7 +73,7 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.artVsEmdr.session,
-        alt: "Afternoon sunlight casting window shapes onto a pale wall",
+        alt: "A therapist taking notes while a client talks on a sofa in a bright room with large plants",
         caption: "Both therapies work with what you notice inside, not with what you say out loud.",
       },
       {
