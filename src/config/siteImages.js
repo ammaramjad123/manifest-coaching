@@ -198,7 +198,7 @@ export const images = {
   blog: {
     artVsEmdr: {
       hero: "/blog/pexels-1578750-forest-trail-fork.jpg",            // Top banner — "Accelerated Resolution Therapy vs EMDR"
-      session: "/blog/pexels-4153317-telehealth-session.jpg",        // "What They Have in Common" section photo
+      session: "/blog/pexels-7579117-therapist-session.jpg",        // "What They Have in Common" section photo
       research: "/blog/pexels-7657381-notepad-pencil.jpg",           // "What the Research Says" section photo
       closing: "/blog/pexels-23966513-morning-sun-trees.jpg",        // Closing / "Getting Started" section photo
     },
