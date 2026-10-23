@@ -33,8 +33,8 @@ const POSTS = {
       "ART and EMDR both use eye movements to treat trauma. How sessions differ, how long each takes, what the research says, and how to choose.",
     image: "https://www.thepeacepractice.me/blog/pexels-1578750-forest-trail-fork.jpg",
     imageAlt: "A forest trail that splits into two paths beside a wooden signpost",
-    publishDate: "2026-10-24",
-    updatedDate: "2026-10-24",
+    publishDate: "2026-10-23",
+    updatedDate: "2026-10-23",
     author: "Ayana F. McKanney, LCSW",
   },
   "accelerated-resolution-therapy-training-what-to-expect": {
