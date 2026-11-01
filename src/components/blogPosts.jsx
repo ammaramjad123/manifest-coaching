@@ -4,17 +4,17 @@ import { Link } from "react-router-dom";
 export const blogPosts = [
   {
     slug: "saft-for-parents-and-teachers",
-    title: "SĀF-T for Parents and Teachers: What It Is, What It Isn't, and Who Should Learn It",
+    title: "SĀF-T for Parents and Teachers: What It Is and What It Isn't",
     metaTitle: "SĀF-T for Parents and Teachers | Peace Practice",
     metaDescription:
       "What SĀF-T (Sensations Awareness Focused Technique) is, what parents and teachers can use it for, where its limits are, and what the one-day training involves.",
     excerpt:
-      "SĀF-T is a short, body-focused calming technique that people without a clinical license can learn. Here is what it does, what it does not do, what the evidence shows so far, and how to tell when a child needs more than a calming skill.",
+      "SĀF-T is a short, body-focused calming technique that people without a clinical license can learn. Here is what it does, what it does not do, and when a child needs more.",
     category: "Parents & Educators",
     author: "Ayana F. McKanney, LCSW",
     publishDate: "2026-11-02",
     updatedDate: "2026-11-02",
-    readTime: "6 min read",
+    readTime: "3 min read",
     heroImage: images.blog.saftParents.hero,
     heroImageAlt: "An empty classroom with rows of desks and chairs catching the morning sun",
     hubLink: { href: "/specialties/safety-sensation", label: "Explore SĀF-T" },
@@ -23,28 +23,15 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "If you raise or teach children, you know this moment. The stomach ache that shows up on school mornings. The tight chest before a test. The child who cannot tell you what is wrong, only that something feels bad. You can reassure them and ask good questions, and the feeling is still sitting right there in their body.",
+          "The stomach ache on school mornings. The tight chest before a test. The child who cannot tell you what is wrong, only that something feels bad. You can reassure them, and the feeling is still sitting right there in their body.",
       },
       {
         type: "paragraph",
         content: (
           <>
-            <Link to="/specialties/safety-sensation" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">SĀF-T</Link> (Sensations Awareness Focused Technique, also written SAF-T) was built for that kind of moment. It is a short technique that works with uncomfortable body sensations, and <strong>you do not need a clinical license to learn it</strong>. I'm a licensed clinical social worker and a Certified SĀF-T Provider and Trainer, and I want you to have an honest picture of it, including what it cannot do.
+            <Link to="/specialties/safety-sensation" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">SĀF-T</Link> (Sensations Awareness Focused Technique, also written SAF-T) was built for moments like these, and <strong>you do not need a clinical license to learn it</strong>.
           </>
         ),
-      },
-      {
-        type: "heading",
-        text: "The Short Answer",
-      },
-      {
-        type: "list",
-        items: [
-          "SĀF-T uses guided eye movements to help ease uncomfortable body sensations linked to stress and anxiety.",
-          "It comes from Accelerated Resolution Therapy, but it is not therapy and does not replace medical or mental health care.",
-          "Parents, teachers, coaches and other non-clinicians can learn it in a one-day training.",
-          "Its developer describes it as safe for adults and children. I could not find published studies of SĀF-T itself, so think of it as a calming skill, not a proven treatment.",
-        ],
       },
       {
         type: "heading",
@@ -54,19 +41,9 @@ export const blogPosts = [
         type: "paragraph",
         content: (
           <>
-            SĀF-T is a portion of the Basic <Link to="/specialties/art" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Accelerated Resolution Therapy</Link> protocol, taught on its own for people outside the mental health professions. According to its developer, the aim is to <strong>move or ease negative sensations in the body</strong> that go along with anxiety, stress, physical discomfort and some pain. It does not involve medication or hypnosis.
+            SĀF-T uses guided eye movements to help <strong>ease uncomfortable body sensations</strong> linked to stress, anxiety and physical discomfort. It involves no medication or hypnosis. It comes from the Basic <Link to="/specialties/art" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Accelerated Resolution Therapy</Link> protocol, but where that therapy works with distressing memories, SĀF-T stays with the sensation itself.
           </>
         ),
-      },
-      {
-        type: "paragraph",
-        content:
-          "The difference from the full therapy matters. Accelerated Resolution Therapy is delivered by a licensed clinician and works with distressing memories. SĀF-T stays with the sensation itself, the knot in the stomach or the tightness in the chest, and that narrower focus is why it can be taught to people who are not therapists.",
-      },
-      {
-        type: "paragraph",
-        content:
-          "Why might eye movements help? The developer's explanation is that they trigger a relaxation response similar to the rapid eye movement stage of sleep, when the body is very relaxed. That is a working idea rather than a settled finding, and it is fair to hold it lightly.",
       },
       {
         type: "heading",
@@ -75,70 +52,41 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.saftParents.together,
-        alt: "An adult's hand gently holding a small child's finger",
-        caption: "A child may not have words for what they feel, but can often show you where it is.",
-      },
-      {
-        type: "paragraph",
-        content: (
-          <>
-            Much of what we offer upset children depends on words. We ask what happened, what they are worried about, what they need. Plenty of children cannot answer those questions in the moment. SĀF-T starts somewhere simpler, with <strong>where the feeling is in the body</strong>, so nobody has to explain or retell anything for it to begin.
-          </>
-        ),
+        alt: "A child with a backpack running down a bright school hallway, seen from behind",
+        caption: "School mornings can carry more than a backpack.",
       },
       {
         type: "paragraph",
         content:
-          "It also asks for willingness. The developer says the motivation of the person taking part is key to its success, so it is something you offer, never something you insist on. If a child says no or wants to stop, that is the end of it.",
-      },
-      {
-        type: "paragraph",
-        content:
-          "I am not going to lay out the steps here, because a blog post is the wrong place to learn something you may use with a child. The steps are what the training is for.",
+          "Much of what we offer upset children depends on words, and plenty of children cannot find them in the moment. SĀF-T starts with where the feeling is in the body, so nobody has to explain or retell anything. It is something you offer, never insist on. If a child says no, that is the end of it.",
       },
       {
         type: "heading",
-        text: "What SĀF-T Is Not",
+        text: "What SĀF-T Can't Do",
       },
       {
         type: "list",
         items: [
           "It is not therapy, and learning it does not make you a therapist.",
-          "It is not a diagnosis. It cannot tell you why a child feels the way they do.",
-          "It is not a substitute for medical care. A new or lasting physical symptom needs a doctor first.",
+          "It does not replace medical care. A new or lasting physical symptom needs a doctor first.",
           "It is not a way to work through a traumatic event with a child. That belongs with a trained clinician.",
-          "For teachers, it is not something to start on your own authority. Check your school's rules and get a parent's permission before using it with a student.",
+          "Teachers should check school rules and get a parent's permission before using it with a student.",
         ],
       },
       {
-        type: "heading",
-        text: "When a Child Needs More Than a Calming Skill",
-      },
-      {
         type: "paragraph",
-        content: (
-          <>
-            Worry and fear are a normal part of childhood. The CDC draws the line at symptoms that are <strong>severe and persistent and that interfere with school, home or play</strong>. If that sounds like a child you know, its advice is to talk to a health care provider about a full evaluation. Teachers can raise concerns with the family and work with them and the child's health care professionals.
-          </>
-        ),
-      },
-      {
-        type: "paragraph",
-        content: (
-          <>
-            If a child may be in immediate danger, call 911. If a child or anyone else is struggling or in crisis, you can <strong>call or text 988</strong>, or chat at 988lifeline.org, for free, confidential support at any hour, including when you are worried about someone else. If a student tells you they are being harmed, follow your school's reporting procedures rather than trying to handle it yourself.
-          </>
-        ),
+        content:
+          "It also has not been studied much. The developer describes it as safe for adults and children, but I could not find published studies of SĀF-T itself, so think of it as a calming skill rather than a proven treatment.",
       },
       {
         type: "heading",
-        text: "What the Evidence Says",
+        text: "When a Child Needs More",
       },
       {
         type: "paragraph",
         content: (
           <>
-            I would rather tell you this plainly. The developer's materials for SĀF-T do not cite studies of it, and my search of the research literature found none. What supports it today is the developer's description and the experience of people who use it. Most people find the eye movements relaxing, the developer reports, but that has not been tested in published trials.
+            Worry is a normal part of childhood. The CDC's advice is to talk to a health care provider when symptoms are <strong>severe and persistent and interfere with school, home or play</strong>.
           </>
         ),
       },
@@ -146,33 +94,25 @@ export const blogPosts = [
         type: "paragraph",
         content: (
           <>
-            Accelerated Resolution Therapy does have research behind it, which I cover in my <Link to="/blog/accelerated-resolution-therapy-vs-emdr" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">comparison of ART and EMDR</Link>. But that research looks at a full therapy delivered by clinicians, so its results cannot simply be carried over to SĀF-T.
+            If a child may be in immediate danger, call 911. For anyone struggling or in crisis, you can <strong>call or text 988</strong> at any hour, including when you are worried about someone else. If a student tells you they are being harmed, follow your school's reporting procedures.
           </>
         ),
       },
       {
         type: "heading",
-        text: "Who the Training Is For",
+        text: "The Training",
       },
       {
         type: "image",
-        src: images.blog.saftParents.path,
-        alt: "Two adults and two children seen from behind, walking hand in hand down a tree-lined path",
-        caption: "SĀF-T is one more skill to bring along, alongside the care you already give.",
+        src: images.blog.saftParents.training,
+        alt: "Hands taking notes on paper around a shared table during a training",
+        caption: "One day, no clinical license required.",
       },
       {
         type: "paragraph",
         content: (
           <>
-            The training is <strong>one day and costs $199</strong>, and no clinical license is required. The developer lists parents, teachers, coaches, clergy, college students, couples, first responders, medical personnel and crisis response teams among the people it suits, along with anyone who would benefit from better stress management.
-          </>
-        ),
-      },
-      {
-        type: "paragraph",
-        content: (
-          <>
-            I run these trainings myself in New York City and Georgia, and you can see the <Link to="/specialties/partnership" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">upcoming dates here</Link>. If you are a licensed professional, ask whether continuing education credit applies to the date you have in mind, since it is currently offered at New York City trainings only.
+            The training is <strong>one day and costs $199</strong>. It is open to parents, teachers, coaches, clergy, first responders and anyone else who wants better tools for stress. I run these trainings myself in New York City and Georgia, and you can see the <Link to="/specialties/partnership" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">upcoming dates here</Link>.
           </>
         ),
       },
@@ -181,26 +121,20 @@ export const blogPosts = [
         heading: "Common Questions About SĀF-T",
         items: [
           {
-            q: "Do I need a license or a background in mental health to learn SĀF-T?",
-            a: "No. The training is open to parents, educators, coaches and other non-clinicians. Learning it does not qualify you to provide therapy.",
-          },
-          {
             q: "Can SĀF-T be used with young children?",
-            a: "The developer describes it as safe for adults and children, but does not publish a minimum age. Ask about your child's age and situation at the training, and speak with their health care provider if you have concerns.",
+            a: "The developer describes it as safe for adults and children, but does not publish a minimum age. Ask about your child's age at the training, and speak with their health care provider if you have concerns.",
           },
           {
             q: "Is SĀF-T the same as Accelerated Resolution Therapy?",
             a: "No. SĀF-T is drawn from the Basic ART protocol, but it focuses only on body sensations and is not therapy. ART is a mental health treatment delivered by a licensed clinician.",
           },
-          {
-            q: "Can a teacher use SĀF-T at school?",
-            a: "Only within your school's rules, and with a parent's permission. Talk to your administrator first. SĀF-T does not replace your school's counseling or reporting procedures.",
-          },
-          {
-            q: "Has SĀF-T been proven to work?",
-            a: "Not in published research that I could find. Its developer reports that most people find it relaxing, and the related therapy, ART, has its own studies, but those do not test SĀF-T itself.",
-          },
         ],
+      },
+      {
+        type: "image",
+        src: images.blog.saftParents.path,
+        alt: "Two adults and two children seen from behind, walking hand in hand down a tree-lined path",
+        caption: "One more skill to bring along, alongside the care you already give.",
       },
       {
         type: "heading",
@@ -210,7 +144,7 @@ export const blogPosts = [
         type: "paragraph",
         content: (
           <>
-            If you are wondering whether this training fits you, your family or your classroom, a free 15-minute consultation is a low-pressure place to start. If SĀF-T is not the right fit, I will tell you. <Link to="/contact" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Reach out here</Link> whenever you are ready.
+            Wondering whether this fits you, your family or your classroom? A free 15-minute consultation is a low-pressure place to start. <Link to="/contact" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Reach out here</Link> whenever you are ready.
           </>
         ),
       },
