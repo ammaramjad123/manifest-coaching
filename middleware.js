@@ -27,6 +27,16 @@ const SITE_IMAGE_ALT = "The Peace Practice — Ayana Foluke McKanney, LCSW";
 // here too — otherwise share previews/bot fetches for that post will fall
 // back to the generic site-wide page below instead of post-specific tags.
 const POSTS = {
+  "saft-for-parents-and-teachers": {
+    title: "SĀF-T for Parents and Teachers | Peace Practice",
+    description:
+      "What SĀF-T (Sensations Awareness Focused Technique) is, what parents and teachers can use it for, where its limits are, and what the one-day training involves.",
+    image: "https://www.thepeacepractice.me/blog/pexels-30281236-sunlit-classroom.jpg",
+    imageAlt: "An empty classroom with rows of desks and chairs catching the morning sun",
+    publishDate: "2026-11-02",
+    updatedDate: "2026-11-02",
+    author: "Ayana F. McKanney, LCSW",
+  },
   "accelerated-resolution-therapy-vs-emdr": {
     title: "Accelerated Resolution Therapy vs EMDR | Peace Practice",
     description:
