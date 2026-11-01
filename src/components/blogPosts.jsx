@@ -52,8 +52,8 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.saftParents.together,
-        alt: "A child with a backpack running down a bright school hallway, seen from behind",
-        caption: "School mornings can carry more than a backpack.",
+        alt: "A mother on a park bench holding her young child's hands in hers",
+        caption: "Often a parent is the first person a child turns to.",
       },
       {
         type: "paragraph",
