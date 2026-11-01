@@ -196,6 +196,11 @@ export const images = {
 
   // ───────────── BLOG ─────────────
   blog: {
+    saftParents: {
+      hero: "/blog/pexels-30281236-sunlit-classroom.jpg",            // Top banner, "SAF-T for Parents and Teachers"
+      together: "/blog/pexels-32890756-child-hand.jpg",        // "Why Parents and Teachers Ask About It" section photo
+      path: "/blog/pexels-40358575-family-path.jpg",            // "Who the Training Is For" section photo
+    },
     artVsEmdr: {
       hero: "/blog/pexels-1578750-forest-trail-fork.jpg",            // Top banner — "Accelerated Resolution Therapy vs EMDR"
       session: "/blog/pexels-7579117-therapist-session.jpg",        // "What They Have in Common" section photo
