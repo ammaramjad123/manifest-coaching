@@ -133,6 +133,11 @@ export default function PathForwardAssessment() {
     }
   ];
 
+  // Offered on every question so nobody has to pick an answer that does not
+  // fit them (e.g. question 2 for someone with no diagnosis). It counts toward
+  // neither result.
+  const notApplicableOption = { value: "na", text: "Not applicable to me" };
+
   const handleAnswer = (value) => {
     setSelectedOption(value);
     setAnswers(prev => ({
@@ -145,20 +150,22 @@ export default function PathForwardAssessment() {
         setCurrentQuestion(currentQuestion + 1);
         setSelectedOption(null);
       } else {
-        calculateResult();
+        calculateResult(value);
       }
     }, 300);
   };
 
-  const calculateResult = () => {
-    const therapyCount = Object.values(answers).filter(v => v === "therapy").length;
-    const coachingCount = Object.values(answers).filter(v => v === "coaching").length;
+  const calculateResult = (lastValue) => {
+    // `answers` is still the pre-click state here, so merge in the answer just
+    // given rather than adding it on top (which double-counted a changed answer).
+    const finalAnswers = { ...answers, [questions[currentQuestion].id]: lastValue };
+    const finalTherapyCount = Object.values(finalAnswers).filter(v => v === "therapy").length;
+    const finalCoachingCount = Object.values(finalAnswers).filter(v => v === "coaching").length;
     
-    const currentAnswer = answers[questions[currentQuestion]?.id];
-    const finalTherapyCount = therapyCount + (currentAnswer === "therapy" ? 1 : 0);
-    const finalCoachingCount = coachingCount + (currentAnswer === "coaching" ? 1 : 0);
-    
-    const resultType = finalTherapyCount > finalCoachingCount ? "therapy" : "coaching";
+    // Every question marked not applicable: nothing to compare.
+    const resultType = finalTherapyCount + finalCoachingCount === 0
+      ? "unsure"
+      : finalTherapyCount > finalCoachingCount ? "therapy" : "coaching";
     
     setResult({
       type: resultType,
@@ -284,7 +291,7 @@ export default function PathForwardAssessment() {
                   </h3>
                   
                   <div className="space-y-4">
-                    {questions[currentQuestion].options.map((option, idx) => (
+                    {[...questions[currentQuestion].options, notApplicableOption].map((option, idx) => (
                       <button
                         key={idx}
                         onClick={() => handleAnswer(option.value)}
@@ -352,16 +359,24 @@ export default function PathForwardAssessment() {
                   } flex items-center justify-center shadow-lg mb-4`}>
                     {result?.type === "therapy" ? (
                       <Heart className="w-10 h-10 text-white" />
+                    ) : result?.type === "unsure" ? (
+                      <Compass className="w-10 h-10 text-white" />
                     ) : (
                       <Target className="w-10 h-10 text-white" />
                     )}
                   </div>
                   <h3 className="text-2xl sm:text-3xl font-black text-black mb-2 font-[system-ui]">
-                    {result?.type === "therapy" ? "Season of Restoration" : "Season of Expansion"}
+                    {result?.type === "therapy"
+                      ? "Season of Restoration"
+                      : result?.type === "unsure"
+                        ? "Let's Find Your Path Together"
+                        : "Season of Expansion"}
                   </h3>
-                  <p className="text-gray-500 font-[system-ui]">
-                    {result?.therapyCount} Therapy responses • {result?.coachingCount} Coaching responses
-                  </p>
+                  {result?.type !== "unsure" && (
+                    <p className="text-gray-500 font-[system-ui]">
+                      {result?.therapyCount} Therapy responses • {result?.coachingCount} Coaching responses
+                    </p>
+                  )}
                 </div>
 
                 {/* Result Description */}
@@ -377,6 +392,18 @@ export default function PathForwardAssessment() {
                         Therapy provides a regulated medical model to treat the "why" behind your distress. 
                         It is the necessary foundation for healing—especially when navigating a new diagnosis, 
                         complicated grief, or traumatic relationship shifts.
+                      </p>
+                    </>
+                  ) : result?.type === "unsure" ? (
+                    <>
+                      <div className="flex items-center gap-2 mb-3">
+                        <Compass className="w-5 h-5 text-[#c09050]" />
+                        <h4 className="font-bold text-black font-[system-ui]">Not Sure Yet</h4>
+                      </div>
+                      <p className="text-gray-700 text-sm sm:text-base leading-relaxed font-[system-ui]">
+                        You marked these questions as not applicable, so there isn't enough here to 
+                        point you toward therapy or coaching. A free consultation is a good place to 
+                        talk through what you are looking for and find the right fit.
                       </p>
                     </>
                   ) : (
