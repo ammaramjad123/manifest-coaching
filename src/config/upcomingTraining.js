@@ -107,7 +107,7 @@ export const upcomingTraining = {
 
       presenter: "The Peace Practice Presents",
       title: "SĀF-T — Sensations Awareness Focused Technique",
-      flyerImage: "/new/saft-flyer.jpg",   // full poster, shown in the flyer carousel
+      flyerImage: "/new/saft-flyer-2027.jpg",   // full poster, shown in the flyer carousel
       format: "1-Day Somatic Training",
       ceu: "6 CEU (NYC only) ",
       whoFor: "Open to all! Ideal for Parents, Educators, First Responders, Coaches, and Medical Personnel seeking advanced stress regulation skills.",
@@ -127,14 +127,6 @@ export const upcomingTraining = {
       note: "Dates for January, April and August 2027 in Georgia are coming soon!",
 
       dates: [
-        {
-          active: true,
-          when: "11/22/26 · 9:00am–3:00pm (Sun)",
-          where: "Acworth, GA",
-          cost: "$199",
-          ctaText: "Reserve Your Spot",
-          ctaLink: "https://acceleratedresolutiontherapy.com/reg/icat.php?course=SAF-T1&inst=ayanamckanney",
-        },
         {
           active: true,
           when: "01/04/27 · 9:00am–3:00pm (Mon)",
