@@ -16,7 +16,7 @@ export const blogPosts = [
     updatedDate: "2026-11-12",
     readTime: "4 min read",
     heroImage: images.blog.ptsdGoAway.hero,
-    heroImageAlt: "A woman with her eyes closed and face turned toward warm sunlight, sitting calmly outdoors",
+    heroImageAlt: "A man sitting on the floor by closed window blinds with his head bowed and arms resting on his knees",
     hubLink: { href: "/specialties/trauma-ptsd", label: "Explore Trauma & PTSD Therapy" },
 
     content: [
