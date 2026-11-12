@@ -31,8 +31,8 @@ const POSTS = {
     title: "Does PTSD Ever Go Away? | Peace Practice",
     description:
       "Whether PTSD goes away on its own, how well treatment works, how long it takes, and what it means if symptoms come back, from a trauma therapist.",
-    image: "https://www.thepeacepractice.me/blog/pexels-34823825-misty-lake-dawn.jpg",
-    imageAlt: "A still lake at dawn with mist over the water, a floating dock and a line of trees on the far shore",
+    image: "https://www.thepeacepractice.me/blog/pexels-10538703-window-light-hope.jpg",
+    imageAlt: "A woman with long hair seen from behind, sitting by a window in warm morning light",
     publishDate: "2026-11-12",
     updatedDate: "2026-11-12",
     author: "Ayana F. McKanney, LCSW",
