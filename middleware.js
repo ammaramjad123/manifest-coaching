@@ -27,6 +27,16 @@ const SITE_IMAGE_ALT = "The Peace Practice — Ayana Foluke McKanney, LCSW";
 // here too — otherwise share previews/bot fetches for that post will fall
 // back to the generic site-wide page below instead of post-specific tags.
 const POSTS = {
+  "does-ptsd-ever-go-away": {
+    title: "Does PTSD Ever Go Away? | Peace Practice",
+    description:
+      "Whether PTSD goes away on its own, how well treatment works, how long it takes, and what it means if symptoms come back, from a trauma therapist.",
+    image: "https://www.thepeacepractice.me/blog/pexels-34823825-misty-lake-dawn.jpg",
+    imageAlt: "A still lake at dawn with mist over the water, a floating dock and a line of trees on the far shore",
+    publishDate: "2026-11-12",
+    updatedDate: "2026-11-12",
+    author: "Ayana F. McKanney, LCSW",
+  },
   "saft-for-parents-and-teachers": {
     title: "SĀF-T for Parents and Teachers | Peace Practice",
     description:
