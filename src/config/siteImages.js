@@ -200,7 +200,7 @@ export const images = {
       hero: "/blog/pexels-32466457-man-head-down.jpg",            // Top banner, "Does PTSD Ever Go Away?"
       reflect: "/blog/pexels-2783762-sitting-by-sea.jpg",           // "Most People Who Live Through Trauma" section photo
       session: "/blog/pexels-5699456-therapist-notes.jpg",          // "What Helps" section photo
-      closing: "/blog/pexels-14578428-walking-sunny-road.jpg",      // Closing / "Getting Started" section photo
+      closing: "/blog/pexels-3807626-peaceful-sleep.jpg",      // Closing / "Getting Started" section photo
     },
     saftParents: {
       hero: "/blog/pexels-30281236-sunlit-classroom.jpg",            // Top banner, "SAF-T for Parents and Teachers"
