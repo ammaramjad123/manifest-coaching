@@ -197,7 +197,7 @@ export const images = {
   // ───────────── BLOG ─────────────
   blog: {
     ptsdGoAway: {
-      hero: "/blog/pexels-34823825-misty-lake-dawn.jpg",            // Top banner, "Does PTSD Ever Go Away?"
+      hero: "/blog/pexels-10538703-window-light-hope.jpg",            // Top banner, "Does PTSD Ever Go Away?" (window light)
       reflect: "/blog/pexels-2783762-sitting-by-sea.jpg",           // "Most People Who Live Through Trauma" section photo
       session: "/blog/pexels-5699456-therapist-notes.jpg",          // "What Helps" section photo
       closing: "/blog/pexels-14578428-walking-sunny-road.jpg",      // Closing / "Getting Started" section photo
