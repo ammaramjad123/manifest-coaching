@@ -140,8 +140,8 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.ptsdGoAway.closing,
-        alt: "A service member in a flight suit talking with others in a group session in a bright room",
-        caption: "Getting better is easier with people who understand.",
+        alt: "A woman with short silver hair smiling softly as she sits by a bright window",
+        caption: "Getting better means different things for different people. It is still worth starting.",
       },
       {
         type: "heading",
