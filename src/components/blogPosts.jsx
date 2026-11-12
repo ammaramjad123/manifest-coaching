@@ -109,7 +109,7 @@ export const blogPosts = [
       {
         type: "paragraph",
         content:
-          "A reminder, an anniversary or a hard season can stir up old symptoms, even after good treatment. That is not a failure, and it does not mean you never healed. The VA's advice is simply to talk to your provider if reactions come back. Often the skills you already learned, and sometimes a few more sessions, are enough to settle things again.",
+          "A reminder, an anniversary or a hard season can stir up old symptoms, even after good treatment. That is not a failure, and it does not mean you never healed. The VA's advice is simply to talk to your doctor if reactions come back. Often the skills you already learned, and sometimes a few more sessions, are enough to settle things again.",
       },
       {
         type: "paragraph",
