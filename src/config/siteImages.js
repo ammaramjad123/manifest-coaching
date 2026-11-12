@@ -196,6 +196,12 @@ export const images = {
 
   // ───────────── BLOG ─────────────
   blog: {
+    ptsdGoAway: {
+      hero: "/blog/pexels-34823825-misty-lake-dawn.jpg",            // Top banner, "Does PTSD Ever Go Away?"
+      reflect: "/blog/pexels-2783762-sitting-by-sea.jpg",           // "Most People Who Live Through Trauma" section photo
+      session: "/blog/pexels-5699456-therapist-notes.jpg",          // "What Helps" section photo
+      closing: "/blog/pexels-14578428-walking-sunny-road.jpg",      // Closing / "Getting Started" section photo
+    },
     saftParents: {
       hero: "/blog/pexels-30281236-sunlit-classroom.jpg",            // Top banner, "SAF-T for Parents and Teachers"
       together: "/blog/pexels-7880613-parent-and-child.jpg",        // "Why Parents and Teachers Ask About It" section photo

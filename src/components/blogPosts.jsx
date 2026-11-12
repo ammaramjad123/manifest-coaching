@@ -3,6 +3,161 @@ import { Link } from "react-router-dom";
 
 export const blogPosts = [
   {
+    slug: "does-ptsd-ever-go-away",
+    title: "Does PTSD Ever Go Away? What Recovery Really Looks Like",
+    metaTitle: "Does PTSD Ever Go Away? | Peace Practice",
+    metaDescription:
+      "Whether PTSD goes away on its own, how well treatment works, how long it takes, and what it means if symptoms come back, from a trauma therapist.",
+    excerpt:
+      "For many people, yes. Here is what the research says about PTSD getting better, how long treatment takes, and what it means if symptoms come back.",
+    category: "Trauma & PTSD",
+    author: "Ayana F. McKanney, LCSW",
+    publishDate: "2026-11-12",
+    updatedDate: "2026-11-12",
+    readTime: "4 min read",
+    heroImage: images.blog.ptsdGoAway.hero,
+    heroImageAlt: "A still lake at dawn with mist over the water, a floating dock and a line of trees on the far shore",
+    hubLink: { href: "/specialties/trauma-ptsd", label: "Explore Trauma & PTSD Therapy" },
+
+    content: [
+      {
+        type: "paragraph",
+        content:
+          "If you have lived with PTSD for a while, you have probably wondered whether it will always be part of you. Whether the startle, the nightmares and the constant scanning for danger are just who you are now.",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            The honest answer is a hopeful one. <strong>For many people, PTSD does go away.</strong> The U.S. Department of Veterans Affairs puts it plainly: for many people, treatment can get rid of symptoms altogether, and others find they have fewer symptoms or that the ones left feel less intense.
+          </>
+        ),
+      },
+      {
+        type: "heading",
+        text: "Most People Who Live Through Trauma Don't Develop PTSD",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            Feeling shaken, jumpy or unable to sleep after something frightening is a normal reaction, not a disorder. The VA notes that <strong>most people start to feel better after a few weeks</strong>, and that most people who go through a traumatic event will not develop PTSD. About 6 in every 100 people in the U.S. will have it at some point in their lives.
+          </>
+        ),
+      },
+      {
+        type: "image",
+        src: images.blog.ptsdGoAway.reflect,
+        alt: "A person sitting alone on a seawall, facing the water under a soft pink evening sky",
+        caption: "Strong reactions in the first weeks after a trauma are normal, and for most people they ease.",
+      },
+      {
+        type: "heading",
+        text: "When It Doesn't Fade on Its Own",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            The VA suggests talking to a provider if your reactions <strong>last longer than a month, are very upsetting, or get in the way of daily life</strong>. Symptoms can also show up months or even years after the event, and they can come and go.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content:
+          "None of that means you are broken or that you waited too long. It means your mind and body are still reacting to the past as if it were happening now, and that is exactly what trauma therapy works on.",
+      },
+      {
+        type: "heading",
+        text: "What Helps",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            <strong>PTSD treatment works.</strong> The VA says certain talk therapies work best, and names three: cognitive processing therapy, prolonged exposure and EMDR. They usually take <strong>about 8 to 16 sessions</strong>, or roughly three months.
+          </>
+        ),
+      },
+      {
+        type: "image",
+        src: images.blog.ptsdGoAway.session,
+        alt: "A therapist writing notes on a clipboard while a client rests on a couch in a bright room",
+        caption: "You do not have to get through this on your own.",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            In my practice I also use <Link to="/specialties/art" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Accelerated Resolution Therapy</Link>, a newer, brief therapy that uses eye movements. In its main clinical trial, people needed <strong>an average of 3.7 sessions</strong>, and their PTSD symptoms dropped significantly more than in the comparison group. It has less research behind it than those three, and I am upfront about that. I compare it with EMDR in <Link to="/blog/accelerated-resolution-therapy-vs-emdr" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Accelerated Resolution Therapy vs EMDR</Link>.
+          </>
+        ),
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            Many people put off therapy because they fear retelling the worst moment of their life. It does not have to work that way. I wrote about that in <Link to="/blog/trauma-therapy-without-talking-about-it" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">trauma therapy that doesn't require you to talk about what happened</Link>.
+          </>
+        ),
+      },
+      {
+        type: "heading",
+        text: "If It Comes Back",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A reminder, an anniversary or a hard season can stir up old symptoms, even after good treatment. That is not a failure, and it does not mean you never healed. The VA's advice is simply to talk to your doctor if reactions come back. Often the skills you already learned, and sometimes a few more sessions, are enough to settle things again.",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            If you are in crisis or thinking about harming yourself, <strong>call or text 988</strong> at any hour. Veterans can press 1 after dialing 988 to reach the Veterans Crisis Line.
+          </>
+        ),
+      },
+      {
+        type: "faq",
+        heading: "Common Questions About PTSD Recovery",
+        items: [
+          {
+            q: "Can PTSD go away without treatment?",
+            a: "Strong reactions right after a trauma often ease within a few weeks, and most people never develop PTSD. If symptoms last longer than a month, are very upsetting or disrupt your life, the VA recommends talking to a provider. Treatment works, and you do not have to wait it out.",
+          },
+          {
+            q: "How long does PTSD treatment take?",
+            a: "The talk therapies with the strongest evidence usually take about 8 to 16 sessions, roughly three months. Accelerated Resolution Therapy averaged 3.7 sessions in its main trial. Complex or repeated trauma can take longer with any approach.",
+          },
+          {
+            q: "Can PTSD come back years later?",
+            a: "It can. The VA notes that symptoms may not appear until months or years after the event, and that they can come and go. If they return, talk to your provider. It does not mean treatment failed.",
+          },
+        ],
+      },
+      {
+        type: "image",
+        src: images.blog.ptsdGoAway.closing,
+        alt: "A woman walking away down a quiet country road between green fields under a clear blue sky",
+        caption: "Getting better means different things for different people. It is still worth starting.",
+      },
+      {
+        type: "heading",
+        text: "Getting Started",
+      },
+      {
+        type: "paragraph",
+        content: (
+          <>
+            If you are wondering whether what you are carrying is PTSD, or whether it can get better, a free 15-minute consultation is a low-pressure place to start. <Link to="/contact" className="underline decoration-[#c09050]/40 hover:decoration-[#c09050] underline-offset-2">Reach out here</Link> whenever you are ready.
+          </>
+        ),
+      },
+    ],
+  },
+  {
     slug: "saft-for-parents-and-teachers",
     title: "SĀF-T for Parents and Teachers: What It Is and What It Isn't",
     metaTitle: "SĀF-T for Parents and Teachers | Peace Practice",
