@@ -16,7 +16,7 @@ export const blogPosts = [
     updatedDate: "2026-11-12",
     readTime: "4 min read",
     heroImage: images.blog.ptsdGoAway.hero,
-    heroImageAlt: "A still lake at dawn with mist over the water, a floating dock and a line of trees on the far shore",
+    heroImageAlt: "A woman with long hair seen from behind, sitting by a window in warm morning light",
     hubLink: { href: "/specialties/trauma-ptsd", label: "Explore Trauma & PTSD Therapy" },
 
     content: [
