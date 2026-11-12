@@ -140,8 +140,8 @@ export const blogPosts = [
       {
         type: "image",
         src: images.blog.ptsdGoAway.closing,
-        alt: "A woman walking away down a quiet country road between green fields under a clear blue sky",
-        caption: "Getting better means different things for different people. It is still worth starting.",
+        alt: "A woman sleeping peacefully on a soft pillow in warm morning light",
+        caption: "Sometimes getting better looks like a full night of sleep.",
       },
       {
         type: "heading",
